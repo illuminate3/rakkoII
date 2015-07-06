@@ -152,6 +152,10 @@ return [
         Caffeinated\Modules\ModulesServiceProvider::class,
         Caffeinated\Plugins\PluginsServiceProvider::class,
         Caffeinated\Themes\ThemesServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Vinkla\Translator\TranslatorServiceProvider::class,
+        yajra\Datatables\DatatablesServiceProvider::class,
 
     ],
 
@@ -208,6 +212,11 @@ return [
         'Module' => Caffeinated\Modules\Facades\Module::class,
         'Plugin' => Caffeinated\Plugins\Facades\Plugin::class,
         'Theme' => Caffeinated\Themes\Facades\Theme::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Datatables' => yajra\Datatables\Datatables::class,
+
     ],
 
 ];

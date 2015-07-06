@@ -44,11 +44,70 @@ Caffeinated\Themes\ThemesServiceProvider::class,
 'Theme' => Caffeinated\Themes\Facades\Theme::class,
 ```
 
+```
+vendor:publish --provider="Caffeinated\Themes\ThemesServiceProvider"
+```
+
 <!--
 * https://github.com/caffeinated/presenter
 ```
 composer require caffeinated/presenters=~2.0
 ```
  -->
+
+* http://laravelcollective.com/docs/5.1/html
+```
+"laravelcollective/html": "5.1.*"
+Collective\Html\HtmlServiceProvider::class,
+'Form' => Collective\Html\FormFacade::class,
+'Html' => Collective\Html\HtmlFacade::class,
+```
+
+* https://github.com/wikimedia/composer-merge-plugin
+```
+composer require wikimedia/composer-merge-plugin
+```
+
+* https://github.com/LaravelRUS/localized-carbon
+```
+"laravelrus/localized-carbon": "dev-master"
+<!--
+'Laravelrus\LocalizedCarbon\LocalizedCarbonServiceProvider',
+'LocalizedCarbon'   => 'Laravelrus\LocalizedCarbon\LocalizedCarbon',
+'DiffFormatter'     => 'Laravelrus\LocalizedCarbon\DiffFactoryFacade',
+ -->
+```
+
+* https://github.com/Intervention/image
+```
+composer require intervention/image
+vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
+```
+
+* https://github.com/Intervention/imagecache
+```
+composer require intervention/imagecache
+'Intervention\Image\ImageServiceProvider'
+'Image' => 'Intervention\Image\Facades\Image'
+```
+
+* https://github.com/vinkla/translator
+```
+'Vinkla\Translator\TranslatorServiceProvider'
+vendor:publish --provider="Vinkla\Translator\TranslatorServiceProvider"
+```
+
+
+* https://github.com/yajra/laravel-datatables
+```
+composer require yajra/laravel-datatables-oracle:~5.0
+yajra\Datatables\DatatablesServiceProvider
+'Datatables' => yajra\Datatables\Datatables::class,
+vendor:publish --provider="yajra\Datatables\DatatablesServiceProvider"
+```
+
+*
+
+*
 
 *
