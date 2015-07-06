@@ -1,5 +1,13 @@
 # Rakko II : Laravel 5.1.x Beta Development
 
+
+## Front End Includes
+* Bootstrap 3.x
+* Font-Awesome 4.x
+* jquery 1.x and 2.x
+* and more ...
+
+
 ## Packages
 
 * https://github.com/illuminate3/kotoba
