@@ -144,6 +144,15 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Service Providers...
+         */
+        Illuminate3\Kotoba\KotobaServiceProvider::class,
+        Caffeinated\Flash\FlashServiceProvider::class,
+        Caffeinated\Modules\ModulesServiceProvider::class,
+        Caffeinated\Plugins\PluginsServiceProvider::class,
+        Caffeinated\Themes\ThemesServiceProvider::class,
+
     ],
 
     /*
@@ -192,6 +201,13 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        /*
+        * Package Alias
+        */
+        'Flash' => Caffeinated\Flash\Facades\Flash::class,
+        'Module' => Caffeinated\Modules\Facades\Module::class,
+        'Plugin' => Caffeinated\Plugins\Facades\Plugin::class,
+        'Theme' => Caffeinated\Themes\Facades\Theme::class,
     ],
 
 ];

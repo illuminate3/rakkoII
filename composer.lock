@@ -4,8 +4,208 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5c6026b96e6fa11a641b51a6ba976f5e",
+    "hash": "edb2757cc4da9abeeb44b9d0d8c4bb98",
     "packages": [
+        {
+            "name": "caffeinated/flash",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/flash.git",
+                "reference": "15b97d6ba7cea999ee0170a040652e7271b73f81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/flash/zipball/15b97d6ba7cea999ee0170a040652e7271b73f81",
+                "reference": "15b97d6ba7cea999ee0170a040652e7271b73f81",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Caffeinated\\Flash": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Flash Messages",
+            "keywords": [
+                "caffeinated",
+                "flash",
+                "laravel"
+            ],
+            "time": "2015-06-26 17:44:04"
+        },
+        {
+            "name": "caffeinated/modules",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/modules.git",
+                "reference": "e84f03eff0bd4633e17d3bfd63f667500fd6cda1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/modules/zipball/e84f03eff0bd4633e17d3bfd63f667500fd6cda1",
+                "reference": "e84f03eff0bd4633e17d3bfd63f667500fd6cda1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.1.*",
+                "illuminate/database": "5.1.*",
+                "illuminate/filesystem": "5.1.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9"
+            },
+            "suggest": {
+                "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Caffeinated\\Modules\\": "src/Caffeinated/Modules/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Modules",
+            "keywords": [
+                "caffeinated",
+                "laravel",
+                "modules"
+            ],
+            "time": "2015-07-06 15:02:42"
+        },
+        {
+            "name": "caffeinated/plugins",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/plugins.git",
+                "reference": "fac76dcb8aed52168eb29471bedae18acd102b8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/plugins/zipball/fac76dcb8aed52168eb29471bedae18acd102b8e",
+                "reference": "fac76dcb8aed52168eb29471bedae18acd102b8e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Caffeinated\\Plugins\\": "src/Caffeinated/Plugins/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Plugins",
+            "keywords": [
+                "caffeinated",
+                "laravel",
+                "plugin",
+                "plugins"
+            ],
+            "time": "2015-06-26 23:54:37"
+        },
+        {
+            "name": "caffeinated/themes",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/themes.git",
+                "reference": "2c00210dc8c423c9f00ce857415fd75a0641f945"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/themes/zipball/2c00210dc8c423c9f00ce857415fd75a0641f945",
+                "reference": "2c00210dc8c423c9f00ce857415fd75a0641f945",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.1.*",
+                "illuminate/filesystem": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "illuminate/view": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "suggest": {
+                "caffeinated/sapling": "Laravel 5 Twig integration package"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Caffeinated\\Themes\\": "src/Caffeinated/Themes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Themes",
+            "keywords": [
+                "blade",
+                "caffeinated",
+                "laravel",
+                "themes",
+                "twig"
+            ],
+            "time": "2015-06-23 17:26:49"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "2.0.0",
@@ -215,6 +415,50 @@
                 "string"
             ],
             "time": "2014-12-20 21:24:13"
+        },
+        {
+            "name": "illuminate3/kotoba",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate3/kotoba.git",
+                "reference": "b3557528e3985cfd9c4f46149e6faad6d68d9744"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/b3557528e3985cfd9c4f46149e6faad6d68d9744",
+                "reference": "b3557528e3985cfd9c4f46149e6faad6d68d9744",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Illuminate3\\Kotoba\\": "src/Illuminate3/Kotoba/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Illuminate3",
+                    "email": "carsten.sapporo@gmail.com",
+                    "homepage": "https://github.com/illuminate3/kotoba",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Baseline language files for Laravel 5",
+            "homepage": "https://github.com/illuminate3/kotoba",
+            "keywords": [
+                "i18n",
+                "language",
+                "laravel"
+            ],
+            "time": "2015-07-05 18:57:36"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -2925,7 +3169,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "illuminate3/kotoba": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -1,6 +1,12 @@
 # Rakko II : Laravel 5.1.x Beta Development
 
-## Packaged
+## Packages
+
+* https://github.com/illuminate3/kotoba
+```
+"illuminate3/kotoba": "dev-master",
+Illuminate3\Kotoba\KotobaServiceProvider::class,
+```
 
 * https://github.com/caffeinated/flash
 ```
@@ -9,11 +15,19 @@ Caffeinated\Flash\FlashServiceProvider::class,
 'Flash' => Caffeinated\Flash\Facades\Flash::class,
 ```
 
+```
+vendor:publish --provider="Caffeinated\Flash\FlashServiceProvider"
+```
+
 * https://github.com/caffeinated/modules
 ```
 composer require caffeinated/modules=~2.0
 Caffeinated\Modules\ModulesServiceProvider::class,
 Module' => Caffeinated\Modules\Facades\Module::class,
+```
+
+```
+vendor:publish --provider="Caffeinated\Modules\ModulesServiceProvider"
 ```
 
 * https://github.com/caffeinated/plugins
@@ -30,11 +44,11 @@ Caffeinated\Themes\ThemesServiceProvider::class,
 'Theme' => Caffeinated\Themes\Facades\Theme::class,
 ```
 
+<!--
 * https://github.com/caffeinated/presenter
 ```
 composer require caffeinated/presenters=~2.0
 ```
+ -->
 
-
-*
 *
