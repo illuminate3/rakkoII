@@ -6,7 +6,12 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*"
+        "laravel/framework": "5.1.*",
+        "caffeinated/flash": "~2.0",
+        "caffeinated/modules": "~2.0",
+        "caffeinated/plugins": "~2.0",
+        "caffeinated/presenters": "~2.0",
+        "caffeinated/themes": "~2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
