@@ -119,3 +119,17 @@ vendor:publish --provider="yajra\Datatables\DatatablesServiceProvider"
 *
 
 *
+
+
+## Thanks
+
+
+*
+
+
+## Partial Code or Ideas
+
+
+*
+
+

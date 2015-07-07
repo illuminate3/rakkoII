@@ -26,6 +26,13 @@
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1"
 	},
+	"extra": {
+		"merge-plugin": {
+			"include": [
+				"app/Modules/*/composer.json"
+			]
+		}
+	},
 	"autoload": {
 		"classmap": [
 			"database"

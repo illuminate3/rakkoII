@@ -1,9 +1,23 @@
 <?php
+
+// php artisan vendor:publish --provider="App\Modules\Core\Providers\CoreServiceProvider" --tag="config"
+// php artisan vendor:publish --provider="App\Modules\Core\Providers\CoreServiceProvider" --tag="views"
+
+
 return [
 
 /*
 |--------------------------------------------------------------------------
-| General configs used for naming conventions
+| db settings
+|--------------------------------------------------------------------------
+*/
+'core_db' => array(
+	'prefix'					=> '',
+),
+
+/*
+|--------------------------------------------------------------------------
+| Core configs used for naming conventions
 |--------------------------------------------------------------------------
 */
 	'title'							=> 'Rakko : ラッコ',
@@ -65,11 +79,8 @@ return [
 
 /*
 |--------------------------------------------------------------------------
-| General views and standard package views
+| Core views and standard package views
 |--------------------------------------------------------------------------
 */
-	'cache' => false,
-	'html_cache' => false,
-	'main_locale_in_url' => false,
 
 ];
