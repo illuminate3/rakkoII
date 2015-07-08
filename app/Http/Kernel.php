@@ -21,7 +21,8 @@ class Kernel extends HttpKernel
 		\Illuminate\View\Middleware\ShareErrorsFromSession::class,
 		\App\Http\Middleware\VerifyCsrfToken::class,
 		\App\Http\Middleware\SetLanguage::class,
-//		\anlutro\LaravelSettings\SaveMiddleware::class,
+		\App\Http\Middleware\SetTheme::class,
+		\anlutro\LaravelSettings\SaveMiddleware::class,
 	];
 
 	/**

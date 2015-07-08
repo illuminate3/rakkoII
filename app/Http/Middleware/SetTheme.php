@@ -14,6 +14,7 @@ use Cache;
 use Config;
 use Redirect;
 use Theme;
+use View;
 
 
 class SetTheme implements Middleware {
@@ -34,6 +35,10 @@ class SetTheme implements Middleware {
 		}
 
 		\Theme::setActive($theme);
+
+		View::share('theme_front',  Theme::getActive() . '::' . Config::get('themes.front', Theme::getActive() . '::' . '_layouts.app'));
+		View::share('theme_back', Theme::getActive() . '::' . Config::get('themes.back', Theme::getActive() . '::' . '_layouts.back'));
+		View::share('activeTheme', Theme::getActive());
 
 		return $next($request);
 

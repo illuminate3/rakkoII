@@ -1,6 +1,34 @@
 # Rakko II : Laravel 5.1.x Beta Development
 
 
+## Functionality
+
+
+### Locales
+Locales that are based upon translations.
+URLs are not translated.
+
+
+### Modules
+Module supports is provided by Caffeinated Modules.
+No modules are included however, illuminates3/core module is highly recommended since it extends some of the functions provided in this app.
+
+### Themes
+Theme supports is provided by Caffeinated Themes.
+A base theme based on Bootstrap is included.
+
+
+### And More!
+Check out all the packages that are included in this app!
+A list of all included packages is provided below.
+
+
+## Routes
+
+*
+*
+
+
 ## Front End Includes
 * Bootstrap 3.x
 * Font-Awesome 4.x

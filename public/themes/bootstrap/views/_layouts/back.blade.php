@@ -29,11 +29,11 @@
 
 <!-- ------------------------------------------ CSS stylesheets ------------------------------------------ -->
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-3.3.2/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-3.3.5-dist/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/font-awesome-4.3.0/css/font-awesome.css') }}">
 
 <!--
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-3.3.2/css/bootstrap-theme.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css') }}">
 -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
@@ -50,20 +50,20 @@
 <body>
 
 
-	@include('_partials.navigation')
+	@include($activeTheme . '::' . '_partials.navigation')
 
 	<div class="container-fluid">
 <!-- <div id="wrap" class="container"> -->
-		@include('_partials.content')
+		@include($activeTheme . '::' . '_partials.content')
 	</div><!-- ./container -->
 
-	@include('_partials.footer')
+	@include($activeTheme . '::' . '_partials.footer')
 
 
 <!-- ------------------------------------------ js ------------------------------------------ -->
 
 	<script type="text/javascript" src="{{ asset('assets/vendors/jquery/jquery-2.1.3.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-3.3.2/js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>
 
 <!--
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
