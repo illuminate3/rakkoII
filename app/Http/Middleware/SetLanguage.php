@@ -9,6 +9,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Contracts\Routing\Middleware;
 
 use App;
+use Cache;
 use Closure;
 use Config;
 use Lang;
@@ -37,7 +38,8 @@ class SetLanguage implements Middleware {
 	{
 		$lang = Session::get('locale');
 		if ( $lang != App::getLocale() ) {
-			if ( Session::has('locale') && array_key_exists(Session::get('locale'), Config::get('languages.supportedLocales')) ) {
+//			if ( Session::has('locale') && array_key_exists(Session::get('locale'), Config::get('languages.supportedLocales')) ) {
+			if ( Session::has('locale') && array_key_exists(Session::get('locale'), Cache::get('locales')) ) {
 				App::setLocale(Session::get('locale'));
 			} else {
 				App::setLocale(Config::get('app.fallback_locale'));
