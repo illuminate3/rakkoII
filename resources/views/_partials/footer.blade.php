@@ -11,7 +11,7 @@
 			</div>
 			<div class="col-sm-4">
 				<p class="text-muted">
-					{{ Config::get('general.footer') }}
+					{{ Config::get('core.footer') }}
 				</p>
 			</div>
 			<div class="col-sm-4">

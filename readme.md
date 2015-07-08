@@ -56,13 +56,6 @@ Caffeinated\Themes\ThemesServiceProvider::class,
 vendor:publish --provider="Caffeinated\Themes\ThemesServiceProvider"
 ```
 
-<!--
-* https://github.com/caffeinated/presenter
-```
-composer require caffeinated/presenters=~2.0
-```
- -->
-
 * http://laravelcollective.com/docs/5.1/html
 ```
 "laravelcollective/html": "5.1.*"
@@ -114,7 +107,10 @@ yajra\Datatables\DatatablesServiceProvider
 vendor:publish --provider="yajra\Datatables\DatatablesServiceProvider"
 ```
 
-*
+* https://github.com/laracasts/Presenter
+```
+"laracasts/presenter": "dev-master"
+```
 
 *
 
