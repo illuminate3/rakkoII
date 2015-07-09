@@ -145,6 +145,11 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         /*
+         * Development Service Providers...
+         */
+        Barryvdh\Debugbar\ServiceProvider::class,
+
+        /*
          * Service Providers...
          */
         Illuminate3\Kotoba\KotobaServiceProvider::class,
@@ -204,6 +209,11 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /*
+        * Development Package Alias
+        */
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
         /*
         * Package Alias

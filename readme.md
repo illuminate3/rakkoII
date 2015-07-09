@@ -140,7 +140,18 @@ vendor:publish --provider="yajra\Datatables\DatatablesServiceProvider"
 "laracasts/presenter": "dev-master"
 ```
 
-*
+## Development
+
+* https://github.com/barryvdh/laravel-debugbar
+```
+"barryvdh/laravel-debugbar": "^2.0"
+'Barryvdh\Debugbar\ServiceProvider',
+'Debugbar' => 'Barryvdh\Debugbar\Facade',
+```
+
+```
+php artisan vendor:publish
+```
 
 *
 
