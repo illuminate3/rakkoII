@@ -4,8 +4,97 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f2136b75c4f2626d682a19a97a4a8246",
+    "hash": "72ca1085b36ffc3f6579ebd7b145e08a",
     "packages": [
+        {
+            "name": "anahkiasen/html-object",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Anahkiasen/html-object.git",
+                "reference": "7890eb43636b1cd5ae7c4aab0d27c6890065c9ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Anahkiasen/html-object/zipball/7890eb43636b1cd5ae7c4aab0d27c6890065c9ad",
+                "reference": "7890eb43636b1cd5ae7c4aab0d27c6890065c9ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HtmlObject\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anahkiasen",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A set of classes to create and manipulate HTML objects abstractions",
+            "time": "2015-03-04 17:12:08"
+        },
+        {
+            "name": "anahkiasen/underscore-php",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Anahkiasen/underscore-php.git",
+                "reference": "48f97b295c82d99c1fe10d8b0684c43f051b5580"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Anahkiasen/underscore-php/zipball/48f97b295c82d99c1fe10d8b0684c43f051b5580",
+                "reference": "48f97b295c82d99c1fe10d8b0684c43f051b5580",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^1.0",
+                "patchwork/utf8": "^1.2",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "2.0.*@dev",
+                "phpunit/phpunit": "^4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Underscore\\": [
+                        "src",
+                        "tests"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A redacted port of Underscore.js for PHP",
+            "keywords": [
+                "internals",
+                "laravel",
+                "toolkit"
+            ],
+            "time": "2015-05-16 19:24:58"
+        },
         {
             "name": "anlutro/l4-settings",
             "version": "0.4.0",
@@ -51,60 +140,6 @@
             ],
             "description": "Persistant settings in Laravel.",
             "time": "2015-06-09 06:10:57"
-        },
-        {
-            "name": "barryvdh/laravel-debugbar",
-            "version": "v2.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "3edaea0e8056edde00f7d0af13ed0d406412182d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/3edaea0e8056edde00f7d0af13ed0d406412182d",
-                "reference": "3edaea0e8056edde00f7d0af13ed0d406412182d",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0.17|5.1.*",
-                "maximebf/debugbar": "~1.10.2",
-                "php": ">=5.4.0",
-                "symfony/finder": "~2.6"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Barryvdh\\Debugbar\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "PHP Debugbar integration for Laravel",
-            "keywords": [
-                "debug",
-                "debugbar",
-                "laravel",
-                "profiler",
-                "webprofiler"
-            ],
-            "time": "2015-06-07 07:19:29"
         },
         {
             "name": "caffeinated/flash",
@@ -158,16 +193,16 @@
         },
         {
             "name": "caffeinated/modules",
-            "version": "v2.1.4",
+            "version": "v2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caffeinated/modules.git",
-                "reference": "d1ffee0c307cee668873504c014d0cda9ec3a688"
+                "reference": "e3a590481515f52b1adc5883a01eee07dc448fcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caffeinated/modules/zipball/d1ffee0c307cee668873504c014d0cda9ec3a688",
-                "reference": "d1ffee0c307cee668873504c014d0cda9ec3a688",
+                "url": "https://api.github.com/repos/caffeinated/modules/zipball/e3a590481515f52b1adc5883a01eee07dc448fcb",
+                "reference": "e3a590481515f52b1adc5883a01eee07dc448fcb",
                 "shasum": ""
             },
             "require": {
@@ -211,7 +246,7 @@
                 "laravel",
                 "modules"
             ],
-            "time": "2015-07-07 16:36:06"
+            "time": "2015-07-08 16:55:08"
         },
         {
             "name": "caffeinated/plugins",
@@ -580,12 +615,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "b3557528e3985cfd9c4f46149e6faad6d68d9744"
+                "reference": "3581b3fb81db79f58881fed130b12dff09507c15"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/3581b3fb81db79f58881fed130b12dff09507c15",
-                "reference": "b3557528e3985cfd9c4f46149e6faad6d68d9744",
+                "reference": "3581b3fb81db79f58881fed130b12dff09507c15",
                 "shasum": ""
             },
             "require": {
@@ -616,7 +651,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2015-07-05 18:57:36"
+            "time": "2015-07-08 19:20:08"
         },
         {
             "name": "intervention/image",
@@ -1143,31 +1178,27 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.4",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "56862959b45131ad33e5a7727a25db19f2cf090b"
+                "reference": "e87d33ecc3a9fe2b1931856dc9921628f8c18cd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/56862959b45131ad33e5a7727a25db19f2cf090b",
-                "reference": "56862959b45131ad33e5a7727a25db19f2cf090b",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/e87d33ecc3a9fe2b1931856dc9921628f8c18cd5",
+                "reference": "e87d33ecc3a9fe2b1931856dc9921628f8c18cd5",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "ext-fileinfo": "*",
-                "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9",
-                "phpspec/phpspec": "~2.0",
+                "phpspec/phpspec": "^2.2",
                 "phpspec/prophecy-phpunit": "~1.0",
-                "phpunit/phpunit": "~4.1",
-                "predis/predis": "~1.0",
-                "tedivm/stash": "~0.12.0"
+                "phpunit/phpunit": "~4.1"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -1181,8 +1212,7 @@
                 "league/flysystem-rackspace": "Allows you to use Rackspace Cloud Files",
                 "league/flysystem-sftp": "Allows you to use SFTP server storage via phpseclib",
                 "league/flysystem-webdav": "Allows you to use WebDAV storage",
-                "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter",
-                "predis/predis": "Allows you to use Predis for caching"
+                "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter"
             },
             "type": "library",
             "extra": {
@@ -1205,10 +1235,11 @@
                     "email": "info@frenky.net"
                 }
             ],
-            "description": "Many filesystems, one API.",
+            "description": "Filesystem abstraction: Many filesystems, one API.",
             "keywords": [
                 "Cloud Files",
                 "WebDAV",
+                "abstraction",
                 "aws",
                 "cloud",
                 "copy.com",
@@ -1216,6 +1247,7 @@
                 "file systems",
                 "files",
                 "filesystem",
+                "filesystems",
                 "ftp",
                 "rackspace",
                 "remote",
@@ -1223,7 +1255,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-06-07 21:27:37"
+            "time": "2015-07-08 20:43:57"
         },
         {
             "name": "league/fractal",
@@ -1287,62 +1319,6 @@
                 "rest"
             ],
             "time": "2015-03-19 15:16:43"
-        },
-        {
-            "name": "maximebf/debugbar",
-            "version": "v1.10.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "7b2006e6e095126b5a061ec33fca3d90ea8a8219"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/7b2006e6e095126b5a061ec33fca3d90ea8a8219",
-                "reference": "7b2006e6e095126b5a061ec33fca3d90ea8a8219",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0",
-                "symfony/var-dumper": "~2.6"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "kriswallsmith/assetic": "The best way to manage assets",
-                "monolog/monolog": "Log using Monolog",
-                "predis/predis": "Redis storage"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.10-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "DebugBar": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Maxime Bouroumeau-Fuseau",
-                    "email": "maxime.bouroumeau@gmail.com",
-                    "homepage": "http://maximebf.com"
-                }
-            ],
-            "description": "Debug bar in the browser for php application",
-            "homepage": "https://github.com/maximebf/php-debugbar",
-            "keywords": [
-                "debug"
-            ],
-            "time": "2015-02-05 07:51:20"
         },
         {
             "name": "monolog/monolog",
@@ -1555,6 +1531,65 @@
                 "php"
             ],
             "time": "2015-05-02 15:40:40"
+        },
+        {
+            "name": "patchwork/utf8",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tchwork/utf8.git",
+                "reference": "a7a9a987d01d052ff9c99510ecbd07ebc6c270f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/a7a9a987d01d052ff9c99510ecbd07ebc6c270f2",
+                "reference": "a7a9a987d01d052ff9c99510ecbd07ebc6c270f2",
+                "shasum": ""
+            },
+            "require": {
+                "lib-pcre": ">=7.3",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-iconv": "Use iconv for best performance",
+                "ext-intl": "Use Intl for best performance",
+                "ext-mbstring": "Use Mbstring for best performance",
+                "ext-wfio": "Use WFIO for UTF-8 filesystem access on Windows"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Patchwork\\": "src/Patchwork/"
+                },
+                "classmap": [
+                    "src/Normalizer.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(Apache-2.0 or GPL-2.0)"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Portable and performant UTF-8, Unicode and Grapheme Clusters for PHP",
+            "homepage": "https://github.com/tchwork/utf8",
+            "keywords": [
+                "grapheme",
+                "i18n",
+                "unicode",
+                "utf-8",
+                "utf8"
+            ],
+            "time": "2015-06-25 08:17:49"
         },
         {
             "name": "psr/http-message",
@@ -2471,6 +2506,56 @@
             "time": "2015-06-08 09:37:21"
         },
         {
+            "name": "vespakoen/menu",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vespakoen/menu.git",
+                "reference": "e2b2c57bca1fa8132c51c906c701103bfa5c03cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vespakoen/menu/zipball/e2b2c57bca1fa8132c51c906c701103bfa5c03cd",
+                "reference": "e2b2c57bca1fa8132c51c906c701103bfa5c03cd",
+                "shasum": ""
+            },
+            "require": {
+                "anahkiasen/html-object": "~1.4",
+                "anahkiasen/underscore-php": "^2.0",
+                "illuminate/config": "5.*",
+                "illuminate/container": "5.*",
+                "illuminate/http": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.0.*",
+                "phpunit/phpunit": "4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Menu": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Koen Schmeets",
+                    "email": "hello@koenschmeets.nl"
+                }
+            ],
+            "description": "Managing menus the easy way.",
+            "keywords": [
+                "laravel",
+                "laravel 5",
+                "menu"
+            ],
+            "time": "2015-06-08 12:22:47"
+        },
+        {
             "name": "vinkla/translator",
             "version": "2.2.0",
             "source": {
@@ -2618,16 +2703,16 @@
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v5.5.4",
+            "version": "v5.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "77d4f862afe8d3130417e13608c83c807edb5d03"
+                "reference": "b60c8ed46871592c99c50badcf208720b0c9b163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/77d4f862afe8d3130417e13608c83c807edb5d03",
-                "reference": "77d4f862afe8d3130417e13608c83c807edb5d03",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/b60c8ed46871592c99c50badcf208720b0c9b163",
+                "reference": "b60c8ed46871592c99c50badcf208720b0c9b163",
                 "shasum": ""
             },
             "require": {
@@ -2669,10 +2754,64 @@
                 "laravel4",
                 "laravel5"
             ],
-            "time": "2015-07-04 00:52:55"
+            "time": "2015-07-09 13:37:48"
         }
     ],
     "packages-dev": [
+        {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "3edaea0e8056edde00f7d0af13ed0d406412182d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/3edaea0e8056edde00f7d0af13ed0d406412182d",
+                "reference": "3edaea0e8056edde00f7d0af13ed0d406412182d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0.17|5.1.*",
+                "maximebf/debugbar": "~1.10.2",
+                "php": ">=5.4.0",
+                "symfony/finder": "~2.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2015-06-07 07:19:29"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
@@ -2823,6 +2962,62 @@
                 "test"
             ],
             "time": "2015-05-11 14:41:42"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.10.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "7b2006e6e095126b5a061ec33fca3d90ea8a8219"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/7b2006e6e095126b5a061ec33fca3d90ea8a8219",
+                "reference": "7b2006e6e095126b5a061ec33fca3d90ea8a8219",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0",
+                "symfony/var-dumper": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "DebugBar": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug"
+            ],
+            "time": "2015-02-05 07:51:20"
         },
         {
             "name": "mockery/mockery",
@@ -3906,7 +4101,8 @@
         "laravelrus/localized-carbon": 20,
         "laravel/framework": 0,
         "anlutro/l4-settings": 0,
-        "vinkla/translator": 0
+        "vinkla/translator": 0,
+        "vespakoen/menu": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
