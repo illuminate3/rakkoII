@@ -9,3 +9,5 @@ Thumbs.db
 /node_modules
 /storage
 /app/Modules/Core
+/app/Modules/Menus
+/app/Modules/Origami

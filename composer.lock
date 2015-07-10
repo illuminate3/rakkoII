@@ -2707,12 +2707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "b60c8ed46871592c99c50badcf208720b0c9b163"
+                "reference": "ec65fa0a200f9a047d66f64893343dd1512b5608"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/b60c8ed46871592c99c50badcf208720b0c9b163",
-                "reference": "b60c8ed46871592c99c50badcf208720b0c9b163",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/ec65fa0a200f9a047d66f64893343dd1512b5608",
+                "reference": "ec65fa0a200f9a047d66f64893343dd1512b5608",
                 "shasum": ""
             },
             "require": {
@@ -2754,22 +2754,22 @@
                 "laravel4",
                 "laravel5"
             ],
-            "time": "2015-07-09 13:37:48"
+            "time": "2015-07-09 15:32:53"
         }
     ],
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v2.0.4",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "3edaea0e8056edde00f7d0af13ed0d406412182d"
+                "reference": "753106cd1f9c724d05bb48728bc652231174e279"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/3edaea0e8056edde00f7d0af13ed0d406412182d",
-                "reference": "3edaea0e8056edde00f7d0af13ed0d406412182d",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/753106cd1f9c724d05bb48728bc652231174e279",
+                "reference": "753106cd1f9c724d05bb48728bc652231174e279",
                 "shasum": ""
             },
             "require": {
@@ -2810,7 +2810,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2015-06-07 07:19:29"
+            "time": "2015-07-09 14:51:59"
         },
         {
             "name": "doctrine/instantiator",
