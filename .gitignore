@@ -9,6 +9,8 @@ Thumbs.db
 /node_modules
 /storage
 /app/Modules/Core
+/app/Modules/Kagi
 /app/Modules/Kantoku
 /app/Modules/Menus
 /app/Modules/Origami
+/app/Modules/Profiles
