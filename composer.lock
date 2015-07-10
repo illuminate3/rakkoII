@@ -2703,16 +2703,16 @@
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v5.5.7",
+            "version": "v5.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "ec65fa0a200f9a047d66f64893343dd1512b5608"
+                "reference": "0f73a4e5b5535120ae9c35512f5f2eb8efbca75b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/ec65fa0a200f9a047d66f64893343dd1512b5608",
-                "reference": "ec65fa0a200f9a047d66f64893343dd1512b5608",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/0f73a4e5b5535120ae9c35512f5f2eb8efbca75b",
+                "reference": "0f73a4e5b5535120ae9c35512f5f2eb8efbca75b",
                 "shasum": ""
             },
             "require": {
@@ -2754,7 +2754,7 @@
                 "laravel4",
                 "laravel5"
             ],
-            "time": "2015-07-09 15:32:53"
+            "time": "2015-07-10 11:36:34"
         }
     ],
     "packages-dev": [
@@ -4102,6 +4102,10 @@
         "laravel/framework": 0,
         "anlutro/l4-settings": 0,
         "vinkla/translator": 0,
+        "caffeinated/flash": 0,
+        "caffeinated/modules": 0,
+        "caffeinated/plugins": 0,
+        "caffeinated/themes": 0,
         "vespakoen/menu": 0
     },
     "prefer-stable": false,
