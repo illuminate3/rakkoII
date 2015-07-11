@@ -1,32 +1,75 @@
-# Rakko II : Laravel 5.1.x Beta Development
+# Rakko : Laravel 5.1.x
+
+
+## Status / Version
+
+Beta Development
 
 
 ## Functionality
 
+Rakko is the fundation platform that uses modules to extend it's functionality.
+Packages are used as "Libraries" rather than extending functionality such as a CMS or Forum.
+
 
 ### Locales
+
 Locales that are based upon translations.
 URLs are not translated.
 
+Functionality can be extended by using:
+https://github.com/illuminate3/core
+
 
 ### Modules
+
 Module supports is provided by Caffeinated Modules.
 No modules are included however, illuminates3/core module is highly recommended since it extends some of the functions provided in this app.
 
+Functionality can be extended by using:
+https://github.com/illuminate3/kantoku
+
+
 ### Themes
+
 Theme supports is provided by Caffeinated Themes.
 A base theme based on Bootstrap is included.
 
 
-### And More!
+Functionality can be extended by using:
+https://github.com/illuminate3/origami
+
+
+### Behind the scenes functionality
+
 Check out all the packages that are included in this app!
 A list of all included packages is provided below.
 
 
-## Routes
+## Packages
 
-*
-*
+The Following are packages that are used:
+
+* https://github.com/laravel/laravel
+* https://github.com/illuminate3/kotoba
+* https://github.com/caffeinated/flash
+* https://github.com/caffeinated/modules
+* https://github.com/caffeinated/plugins
+* https://github.com/caffeinated/themes
+* https://github.com/Intervention/image
+* https://github.com/Intervention/imagecache
+* https://github.com/laracasts/Presenter
+* http://laravelcollective.com/docs/5.1/html
+* https://github.com/LaravelRUS/localized-carbon
+* https://github.com/vinkla/translator
+* https://github.com/wikimedia/composer-merge-plugin
+* https://github.com/yajra/laravel-datatables
+
+
+Development packages
+
+
+* https://github.com/barryvdh/laravel-debugbar
 
 
 ## Front End Includes
@@ -36,135 +79,15 @@ A list of all included packages is provided below.
 * and more ...
 
 
-## Packages
-
-* https://github.com/illuminate3/kotoba
-```
-"illuminate3/kotoba": "dev-master",
-Illuminate3\Kotoba\KotobaServiceProvider::class,
-```
-
-* https://github.com/caffeinated/flash
-```
-composer require caffeinated/flash=~2.0
-Caffeinated\Flash\FlashServiceProvider::class,
-'Flash' => Caffeinated\Flash\Facades\Flash::class,
-```
-
-```
-vendor:publish --provider="Caffeinated\Flash\FlashServiceProvider"
-```
-
-* https://github.com/caffeinated/modules
-```
-composer require caffeinated/modules=~2.0
-Caffeinated\Modules\ModulesServiceProvider::class,
-Module' => Caffeinated\Modules\Facades\Module::class,
-```
-
-```
-vendor:publish --provider="Caffeinated\Modules\ModulesServiceProvider"
-```
-
-* https://github.com/caffeinated/plugins
-```
-composer require caffeinated/plugins=~2.0
-Caffeinated\Plugins\PluginsServiceProvider::class,
-'Plugin' => Caffeinated\Plugins\Facades\Plugin::class,
-```
-
-* https://github.com/caffeinated/themes
-```
-composer require caffeinated/themes=~2.0
-Caffeinated\Themes\ThemesServiceProvider::class,
-'Theme' => Caffeinated\Themes\Facades\Theme::class,
-```
-
-```
-vendor:publish --provider="Caffeinated\Themes\ThemesServiceProvider"
-```
-
-* http://laravelcollective.com/docs/5.1/html
-```
-"laravelcollective/html": "5.1.*"
-Collective\Html\HtmlServiceProvider::class,
-'Form' => Collective\Html\FormFacade::class,
-'Html' => Collective\Html\HtmlFacade::class,
-```
-
-* https://github.com/wikimedia/composer-merge-plugin
-```
-composer require wikimedia/composer-merge-plugin
-```
-
-* https://github.com/LaravelRUS/localized-carbon
-```
-"laravelrus/localized-carbon": "dev-master"
-<!--
-'Laravelrus\LocalizedCarbon\LocalizedCarbonServiceProvider',
-'LocalizedCarbon'   => 'Laravelrus\LocalizedCarbon\LocalizedCarbon',
-'DiffFormatter'     => 'Laravelrus\LocalizedCarbon\DiffFactoryFacade',
- -->
-```
-
-* https://github.com/Intervention/image
-```
-composer require intervention/image
-vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
-```
-
-* https://github.com/Intervention/imagecache
-```
-composer require intervention/imagecache
-'Intervention\Image\ImageServiceProvider'
-'Image' => 'Intervention\Image\Facades\Image'
-```
-
-* https://github.com/vinkla/translator
-```
-'Vinkla\Translator\TranslatorServiceProvider'
-vendor:publish --provider="Vinkla\Translator\TranslatorServiceProvider"
-```
-
-
-* https://github.com/yajra/laravel-datatables
-```
-composer require yajra/laravel-datatables-oracle:~5.0
-yajra\Datatables\DatatablesServiceProvider
-'Datatables' => yajra\Datatables\Datatables::class,
-vendor:publish --provider="yajra\Datatables\DatatablesServiceProvider"
-```
-
-* https://github.com/laracasts/Presenter
-```
-"laracasts/presenter": "dev-master"
-```
-
-## Development
-
-* https://github.com/barryvdh/laravel-debugbar
-```
-"barryvdh/laravel-debugbar": "^2.0"
-'Barryvdh\Debugbar\ServiceProvider',
-'Debugbar' => 'Barryvdh\Debugbar\Facade',
-```
-
-```
-php artisan vendor:publish
-```
-
-*
-
-
+## Screen Shots
 ## Thanks
 
+A very special thanks and arigatou! to Kai over at ( https://github.com/caffeinated )
+Thanks for your patience and help!
 
-*
+There are also several packages that I looked to for inspiration and many other ideas:
 
+* https://github.com/kJamesy/NiftyCMS
+* https://github.com/sdebacker/TypiCMS
 
-## Partial Code or Ideas
-
-
-*
-
-
+I would also like to say, "Thank You" to all the developers who took the time to answer my questions about their packages.
