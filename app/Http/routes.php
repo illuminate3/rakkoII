@@ -28,16 +28,14 @@ Route::pattern('lang', '[0-9a-z]+');
 
 // Controllers
 
+
 Route::get('/', function () {
     return Theme::view('welcome');
 });
 
-//Route::get('welcome', 'WelcomeController@index');
 
-Route::get('/language/{lang}', function ($lang) {
-	Session::put('locale', $lang);
-	return Redirect::back();
-	});
+Route::get('/language/{lang}', 'LanguageController@language');
+
 
 // Resources
 
