@@ -35,4 +35,24 @@ return [
         'secret' => '',
     ],
 
+	'github' => [
+		'client_id' => getenv('GITHUB_CLIENT_ID'),
+		'client_secret' => getenv('GITHUB_CLIENT_SECRET'),
+		'redirect' => 'http://localhost/social/login'
+	],
+
+/**
+ * Google
+ *
+ * Go to https://console.developers.google.com/project/['your porject name']/apiui/credential
+ * to ge the infomation for the the following.
+ *
+ */
+	'google' => [
+		'client_id' => getenv('GOOGLE_CLIENT_ID'),
+		'client_secret' => getenv('GOOGLE_CLIENT_SECRET'),
+		'redirect' => 'http://localhost/social/login'
+	]
+
+
 ];
