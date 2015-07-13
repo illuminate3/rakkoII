@@ -28,7 +28,8 @@ return [
     |
     */
 
-    'model' => App\User::class,
+//    'model' => App\User::class,
+    'model' => App\Modules\Kagi\Http\Models\User::class,
 
     /*
     |--------------------------------------------------------------------------

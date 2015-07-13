@@ -32,7 +32,7 @@ Route::get('/', function () {
     return Theme::view('welcome');
 });
 
-Route::get('welcome', 'WelcomeController@index');
+//Route::get('welcome', 'WelcomeController@index');
 
 Route::get('/language/{lang}', function ($lang) {
 	Session::put('locale', $lang);
