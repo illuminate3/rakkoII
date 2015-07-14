@@ -1,7 +1,7 @@
 @include('flash::message')
 
 @if (count($errors) > 0)
-	@include('_partials.errors')
+	@include($activeTheme . '::' . '_partials.errors')
 @endif
 
 @if (session('status'))
