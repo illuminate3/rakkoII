@@ -1,9 +1,11 @@
 <?php
-namespace App\Plugins;
 
-use App\Modules\General\Http\Domain\Models\Menu as LMenu;
-use App\Modules\General\Http\Domain\Models\MenuLink;
+namespace App\Widgets;
 
+use Caffeinated\Widgets\Widget;
+
+use App\Modules\Menus\Http\Models\Menu as LMenu;
+use App\Modules\Menus\Http\Models\MenuLink;
 
 use App;
 //use Cache;
@@ -11,13 +13,17 @@ use Config;
 //use DB;
 use Menu;
 use Session;
+use Theme;
 
-class MenuAdmin
+
+class MenuAdmin extends Widget
 {
 
 
-	public function run()
+	public function handle()
 	{
+
+		$activeTheme				= Theme::getActive();
 
 		Menu::handler('admin')->hydrate(function()
 			{
@@ -29,7 +35,7 @@ class MenuAdmin
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
-		return view("plugins.admin_menu");
+		return Theme::View($activeTheme . '::' . 'widgets.admin_menu');
 	}
 
 

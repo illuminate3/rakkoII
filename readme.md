@@ -54,8 +54,8 @@ The Following are packages that are used:
 * https://github.com/illuminate3/kotoba
 * https://github.com/caffeinated/flash
 * https://github.com/caffeinated/modules
-* https://github.com/caffeinated/plugins
 * https://github.com/caffeinated/themes
+* https://github.com/caffeinated/widgets
 * https://github.com/Intervention/image
 * https://github.com/Intervention/imagecache
 * https://github.com/laracasts/Presenter

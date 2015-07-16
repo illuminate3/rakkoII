@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 
-				{!! Plugin::MenuFooter() !!}
+				{!! Widget::MenuFooter() !!}
 
 			</div>
 			<div class="col-sm-4">
@@ -16,10 +16,10 @@
 			</div>
 			<div class="col-sm-4">
 
-				{!! Plugin::Featured() !!}
-				{!! Plugin::Timed() !!}
 
 {{--
+				{!! Widget::Featured() !!}
+				{!! Widget::Timed() !!}
 				<ul class="pull-right">
 					<li>{!! link_to_route('dashboard', 'Home') !!}</li>
 					<li>{!! link_to_route('dashboard.faq', 'Faq') !!}</li>
