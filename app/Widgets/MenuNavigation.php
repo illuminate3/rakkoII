@@ -4,7 +4,7 @@ namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
-//use App\Modules\Himawari\Http\Domain\Models\Content as Content;
+use App\Modules\Himawari\Http\Models\Content as Content;
 
 use App;
 //use Cache;
