@@ -25,23 +25,23 @@ class MenuNavigation extends Widget
 
 		$activeTheme				= Theme::getActive();
 
-		if ( Module::exists('himawari') ) {
-			Menu::handler('top')->hydrate(function()
-				{
+//		if ( Module::exists('himawari') ) {
+		Menu::handler('top')->hydrate( function()
+			{
 //				$pages = Content::where('print_status_id', '=', 3)->orderBy('order')->get();
-				$pages = Content::whereRaw('print_status_id = 3 OR print_status_id = 4')->orderBy('order')->get();
+			$pages = Content::whereRaw('print_status_id = 3 OR print_status_id = 4')->orderBy('order')->get();
 //dd($pages);
-				return $pages;
-				},
-				function($children, $item)
-				{
-					if($item->depth < 1) {
-						$children->add($item->slug, $item->translate(Config::get('app.locale'))->title, Menu::items($item->as));
-					}
-				});
+			return $pages;
+			},
+			function($children, $item)
+			{
+//dd($item);
+				if($item->depth < 1) {
+					$children->add($item->slug, $item->translate(Config::get('app.locale'))->title, Menu::items($item->as));
+				}
+			});
 
-			return Theme::View($activeTheme . '::' . 'widgets.navigation_menu');
-		}
+		return Theme::View($activeTheme . '::' . 'widgets.navigation_menu');
 
 	}
 

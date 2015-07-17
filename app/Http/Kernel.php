@@ -32,10 +32,11 @@ class Kernel extends HttpKernel
 	 */
 	protected $routeMiddleware = [
 // auth middleware
-		'auth' => \App\Http\Middleware\Authenticate::class,
-		'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-		'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+		'auth'				=> \App\Http\Middleware\Authenticate::class,
+		'auth.basic'		=> \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+		'guest'				=> \App\Http\Middleware\RedirectIfAuthenticated::class,
 // module middleware
+		'admin'				=> \App\Modules\Kagi\Http\Middleware\AuthenticateAdmin::class,
 	];
 
 
