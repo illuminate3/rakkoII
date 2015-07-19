@@ -248,16 +248,16 @@
         },
         {
             "name": "caffeinated/modules",
-            "version": "v2.1.6",
+            "version": "v2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caffeinated/modules.git",
-                "reference": "e457bfcda41ba4335aa2b6ab5551dcaeacf255c9"
+                "reference": "927af02641a4394551cd169bf129f533e0bb4179"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caffeinated/modules/zipball/e457bfcda41ba4335aa2b6ab5551dcaeacf255c9",
-                "reference": "e457bfcda41ba4335aa2b6ab5551dcaeacf255c9",
+                "url": "https://api.github.com/repos/caffeinated/modules/zipball/927af02641a4394551cd169bf129f533e0bb4179",
+                "reference": "927af02641a4394551cd169bf129f533e0bb4179",
                 "shasum": ""
             },
             "require": {
@@ -301,7 +301,7 @@
                 "laravel",
                 "modules"
             ],
-            "time": "2015-07-14 16:42:19"
+            "time": "2015-07-16 23:14:07"
         },
         {
             "name": "caffeinated/shinobi",
@@ -1151,16 +1151,16 @@
         },
         {
             "name": "intervention/imagecache",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/imagecache.git",
-                "reference": "27d2ee028672c13bedf896b4ca456b7c89d84086"
+                "reference": "b3f1958c5f300a1986281d599f6a3654d991e30b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/imagecache/zipball/27d2ee028672c13bedf896b4ca456b7c89d84086",
-                "reference": "27d2ee028672c13bedf896b4ca456b7c89d84086",
+                "url": "https://api.github.com/repos/Intervention/imagecache/zipball/b3f1958c5f300a1986281d599f6a3654d991e30b",
+                "reference": "b3f1958c5f300a1986281d599f6a3654d991e30b",
                 "shasum": ""
             },
             "require": {
@@ -1200,7 +1200,7 @@
                 "imagick",
                 "laravel"
             ],
-            "time": "2015-05-24 11:53:20"
+            "time": "2015-07-18 11:00:37"
         },
         {
             "name": "jakub-onderka/php-console-color",
