@@ -59,7 +59,7 @@ class MenuNavigation extends Widget
 			function($children, $item)
 			{
 //				if($item->depth < 1) {
-					$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
+					$children->add($item->slug, $item->translate(App::getLocale())->title, Menu::items($item->as));
 //				}
 			});
 
