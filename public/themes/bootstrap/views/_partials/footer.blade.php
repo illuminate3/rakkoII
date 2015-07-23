@@ -6,7 +6,6 @@
 		<div class="row">
 			<div class="col-sm-4">
 
-				{!! Widget::MenuFooter() !!}
 
 			</div>
 			<div class="col-sm-4">
@@ -17,8 +16,6 @@
 			<div class="col-sm-4">
 
 
-				{!! Widget::Featured() !!}
-				{!! Widget::Timed() !!}
 {{--
 				<ul class="pull-right">
 					<li>{!! link_to_route('dashboard', 'Home') !!}</li>
