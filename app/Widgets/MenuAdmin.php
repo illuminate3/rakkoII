@@ -5,7 +5,7 @@ namespace App\Widgets;
 use Caffeinated\Widgets\Widget;
 
 use App\Modules\Menus\Http\Models\Menu as LMenu;
-use App\Modules\Menus\Http\Models\MenuLink;
+use App\Modules\Menus\Http\Models\Menulink;
 
 use App;
 //use Cache;
@@ -28,7 +28,7 @@ class MenuAdmin extends Widget
 		Menu::handler('admin')->hydrate(function()
 			{
 			$main_menu_id = LMenu::where('name', '=', 'admin')->pluck('id');
-			return MenuLink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 			},
 			function($children, $item)
 			{

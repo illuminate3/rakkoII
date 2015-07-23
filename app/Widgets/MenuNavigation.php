@@ -6,7 +6,7 @@ use Caffeinated\Widgets\Widget;
 
 use App\Modules\Himawari\Http\Models\Content as Content;
 use App\Modules\Menus\Http\Models\Menu as LMenu;
-use App\Modules\Menus\Http\Models\MenuLink;
+use App\Modules\Menus\Http\Models\Menulink;
 
 use App;
 //use Cache;
