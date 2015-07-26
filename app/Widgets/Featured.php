@@ -20,7 +20,7 @@ class Featured extends Widget
 	public function handle()
 	{
 
-		$activeTheme				= Theme::getActive();
+		$activeTheme = Theme::getActive();
 
 		Menu::handler('featured')->hydrate(function()
 			{

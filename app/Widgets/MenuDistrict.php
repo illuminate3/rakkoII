@@ -16,7 +16,7 @@ use Session;
 use Theme;
 
 
-class MenuFooter extends Widget
+class MenuDistrict extends Widget
 {
 
 
@@ -25,9 +25,9 @@ class MenuFooter extends Widget
 
 		$activeTheme = Theme::getActive();
 
-		Menu::handler('footer')->hydrate(function()
+		Menu::handler('district')->hydrate(function()
 			{
-			$main_menu_id = LMenu::where('name', '=', 'footer')->pluck('id');
+			$main_menu_id = LMenu::where('name', '=', 'district')->pluck('id');
 			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 			},
 			function($children, $item)
@@ -35,7 +35,7 @@ class MenuFooter extends Widget
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
-		return Theme::View($activeTheme . '::' . 'widgets.footer_menu');
+		return Theme::View($activeTheme . '::' . 'widgets.district_menu');
 	}
 
 

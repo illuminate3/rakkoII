@@ -25,7 +25,7 @@ class MenuNavigation extends Widget
 	public function handle()
 	{
 
-		$activeTheme				= Theme::getActive();
+		$activeTheme = Theme::getActive();
 
 		$pages = Content::InPrint()->orderBy('order')->get();
 

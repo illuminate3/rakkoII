@@ -23,7 +23,7 @@ class MenuAdmin extends Widget
 	public function handle()
 	{
 
-		$activeTheme				= Theme::getActive();
+		$activeTheme = Theme::getActive();
 
 		Menu::handler('admin')->hydrate(function()
 			{
