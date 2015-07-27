@@ -23,8 +23,8 @@ class MenuDistrict extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
-		$districts = Cache::get('district');
-//dd($pages);
+		$districts = Cache::get('district', null);
+//dd($districts);
 
 		if ($districts == null) {
 			$districts = Cache::rememberForever('districts', function() {

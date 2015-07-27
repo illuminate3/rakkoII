@@ -21,12 +21,12 @@ class NavLinks extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
-		$pages = Cache::get('pages');
+		$pages = Cache::get('pages', null);
 //dd($pages);
 
 		if ($pages == null) {
 			$pages = Cache::rememberForever('pages', function() {
-				return Content::IsNavigation()->orderBy('order')->get();
+				return Content::InPrint()->IsNavigation()->orderBy('order')->get();
 			});
 		}
 

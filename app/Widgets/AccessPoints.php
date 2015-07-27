@@ -21,12 +21,12 @@ class AccessPoints extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
-		$pages = Cache::get('accesspoints');
+		$pages = Cache::get('accesspoints', null);
 //dd($pages);
 
 		if ($pages == null) {
 			$pages = Cache::rememberForever('accesspoints', function() {
-				return Content::IsAccessPoint()->orderBy('order')->get();
+				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
 			});
 		}
 
@@ -36,7 +36,7 @@ class AccessPoints extends Widget
 			{
 
 //			$pages = Content::IsAccessPoint()->orderBy('order')->get();
-			$pages = Cache::get('pages');
+			$pages = Cache::get('accesspoints');
 //dd($pages);
 			return $pages;
 

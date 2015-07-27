@@ -23,8 +23,8 @@ class MenuSchools extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
-		$schools = Cache::get('schools');
-//dd($pages);
+		$schools = Cache::get('schools', null);
+//dd($schools);
 
 		if ($schools == null) {
 			$schools = Cache::rememberForever('schools', function() {
