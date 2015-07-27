@@ -27,8 +27,10 @@ class MenuAdmin extends Widget
 
 		Menu::handler('admin')->hydrate(function()
 			{
+
 			$main_menu_id = LMenu::where('name', '=', 'admin')->pluck('id');
 			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+
 			},
 			function($children, $item)
 			{

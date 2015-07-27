@@ -29,16 +29,11 @@ class MenuNavigation extends Widget
 
 		$pages = Content::InPrint()->orderBy('order')->get();
 
-if (count($pages)) {
+		if (count($pages)) {
 		Menu::handler('top')->hydrate(function()
 			{
-//dd($pages);
 
-//			$pages = Content::all();
-//			$pages = Content::whereRaw('print_status_id = 3 OR print_status_id = 4')->orderBy('order')->get();
-//			$pages = Content::whereRaw('print_status_id')->orderBy('order')->get();
 			$pages = Content::InPrint()->NotFeatured()->NotTimed()->orderBy('order')->get();
-//dd($pages);
 			return $pages;
 
 			},
@@ -51,9 +46,8 @@ if (count($pages)) {
 
 
 		return Theme::View($activeTheme . '::' . 'widgets.navigation_menu');
-
+		}
 	}
-}
 
 
 }

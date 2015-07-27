@@ -24,11 +24,10 @@ class Featured extends Widget
 
 		Menu::handler('featured')->hydrate(function()
 			{
-//			$pages = Content::where('print_status_id', '=', 3)->IsFeatured()->orderBy('order')->get();
+
 			$pages = Content::InPrint()->IsFeatured()->orderBy('order')->get();
-//			$pages = Content::whereRaw('print_status_id = 3 OR print_status_id = 4')->IsFeatured()->orderBy('order')->get();
-//dd($pages);
 			return $pages;
+
 			},
 			function($children, $item)
 			{

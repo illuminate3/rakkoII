@@ -27,8 +27,10 @@ class MenuFooter extends Widget
 
 		Menu::handler('footer')->hydrate(function()
 			{
+
 			$main_menu_id = LMenu::where('name', '=', 'footer')->pluck('id');
 			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+
 			},
 			function($children, $item)
 			{

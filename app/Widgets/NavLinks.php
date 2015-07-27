@@ -7,6 +7,7 @@ use Caffeinated\Widgets\Widget;
 use App\Modules\Himawari\Http\Models\Content as Content;
 
 use App;
+use Cache;
 use Config;
 use Menu;
 use Session;
@@ -20,15 +21,25 @@ class NavLinks extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
+		$pages = Cache::get('pages');
+//dd($pages);
 
+		if ($pages == null) {
+			$pages = Cache::rememberForever('pages', function() {
+				return Content::IsNavigation()->orderBy('order')->get();
+			});
+		}
+
+
+		if (count($pages)) {
 		Menu::handler('navlinks')->hydrate(function()
 			{
-//dd('die');
-			$pages = Content::IsNavigation()->orderBy('order')->get();
-//			$pages = Content::where('print_status_id', '=', 3)->IsTimed()->PublishStart()->PublishEnd()->orderBy('order')->get();
-//			$pages = Content::whereRaw('print_status_id = 3 OR print_status_id = 4')->IsTimed()->PublishStart()->PublishEnd()->orderBy('order')->get();
+
+// 			$pages = Content::IsNavigation()->orderBy('order')->get();
+			$pages = Cache::get('pages');
 //dd($pages);
 			return $pages;
+
 			},
 			function($children, $item)
 			{
@@ -38,6 +49,7 @@ class NavLinks extends Widget
 			});
 
 		return Theme::View($activeTheme . '::' . 'widgets.navlinks');
+		}
 	}
 
 
