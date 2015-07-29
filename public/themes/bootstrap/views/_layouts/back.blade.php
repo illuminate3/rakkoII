@@ -50,14 +50,14 @@
 <body>
 
 
-	@include($activeTheme . '::' . '_partials.navigation')
+	@include($activeTheme . '::' . '_partials.admin.navigation')
 
 	<div class="container-fluid">
 <!-- <div id="wrap" class="container"> -->
 		@include($activeTheme . '::' . '_partials.content')
 	</div><!-- ./container -->
 
-	@include($activeTheme . '::' . '_partials.footer')
+	@include($activeTheme . '::' . '_partials.admin.footer')
 
 
 <!-- ------------------------------------------ js ------------------------------------------ -->
