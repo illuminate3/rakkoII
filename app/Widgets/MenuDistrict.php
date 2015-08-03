@@ -10,6 +10,7 @@ use App\Modules\Menus\Http\Models\Menulink;
 use App;
 use Cache;
 use Config;
+use DB;
 use Menu;
 use Session;
 use Theme;
@@ -29,7 +30,16 @@ class MenuDistrict extends Widget
 		if ($districts == null) {
 			$districts = Cache::rememberForever('districts', function() {
 				$main_menu_id = LMenu::where('name', '=', 'district')->pluck('id');
-				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+//				$links = Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+				$links = DB::table('menulinks')
+					->leftJoin('menulink_translations', 'menulinks.id', '=', 'menulink_translations.menulink_id')
+					->where('menu_id', '=', $main_menu_id)
+					->where('status', '=', 1, 'AND')
+					->get();
+				$links = new \Illuminate\Support\Collection($links);
+//dd($links);
+
+				return $links;
 			});
 		}
 
