@@ -50,7 +50,7 @@ class MenuDistrict extends Widget
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
-			return Theme::View($activeTheme . '::' . 'widgets.school_menu');
+			return Theme::View($activeTheme . '::' . 'widgets.district_menu');
 		}
 	}
 
