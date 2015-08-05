@@ -1,5 +1,6 @@
 @extends($theme_back)
 
+
 {{-- Web site Title --}}
 @section('title')
 {{ trans('kotoba::general.dashboard') }} :: @parent

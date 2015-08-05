@@ -10,7 +10,6 @@ use App\Modules\Menus\Http\Models\Menulink;
 use App;
 use Cache;
 use Config;
-use DB;
 use Menu;
 use Session;
 use Theme;
@@ -24,35 +23,26 @@ class MenuDistrict extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
-		$districts = Cache::get('district', null);
-//dd($districts);
+		$district = Cache::get('district', null);
+//dd($district);
 
-		if ($districts == null) {
-			$districts = Cache::rememberForever('districts', function() {
+		if ($district == null) {
+			$district = Cache::rememberForever('district', function() {
 				$main_menu_id = LMenu::where('name', '=', 'district')->pluck('id');
-//				$links = Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
-				$links = DB::table('menulinks')
-					->leftJoin('menulink_translations', 'menulinks.id', '=', 'menulink_translations.menulink_id')
-					->where('menu_id', '=', $main_menu_id)
-					->where('status', '=', 1, 'AND')
-					->get();
-				$links = new \Illuminate\Support\Collection($links);
-//dd($links);
-
-				return $links;
+				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 			});
 		}
 
 
-		if (count($districts)) {
+		if (count($district)) {
 		Menu::handler('district')->hydrate(function()
 			{
 
 // 			$main_menu_id = LMenu::where('name', '=', 'district')->pluck('id');
-// 			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
-			$districts = Cache::get('districts');
-//dd($schools);
-			return $districts;
+// 			$district = Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+			$district = Cache::get('district');
+//dd($district);
+			return $district;
 
 			},
 			function($children, $item)
@@ -60,7 +50,7 @@ class MenuDistrict extends Widget
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
-			return Theme::View($activeTheme . '::' . 'widgets.district_menu');
+			return Theme::View($activeTheme . '::' . 'widgets.school_menu');
 		}
 	}
 

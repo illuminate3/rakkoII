@@ -1,5 +1,6 @@
 @extends($theme_back)
 
+
 {{-- Web site Title --}}
 @section('title')
 {{ Lang::choice('kotoba::cms.settings', 2) }} :: @parent
