@@ -39,5 +39,4 @@ class Kernel extends HttpKernel
 		'admin'				=> \App\Modules\Kagi\Http\Middleware\AuthenticateAdmin::class,
 	];
 
-
 }

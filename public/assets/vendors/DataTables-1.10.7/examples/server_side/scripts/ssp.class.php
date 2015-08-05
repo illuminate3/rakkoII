@@ -455,6 +455,7 @@ class SSP {
 		exit(0);
 	}
 
+
 	/**
 	 * Create a PDO binding key which can be used for escaping variables safely
 	 * when executing a query with sql_exec()

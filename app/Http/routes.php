@@ -12,11 +12,9 @@ Route::pattern('role', '[0-9]+');
 Route::pattern('token', '[0-9a-z]+');
 */
 
-
 // set pattern for overall
 Route::pattern('id', '[0-9]+');
 Route::pattern('lang', '[0-9a-z]+');
-
 
 
 /*
@@ -25,22 +23,17 @@ Route::pattern('lang', '[0-9a-z]+');
 |--------------------------------------------------------------------------
 */
 
-
 // Controllers
-
 
 Route::get('/', function () {
     return Theme::view('welcome');
 });
 
-
 Route::get('/language/{lang}', 'LanguageController@language');
-
 
 // Resources
 
 // API DATA
-
 
 
 /*

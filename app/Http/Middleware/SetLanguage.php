@@ -27,6 +27,7 @@ class SetLanguage implements Middleware {
 		}
 	}
 
+
 	/**
 	 * Handle an incoming request.
 	 *
@@ -49,6 +50,5 @@ class SetLanguage implements Middleware {
 		return $next($request);
 
 	}
-
 
 }

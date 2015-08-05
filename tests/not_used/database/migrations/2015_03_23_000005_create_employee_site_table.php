@@ -13,6 +13,7 @@ class CreateEmployeeSiteTable extends Migration
 		$this->prefix = Config::get('campus.campus_db.prefix', '');
 	}
 
+
 	/**
 	 * Run the migrations.
 	 *
@@ -38,6 +39,7 @@ class CreateEmployeeSiteTable extends Migration
 
 		});
 	}
+
 
 	/**
 	 * Reverse the migrations.

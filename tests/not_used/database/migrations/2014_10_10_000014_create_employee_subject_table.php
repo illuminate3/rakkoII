@@ -3,6 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
 class CreateEmployeeSubjectTable extends Migration
 {
 
@@ -11,6 +12,7 @@ class CreateEmployeeSubjectTable extends Migration
 		// Get the prefix
 		$this->prefix = Config::get('gakko.gakko_db.prefix', '');
 	}
+
 
 	/**
 	 * Run the migrations.
@@ -37,6 +39,7 @@ class CreateEmployeeSubjectTable extends Migration
 
 		});
 	}
+
 
 	/**
 	 * Reverse the migrations.

@@ -4,8 +4,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 
-class CreateRoomSiteTable extends Migration
+class CreateSiteUserTable extends Migration
 {
+
 
 	public function __construct()
 	{
@@ -21,17 +22,17 @@ class CreateRoomSiteTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create($this->prefix . 'room_site', function(Blueprint $table)
+		Schema::create($this->prefix . 'site_user', function(Blueprint $table)
 		{
 
 			$table->engine = 'InnoDB';
 
 
-			$table->integer('room_id')->unsigned()->index();
 			$table->integer('site_id')->unsigned()->index();
+			$table->integer('user_id')->unsigned()->index();
 
-			$table->foreign('room_id')->references('id')->on($this->prefix.'rooms')->onDelete('cascade');
 			$table->foreign('site_id')->references('id')->on($this->prefix.'sites')->onDelete('cascade');
+			$table->foreign('user_id')->references('id')->on($this->prefix.'users')->onDelete('cascade');
 
 
 // 			$table->softDeletes();
@@ -48,7 +49,8 @@ class CreateRoomSiteTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::drop($this->prefix . 'room_site');
+		Schema::drop($this->prefix . 'site_user');
 	}
+
 
 }

@@ -4,6 +4,7 @@ namespace App\Modules\Kagi\Console\Commands;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 
+
 class KagiCommand extends Command
 {
 	/**
@@ -40,6 +41,7 @@ class KagiCommand extends Command
 	{
 		parent::__construct();
 	}
+
 
 	/**
 	 * Execute console command
@@ -134,6 +136,7 @@ class KagiCommand extends Command
 
 	}
 
+
 	/**
 	 * Asks Admin name
 	 *
@@ -159,6 +162,7 @@ class KagiCommand extends Command
 		}
 		while( ! $name);
 	}
+
 
 	/**
 	 * Ask Admin Email
@@ -186,6 +190,7 @@ class KagiCommand extends Command
 		while ( ! $email);
 	}
 
+
 	/**
 	 * Asks Admin password.
 	 *
@@ -212,6 +217,7 @@ class KagiCommand extends Command
 		while( ! $password);
 	}
 
+
 	/**
 	 * Create base permissions
 	 *
@@ -236,6 +242,7 @@ class KagiCommand extends Command
 		$this->info('Success: Permission Table and Seeder');
 
 	}
+
 
 	/**
 	 * Create bae role
@@ -265,6 +272,7 @@ class KagiCommand extends Command
 		$this->info('Success: Role Table and Seeder');
 
 	}
+
 
 	/**
 	 * Create the Admin User, fill defaults, attach permission
@@ -309,6 +317,7 @@ class KagiCommand extends Command
 // 			['example', InputArgument::REQUIRED, 'An example argument.'],
 // 		];
 	}
+
 
 	/**
 	 * Get the console command options.

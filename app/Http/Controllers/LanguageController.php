@@ -14,7 +14,6 @@ use Session;
 class LanguageController extends Controller
 {
 
-
 	use DispatchesJobs, ValidatesRequests;
 
 	/**
@@ -51,6 +50,5 @@ Route::get('/language/{lang}', function ($lang) {
 
 		return Redirect::back();
 	}
-
 
 }
