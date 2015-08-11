@@ -4,7 +4,8 @@ namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
-use App\Modules\Himawari\Http\Models\Content as Content;
+use App\Modules\Menus\Http\Models\Menu as LMenu;
+use App\Modules\Menus\Http\Models\Menulink;
 
 use App;
 use Cache;
@@ -17,35 +18,36 @@ use Theme;
 class AccessPoints extends Widget
 {
 
+
 	public function handle()
 	{
 
 		$activeTheme = Theme::getActive();
-		$pages = Cache::get('accesspoints', null);
-//dd($pages);
+		$accesspoint = Cache::get('accesspoint', null);
+//dd($accesspoint);
 
-		if ($pages == null) {
-			$pages = Cache::rememberForever('accesspoints', function() {
-				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
+		if ($accesspoint == null) {
+			$accesspoint = Cache::rememberForever('accesspoint', function() {
+				$main_menu_id = LMenu::where('name', '=', 'accesspoint')->pluck('id');
+				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 			});
 		}
 
 
-		if (count($pages)) {
+		if (count($accesspoint)) {
 		Menu::handler('accesspoint')->hydrate(function()
 			{
 
-//			$pages = Content::IsAccessPoint()->orderBy('order')->get();
-			$pages = Cache::get('accesspoints');
-//dd($pages);
-			return $pages;
+// 			$main_menu_id = LMenu::where('name', '=', 'accesspoint')->pluck('id');
+// 			$accesspoint = Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+			$accesspoint = Cache::get('accesspoint');
+//dd($accesspoint);
+			return $accesspoint;
 
 			},
 			function($children, $item)
 			{
-				if($item->depth < 1) {
-					$children->add($item->slug, $item->translate(Config::get('app.locale'))->title, Menu::items($item->as));
-				}
+				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
 			return Theme::View($activeTheme . '::' . 'widgets.accesspoints');
