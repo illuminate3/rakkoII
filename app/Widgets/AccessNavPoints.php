@@ -14,44 +14,41 @@ use Session;
 use Theme;
 
 
-class NavLinks extends Widget
+class AccessNavPoints extends Widget
 {
 
 	public function handle()
 	{
 
 		$activeTheme = Theme::getActive();
-//Cache::forget('pages');
-		$pages = Cache::get('pages', null);
+		$pages = Cache::get('accesspoints', null);
 //dd($pages);
 
-//		if ($pages == null || isEmpty($pages) ) {
-		if (!count($pages)) {
-			$pages = Cache::rememberForever('pages', function() {
-				return Content::InPrint()->IsNavigation()->orderBy('order')->get();
-			});
-		}
-//dd($pages);
+// 		if ($pages == null) {
+// 			$pages = Cache::rememberForever('accesspoints', function() {
+// 				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
+// 			});
+// 		}
 
 
 		if (count($pages)) {
-		Menu::handler('navlinks')->hydrate(function()
+		Menu::handler('accessnavpoint')->hydrate(function()
 			{
 
-// 			$pages = Content::IsNavigation()->orderBy('order')->get();
-			$pages = Cache::get('pages');
+			$pages = Cache::get('accesspoints');
 //dd($pages);
 			return $pages;
 
 			},
 			function($children, $item)
 			{
+//dd($item);
 				if($item->depth < 1) {
 					$children->add($item->slug, $item->translate(Config::get('app.locale'))->title, Menu::items($item->as));
 				}
 			});
 
-		return Theme::View($activeTheme . '::' . 'widgets.navlinks');
+			return Theme::View($activeTheme . '::' . 'widgets.accessnavpoints');
 		}
 	}
 
