@@ -13,7 +13,7 @@ return [
 	|
 	*/
 
-	'active' => 'district',
+	'active' => 'bootstrap',
 	'front' => '_layouts.app',
 	'back' => '_layouts.back',
 
