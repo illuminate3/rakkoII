@@ -30,13 +30,6 @@
 @endif
 
 
-<ul class="nav navbar-nav">
-{!!
-	Widget::MenuNavigation()
-!!}
-</ul>
-
-
 	@if (Auth::user())
 		<ul class="nav navbar-nav">
 {{--

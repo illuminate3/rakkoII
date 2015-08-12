@@ -13,7 +13,3 @@
 @yield('content')
 
 {{-- var_dump($errors) --}}
-
-
-{{ trans('kotoba::general.home') }}
-

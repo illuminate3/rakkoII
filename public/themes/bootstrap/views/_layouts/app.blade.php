@@ -5,13 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="author" content="{{ Config::get('core.author') }}" />
-	<meta name="keywords" content="{{ Config::get('core.keywords') }}" />
-	<meta name="description" content="{{ Config::get('core.description') }}" />
+	<meta name="author" content="{{ Setting::get('author', Config::get('core.author')) }}" />
+	<meta name="keywords" content="{{ Setting::get('keywords', Config::get('core.keywords')) }}" />
+	<meta name="description" content="{{ Setting::get('description', Config::get('core.description')) }}" />
 
 	<title>
 		@section('title')
-			{{ Config::get('core.title') }}
+			{{ Setting::get('title', Config::get('core.title')) }}
 		@show
 	</title>
 
