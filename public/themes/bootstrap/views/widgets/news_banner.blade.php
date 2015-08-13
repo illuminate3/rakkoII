@@ -1,52 +1,52 @@
 <! -- Widget -->
 
-
-
 <!-- Carousel -->
+
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 <!-- Buttons -->
-{!!
+{{--
 	Widget::AccessPoints()
-!!}
+--}}
+
 
 <!-- Indicators -->
 <ol class="carousel-indicators">
-	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	<li data-target="#myCarousel" data-slide-to="1"></li>
-	<li data-target="#myCarousel" data-slide-to="2"></li>
-	<li data-target="#myCarousel" data-slide-to="3"></li>
+	@for ($i = 0; $i < $count; $i++)
+		<li data-target="#myCarousel" data-slide-to="{{ $i }}"></li>
+	@endfor
 </ol>
+
 
 <div class="carousel-inner" role="listbox">
 
-	<div class="item active">
-		<a href="flashing-red-kids-ahead"><img class="first-slide img-responsive" src="{{ asset('themes/district/assets/img/slides/Bus_Safety_banner.jpg') }}" alt="First slide"></a>
-	</div>
+	@foreach ($articles as $article)
 
 		<div class="item">
-		<a href="school-board-meetings"><img class="first-slide img-responsive" src="{{ asset('themes/district/assets/img/slides/Board_Meeting_Banner.jpg') }}" alt="First slide"></a>
-	</div>
+			<a href="/news/{{ $article->slug }}"><img class="third-slide img-responsive" src="{{ asset('images/news/' . $article->image) }}" alt="{{ $article->slug }}"></a>
+		</div>
 
-	<div class="item">
-		<a href="unfinished-business"><img class="second-slide img-responsive" src="{{ asset('themes/district/assets/img/slides/Salt Bowl 15_Banner.jpg') }}" alt="second slide"></a>
-	</div>
+	@endforeach
 
-	<div class="item">
-		<a href="social-networking-to-stay-connected"><img class="third-slide img-responsive" src="{{ asset('themes/district/assets/img/slides/Stay Connected_banner.jpg') }}" alt="third slide"></a>
+
+<div class="item active">
+	<a href="/news/{{ $article->slug }}"><img class="third-slide img-responsive" src="{{ asset('images/news/' . $article->image) }}" alt="{{ $article->slug }}"></a>
+	<div class="container">
+		<div class="carousel-caption">
+			<h1>
+				{{ $article->translate($lang)->title }}
+			</h1>
+			<p>
+				{!! $article->translate($lang)->summary !!}
+			</p>
+			<p>
+				<a class="btn btn-primary" href="/news/{{ $article->slug }}">{{ trans('kotoba::cms.more') }}</a>
+			</p>
+		</div>
 	</div>
+</div>
+
 
 </div><!-- ./carousel-inner -->
-
-</div><!-- #/myCarousel -->
-
-</div><!-- /.carousel -->
-
-
-
-
-
-{!!
-	Menu::handler('slider')
-	->addClass('list-unstyled');
-!!}
+</div><!-- /#myCarousel -->

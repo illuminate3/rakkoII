@@ -30,9 +30,9 @@ jQuery(function ($) {
 
 
 <!-- Buttons -->
-{{--
+{!!
 	Widget::NewsBanner()
---}}
+!!}
 
 
 <!--WELCOME-->

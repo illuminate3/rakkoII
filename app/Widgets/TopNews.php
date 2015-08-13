@@ -20,22 +20,16 @@ class TopNews extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
+		$lang = Session::get('locale');
 
-		Menu::handler('TopNews')->hydrate(function()
-			{
+		$articles = News::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
+//dd($activeTheme);
 
-			$articles = News::IsPublished()->IsFeatured()->orderBy('order')->get();
-			return $articles;
-
-			},
-			function($children, $item)
-			{
-				if($item->depth < 1) {
-					$children->add($item->slug, $item->translate(Config::get('app.locale'))->title, Menu::items($item->as));
-				}
-			});
-
-		return Theme::View($activeTheme . '::' . 'widgets.top_news');
+		return Theme::View($activeTheme . '::' . 'widgets.top_news',
+			compact(
+				'articles',
+				'lang'
+			));
 	}
 
 

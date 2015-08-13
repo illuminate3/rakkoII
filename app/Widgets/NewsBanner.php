@@ -4,7 +4,7 @@ namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
-use App\Modules\Himawari\Http\Models\Content as Content;
+use App\Modules\newsDesk\Http\Models\News as news;
 
 use App;
 use Config;
@@ -13,30 +13,25 @@ use Session;
 use Theme;
 
 
-class Banner extends Widget
+class NewsBanner extends Widget
 {
-
 
 	public function handle()
 	{
 
 		$activeTheme = Theme::getActive();
+		$lang = Session::get('locale');
 
-		Menu::handler('banner')->hydrate(function()
-			{
+		$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
+		$count = count($articles);
+//dd($count);
 
-			$pages = Content::InPrint()->IsBanner()->orderBy('order')->get();
-			return $pages;
-
-			},
-			function($children, $item)
-			{
-				if($item->depth < 1) {
-					$children->add($item->slug, $item->translate(Config::get('app.locale'))->title, Menu::items($item->as));
-				}
-			});
-
-		return Theme::View($activeTheme . '::' . 'widgets.banner');
+		return Theme::View($activeTheme . '::' . 'widgets.news_banner',
+			compact(
+				'articles',
+				'count',
+				'lang'
+			));
 	}
 
 
