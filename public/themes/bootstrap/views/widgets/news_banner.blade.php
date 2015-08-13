@@ -22,30 +22,27 @@
 <div class="carousel-inner" role="listbox">
 
 	@foreach ($articles as $article)
+	@for ($i = 0; $i < $count; $i++)
 
-		<div class="item">
-			<a href="/news/{{ $article->slug }}"><img class="third-slide img-responsive" src="{{ asset('images/news/' . $article->image) }}" alt="{{ $article->slug }}"></a>
+		<div class="item @if ($i == 0)active @endif">
+			<a href="/news/{{ $article->slug }}"><img class="img-responsive" src="{{ asset('images/news/' . $article->image) }}" alt="{{ $article->slug }}"></a>
+			<div class="container">
+				<div class="carousel-caption">
+					<h1>
+						{{ $article->translate($lang)->title }}
+					</h1>
+					<p>
+						{!! $article->translate($lang)->summary !!}
+					</p>
+					<p>
+						<a class="btn btn-primary" href="/news/{{ $article->slug }}">{{ trans('kotoba::cms.more') }}</a>
+					</p>
+				</div>
+			</div>
 		</div>
 
+	@endfor
 	@endforeach
-
-
-<div class="item active">
-	<a href="/news/{{ $article->slug }}"><img class="third-slide img-responsive" src="{{ asset('images/news/' . $article->image) }}" alt="{{ $article->slug }}"></a>
-	<div class="container">
-		<div class="carousel-caption">
-			<h1>
-				{{ $article->translate($lang)->title }}
-			</h1>
-			<p>
-				{!! $article->translate($lang)->summary !!}
-			</p>
-			<p>
-				<a class="btn btn-primary" href="/news/{{ $article->slug }}">{{ trans('kotoba::cms.more') }}</a>
-			</p>
-		</div>
-	</div>
-</div>
 
 
 </div><!-- ./carousel-inner -->
