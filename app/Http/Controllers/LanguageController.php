@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller as BaseController;
 
 use Redirect;
 use Session;
@@ -14,7 +11,6 @@ use Session;
 class LanguageController extends Controller
 {
 
-	use DispatchesJobs, ValidatesRequests;
 
 	/**
 	 * Initializer.
@@ -50,5 +46,6 @@ Route::get('/language/{lang}', function ($lang) {
 
 		return Redirect::back();
 	}
+
 
 }
