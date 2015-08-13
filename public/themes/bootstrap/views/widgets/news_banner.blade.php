@@ -21,8 +21,8 @@
 
 <div class="carousel-inner" role="listbox">
 
+	{{--*/ $i=0 /*--}}
 	@foreach ($articles as $article)
-	@for ($i = 0; $i < $count; $i++)
 
 		<div class="item @if ($i == 0)active @endif">
 			<a href="/news/{{ $article->slug }}"><img class="img-responsive" src="{{ asset('images/news/' . $article->image) }}" alt="{{ $article->slug }}"></a>
@@ -41,7 +41,7 @@
 			</div>
 		</div>
 
-	@endfor
+	{{--*/ $i++ /*--}}
 	@endforeach
 
 
