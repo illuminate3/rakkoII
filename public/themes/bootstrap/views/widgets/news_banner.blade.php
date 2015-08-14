@@ -6,10 +6,9 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 <!-- Buttons -->
-{{--
+{!!
 	Widget::AccessPoints()
---}}
-
+!!}
 
 <!-- Indicators -->
 <ol class="carousel-indicators">

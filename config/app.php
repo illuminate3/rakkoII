@@ -161,6 +161,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Vinkla\Translator\TranslatorServiceProvider::class,
         yajra\Datatables\DatatablesServiceProvider::class,
+        Barryvdh\Elfinder\ElfinderServiceProvider::class,
 
     ],
 
