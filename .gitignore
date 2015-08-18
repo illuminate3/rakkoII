@@ -8,6 +8,7 @@ Thumbs.db
 /vendor
 /node_modules
 /storage
+/public/system
 /app/Modules/Core
 /app/Modules/Kagi
 /app/Modules/Kantoku

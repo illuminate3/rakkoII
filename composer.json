@@ -18,6 +18,7 @@
 		"laracasts/presenter": "dev-master",
 		"laravelcollective/html": "5.1.*",
 		"laravelrus/localized-carbon": "dev-master",
+		"vinkla/translator": "^2.2",
 		"wikimedia/composer-merge-plugin": "^1.2",
 		"yajra/laravel-datatables-oracle": "~5.0"
 	},
