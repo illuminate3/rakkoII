@@ -17,41 +17,18 @@ return [
 ),
 
 
-'supported_document_types' => array(
-// generic
-	'txt' => 'text/plain',
-// adobe
-	'pdf' => 'application/pdf',
-	'psd' => 'image/vnd.adobe.photoshop',
-	'ai' => 'application/postscript',
-	'eps' => 'application/postscript',
-	'ps' => 'application/postscript',
-// ms office
-	'doc' => 'application/msword',
-	'rtf' => 'application/rtf',
-	'xls' => 'application/vnd.ms-excel',
-	'ppt' => 'application/vnd.ms-powerpoint',
-// open office
-	'odt' => 'application/vnd.oasis.opendocument.text',
-	'ods' => 'application/vnd.oasis.opendocument.spreadsheet',
-	'xlsx' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+/*
+width: A style that defines a width only (landscape). Height will be automagically selected to preserve aspect ratio. This works well for resizing images for display on mobile devices, etc.
+xheight: A style that defines a heigh only (portrait). Width automagically selected to preserve aspect ratio.
+widthxheight#: Resize then crop.
+widthxheight!: Resize by exacty width and height. Width and height emphatically given, original aspect ratio will be ignored.
+widthxheight: Auto determine both width and height when resizing. This will resize as close as possible to the given dimensions while still preserving the original aspect ratio.
+*/
 
-),
-
-'supported_image_types' => array(
-	// images
-	'png' => 'image/png',
-	'jpe' => 'image/jpeg',
-	'jpeg' => 'image/jpeg',
-	'jpg' => 'image/jpeg',
-	'gif' => 'image/gif',
-	'bmp' => 'image/bmp',
-	'ico' => 'image/vnd.microsoft.icon',
-	'tiff' => 'image/tiff',
-	'tif' => 'image/tiff',
-	'svg' => 'image/svg+xml',
-	'svgz' => 'image/svg+xml'
-)
-
+'image_styles' => [
+	'landscape'					=> '1356x500!',
+	'portrait'					=> '150x196!',
+	'thumb'						=> '100x100!'
+]
 
 ];
