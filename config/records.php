@@ -27,6 +27,7 @@ widthxheight: Auto determine both width and height when resizing. This will resi
 
 'image_styles' => [
 	'landscape'					=> '1356x500!',
+	'preview'					=> '700x500!',
 	'portrait'					=> '150x196!',
 	'thumb'						=> '100x100!'
 ]
