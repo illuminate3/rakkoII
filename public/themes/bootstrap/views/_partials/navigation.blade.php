@@ -31,9 +31,9 @@
 
 
 <ul class="nav navbar-nav">
-{!!
+{{--
 	Widget::MenuNavigation()
-!!}
+--}}
 </ul>
 
 

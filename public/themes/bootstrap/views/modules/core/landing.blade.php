@@ -30,9 +30,9 @@ jQuery(function ($) {
 
 
 <!-- Banner -->
-{!!
+{{--
 	Widget::NewsBanner()
-!!}
+--}}
 
 
 <!--WELCOME-->
@@ -70,9 +70,9 @@ jQuery(function ($) {
 
 
 <!-- Buttons -->
-{!!
+{{--
 	Widget::TopNews()
-!!}
+--}}
 
 
 	</div>
