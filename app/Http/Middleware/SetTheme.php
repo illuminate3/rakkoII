@@ -13,6 +13,7 @@ use Closure;
 use Cache;
 use Config;
 use Redirect;
+use Setting;
 use Theme;
 use View;
 
@@ -37,9 +38,9 @@ class SetTheme implements Middleware {
 
 		\Theme::setActive($theme);
 
-		View::share('theme_front',  Theme::getActive() . '::' . Config::get('themes.front', Theme::getActive() . '::' . '_layouts.app'));
-		View::share('theme_back', Theme::getActive() . '::' . Config::get('themes.back', Theme::getActive() . '::' . '_layouts.back'));
-		View::share('activeTheme', Theme::getActive());
+		View::share( 'theme_front',  Setting::get('active_theme', Theme::getActive()) . '::' . Config::get('themes.front', Setting::get('active_theme', Theme::getActive()) . '::' . '_layouts.app') );
+		View::share( 'theme_back', Setting::get('active_theme', Theme::getActive()) . '::' . Config::get('themes.back', Setting::get('active_theme', Theme::getActive()) . '::' . '_layouts.back') );
+		View::share( 'activeTheme', Setting::get('active_theme', Theme::getActive()) );
 
 		return $next($request);
 
