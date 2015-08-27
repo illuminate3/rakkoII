@@ -13,7 +13,7 @@ return [
 	|
 	*/
 
-	'active' => 'bootstrap',
+	'active' => env('ACTIVE_THEME', 'bootstrap'),
 	'back' => '_layouts.back',
 	'front' => '_layouts.app',
 	'simple' => '_layouts.simple',
