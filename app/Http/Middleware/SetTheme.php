@@ -13,6 +13,7 @@ use Closure;
 use Cache;
 use Config;
 use Redirect;
+use Setting;
 use Theme;
 use View;
 
@@ -29,17 +30,24 @@ class SetTheme implements Middleware {
 	{
 
 		$theme = Cache::get('theme', null);
-
-		if ($theme == null) {
-			$theme = Config::get('themes.active', 'bootstrap');
-		}
+//		Cache::forget('theme');
 //dd($theme);
 
-		\Theme::setActive($theme);
+		if ($theme == null) {
+			$theme = Setting::get( 'active_theme', Config::get('themes.active', 'bootstrap') );
 
-		View::share('theme_front',  Theme::getActive() . '::' . Config::get('themes.front', Theme::getActive() . '::' . '_layouts.app'));
-		View::share('theme_back', Theme::getActive() . '::' . Config::get('themes.back', Theme::getActive() . '::' . '_layouts.back'));
-		View::share('activeTheme', Theme::getActive());
+			Theme::setActive($theme);
+			Cache::forever('theme', $theme);
+		}
+//dd(Theme::getActive());
+//dd(Theme::setActive($theme));
+//dd(Theme::getActive() . '::' . Config::get('themes.simple', Theme::getActive() . '::' . '_layouts.simple'));
+//dd($theme);
+
+		View::share('activeTheme', $theme);
+		View::share('theme_back', $theme . '::' . Config::get('themes.back', $theme . '::' . '_layouts.back'));
+		View::share('theme_front',  $theme . '::' . Config::get('themes.front', $theme . '::' . '_layouts.app'));
+		View::share('theme_simple', $theme . '::' . Config::get('themes.simple', $theme . '::' . '_layouts.simple'));
 
 		return $next($request);
 

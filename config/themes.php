@@ -14,8 +14,9 @@ return [
 	*/
 
 	'active' => 'bootstrap',
-	'front' => '_layouts.app',
 	'back' => '_layouts.back',
+	'front' => '_layouts.app',
+	'simple' => '_layouts.simple',
 
 	/*
 	|--------------------------------------------------------------------------
