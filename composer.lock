@@ -985,12 +985,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "af8d457f24be1fc57a1837487f772686e2646853"
+                "reference": "a88c488168fcc94a84211bd02eef97bec29161e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/af8d457f24be1fc57a1837487f772686e2646853",
-                "reference": "af8d457f24be1fc57a1837487f772686e2646853",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/a88c488168fcc94a84211bd02eef97bec29161e7",
+                "reference": "a88c488168fcc94a84211bd02eef97bec29161e7",
                 "shasum": ""
             },
             "require": {
@@ -1021,7 +1021,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2015-08-31 21:10:19"
+            "time": "2015-09-01 14:24:47"
         },
         {
             "name": "imagine/imagine",
