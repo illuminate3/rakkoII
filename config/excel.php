@@ -1,7 +1,5 @@
 <?php
 
-use Config;
-
 return array(
 
     'cache'      => array(
@@ -60,15 +58,15 @@ return array(
     ),
 
     'properties' => array(
-        'creator'        => Config::get('core.brand_title'),
-        'lastModifiedBy' => Config::get('core.brand_title'),
+        'creator'        => 'Maatwebsite',
+        'lastModifiedBy' => 'Maatwebsite',
         'title'          => 'Spreadsheet',
         'description'    => 'Default spreadsheet export',
         'subject'        => 'Spreadsheet export',
         'keywords'       => 'maatwebsite, excel, export',
         'category'       => 'Excel',
-        'manager'        => Config::get('core.brand_title'),
-        'company'        => Config::get('core.brand_title'),
+        'manager'        => 'Maatwebsite',
+        'company'        => 'Maatwebsite',
     ),
 
     /*
