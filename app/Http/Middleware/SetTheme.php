@@ -29,6 +29,7 @@ class SetTheme implements Middleware {
 	public function handle($request, Closure $next)
 	{
 
+//		Cache::forever('theme', 'global');
 		$theme = Cache::get('theme', null);
 //		Cache::forget('theme');
 //dd($theme);
@@ -39,10 +40,12 @@ class SetTheme implements Middleware {
 			Theme::setActive($theme);
 			Cache::forever('theme', $theme);
 		}
+
+//dd(env('ACTIVE_THEME'));
+//dd($theme);
 //dd(Theme::getActive());
 //dd(Theme::setActive($theme));
-//dd(Theme::getActive() . '::' . Config::get('themes.simple', Theme::getActive() . '::' . '_layouts.simple'));
-//dd($theme);
+//dd(Theme::getActive() . '::' . Config::get('themes.simple', $theme . '::' . '_layouts.simple'));
 
 		View::share('activeTheme', $theme);
 		View::share('theme_back', $theme . '::' . Config::get('themes.back', $theme . '::' . '_layouts.back'));
