@@ -16,6 +16,14 @@ body {
 /* Set the fixed height of the footer here */
 	height: 80px;
 }
+
+
+#wide dt {
+	overflow: visible;
+	width: 250px !important;
+	margin-right: 8px;
+}
+
 .breadcrumb {
 	padding: 0;
 	margin: 10px auto 0;
