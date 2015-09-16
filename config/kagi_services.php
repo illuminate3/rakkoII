@@ -2,16 +2,16 @@
 
 return [
 
-	/*
-	|--------------------------------------------------------------------------
-	| Third Party Services
-	|--------------------------------------------------------------------------
-	|
-	| This file is for storing the credentials for third party services
-	| Default locations for this type of information, allowing packages
-	| to have a conventional place to find your various credentials.
-	|
-	*/
+/*
+|--------------------------------------------------------------------------
+| Third Party Services
+|--------------------------------------------------------------------------
+|
+| This file is for storing the credentials for third party services
+| Default locations for this type of information, allowing packages
+| to have a conventional place to find your various credentials.
+|
+*/
 
 	'mailgun' => [
 		'domain' => '',
@@ -33,23 +33,47 @@ return [
 		'secret' => '',
 	],
 
+
+
+/*
+|--------------------------------------------------------------------------
+| SocialLite choices
+|--------------------------------------------------------------------------
+|
+| facebook, twitter, google, and github
+|
+| settings
+|
+*/
+'outh_provider'					=> 'google',
+'oauth_domain_limiter'			=> 'bryantschools.org',
+
+
+/*
+|
+| Github
+|--------------------------------------------------------------------------
+|
+*/
 	'github' => [
 		'client_id' => getenv('GITHUB_CLIENT_ID'),
 		'client_secret' => getenv('GITHUB_CLIENT_SECRET'),
-		'redirect' => 'http://l5.local/social/login'
+		'redirect' => getenv('GITHUB_REDIRECT')
 	],
 
-/**
- * Google
- *
- * Go to https://console.developers.google.com/project/['your porject name']/apiui/credential
- * to ge the infomation for the the following.
- *
- */
+/*
+|
+| Google
+|--------------------------------------------------------------------------
+|
+| Go to https://console.developers.google.com/project/['your porject name']/apiui/credential
+| to ge the infomation for the the following.
+|
+*/
 	'google' => [
 		'client_id' => getenv('GOOGLE_CLIENT_ID'),
 		'client_secret' => getenv('GOOGLE_CLIENT_SECRET'),
-		'redirect' => 'http://localhost/social/login'
+		'redirect' => getenv('GOOGLE_REDIRECT')
 	]
 
 ];
