@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 
+use Config;
 
 class RedirectIfAuthenticated
 {
@@ -36,7 +37,7 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next)
     {
         if ($this->auth->check()) {
-            return redirect('/home');
+            return redirect(Config::get('kagi.login_return_path', '/'));
         }
 
         return $next($request);
