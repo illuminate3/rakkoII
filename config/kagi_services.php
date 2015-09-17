@@ -34,6 +34,18 @@ return [
 	],
 
 
+/*
+|--------------------------------------------------------------------------
+| SocialLite choices
+|--------------------------------------------------------------------------
+|
+| Restrict or Allow any client to register
+| true = open registration
+| false = registration is closed
+|
+*/
+'open_registration'				=> false,
+
 
 /*
 |--------------------------------------------------------------------------
@@ -47,7 +59,6 @@ return [
 */
 'outh_provider'					=> 'google',
 'oauth_domain_limiter'			=> '',
-
 
 /*
 |
