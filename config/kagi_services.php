@@ -46,7 +46,7 @@ return [
 |
 */
 'outh_provider'					=> 'google',
-'oauth_domain_limiter'			=> 'bryantschools.org',
+'oauth_domain_limiter'			=> '',
 
 
 /*
