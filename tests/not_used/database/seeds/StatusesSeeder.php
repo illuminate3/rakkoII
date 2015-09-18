@@ -6,7 +6,8 @@ use Illuminate\Database\Seeder;
 Use DB, Eloquent, Model, Schema;
 
 
-class StatusesSeeder extends Seeder {
+class StatusesSeeder extends Seeder
+{
 
 
 	public function run()
