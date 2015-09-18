@@ -16,7 +16,7 @@ use Session;
 use Theme;
 
 
-class MenuSettings extends Widget
+class MenuCampus extends Widget
 {
 
 
@@ -25,10 +25,10 @@ class MenuSettings extends Widget
 
 		$activeTheme = Theme::getActive();
 
-		Menu::handler('settings')->hydrate(function()
+		Menu::handler('campus')->hydrate(function()
 			{
 
-			$main_menu_id = LMenu::where('name', '=', 'settings')->pluck('id');
+			$main_menu_id = LMenu::where('name', '=', 'campus')->pluck('id');
 			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 
 			},
@@ -37,7 +37,7 @@ class MenuSettings extends Widget
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
-		return Theme::View($activeTheme . '::' . 'widgets.menu_settings');
+		return Theme::View($activeTheme . '::' . 'widgets.admin.campus_menu');
 	}
 
 
