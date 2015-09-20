@@ -21,15 +21,15 @@ return [
 | /login // simple 1 button to redirect to social oauth provider
 |
 */
-'auth_login_path'				=> 'login',
+'auth_login_path'				=> '/auth/login',
 
 'admin_login_return_path'		=> '/admin/dashboard',
 'admin_logout_return_path'		=> '/auth/login',
 
 'login_return_path'				=> '/',
-'logout_return_path'			=> '/login',
+'logout_return_path'			=> '/auth/login',
 
-'auth_fail_redirect'			=> '/login',
+'auth_fail_redirect'			=> '/auth/login',
 
 /*
 |--------------------------------------------------------------------------
