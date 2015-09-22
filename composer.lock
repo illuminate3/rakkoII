@@ -97,16 +97,16 @@
         },
         {
             "name": "anlutro/l4-settings",
-            "version": "0.4.1",
+            "version": "0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/anlutro/laravel-settings.git",
-                "reference": "e8a7fdc46042d64cd9c89c6ce991ce08e77ea2da"
+                "reference": "e38fd914e2c66215fda07db38ffe01e2cc5bcabf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anlutro/laravel-settings/zipball/e8a7fdc46042d64cd9c89c6ce991ce08e77ea2da",
-                "reference": "e8a7fdc46042d64cd9c89c6ce991ce08e77ea2da",
+                "url": "https://api.github.com/repos/anlutro/laravel-settings/zipball/e38fd914e2c66215fda07db38ffe01e2cc5bcabf",
+                "reference": "e38fd914e2c66215fda07db38ffe01e2cc5bcabf",
                 "shasum": ""
             },
             "require": {
@@ -139,224 +139,7 @@
                 }
             ],
             "description": "Persistant settings in Laravel.",
-            "time": "2015-08-25 19:41:06"
-        },
-        {
-            "name": "barryvdh/elfinder-builds",
-            "version": "v2.1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/elfinder-builds.git",
-                "reference": "f11eb97d55ad16cdb96b6e41c2d9ffc4e697303c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/elfinder-builds/zipball/f11eb97d55ad16cdb96b6e41c2d9ffc4e697303c",
-                "reference": "f11eb97d55ad16cdb96b6e41c2d9ffc4e697303c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dmitry Levashov",
-                    "email": "dio@std42.ru",
-                    "homepage": "http://std42.ru"
-                },
-                {
-                    "name": "Troex Nevelin",
-                    "email": "troex@fury.scancode.ru",
-                    "homepage": "http://std42.ru"
-                },
-                {
-                    "name": "Naoki Sawada",
-                    "email": "hypweb@gmail.com",
-                    "homepage": "http://xoops.hypweb.net"
-                },
-                {
-                    "name": "Community contributions",
-                    "homepage": "https://github.com/Studio-42/elFinder/contributors"
-                }
-            ],
-            "description": "File manager for web",
-            "homepage": "http://elfinder.org",
-            "time": "2015-06-25 06:56:25"
-        },
-        {
-            "name": "barryvdh/elfinder-flysystem-driver",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/elfinder-flysystem-driver.git",
-                "reference": "3ae5cd939e36710bab0ea0163011dbfbc1a6ec77"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/elfinder-flysystem-driver/zipball/3ae5cd939e36710bab0ea0163011dbfbc1a6ec77",
-                "reference": "3ae5cd939e36710bab0ea0163011dbfbc1a6ec77",
-                "shasum": ""
-            },
-            "require": {
-                "intervention/image": "~2.0",
-                "league/flysystem": "~1.0",
-                "php": ">=5.4"
-            },
-            "suggest": {
-                "barryvdh/elfinder-builds": "~2.1",
-                "league/glide": "~0.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "elFinderVolumeFlysystem.php"
-                ],
-                "psr-4": {
-                    "Barryvdh\\elFinderFlysystemDriver\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "A Flysystem Driver for elFinder",
-            "keywords": [
-                "Flysystem",
-                "elfinder",
-                "filesystem"
-            ],
-            "time": "2015-06-20 06:51:51"
-        },
-        {
-            "name": "barryvdh/laravel-elfinder",
-            "version": "v0.3.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-elfinder.git",
-                "reference": "f19c8870ab6a0e53da9b79045427a1cdedccbbec"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-elfinder/zipball/f19c8870ab6a0e53da9b79045427a1cdedccbbec",
-                "reference": "f19c8870ab6a0e53da9b79045427a1cdedccbbec",
-                "shasum": ""
-            },
-            "require": {
-                "barryvdh/elfinder-builds": "2.1.x",
-                "barryvdh/elfinder-flysystem-driver": "0.1.x@dev",
-                "illuminate/support": "5.0.x|5.1.x",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Barryvdh\\Elfinder\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "A Laravel Package to integrate elFinder 2",
-            "keywords": [
-                "elfinder",
-                "filebrowser",
-                "laravel",
-                "tinymce"
-            ],
-            "time": "2015-06-07 19:51:57"
-        },
-        {
-            "name": "baum/baum",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/etrepat/baum.git",
-                "reference": "9290bed862d329aaaef666a71e0a2734afc28286"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/etrepat/baum/zipball/9290bed862d329aaaef666a71e0a2734afc28286",
-                "reference": "9290bed862d329aaaef666a71e0a2734afc28286",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "5.*",
-                "illuminate/database": "5.*",
-                "illuminate/events": "5.*",
-                "illuminate/filesystem": "5.*",
-                "illuminate/support": "5.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "d11wtq/boris": "~1.0.10",
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Baum": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Estanislau Trepat",
-                    "email": "estanis@etrepat.com",
-                    "homepage": "http://etrepat.com"
-                }
-            ],
-            "description": "Baum is an implementation of the Nested Set pattern for Eloquent models.",
-            "keywords": [
-                "Laravel 4",
-                "database",
-                "eloquent",
-                "laravel",
-                "laravel 5",
-                "nested set"
-            ],
-            "time": "2015-03-04 12:07:54"
+            "time": "2015-09-20 11:23:25"
         },
         {
             "name": "caffeinated/flash",
@@ -672,79 +455,17 @@
             "time": "2015-06-28 21:39:13"
         },
         {
-            "name": "cocur/slugify",
-            "version": "v1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cocur/slugify.git",
-                "reference": "2b67d4e2b75dbaed2ebefa9eb5683e8940513847"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cocur/slugify/zipball/2b67d4e2b75dbaed2ebefa9eb5683e8940513847",
-                "reference": "2b67d4e2b75dbaed2ebefa9eb5683e8940513847",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "dev-master",
-                "laravel/framework": "~4.1",
-                "latte/latte": "~2.2",
-                "mockery/mockery": "~0.9",
-                "nette/di": "~2.2",
-                "phpunit/phpunit": "~3.7",
-                "sami/sami": "~1.3",
-                "satooshi/php-coveralls": "0.6.*",
-                "silex/silex": "~1.2",
-                "symfony/dependency-injection": "~2.4",
-                "symfony/http-kernel": "~2.4",
-                "twig/twig": "~1",
-                "zendframework/zend-modulemanager": "~2.2",
-                "zendframework/zend-servicemanager": "~2.2",
-                "zendframework/zend-view": "~2.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cocur\\Slugify\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ivo Bathke",
-                    "email": "ivo.bathke@gmail.com"
-                },
-                {
-                    "name": "Florian Eckerstorfer",
-                    "email": "florian@eckerstorfer.co",
-                    "homepage": "https://florian.ec"
-                }
-            ],
-            "description": "Converts a string into a slug.",
-            "keywords": [
-                "slug",
-                "slugify"
-            ],
-            "time": "2015-03-18 08:21:30"
-        },
-        {
             "name": "codesleeve/laravel-stapler",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeSleeve/laravel-stapler.git",
-                "reference": "4a41d6b4710ad1609a3f53da664d0ee010d240d7"
+                "reference": "79d644b495754c955f652fee8a6ca799f923bec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeSleeve/laravel-stapler/zipball/4a41d6b4710ad1609a3f53da664d0ee010d240d7",
-                "reference": "4a41d6b4710ad1609a3f53da664d0ee010d240d7",
+                "url": "https://api.github.com/repos/CodeSleeve/laravel-stapler/zipball/79d644b495754c955f652fee8a6ca799f923bec6",
+                "reference": "79d644b495754c955f652fee8a6ca799f923bec6",
                 "shasum": ""
             },
             "require": {
@@ -781,32 +502,32 @@
                 "stapler",
                 "upload"
             ],
-            "time": "2015-07-22 19:39:24"
+            "time": "2015-09-21 00:06:39"
         },
         {
             "name": "codesleeve/stapler",
-            "version": "v1.0.05",
+            "version": "v1.0.06",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeSleeve/stapler.git",
-                "reference": "4475ec4ca36ee14fd9b7e4ae0e026075f8704734"
+                "reference": "76d6fa48d263b70437ba92b7c2c053b79dbb5cc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeSleeve/stapler/zipball/4475ec4ca36ee14fd9b7e4ae0e026075f8704734",
-                "reference": "4475ec4ca36ee14fd9b7e4ae0e026075f8704734",
+                "url": "https://api.github.com/repos/CodeSleeve/stapler/zipball/76d6fa48d263b70437ba92b7c2c053b79dbb5cc6",
+                "reference": "76d6fa48d263b70437ba92b7c2c053b79dbb5cc6",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "~1",
-                "imagine/imagine": "~0.5.0",
+                "imagine/imagine": "~0.6.2",
                 "php": ">=5.4",
                 "symfony/http-foundation": "~2.3"
             },
             "require-dev": {
                 "aws/aws-sdk-php": "2.4.*@dev",
-                "illuminate/config": "~4",
-                "illuminate/database": "~4",
+                "illuminate/config": "4.*|5.*",
+                "illuminate/database": "4.*|5.*",
                 "mockery/mockery": "0.8.0"
             },
             "type": "library",
@@ -834,57 +555,7 @@
                 "s3",
                 "upload"
             ],
-            "time": "2015-04-21 16:55:09"
-        },
-        {
-            "name": "cviebrock/eloquent-sluggable",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cviebrock/eloquent-sluggable.git",
-                "reference": "eaf7b573d7c82f004fc3efde0e0f9f63200d4c32"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/eaf7b573d7c82f004fc3efde0e0f9f63200d4c32",
-                "reference": "eaf7b573d7c82f004fc3efde0e0f9f63200d4c32",
-                "shasum": ""
-            },
-            "require": {
-                "cocur/slugify": "1.1.*",
-                "illuminate/config": "5.*",
-                "illuminate/database": "5.*",
-                "illuminate/support": "5.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.0.*",
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cviebrock\\EloquentSluggable\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Colin Viebrock",
-                    "email": "colin@viebrock.ca"
-                }
-            ],
-            "description": "Easy creation of slugs for your Eloquent models in Laravel",
-            "homepage": "https://github.com/cviebrock/eloquent-sluggable",
-            "keywords": [
-                "eloquent",
-                "laravel",
-                "slug"
-            ],
-            "time": "2015-07-06 15:09:35"
+            "time": "2015-09-19 01:27:59"
         },
         {
             "name": "danielstjules/stringy",
@@ -1314,12 +985,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "41bb0d38d8ebc39933823b43e3366e7939b09292"
+                "reference": "f1a14ff9c66a4d637a8453ee2cedc807941fddb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/41bb0d38d8ebc39933823b43e3366e7939b09292",
-                "reference": "41bb0d38d8ebc39933823b43e3366e7939b09292",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/f1a14ff9c66a4d637a8453ee2cedc807941fddb0",
+                "reference": "f1a14ff9c66a4d637a8453ee2cedc807941fddb0",
                 "shasum": ""
             },
             "require": {
@@ -1350,20 +1021,20 @@
                 "language",
                 "laravel"
             ],
-            "time": "2015-09-15 02:41:14"
+            "time": "2015-09-20 00:24:02"
         },
         {
             "name": "imagine/imagine",
-            "version": "v0.5.0",
+            "version": "0.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avalanche123/Imagine.git",
-                "reference": "f64ec666baaa800edcbf237db41121a569230709"
+                "reference": "83ca8babede0e54f935ec09d55a726bf4b0a3f7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/f64ec666baaa800edcbf237db41121a569230709",
-                "reference": "f64ec666baaa800edcbf237db41121a569230709",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/83ca8babede0e54f935ec09d55a726bf4b0a3f7c",
+                "reference": "83ca8babede0e54f935ec09d55a726bf4b0a3f7c",
                 "shasum": ""
             },
             "require": {
@@ -1378,6 +1049,11 @@
                 "ext-imagick": "to use the Imagick implementation"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.7-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Imagine": "lib/"
@@ -1402,7 +1078,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2013-07-10 17:25:36"
+            "time": "2014-11-11 11:36:02"
         },
         {
             "name": "intervention/image",
@@ -1712,16 +1388,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.16",
+            "version": "v5.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "e34dcc0c57e0f560248aec5128161256ff8bf4e1"
+                "reference": "415b5d824e15ee7cd18b8b23f96ae32b0b51d6a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/e34dcc0c57e0f560248aec5128161256ff8bf4e1",
-                "reference": "e34dcc0c57e0f560248aec5128161256ff8bf4e1",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/415b5d824e15ee7cd18b8b23f96ae32b0b51d6a0",
+                "reference": "415b5d824e15ee7cd18b8b23f96ae32b0b51d6a0",
                 "shasum": ""
             },
             "require": {
@@ -1836,7 +1512,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-09-04 12:46:14"
+            "time": "2015-09-16 16:57:12"
         },
         {
             "name": "laravel/socialite",
@@ -1988,20 +1664,23 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.12",
+            "version": "1.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "7323424a9d39c24e597ed3f2144419dfbb52e086"
+                "reference": "76caed01a57527599b55919f0746104f288b3d56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7323424a9d39c24e597ed3f2144419dfbb52e086",
-                "reference": "7323424a9d39c24e597ed3f2144419dfbb52e086",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/76caed01a57527599b55919f0746104f288b3d56",
+                "reference": "76caed01a57527599b55919f0746104f288b3d56",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
+            },
+            "conflict": {
+                "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
                 "ext-fileinfo": "*",
@@ -2065,7 +1744,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-09-05 12:06:41"
+            "time": "2015-09-20 13:05:34"
         },
         {
             "name": "league/fractal",
@@ -2261,6 +1940,55 @@
             "time": "2015-08-20 15:23:00"
         },
         {
+            "name": "milon/barcode",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/milon/barcode.git",
+                "reference": "ff719fe293fda2cf7d860a0f95319a1401853c50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/milon/barcode/zipball/ff719fe293fda2cf7d860a0f95319a1401853c50",
+                "reference": "ff719fe293fda2cf7d860a0f95319a1401853c50",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Milon\\Barcode": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuruzzaman Milon",
+                    "email": "milon521@gmail.com"
+                }
+            ],
+            "description": "Barcode generator like Qr Code , PDF417,C39, C39+,C39E,C39E+,C93,S25,S25+,I25,I25+,C128,C128A,C128B,C128C,2-Digits UPC-Based Extention,5-Digits UPC-Based Extention,EAN 8,EAN 13,UPC-A,UPC-E,MSI (Variation of Plessey code) ",
+            "keywords": [
+                "CODABAR",
+                "CODE 128",
+                "CODE 39",
+                "barcode",
+                "datamatrix",
+                "ean",
+                "laravel",
+                "pdf417",
+                "qr code",
+                "qrcode"
+            ],
+            "time": "2015-02-22 09:27:15"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.17.1",
             "source": {
@@ -2433,12 +2161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nicolaslopezj/searchable.git",
-                "reference": "ecc8aa79cac4c8d7f0a4fb713828000171ecd0ab"
+                "reference": "bf47a9055cd873f06ac9ff32534d56a98953198f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicolaslopezj/searchable/zipball/ecc8aa79cac4c8d7f0a4fb713828000171ecd0ab",
-                "reference": "ecc8aa79cac4c8d7f0a4fb713828000171ecd0ab",
+                "url": "https://api.github.com/repos/nicolaslopezj/searchable/zipball/bf47a9055cd873f06ac9ff32534d56a98953198f",
+                "reference": "bf47a9055cd873f06ac9ff32534d56a98953198f",
                 "shasum": ""
             },
             "require": {
@@ -2471,20 +2199,20 @@
                 "search",
                 "searchable"
             ],
-            "time": "2015-08-05 18:43:42"
+            "time": "2015-09-20 14:21:52"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "196f177cfefa0f1f7166c0a05d8255889be12418"
+                "reference": "f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/196f177cfefa0f1f7166c0a05d8255889be12418",
-                "reference": "196f177cfefa0f1f7166c0a05d8255889be12418",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51",
+                "reference": "f78af2c9c86107aa1a34cd1dbb5bbe9eeb0d9f51",
                 "shasum": ""
             },
             "require": {
@@ -2516,7 +2244,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2015-07-14 17:31:05"
+            "time": "2015-09-19 14:15:08"
         },
         {
             "name": "patchwork/utf8",
@@ -3834,16 +3562,16 @@
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v5.11.8",
+            "version": "v5.11.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "f034660014fa8759c324bb5970e36faa4d76786c"
+                "reference": "73651c4f33b68a48463bdf94eecf1fc811fd1a8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/f034660014fa8759c324bb5970e36faa4d76786c",
-                "reference": "f034660014fa8759c324bb5970e36faa4d76786c",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/73651c4f33b68a48463bdf94eecf1fc811fd1a8c",
+                "reference": "73651c4f33b68a48463bdf94eecf1fc811fd1a8c",
                 "shasum": ""
             },
             "require": {
@@ -3885,7 +3613,7 @@
                 "laravel4",
                 "laravel5"
             ],
-            "time": "2015-09-15 01:44:55"
+            "time": "2015-09-21 09:40:45"
         }
     ],
     "packages-dev": [
@@ -4677,16 +4405,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.7",
+            "version": "4.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa"
+                "reference": "73fad41adb5b7bc3a494bb930d90648df1d5e74b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa",
-                "reference": "dab2ada9e9a503d2ec3c32fe0fb59dea9bdd9dfa",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/73fad41adb5b7bc3a494bb930d90648df1d5e74b",
+                "reference": "73fad41adb5b7bc3a494bb930d90648df1d5e74b",
                 "shasum": ""
             },
             "require": {
@@ -4745,7 +4473,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-09-14 06:57:22"
+            "time": "2015-09-20 12:56:44"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -5235,12 +4963,10 @@
         "anlutro/l4-settings": 0,
         "nicolaslopezj/searchable": 20,
         "tom-lingham/searchy": 0,
-        "baum/baum": 0,
-        "cviebrock/eloquent-sluggable": 10,
-        "vespakoen/menu": 0,
-        "barryvdh/laravel-elfinder": 0,
+        "milon/barcode": 20,
         "caffeinated/shinobi": 0,
         "laravel/socialite": 0,
+        "vespakoen/menu": 0,
         "maatwebsite/excel": 0
     },
     "prefer-stable": false,
