@@ -21,6 +21,7 @@ class AccessPoints extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
+//Cache::forget('accesspoints');
 		$pages = Cache::get('accesspoints', null);
 //dd($pages);
 
@@ -30,6 +31,7 @@ class AccessPoints extends Widget
 			});
 		}
 
+//dd($pages);
 
 		if (count($pages)) {
 		Menu::handler('accesspoint')->hydrate(function()

@@ -21,21 +21,23 @@ class AccessNavPoints extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
-		$pages = Cache::get('accesspoints', null);
+//Cache::forget('accessnavpoint');
+		$pages = Cache::get('accessnavpoint', null);
 //dd($pages);
 
-// 		if ($pages == null) {
-// 			$pages = Cache::rememberForever('accesspoints', function() {
-// 				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
-// 			});
-// 		}
+		if ($pages == null) {
+			$pages = Cache::rememberForever('accessnavpoint', function() {
+				return Content::InPrint()->IsNavigation()->orderBy('order')->get();
+			});
+		}
 
+//dd($pages);
 
 		if (count($pages)) {
 		Menu::handler('accessnavpoint')->hydrate(function()
 			{
 
-			$pages = Cache::get('accesspoints');
+			$pages = Cache::get('accessnavpoint');
 //dd($pages);
 			return $pages;
 
