@@ -8,7 +8,11 @@ echo "----------------------------------------------------"
 
 path=~/Sites/laravel/app/Modules/
 
-for repo in Campus Core FileX Gakko Himawari Jinji Kagi Kantoku Menus NewsDesk Origami Profiles Setup
+echo "----------------------------------------------------"
+echo "fetch and reset Github"
+echo "----------------------------------------------------"
+
+for repo in Core FileX Himawari Kagi Kantoku Menus NewsDesk Origami Profiles
 do
 
 	cd ${repo}
@@ -16,16 +20,26 @@ do
 	git fetch --all
 	git reset --hard origin/master
 
+#	cd $path
 	cd ..
 
-#	dir=`echo "$repo" | tr '[:upper:]' '[:lower:]'`
-#	echo $dir
-#	git remote add origin https://github.com/illuminate3/$dir.git
-#	cd $path
+done
 
-#	(cd "${repo}" && git fetch --all && git reset --hard origin/master)
-#	echo "${repo}"
+echo "----------------------------------------------------"
+echo "fetch and reset Gitlab"
+echo "----------------------------------------------------"
+
+for repo in Campus Gakko Jinji Setup
+do
+
+	cd ${repo}
+
+	git fetch --all
+	git reset --hard origin/master
+
 #	cd $path
+	cd ..
+
 done
 
 echo "----------------------------------------------------"
