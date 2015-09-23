@@ -2,6 +2,8 @@
 
 clear
 
+path=~/Sites/laravel/app/Modules/
+
 echo "----------------------------------------------------"
 echo "git init and git add origin for GitHub repos"
 echo "----------------------------------------------------"
@@ -16,7 +18,7 @@ do
 	echo $dir
 	git remote add origin https://github.com/illuminate3/$dir.git
 
-	cd ~/Sites/laravel/app/Modules/
+	cd $path
 
 done
 
@@ -34,7 +36,7 @@ do
 	echo $dir
 	git remote add origin git@dev.cogents.io:crichter/$dir.git
 
-	cd ~/Sites/laravel/app/Modules/
+	cd $path
 
 done
 
