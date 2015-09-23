@@ -14,7 +14,7 @@ do
 	git init
 	dir=`echo "$repo" | tr '[:upper:]' '[:lower:]'`
 	echo $dir
-	git remote add origin https://github.com/illuminate3/$dir.git)
+	git remote add origin https://github.com/illuminate3/$dir.git
 
 	cd ~/Sites/laravel/app/Modules/
 
