@@ -23,10 +23,6 @@ do
 	echo $dir
 	git remote add origin https://github.com/illuminate3/$dir.git
 
-	echo "----------------------------------------------------"
-	echo "Next Repo"
-	echo "----------------------------------------------------"
-
 	cd $path
 
 done
@@ -48,10 +44,6 @@ do
 	dir=`echo "$repo" | tr '[:upper:]' '[:lower:]'`
 	echo $dir
 	git remote add origin git@dev.cogents.io:crichter/$dir.git
-
-	echo "----------------------------------------------------"
-	echo "Next Repo"
-	echo "----------------------------------------------------"
 
 	cd $path
 

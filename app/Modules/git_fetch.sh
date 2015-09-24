@@ -25,10 +25,6 @@ do
 	git fetch --all
 	git reset --hard origin/master
 
-	echo "----------------------------------------------------"
-	echo "Next Repo"
-	echo "----------------------------------------------------"
-
 	cd $path
 
 done
@@ -48,10 +44,6 @@ do
 
 	git fetch --all
 	git reset --hard origin/master
-
-	echo "----------------------------------------------------"
-	echo "Next Repo"
-	echo "----------------------------------------------------"
 
 	cd $path
 
