@@ -2,7 +2,8 @@
 
 clear
 
-path=~/Sites/laravel/app/Modules/
+#path=~/Sites/laravel/app/Modules/
+path=..
 
 echo "----------------------------------------------------"
 echo "git init and git add origin for GitHub repos"
@@ -13,10 +14,18 @@ do
 
 	cd ${repo}
 
+	echo "----------------------------------------------------"
+	echo ${repo}
+	echo "----------------------------------------------------"
+
 	git init
 	dir=`echo "$repo" | tr '[:upper:]' '[:lower:]'`
 	echo $dir
 	git remote add origin https://github.com/illuminate3/$dir.git
+
+	echo "----------------------------------------------------"
+	echo "Next Repo"
+	echo "----------------------------------------------------"
 
 	cd $path
 
@@ -31,10 +40,18 @@ do
 
 	cd ${repo}
 
+	echo "----------------------------------------------------"
+	echo ${repo}
+	echo "----------------------------------------------------"
+
 	git init
 	dir=`echo "$repo" | tr '[:upper:]' '[:lower:]'`
 	echo $dir
 	git remote add origin git@dev.cogents.io:crichter/$dir.git
+
+	echo "----------------------------------------------------"
+	echo "Next Repo"
+	echo "----------------------------------------------------"
 
 	cd $path
 
