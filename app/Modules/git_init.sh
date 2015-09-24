@@ -9,7 +9,7 @@ echo "----------------------------------------------------"
 echo "git init and git add origin for GitHub repos"
 echo "----------------------------------------------------"
 
-for repo in Core Filex Himawari Kagi Kantoku Menus NewsDesk Origami Profiles
+for repo in Core Filex Himawari Kagi Kantoku Menus Newsdesk Origami Profiles
 do
 
 	cd ${repo}
