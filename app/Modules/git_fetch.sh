@@ -2,10 +2,6 @@
 
 clear
 
-echo "----------------------------------------------------"
-echo "git fetch for all repos"
-echo "----------------------------------------------------"
-
 #path=~/Sites/laravel/app/Modules/
 path=..
 
@@ -13,7 +9,7 @@ echo "----------------------------------------------------"
 echo "fetch and reset Github"
 echo "----------------------------------------------------"
 
-for repo in Core FileX Himawari Kagi Kantoku Menus NewsDesk Origami Profiles
+for repo in Core Filex Himawari Kagi Kantoku Menus NewsDesk Origami Profiles
 do
 
 	cd ${repo}

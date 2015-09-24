@@ -3,10 +3,21 @@
 clear
 
 echo "----------------------------------------------------"
-echo "mkdir all repos"
+echo "mkdir Github"
 echo "----------------------------------------------------"
 
-for repo in Campus Core FileX Gakko Himawari Jinji Kagi Kantoku Menus NewsDesk Origami Profiles Setup; do
+for repo in Core Filex Himawari Kagi Kantoku Menus NewsDesk Origami Profiles
+do
+	mkdir "${repo}"
+	echo "${repo}"
+done
+
+echo "----------------------------------------------------"
+echo "mkdir Gitlab"
+echo "----------------------------------------------------"
+
+for repo in Campus Gakko Jinji Setup
+do
 	mkdir "${repo}"
 	echo "${repo}"
 done
