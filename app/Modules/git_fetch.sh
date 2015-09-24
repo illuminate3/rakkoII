@@ -6,7 +6,8 @@ echo "----------------------------------------------------"
 echo "git fetch for all repos"
 echo "----------------------------------------------------"
 
-path=~/Sites/laravel/app/Modules/
+#path=~/Sites/laravel/app/Modules/
+path=..
 
 echo "----------------------------------------------------"
 echo "fetch and reset Github"
@@ -28,8 +29,7 @@ do
 	echo "Next Repo"
 	echo "----------------------------------------------------"
 
-#	cd $path
-	cd ..
+	cd $path
 
 done
 
@@ -46,15 +46,14 @@ do
 	echo ${repo}
 	echo "----------------------------------------------------"
 
+	git fetch --all
+	git reset --hard origin/master
+
 	echo "----------------------------------------------------"
 	echo "Next Repo"
 	echo "----------------------------------------------------"
 
-	git fetch --all
-	git reset --hard origin/master
-
-#	cd $path
-	cd ..
+	cd $path
 
 done
 
