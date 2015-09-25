@@ -57,8 +57,8 @@ return [
 | settings
 |
 */
-'outh_provider'					=> 'google',
-'oauth_domain_limiter'			=> '',
+'outh_provider'					=> getenv('OAUTH_PROVIDER'),
+'oauth_domain_limiter'			=> getenv('OAUTH_DOMAIN_LIMITER'),
 
 /*
 |
