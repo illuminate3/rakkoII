@@ -39,12 +39,15 @@ return [
 | SocialLite choices
 |--------------------------------------------------------------------------
 |
-| Restrict or Allow any client to register
-| true = open registration
-| false = registration is closed
+| Open Registration: IF verified create user
+| true / false
+|
+| Semi Registration: User data is partially in database, update info from Oauth
+| true / false
 |
 */
 'open_registration'				=> false,
+'semi_registration'				=> true,
 
 
 /*
