@@ -16,7 +16,7 @@ echo "----------------------------------------------------"
 echo "mkdir Gitlab"
 echo "----------------------------------------------------"
 
-for repo in Campus Gakko Jinji Setup
+for repo in Campus Gakko Jinji Setup Shisan
 do
 	mkdir "${repo}"
 	echo "${repo}"

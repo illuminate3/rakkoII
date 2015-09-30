@@ -31,7 +31,7 @@ echo "----------------------------------------------------"
 echo "git init and git add origin for Gitlab repos"
 echo "----------------------------------------------------"
 
-for repo in Campus Gakko Jinji Setup
+for repo in Campus Gakko Jinji Setup Shisan
 do
 
 	cd ${repo}

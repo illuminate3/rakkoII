@@ -29,7 +29,7 @@ echo "----------------------------------------------------"
 echo "fetch and reset Gitlab"
 echo "----------------------------------------------------"
 
-for repo in Campus Gakko Jinji Setup
+for repo in Campus Gakko Jinji Setup Shisan
 do
 
 	cd ${repo}
