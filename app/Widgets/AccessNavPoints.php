@@ -27,7 +27,7 @@ class AccessNavPoints extends Widget
 
 		if ($pages == null) {
 			$pages = Cache::rememberForever('accessnavpoint', function() {
-				return Content::InPrint()->IsNavigation()->orderBy('order')->get();
+				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
 			});
 		}
 
@@ -48,6 +48,7 @@ class AccessNavPoints extends Widget
 				if($item->depth < 1) {
 					$children->add($item->slug, $item->translate(Config::get('app.locale'))->title, Menu::items($item->as));
 				}
+
 			});
 
 			return Theme::View($activeTheme . '::' . 'widgets.accessnavpoints');

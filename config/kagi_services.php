@@ -39,12 +39,15 @@ return [
 | SocialLite choices
 |--------------------------------------------------------------------------
 |
-| Restrict or Allow any client to register
-| true = open registration
-| false = registration is closed
+| Open Registration: IF verified create user
+| true / false
+|
+| Semi Registration: User data is partially in database, update info from Oauth
+| true / false
 |
 */
 'open_registration'				=> false,
+'semi_registration'				=> true,
 
 
 /*
@@ -57,8 +60,8 @@ return [
 | settings
 |
 */
-'outh_provider'					=> 'google',
-'oauth_domain_limiter'			=> '',
+'outh_provider'					=> getenv('OAUTH_PROVIDER'),
+'oauth_domain_limiter'			=> getenv('OAUTH_DOMAIN_LIMITER'),
 
 /*
 |

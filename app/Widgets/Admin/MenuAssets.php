@@ -25,10 +25,10 @@ class MenuAssets extends Widget
 
 		$activeTheme = Theme::getActive();
 
-		Menu::handler('settings')->hydrate(function()
+		Menu::handler('assets')->hydrate(function()
 			{
 
-			$main_menu_id = LMenu::where('name', '=', 'settings')->pluck('id');
+			$main_menu_id = LMenu::where('name', '=', 'assets')->pluck('id');
 			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 
 			},

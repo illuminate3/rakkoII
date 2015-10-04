@@ -4,7 +4,7 @@ namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
-use App\Modules\newsDesk\Http\Models\News as news;
+use App\Modules\Newsdesk\Http\Models\News as news;
 
 use App;
 use Config;

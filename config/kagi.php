@@ -21,15 +21,15 @@ return [
 | /login // simple 1 button to redirect to social oauth provider
 |
 */
-'auth_login_path'				=> '/auth/login',
+'auth_login_path'				=> getenv('AUTH_LOGIN_PATH'),
 
 'admin_login_return_path'		=> '/admin/dashboard',
 'admin_logout_return_path'		=> '/auth/login',
 
 'login_return_path'				=> '/',
-'logout_return_path'			=> '/auth/login',
+'logout_return_path'			=> getenv('LOGOUT_RETURN_PATH'),
 
-'auth_fail_redirect'			=> '/auth/login',
+'auth_fail_redirect'			=> getenv('AUTH_FAIL_REDIRECT'),
 
 /*
 |--------------------------------------------------------------------------
