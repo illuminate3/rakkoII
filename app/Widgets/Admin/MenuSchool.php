@@ -29,7 +29,8 @@ class MenuSchool extends Widget
 			{
 
 			$main_menu_id = LMenu::where('name', '=', 'school')->pluck('id');
-			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+//			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+			return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
 
 			},
 			function($children, $item)
