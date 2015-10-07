@@ -21,4 +21,5 @@ Thumbs.db
 /app/Modules/Hanso
 /app/Modules/Seisan
 /app/Modules/Ticket
+/app/Modules/Yubin
 /config/kagi.php
