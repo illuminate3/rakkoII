@@ -26,8 +26,10 @@ return [
         'sender' => [],
         'attachments' => [],
         'subject' => 'Laravel Sandbox Email',
-        'layout' => 'emails.layouts.default',
-        'template' => 'emails.templates.default',
+//         'layout' => 'emails.layouts.default',
+//         'template' => 'emails.templates.default',
+        'layout' => [],
+        'template' => [],
         'message_variables' => []
     ],
 

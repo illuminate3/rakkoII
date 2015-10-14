@@ -839,16 +839,16 @@
         },
         {
             "name": "cviebrock/eloquent-sluggable",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cviebrock/eloquent-sluggable.git",
-                "reference": "eaf7b573d7c82f004fc3efde0e0f9f63200d4c32"
+                "reference": "1192fc168df55452a5546e918c1d1c0657df99eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/eaf7b573d7c82f004fc3efde0e0f9f63200d4c32",
-                "reference": "eaf7b573d7c82f004fc3efde0e0f9f63200d4c32",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/1192fc168df55452a5546e918c1d1c0657df99eb",
+                "reference": "1192fc168df55452a5546e918c1d1c0657df99eb",
                 "shasum": ""
             },
             "require": {
@@ -885,7 +885,7 @@
                 "laravel",
                 "slug"
             ],
-            "time": "2015-07-06 15:09:35"
+            "time": "2015-10-14 16:15:32"
         },
         {
             "name": "danielstjules/stringy",
@@ -1315,12 +1315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "f0dedf2642c8fc93e2adf773b1ba036eac8096d9"
+                "reference": "7a9664e1275af0347c1b2d7718f2a2748c7d23bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/f0dedf2642c8fc93e2adf773b1ba036eac8096d9",
-                "reference": "f0dedf2642c8fc93e2adf773b1ba036eac8096d9",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/7a9664e1275af0347c1b2d7718f2a2748c7d23bb",
+                "reference": "7a9664e1275af0347c1b2d7718f2a2748c7d23bb",
                 "shasum": ""
             },
             "require": {
@@ -1351,7 +1351,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2015-10-09 16:20:55"
+            "time": "2015-10-14 02:43:54"
         },
         {
             "name": "imagine/imagine",
@@ -1833,16 +1833,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.19",
+            "version": "v5.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "45e181369991579dc3ad015665eabbb72c0fadba"
+                "reference": "435af155ed15a6b1d03a0d0a46ae4c347d96b0d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/45e181369991579dc3ad015665eabbb72c0fadba",
-                "reference": "45e181369991579dc3ad015665eabbb72c0fadba",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/435af155ed15a6b1d03a0d0a46ae4c347d96b0d7",
+                "reference": "435af155ed15a6b1d03a0d0a46ae4c347d96b0d7",
                 "shasum": ""
             },
             "require": {
@@ -1856,6 +1856,7 @@
                 "monolog/monolog": "~1.11",
                 "mtdowling/cron-expression": "~1.0",
                 "nesbot/carbon": "~1.19",
+                "paragonie/random_compat": "^1.0.4",
                 "php": ">=5.5.9",
                 "psy/psysh": "~0.5.1",
                 "swiftmailer/swiftmailer": "~5.1",
@@ -1957,7 +1958,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-10-01 18:32:48"
+            "time": "2015-10-14 15:49:40"
         },
         {
             "name": "laravel/socialite",
@@ -2386,16 +2387,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.17.1",
+            "version": "1.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422"
+                "reference": "bee7f0dc9c3e0b69a6039697533dca1e845c8c24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0524c87587ab85bc4c2d6f5b41253ccb930a5422",
-                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bee7f0dc9c3e0b69a6039697533dca1e845c8c24",
+                "reference": "bee7f0dc9c3e0b69a6039697533dca1e845c8c24",
                 "shasum": ""
             },
             "require": {
@@ -2409,10 +2410,11 @@
                 "aws/aws-sdk-php": "^2.4.9",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
                 "php-console/php-console": "^3.1.3",
                 "phpunit/phpunit": "~4.5",
                 "phpunit/phpunit-mock-objects": "2.3.0",
-                "raven/raven": "~0.11",
+                "raven/raven": "^0.13",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "swiftmailer/swiftmailer": "~5.3",
                 "videlalvaro/php-amqplib": "~2.4"
@@ -2458,7 +2460,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-08-31 09:17:37"
+            "time": "2015-10-14 12:51:02"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -2643,17 +2645,59 @@
             "time": "2015-09-19 14:15:08"
         },
         {
-            "name": "patchwork/utf8",
-            "version": "v1.2.3",
+            "name": "paragonie/random_compat",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tchwork/utf8.git",
-                "reference": "a7a9a987d01d052ff9c99510ecbd07ebc6c270f2"
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tchwork/utf8/zipball/a7a9a987d01d052ff9c99510ecbd07ebc6c270f2",
-                "reference": "a7a9a987d01d052ff9c99510ecbd07ebc6c270f2",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
+                "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "pseudorandom",
+                "random"
+            ],
+            "time": "2015-10-08 12:57:25"
+        },
+        {
+            "name": "patchwork/utf8",
+            "version": "v1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tchwork/utf8.git",
+                "reference": "25a55c6c668de61cc3b97aab4237ebf6dadabe17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tchwork/utf8/zipball/25a55c6c668de61cc3b97aab4237ebf6dadabe17",
+                "reference": "25a55c6c668de61cc3b97aab4237ebf6dadabe17",
                 "shasum": ""
             },
             "require": {
@@ -2699,7 +2743,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2015-06-25 08:17:49"
+            "time": "2015-10-14 08:58:12"
         },
         {
             "name": "pelago/emogrifier",
@@ -4098,6 +4142,58 @@
             "time": "2015-07-03 03:24:58"
         },
         {
+            "name": "willvincent/laravel-rateable",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willvincent/laravel-rateable.git",
+                "reference": "5345b799619b7aa6861ca446a544ed1cd8cbe6ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willvincent/laravel-rateable/zipball/5345b799619b7aa6861ca446a544ed1cd8cbe6ab",
+                "reference": "5345b799619b7aa6861ca446a544ed1cd8cbe6ab",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/commands"
+                ],
+                "psr-4": {
+                    "willvincent\\Rateable\\": "src/Rateable"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Will Vincent",
+                    "email": "tcindie@gmail.com"
+                }
+            ],
+            "description": "Allows multiple models to be rated with a fivestar like system.",
+            "keywords": [
+                "Rating",
+                "fivestar",
+                "laravel",
+                "laravel 5",
+                "rateable",
+                "vote"
+            ],
+            "time": "2015-08-27 14:15:08"
+        },
+        {
             "name": "yajra/laravel-datatables-oracle",
             "version": "v5.11.10",
             "source": {
@@ -4942,16 +5038,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.12",
+            "version": "4.8.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "00194eb95989190a73198390ceca081ad3441a7f"
+                "reference": "be067d6105286b74272facefc2697038f8807b77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/00194eb95989190a73198390ceca081ad3441a7f",
-                "reference": "00194eb95989190a73198390ceca081ad3441a7f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/be067d6105286b74272facefc2697038f8807b77",
+                "reference": "be067d6105286b74272facefc2697038f8807b77",
                 "shasum": ""
             },
             "require": {
@@ -5010,7 +5106,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-10-12 03:36:47"
+            "time": "2015-10-14 13:49:40"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -5508,6 +5604,7 @@
         "laravel/socialite": 0,
         "maatwebsite/excel": 0,
         "lanz/laravel-commentable": 0,
+        "willvincent/laravel-rateable": 0,
         "larablocks/pigeon": 0,
         "snowfire/beautymail": 20,
         "shvetsgroup/laravel-email-database-log": 0
