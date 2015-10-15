@@ -29,7 +29,7 @@ return [
 'login_return_path'				=> '/',
 'logout_return_path'			=> getenv('LOGOUT_RETURN_PATH'),
 
-'auth_fail_redirect'			=> getenv('AUTH_FAIL_REDIRECT'),
+'auth_fail_redirect'			=> '/auth/login',
 
 /*
 |--------------------------------------------------------------------------

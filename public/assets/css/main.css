@@ -44,6 +44,15 @@ body {
 */
 }
 
+.underline {
+	display: inline-block;
+	padding-right: 200px;
+	border-bottom: 1px dotted #888;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: -10px;
+}
+
 .ms-container{
 	width: 100% !important;
 }
