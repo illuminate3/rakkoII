@@ -16,7 +16,7 @@ use Session;
 use Theme;
 
 
-class MenuCMS extends Widget
+class MenuMail extends Widget
 {
 
 
@@ -25,12 +25,12 @@ class MenuCMS extends Widget
 
 		$activeTheme = Theme::getActive();
 
-		Menu::handler('cms')->hydrate(function()
+		Menu::handler('mail')->hydrate(function()
 			{
 
-			$main_menu_id = LMenu::where('name', '=', 'cms')->pluck('id');
-			return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
+			$main_menu_id = LMenu::where('name', '=', 'mail')->pluck('id');
 //			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+			return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
 
 			},
 			function($children, $item)
@@ -38,7 +38,7 @@ class MenuCMS extends Widget
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
-		return Theme::View($activeTheme . '::' . 'widgets.admin.cms_menu');
+		return Theme::View($activeTheme . '::' . 'widgets.admin.mail_menu');
 	}
 
 

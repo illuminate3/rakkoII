@@ -17,6 +17,7 @@ return [
 	'back' => '_layouts.back',
 	'front' => '_layouts.app',
 	'simple' => '_layouts.simple',
+	'html' => 'pigeon.layouts.html',
 
 	/*
 	|--------------------------------------------------------------------------
