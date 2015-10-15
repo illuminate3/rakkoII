@@ -14,6 +14,7 @@ return [
 	'prefix'					=> '',
 ),
 
+'ticket_closed_id'				=> 4,
 'ticket_update_slug'			=> 'ticket_update',
 'tech_status_purchased'			=> 1,
 
