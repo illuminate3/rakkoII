@@ -38,7 +38,7 @@
 <div class="panel-heading">
 
 	<h3 class="panel-title">
-	{{ Lang::choice('kotoba::general.ticket', 1) }}&nbsp;{{ trans('kotoba::general.information') }}
+	{{ trans('kotoba::general.information') }}
 	</h3>
 
 </div>
