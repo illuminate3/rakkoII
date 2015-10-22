@@ -9,9 +9,9 @@ use App\Modules\Menus\Http\Models\Menu as LMenu;
 use App\Modules\Menus\Http\Models\Menulink;
 
 use App;
-//use Cache;
+use Cache;
 use Config;
-use DB;
+//use DB;
 use Menu;
 use Module;
 use Session;
@@ -27,13 +27,25 @@ class MenuNavigation extends Widget
 
 		$activeTheme = Theme::getActive();
 
-		$pages = Content::InPrint()->orderBy('order')->get();
+// 		$pages = Content::InPrint()->orderBy('order')->get();
+		$pages = Cache::get('top', null);
+
+		if ($pages == null) {
+			$pages = Cache::rememberForever('top', function() {
+//				return Content::InPrint()->orderBy('order')->get();
+				return Content::InPrint()->NotFeatured()->NotTimed()->orderBy('order')->get();
+			});
+		}
+
+
+
 
 		if (count($pages)) {
 		Menu::handler('top')->hydrate(function()
 			{
 
-			$pages = Content::InPrint()->NotFeatured()->NotTimed()->orderBy('order')->get();
+//			$pages = Content::InPrint()->NotFeatured()->NotTimed()->orderBy('order')->get();
+			$pages = Cache::get('top');
 			return $pages;
 
 			},

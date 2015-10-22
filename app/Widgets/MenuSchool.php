@@ -8,7 +8,7 @@ use App\Modules\Menus\Http\Models\Menu as LMenu;
 use App\Modules\Menus\Http\Models\Menulink;
 
 use App;
-//use Cache;
+use Cache;
 use Config;
 //use DB;
 use Menu;
@@ -25,20 +25,47 @@ class MenuSchool extends Widget
 
 		$activeTheme = Theme::getActive();
 
+// 		Menu::handler('school')->hydrate(function()
+// 			{
+//
+// 			$main_menu_id = LMenu::where('name', '=', 'school')->pluck('id');
+// //			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+// 			return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
+//
+// 			},
+// 			function($children, $item)
+// 			{
+// 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
+// 			});
+//
+// 		return Theme::View($activeTheme . '::' . 'widgets.admin.school_menu');
+// 	}
+
+
+		$menus = Cache::get('school', null);
+
+		if ($menus == null) {
+			$menus = Cache::rememberForever('school', function() {
+				$main_menu_id = LMenu::where('name', '=', 'school')->pluck('id');
+//				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
+			});
+		}
+
+		if (count($menus)) {
 		Menu::handler('school')->hydrate(function()
 			{
-
-			$main_menu_id = LMenu::where('name', '=', 'school')->pluck('id');
-//			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
-			return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
-
+			$menus = Cache::get('school');
+			return $menus;
 			},
+
 			function($children, $item)
 			{
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
 		return Theme::View($activeTheme . '::' . 'widgets.admin.school_menu');
+		}
 	}
 
 

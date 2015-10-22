@@ -22,12 +22,12 @@ class NavLinks extends Widget
 
 		$activeTheme = Theme::getActive();
 //Cache::forget('pages');
-		$pages = Cache::get('pages', null);
+		$pages = Cache::get('navlinks', null);
 //dd($pages);
 
 //		if ($pages == null || isEmpty($pages) ) {
 		if (!count($pages)) {
-			$pages = Cache::rememberForever('pages', function() {
+			$pages = Cache::rememberForever('navlinks', function() {
 				return Content::InPrint()->IsNavigation()->orderBy('order')->get();
 			});
 		}
@@ -39,7 +39,7 @@ class NavLinks extends Widget
 			{
 
 // 			$pages = Content::IsNavigation()->orderBy('order')->get();
-			$pages = Cache::get('pages');
+			$pages = Cache::get('navlinks');
 //dd($pages);
 			return $pages;
 
