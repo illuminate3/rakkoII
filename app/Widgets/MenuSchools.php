@@ -30,7 +30,8 @@ class MenuSchools extends Widget
 		if ($schools == null) {
 			$schools = Cache::rememberForever('schools', function() {
 				$main_menu_id = LMenu::where('name', '=', 'schools')->pluck('id');
-				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+//				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
 			});
 		}
 

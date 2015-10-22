@@ -6,6 +6,7 @@
 @stop
 
 @section('styles')
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/district/assets/css/style.css') }}">
 @stop
 
 @section('scripts')
@@ -16,8 +17,8 @@
 jQuery(function ($) {
 
 	$('#eventlist').gCalReader({
-		calendarId:'bryantschools.org_0uailapodvjkgoate1ke1jd7q8@group.calendar.google.com',
-		apiKey:'AIzaSyCp0u86myROyRqtz8w-YQmouTlHHtYSxPw',
+		calendarId:'bryantschools.org_iqtueaujn0n4a9ksvijd8ar22c@group.calendar.google.com',
+		apiKey:'AIzaSyBKzLxjq0AnyJORq2vh_6UtfaXVqz1Xad0',
 		sortDescending: false
 	});
 
@@ -29,10 +30,10 @@ jQuery(function ($) {
 @section('content')
 
 
-<!-- Banner -->
-{{--
+<!-- Carousel -->
+{!!
 	Widget::NewsBanner()
---}}
+!!}
 
 
 <!--WELCOME-->
@@ -40,8 +41,7 @@ jQuery(function ($) {
 <div class="row welcome">
 
 	<div class="col-md-12">
-		<h1 class="text-center">Welcome to the Bryant School District!</h1>
-		<h3 class="text-center subheading">Bryant Public Schools create opportunities for academic and personal success to ensure all students are future ready.</h3>
+		<h1 class="text-center">Welcome to Bryant Middle School!</h1>
 	</div>
 
 </div>
@@ -64,16 +64,20 @@ jQuery(function ($) {
 			</h1>
 		</div>
 		<ul id="eventlist"></ul>
+
+		<div class="eventdate padding-top-md">
+			<i class="fa fa-calendar fa-2x"></i>
+		</div>
+		<div class="eventtitle padding-top-lg">
+			<a href="district-calendars">Click here for all district calendars</a>
+		</div>
 	</div>
 
 	<div class="col-sm-6">
 
-
-<!-- Buttons -->
-{{--
-	Widget::TopNews()
---}}
-
+		{!!
+			Widget::TopNews()
+		!!}
 
 	</div>
 

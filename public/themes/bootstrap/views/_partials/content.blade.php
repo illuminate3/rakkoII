@@ -11,5 +11,3 @@
 @endif
 
 @yield('content')
-
-{{-- var_dump($errors) --}}

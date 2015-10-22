@@ -8,7 +8,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-	<a class="navbar-brand" href="/">
+	<a class="navbar-brand" href="/admin">
 		{{ Config::get('core.brand_title') }}
 	</a>
 </div>
@@ -120,6 +120,116 @@
 			</ul>
 		</li>
 	</ul>
+
+@if (Auth::user())
+
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ Lang::choice('kotoba::general.setting', 2) }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+				{!!
+					Widget::MenuSettings()
+				!!}
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ Lang::choice('kotoba::general.mail', 1) }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+				{!!
+					Widget::MenuMail()
+				!!}
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ Lang::choice('kotoba::hr.school', 1) }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+				{!!
+					Widget::MenuSchool()
+				!!}
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ trans('kotoba::hr.campus') }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+				{!!
+					Widget::MenuCampus()
+				!!}
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ Lang::choice('kotoba::hr.hr', 1) }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+				{!!
+					Widget::MenuHR()
+				!!}
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ trans('kotoba::cms.cms') }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+				{!!
+					Widget::MenuCMS()
+				!!}
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ Lang::choice('kotoba::shop.asset', 1) }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+				{!!
+					Widget::MenuAssets()
+				!!}
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+@endif
+
 
 
 </div>

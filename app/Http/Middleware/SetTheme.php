@@ -53,6 +53,9 @@ class SetTheme implements Middleware {
 		View::share('theme_front',  $theme . '::' . Config::get('themes.front', $theme . '::' . '_layouts.app'));
 		View::share('theme_simple', $theme . '::' . Config::get('themes.simple', $theme . '::' . '_layouts.simple'));
 
+//		View::share('site_title', Setting::get( 'brand_title', Config::get('core.title', 'Site Name')) );
+
+
 		return $next($request);
 
 	}

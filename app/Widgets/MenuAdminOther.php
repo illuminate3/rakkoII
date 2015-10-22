@@ -30,7 +30,8 @@ class MenuAdminOther extends Widget
 		if ($menus == null) {
 			$menus = Cache::rememberForever('other', function() {
 				$main_menu_id = LMenu::where('name', '=', 'other')->pluck('id');
-				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+//				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
+				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
 			});
 		}
 
