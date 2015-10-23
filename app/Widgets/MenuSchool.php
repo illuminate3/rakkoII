@@ -42,10 +42,10 @@ class MenuSchool extends Widget
 // 	}
 
 
-		$menus = Cache::get('school', null);
+		$menus = Cache::get('widget_school', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('school', function() {
+			$menus = Cache::rememberForever('widget_school', function() {
 				$main_menu_id = LMenu::where('name', '=', 'school')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -53,9 +53,9 @@ class MenuSchool extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('school')->hydrate(function()
+		Menu::handler('widget_school')->hydrate(function()
 			{
-			$menus = Cache::get('school');
+			$menus = Cache::get('widget_school');
 			return $menus;
 			},
 
@@ -66,7 +66,7 @@ class MenuSchool extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.admin.school_menu');
 		}
+
+
 	}
-
-
 }

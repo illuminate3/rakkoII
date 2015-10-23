@@ -23,12 +23,12 @@ class MenuDistrict extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
-		$district = Cache::get('district', null);
+		$district = Cache::get('widget_district', null);
 //Cache::forget('district');
 //dd($district);
 
 		if ($district == null) {
-			$district = Cache::rememberForever('district', function() {
+			$district = Cache::rememberForever('widget_district', function() {
 				$main_menu_id = LMenu::where('name', '=', 'district')->pluck('id');
 	//			return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -37,12 +37,12 @@ class MenuDistrict extends Widget
 
 
 		if (count($district)) {
-		Menu::handler('district')->hydrate(function()
+		Menu::handler('widget_district')->hydrate(function()
 			{
 
 // 			$main_menu_id = LMenu::where('name', '=', 'district')->pluck('id');
 // 			$district = Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
-			$district = Cache::get('district');
+			$district = Cache::get('widget_district');
 //dd($district);
 			return $district;
 
@@ -54,7 +54,7 @@ class MenuDistrict extends Widget
 
 			return Theme::View($activeTheme . '::' . 'widgets.district_menu');
 		}
+
+
 	}
-
-
 }

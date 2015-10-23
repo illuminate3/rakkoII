@@ -23,12 +23,12 @@ class MenuSchools extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
-		$schools = Cache::get('schools', null);
+		$schools = Cache::get('widget_schools', null);
 //Cache::forget('schools');
 //dd($schools);
 
 		if ($schools == null) {
-			$schools = Cache::rememberForever('schools', function() {
+			$schools = Cache::rememberForever('widget_schools', function() {
 				$main_menu_id = LMenu::where('name', '=', 'schools')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -37,12 +37,12 @@ class MenuSchools extends Widget
 
 
 		if (count($schools)) {
-		Menu::handler('schools')->hydrate(function()
+		Menu::handler('widget_schools')->hydrate(function()
 			{
 
 // 			$main_menu_id = LMenu::where('name', '=', 'schools')->pluck('id');
 // 			$schools = Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
-			$schools = Cache::get('schools');
+			$schools = Cache::get('widget_schools');
 //dd($schools);
 			return $schools;
 
@@ -54,7 +54,7 @@ class MenuSchools extends Widget
 
 			return Theme::View($activeTheme . '::' . 'widgets.school_menu');
 		}
+
+
 	}
-
-
 }

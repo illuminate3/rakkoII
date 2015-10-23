@@ -1,6 +1,6 @@
 <! -- Widget -->
 {!!
-	Menu::handler('admin')
+	Menu::handler('widget_admin')
 		->getAllItems()
 		->render();
 !!}

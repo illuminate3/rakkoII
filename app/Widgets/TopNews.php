@@ -23,10 +23,10 @@ class TopNews extends Widget
 		$activeTheme = Theme::getActive();
 		$lang = Session::get('locale');
 
-		$articles = Cache::get('top_news', null);
+		$articles = Cache::get('widget_top_news', null);
 
 		if ($articles == null) {
-			$articles = Cache::rememberForever('top_news', function() {
+			$articles = Cache::rememberForever('widget_top_news', function() {
 				return News::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
 			});
 		}
@@ -39,7 +39,7 @@ class TopNews extends Widget
 				'articles',
 				'lang'
 			));
+
+
 	}
-
-
 }

@@ -41,10 +41,10 @@ class Featured extends Widget
 // 	}
 
 
-		$menus = Cache::get('featured', null);
+		$menus = Cache::get('widget_featured', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('featured', function() {
+			$menus = Cache::rememberForever('widget_featured', function() {
 				$main_menu_id = LMenu::where('name', '=', 'featured')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -52,9 +52,9 @@ class Featured extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('featured')->hydrate(function()
+		Menu::handler('widget_featured')->hydrate(function()
 			{
-			$menus = Cache::get('featured');
+			$menus = Cache::get('widget_featured');
 			return $menus;
 			},
 
@@ -65,8 +65,7 @@ class Featured extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.featured');
 		}
+
+
 	}
-
-
-
 }

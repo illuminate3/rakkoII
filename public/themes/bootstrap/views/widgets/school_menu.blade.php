@@ -6,7 +6,7 @@
 	</h3>
 
 	{!!
-		Menu::handler('schools')
+		Menu::handler('widget_schools')
 		->getItemsAtDepth(0)
 		->addClass('nav-item');
 	!!}

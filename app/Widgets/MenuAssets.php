@@ -45,10 +45,10 @@ class MenuAssets extends Widget
 // 	}
 
 
-		$menus = Cache::get('assets', null);
+		$menus = Cache::get('widget_assets', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('assets', function() {
+			$menus = Cache::rememberForever('widget_assets', function() {
 				$main_menu_id = LMenu::where('name', '=', 'assets')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -56,9 +56,9 @@ class MenuAssets extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('assets')->hydrate(function()
+		Menu::handler('widget_assets')->hydrate(function()
 			{
-			$menus = Cache::get('assets');
+			$menus = Cache::get('widget_assets');
 			return $menus;
 			},
 
@@ -67,10 +67,9 @@ class MenuAssets extends Widget
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
-		return Theme::View($activeTheme . '::' . 'widgets.admin.admin_assets_menu');
+		return Theme::View($activeTheme . '::' . 'widgets.admin.assets_menu');
 		}
+
+
 	}
-
-
-
 }

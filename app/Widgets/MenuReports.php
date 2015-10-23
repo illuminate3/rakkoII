@@ -42,10 +42,10 @@ class MenuReports extends Widget
 // 	}
 
 
-		$menus = Cache::get('reports', null);
+		$menus = Cache::get('widget_reports', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('reports', function() {
+			$menus = Cache::rememberForever('widget_reports', function() {
 				$main_menu_id = LMenu::where('name', '=', 'reports')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -53,9 +53,9 @@ class MenuReports extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('reports')->hydrate(function()
+		Menu::handler('widget_reports')->hydrate(function()
 			{
-			$menus = Cache::get('reports');
+			$menus = Cache::get('widget_reports');
 			return $menus;
 			},
 
@@ -66,7 +66,7 @@ class MenuReports extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.menu_reports');
 		}
+
+
 	}
-
-
 }

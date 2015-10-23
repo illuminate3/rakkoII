@@ -42,10 +42,10 @@ class MenuCMS extends Widget
 // 	}
 
 
-		$menus = Cache::get('cms', null);
+		$menus = Cache::get('widget_cms', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('cms', function() {
+			$menus = Cache::rememberForever('widget_cms', function() {
 				$main_menu_id = LMenu::where('name', '=', 'cms')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -53,9 +53,9 @@ class MenuCMS extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('cms')->hydrate(function()
+		Menu::handler('widget_cms')->hydrate(function()
 			{
-			$menus = Cache::get('cms');
+			$menus = Cache::get('widget_cms');
 			return $menus;
 			},
 
@@ -66,7 +66,7 @@ class MenuCMS extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.admin.cms_menu');
 		}
+
+
 	}
-
-
 }

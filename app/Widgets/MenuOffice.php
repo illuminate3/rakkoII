@@ -43,10 +43,10 @@ class MenuOffice extends Widget
 
 
 
-		$menus = Cache::get('office', null);
+		$menus = Cache::get('widget_office', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('office', function() {
+			$menus = Cache::rememberForever('widget_office', function() {
 				$main_menu_id = LMenu::where('name', '=', 'office')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -54,9 +54,9 @@ class MenuOffice extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('office')->hydrate(function()
+		Menu::handler('widget_office')->hydrate(function()
 			{
-			$menus = Cache::get('office');
+			$menus = Cache::get('widget_office');
 			return $menus;
 			},
 
@@ -67,7 +67,7 @@ class MenuOffice extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.menu_office');
 		}
+
+
 	}
-
-
 }

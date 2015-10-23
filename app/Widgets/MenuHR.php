@@ -42,10 +42,10 @@ class MenuHR extends Widget
 // 	}
 
 
-		$menus = Cache::get('hr', null);
+		$menus = Cache::get('widget_hr', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('hr', function() {
+			$menus = Cache::rememberForever('widget_hr', function() {
 				$main_menu_id = LMenu::where('name', '=', 'hr')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -53,9 +53,9 @@ class MenuHR extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('hr')->hydrate(function()
+		Menu::handler('widget_hr')->hydrate(function()
 			{
-			$menus = Cache::get('hr');
+			$menus = Cache::get('widget_hr');
 			return $menus;
 			},
 
@@ -66,7 +66,7 @@ class MenuHR extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.admin.hr_menu');
 		}
+
+
 	}
-
-
 }

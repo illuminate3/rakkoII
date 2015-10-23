@@ -4,7 +4,7 @@
 <ul>
 
 	{!!
-		Menu::handler('accesspoint')
+		Menu::handler('widget_accesspoint')
 		->getItemsAtDepth(0)
 		->addClass('accesspoint');
 	!!}

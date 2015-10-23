@@ -22,11 +22,11 @@ class AccessNavPoints extends Widget
 
 		$activeTheme = Theme::getActive();
 //Cache::forget('accessnavpoint');
-		$pages = Cache::get('accessnavpoint', null);
+		$pages = Cache::get('widget_accessnavpoint', null);
 //dd($pages);
 
 		if ($pages == null) {
-			$pages = Cache::rememberForever('accessnavpoint', function() {
+			$pages = Cache::rememberForever('widget_accessnavpoint', function() {
 				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
 			});
 		}
@@ -34,10 +34,10 @@ class AccessNavPoints extends Widget
 //dd($pages);
 
 		if (count($pages)) {
-		Menu::handler('accessnavpoint')->hydrate(function()
+		Menu::handler('widget_accessnavpoint')->hydrate(function()
 			{
 
-			$pages = Cache::get('accessnavpoint');
+			$pages = Cache::get('widget_accessnavpoint');
 //dd($pages);
 			return $pages;
 
@@ -53,7 +53,7 @@ class AccessNavPoints extends Widget
 
 			return Theme::View($activeTheme . '::' . 'widgets.accessnavpoints');
 		}
+
+
 	}
-
-
 }

@@ -1,6 +1,6 @@
 <! -- Widget -->
 {!!
-	Menu::handler('mail')
+	Menu::handler('widget_mail')
 		->getAllItems()
 		->render();
 !!}

@@ -24,10 +24,10 @@ class NewsBanner extends Widget
 		$lang = Session::get('locale');
 
 
-		$articles = Cache::get('news_banner', null);
+		$articles = Cache::get('widget_news_banner', null);
 
 		if ($articles == null) {
-			$articles = Cache::rememberForever('news_banner', function() {
+			$articles = Cache::rememberForever('widget_news_banner', function() {
 				return News::IsPublished()->IsBanner()->orderBy('order')->get();
 			});
 		}
@@ -44,7 +44,7 @@ class NewsBanner extends Widget
 				'count',
 				'lang'
 			));
+
+
 	}
-
-
 }

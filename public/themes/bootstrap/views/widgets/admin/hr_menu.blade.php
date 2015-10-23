@@ -1,6 +1,6 @@
 <! -- Widget -->
 {!!
-	Menu::handler('hr')
+	Menu::handler('widget_hr')
 		->getAllItems()
 		->render();
 !!}

@@ -3,6 +3,6 @@
 FEATURED
 
 {!!
-	Menu::handler('featured')
+	Menu::handler('widget_featured')
 	->addClass('list-unstyled');
 !!}

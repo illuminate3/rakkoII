@@ -42,10 +42,10 @@ class MenuCampus extends Widget
 // 	}
 
 
-		$menus = Cache::get('campus', null);
+		$menus = Cache::get('widget_campus', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('campus', function() {
+			$menus = Cache::rememberForever('widget_campus', function() {
 				$main_menu_id = LMenu::where('name', '=', 'campus')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -53,9 +53,9 @@ class MenuCampus extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('campus')->hydrate(function()
+		Menu::handler('widget_campus')->hydrate(function()
 			{
-			$menus = Cache::get('campus');
+			$menus = Cache::get('widget_campus');
 			return $menus;
 			},
 
@@ -66,7 +66,7 @@ class MenuCampus extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.admin.campus_menu');
 		}
+
+
 	}
-
-
 }

@@ -40,10 +40,10 @@ class Timed extends Widget
 // 	}
 
 
-		$menus = Cache::get('timed', null);
+		$menus = Cache::get('widget_timed', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('timed', function() {
+			$menus = Cache::rememberForever('widget_timed', function() {
 				$main_menu_id = LMenu::where('name', '=', 'timed')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -51,9 +51,9 @@ class Timed extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('timed')->hydrate(function()
+		Menu::handler('widget_timed')->hydrate(function()
 			{
-			$menus = Cache::get('timed');
+			$menus = Cache::get('widget_timed');
 			return $menus;
 			},
 
@@ -64,7 +64,7 @@ class Timed extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.timed');
 		}
+
+
 	}
-
-
 }

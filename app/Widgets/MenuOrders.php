@@ -42,10 +42,10 @@ class MenuOrders extends Widget
 // 	}
 
 
-		$menus = Cache::get('orders', null);
+		$menus = Cache::get('widget_orders', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('orders', function() {
+			$menus = Cache::rememberForever('widget_orders', function() {
 				$main_menu_id = LMenu::where('name', '=', 'orders')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -53,9 +53,9 @@ class MenuOrders extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('orders')->hydrate(function()
+		Menu::handler('widget_orders')->hydrate(function()
 			{
-			$menus = Cache::get('orders');
+			$menus = Cache::get('widget_orders');
 			return $menus;
 			},
 
@@ -66,7 +66,7 @@ class MenuOrders extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.menu_orders');
 		}
+
+
 	}
-
-
 }

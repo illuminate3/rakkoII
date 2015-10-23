@@ -1,6 +1,6 @@
 <! -- Widget -->
 
 {!!
-	Menu::handler('top')
+	Menu::handler('widget_top')
 		->getItemsAtDepth(0);
 !!}

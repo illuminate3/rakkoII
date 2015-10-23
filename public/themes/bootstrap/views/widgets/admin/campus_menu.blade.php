@@ -1,6 +1,6 @@
 <! -- Widget -->
 {!!
-	Menu::handler('campus')
+	Menu::handler('widget_campus')
 		->getAllItems()
 		->render();
 !!}

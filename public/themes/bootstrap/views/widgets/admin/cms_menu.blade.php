@@ -1,6 +1,6 @@
 <! -- Widget -->
 {!!
-	Menu::handler('cms')
+	Menu::handler('widget_cms')
 		->getAllItems()
 		->render();
 !!}

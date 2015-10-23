@@ -43,10 +43,10 @@ class MenuAdmin extends Widget
 
 
 
-		$menus = Cache::get('admin', null);
+		$menus = Cache::get('widget_admin', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('admin', function() {
+			$menus = Cache::rememberForever('widget_admin', function() {
 				$main_menu_id = LMenu::where('name', '=', 'admin')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -54,9 +54,9 @@ class MenuAdmin extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('admin')->hydrate(function()
+		Menu::handler('widget_admin')->hydrate(function()
 			{
-			$menus = Cache::get('admin');
+			$menus = Cache::get('widget_admin');
 			return $menus;
 			},
 
@@ -67,7 +67,7 @@ class MenuAdmin extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.admin_menu');
 		}
+
+
 	}
-
-
 }

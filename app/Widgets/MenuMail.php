@@ -42,10 +42,10 @@ class MenuMail extends Widget
 // 	}
 
 
-		$menus = Cache::get('mail', null);
+		$menus = Cache::get('widget_mail', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('mail', function() {
+			$menus = Cache::rememberForever('widget_mail', function() {
 				$main_menu_id = LMenu::where('name', '=', 'mail')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -53,9 +53,9 @@ class MenuMail extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('mail')->hydrate(function()
+		Menu::handler('widget_mail')->hydrate(function()
 			{
-			$menus = Cache::get('mail');
+			$menus = Cache::get('widget_mail');
 			return $menus;
 			},
 
@@ -66,7 +66,7 @@ class MenuMail extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.admin.mail_menu');
 		}
+
+
 	}
-
-
 }

@@ -42,10 +42,10 @@ class MenuFooter extends Widget
 // 	}
 
 
-		$menus = Cache::get('footer', null);
+		$menus = Cache::get('widget_footer', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('footer', function() {
+			$menus = Cache::rememberForever('widget_footer', function() {
 				$main_menu_id = LMenu::where('name', '=', 'footer')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -53,9 +53,9 @@ class MenuFooter extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('footer')->hydrate(function()
+		Menu::handler('widget_footer')->hydrate(function()
 			{
-			$menus = Cache::get('footer');
+			$menus = Cache::get('widget_footer');
 			return $menus;
 			},
 
@@ -66,8 +66,7 @@ class MenuFooter extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.footer_menu');
 		}
+
+
 	}
-
-
-
 }

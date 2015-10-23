@@ -1,6 +1,6 @@
 <! -- Widget -->
 {!!
-	Menu::handler('assets')
+	Menu::handler('widget_assets')
 		->getAllItems()
 		->render();
 !!}

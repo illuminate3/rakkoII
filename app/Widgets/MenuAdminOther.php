@@ -25,10 +25,10 @@ class MenuAdminOther extends Widget
 
 		$activeTheme = Theme::getActive();
 
-		$menus = Cache::get('other', null);
+		$menus = Cache::get('widget_other', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('other', function() {
+			$menus = Cache::rememberForever('widget_other', function() {
 				$main_menu_id = LMenu::where('name', '=', 'other')->pluck('id');
 //				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
@@ -36,9 +36,9 @@ class MenuAdminOther extends Widget
 		}
 
 		if (count($menus)) {
-		Menu::handler('other')->hydrate(function()
+		Menu::handler('widget_other')->hydrate(function()
 			{
-			$menus = Cache::get('other');
+			$menus = Cache::get('widget_other');
 			return $menus;
 			},
 
@@ -49,7 +49,7 @@ class MenuAdminOther extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.admin.admin_other_menu');
 		}
+
+
 	}
-
-
 }

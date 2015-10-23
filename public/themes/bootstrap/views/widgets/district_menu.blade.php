@@ -6,7 +6,7 @@
 	</h3>
 
 	{!!
-		Menu::handler('district')
+		Menu::handler('widget_district')
 		->getItemsAtDepth(0)
 		->addClass('nav-item');
 	!!}

@@ -3,6 +3,6 @@
 FOOTER
 
 {!!
-	Menu::handler('footer')
+	Menu::handler('widget_footer')
 	->addClass('list-unstyled');
 !!}

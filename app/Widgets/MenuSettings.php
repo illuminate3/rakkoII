@@ -41,23 +41,21 @@ class MenuSettings extends Widget
 // 		return Theme::View($activeTheme . '::' . 'widgets.admin.settings_menu');
 // 	}
 
-
-
-		$menus = Cache::get('settings', null);
+//Cache::forget('widget_settings');
+		$menus = Cache::get('widget_settings', null);
 
 		if ($menus == null) {
-			$menus = Cache::rememberForever('settings', function() {
+			$menus = Cache::rememberForever('widget_settings', function() {
 				$main_menu_id = LMenu::where('name', '=', 'settings')->pluck('id');
-//				return Menulink::where('menu_id', '=', $main_menu_id)->orderBy('position')->get();
 				return Menulink::where('menu_id', '=', $main_menu_id)->IsEnabled()->orderBy('position')->get();
 			});
 		}
 
 		if (count($menus)) {
-		Menu::handler('settings')->hydrate(function()
+			Menu::handler('widget_settings')->hydrate(function()
 			{
-			$menus = Cache::get('settings');
-			return $menus;
+				$menus = Cache::get('widget_settings');
+				return $menus;
 			},
 
 			function($children, $item)
@@ -65,9 +63,9 @@ class MenuSettings extends Widget
 				$children->add($item->translate(App::getLocale())->url, $item->translate(App::getLocale())->title, Menu::items($item->as));
 			});
 
-		return Theme::View($activeTheme . '::' . 'widgets.admin.settings_menu');
+			return Theme::View($activeTheme . '::' . 'widgets.admin.settings_menu');
 		}
+
+
 	}
-
-
 }

@@ -3,7 +3,7 @@
 TIMED
 
 {!!
-	Menu::handler('timed')
+	Menu::handler('widget_timed')
 	->addClass('list-unstyled');
 !!}
 

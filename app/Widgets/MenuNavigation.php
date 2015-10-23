@@ -28,10 +28,10 @@ class MenuNavigation extends Widget
 		$activeTheme = Theme::getActive();
 
 // 		$pages = Content::InPrint()->orderBy('order')->get();
-		$pages = Cache::get('top', null);
+		$pages = Cache::get('widget_top', null);
 
 		if ($pages == null) {
-			$pages = Cache::rememberForever('top', function() {
+			$pages = Cache::rememberForever('widget_top', function() {
 //				return Content::InPrint()->orderBy('order')->get();
 				return Content::InPrint()->NotFeatured()->NotTimed()->orderBy('order')->get();
 			});
@@ -41,11 +41,11 @@ class MenuNavigation extends Widget
 
 
 		if (count($pages)) {
-		Menu::handler('top')->hydrate(function()
+		Menu::handler('widget_top')->hydrate(function()
 			{
 
 //			$pages = Content::InPrint()->NotFeatured()->NotTimed()->orderBy('order')->get();
-			$pages = Cache::get('top');
+			$pages = Cache::get('widget_top');
 			return $pages;
 
 			},
@@ -59,7 +59,7 @@ class MenuNavigation extends Widget
 
 		return Theme::View($activeTheme . '::' . 'widgets.navigation_menu');
 		}
+
+
 	}
-
-
 }

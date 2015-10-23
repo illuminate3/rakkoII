@@ -9,7 +9,7 @@
 		<span class="icon-bar"></span>
 	</button>
 	<a class="navbar-brand" href="/admin">
-		{{ Config::get('core.brand_title') }}
+		{{ Setting::get('brand_title', Config::get('core.brand_title')) }}
 	</a>
 </div>
 
