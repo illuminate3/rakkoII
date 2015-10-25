@@ -39,7 +39,6 @@ class MenuOrders extends Widget
 // 			});
 //
 // 		return Theme::View($activeTheme . '::' . 'widgets.menu_orders');
-// 	}
 
 
 		$menus = Cache::get('widget_orders', null);
