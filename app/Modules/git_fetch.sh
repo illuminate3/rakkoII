@@ -30,7 +30,7 @@ echo "----------------------------------------------------"
 echo "fetch and reset Gitlab"
 echo "----------------------------------------------------"
 
-for repo in Campus Gakko Jinji Setup Shisan
+for repo in Campus Gakko Jinji Setup Shisan Ticket Yubin
 #for repo in Hanso Kyaku Nenji Seisan Taxon Third Warehouse
 do
 
