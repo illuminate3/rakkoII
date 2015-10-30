@@ -43,6 +43,8 @@ class MenuReports extends Widget
 
 
 		$menus = Cache::get('widget_reports', null);
+// $menus = null;
+// Cache::forget('widget_reports');
 
 		if ($menus == null) {
 			$menus = Cache::rememberForever('widget_reports', function() {
