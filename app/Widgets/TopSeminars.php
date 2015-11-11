@@ -4,7 +4,7 @@ namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
-use App\Modules\Newsdesk\Http\Models\News as news;
+use App\Modules\Seminar\Http\Models\Seminar;
 
 use App;
 use Cache;
@@ -14,7 +14,7 @@ use Session;
 use Theme;
 
 
-class TopNews extends Widget
+class TopSeminars extends Widget
 {
 
 	public function handle()
@@ -23,20 +23,21 @@ class TopNews extends Widget
 		$activeTheme = Theme::getActive();
 		$lang = Session::get('locale');
 
-		$articles = Cache::get('widget_top_news', null);
+		$seminars = Cache::get('widget_top_seminars', null);
 
-		if ($articles == null) {
-			$articles = Cache::rememberForever('widget_top_news', function() {
-				return News::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
+		if ($seminars == null) {
+			$seminars = Cache::rememberForever('widget_top_seminars', function() {
+//				return Seminar::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
+				return Seminar::orderBy('order')->get();
 			});
 		}
 
-// 		$articles = News::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
-// dd($articles);
+// 		$seminars = News::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
+// dd($seminars);
 
-		return Theme::View($activeTheme . '::' . 'widgets.top_news',
+		return Theme::View($activeTheme . '::' . 'widgets.top_seminars',
 			compact(
-				'articles',
+				'seminars',
 				'lang'
 			));
 

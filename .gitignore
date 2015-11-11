@@ -22,4 +22,5 @@ Thumbs.db
 /app/Modules/Seisan
 /app/Modules/Ticket
 /app/Modules/Yubin
+/app/Modules/Kenshu
 /config/kagi.php
