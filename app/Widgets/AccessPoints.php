@@ -30,8 +30,10 @@ class AccessPoints extends Widget
 				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
 			});
 		}
-
 //dd($pages);
+
+		$count = count($pages);
+//dd($count);
 
 		if (count($pages)) {
 		Menu::handler('widget_accesspoints')->hydrate(function()
@@ -45,6 +47,7 @@ class AccessPoints extends Widget
 			},
 			function($children, $item)
 			{
+//dd($item);
 				if($item->depth < 1) {
 					$children->add($item->slug, $item->translate(Config::get('app.locale'))->title, Menu::items($item->as));
 				}

@@ -32,11 +32,12 @@ class NewsBanner extends Widget
 			});
 		}
 
+//dd($articles);
 // 		$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
 // 		$count = count($articles);
-//dd($count);
 
 		$count = count($articles);
+//dd($count);
 
 		return Theme::View($activeTheme . '::' . 'widgets.news_banner',
 			compact(
