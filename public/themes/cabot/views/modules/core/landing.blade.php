@@ -40,8 +40,8 @@ jQuery(function ($) {
 <div class="row welcome">
 
 	<div class="col-md-12">
-		<h1 class="text-center">Welcome to the Bryant School District!</h1>
-		<h3 class="text-center subheading">Bryant Public Schools create opportunities for academic and personal success to ensure all students are future ready.</h3>
+		<h1 class="text-center">Cabot Public Schools</h1>
+		<h3 class="text-center subheading">It's about KIDS</h3>
 	</div>
 
 </div>
