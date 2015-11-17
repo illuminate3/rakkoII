@@ -6,22 +6,13 @@
 @stop
 
 @section('styles')
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/login.css') }}">
 @stop
 
 @section('scripts')
-<script src="{{ asset('themes/district/assets/js/calendar.js') }}" type="text/javascript"></script>
 @stop
 
 @section('inline-scripts')
-jQuery(function ($) {
-
-	$('#eventlist').gCalReader({
-		calendarId:'bryantschools.org_0uailapodvjkgoate1ke1jd7q8@group.calendar.google.com',
-		apiKey:'AIzaSyCp0u86myROyRqtz8w-YQmouTlHHtYSxPw',
-		sortDescending: false
-	});
-
-});
 @stop
 
 
@@ -29,66 +20,41 @@ jQuery(function ($) {
 @section('content')
 
 
-<!-- Banner -->
-{!!
-	Widget::NewsBanner()
-!!}
+<div id="flex-container">
+<div id="flex-item">
+
+	<a href="/">
+		<img src="{{ asset('themes/' . $activeTheme . '/assets/img/logo.png') }}">
+	</a>
+
+	<div class="margin-top-lg">
+		<a href="/auth/login" class="btn btn-success btn-block">{{ trans('kotoba::button.log_in') }}</a>
+	</div>
 
 
-<!--WELCOME-->
-<div class="container-fluid">
-<div class="row welcome">
+</div>
+</div>
 
-	<div class="col-md-12">
+
+<hr>
+
+
+<div class="row">
+	<div class="col-sm-4">
+		{!!
+			Widget::MenuDistrict()
+		!!}
+	</div>
+	<div class="col-sm-4">
 		<h1 class="text-center">Cabot Public Schools</h1>
 		<h3 class="text-center subheading">It's about KIDS</h3>
 	</div>
-
-</div>
-
-</div><!--./row-->
-</div><!--./container-fluid-->
-
-
-<hr>
-
-
-<!--Calendar/News-->
-<div class="container-fluid">
-<div class="row">
-
-	<div class="col-sm-6">
-		<div class="header1">
-			<h1>
-				Calendar
-			</h1>
-		</div>
-		<ul id="eventlist"></ul>
+	<div class="col-sm-4">
+		{!!
+			Widget::TopNews()
+		!!}
 	</div>
-
-	<div class="col-sm-6">
-
-
-<!-- Buttons -->
-{!!
-	Widget::TopNews()
-!!}
-
-
-	</div>
-
-</div><!--./row-->
-</div><!--./container-fluid-->
 </div>
-
-
-<hr>
-
-
-<!--Catch Copy-->
-<div class="container-fluid">
-	<img class="img-responsive center-block" src="{{ asset('themes/district/assets/img/creating.png') }}" />
-</div><!--./container-fluid-->
 
 
 @stop

@@ -9,11 +9,9 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<div class="img-align padding-left-xl padding-right-xl">
 			<a href="/">
-				<img class="logo" src="{{ asset('themes/' . $activeTheme . '/assets/img/logo.png') }}"></img>
+				Cabot Public Schools
 			</a>
-		</div>
 	</div>
 
 	<div id="navbar" class="navbar-collapse collapse">
@@ -22,12 +20,6 @@
 {!!
 	Widget::NavLinks()
 !!}
-{!!
-	Widget::AccessNavPoints()
-!!}
-{{--
-	Widget::AccessPoints()
---}}
 
 		</ul>
 	</div><!--/.nav-collapse -->

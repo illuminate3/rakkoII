@@ -1,9 +1,15 @@
 <! -- Widget / district -->
 
-<ul class="nav-title">
-	<h3>
-	District Links
-	</h3>
+
+<div class="row">
+	<h1>
+		District Links
+	</h1>
+</div>
+
+
+<div class="row margin-top-md">
+<ul>
 
 	{!!
 		Menu::handler('widget_district')
@@ -12,4 +18,4 @@
 	!!}
 
 </ul>
-
+</div>
