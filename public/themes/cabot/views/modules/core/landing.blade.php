@@ -27,10 +27,15 @@
 		<img src="{{ asset('themes/' . $activeTheme . '/assets/img/logo.png') }}">
 	</a>
 
+@if ( Auth::user() != null) {
+	<div class="margin-top-lg">
+		<a href="/admin" class="btn btn-success btn-block">{{ trans('kotoba::general.dashboard') }}</a>
+	</div>
+@else
 	<div class="margin-top-lg">
 		<a href="/auth/login" class="btn btn-success btn-block">{{ trans('kotoba::button.log_in') }}</a>
 	</div>
-
+@endif
 
 </div>
 </div>
