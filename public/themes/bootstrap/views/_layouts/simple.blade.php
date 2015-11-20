@@ -49,8 +49,9 @@
 
 <body>
 
-
+	<div class="container-fluid">
 		@include($activeTheme . '::' . '_partials.content')
+	</div><!-- ./container -->
 
 
 <!-- ------------------------------------------ js ------------------------------------------ -->
