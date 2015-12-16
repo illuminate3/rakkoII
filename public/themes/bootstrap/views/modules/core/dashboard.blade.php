@@ -170,6 +170,25 @@
 
 	@endif
 
+	@if (Auth::user()->can('manage_kenshu'))
+
+	<h2>
+		<i class="fa fa-lightbulb-o fa-lg"></i>
+		{{ Lang::choice('kotoba::hr.seminar', 2) }}
+		<hr>
+	</h2>
+
+	<dl class="dl-horizontal">
+		<dt>
+			{{ trans('kotoba::general.all') }}
+		</dt>
+		<dd>
+			<a href="{{ URL::to('/admin/seminars') }}">{{ $total_seminars }}</a>
+		</dd>
+	</dl>
+
+	@endif
+
 </div>
 </div>
 
