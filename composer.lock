@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "39190e7f1de5226378ad8230207296bc",
-    "content-hash": "e157799f78b26538095e84933b339e72",
+    "hash": "4712f07753bd2772f219462dac9d8238",
+    "content-hash": "fae2df43081a0889be0735880f0669e5",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -141,6 +141,44 @@
             ],
             "description": "Persistant settings in Laravel.",
             "time": "2015-10-27 16:51:14"
+        },
+        {
+            "name": "aura-is-here/laravel-multi-tenant",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AuraEQ/laravel-multi-tenant.git",
+                "reference": "0fdbe97db9f78200d42ec1e36bafdb6e96465351"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AuraEQ/laravel-multi-tenant/zipball/0fdbe97db9f78200d42ec1e36bafdb6e96465351",
+                "reference": "0fdbe97db9f78200d42ec1e36bafdb6e96465351",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.2.*|5.0.*|5.1.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "laravel/framework": "4.2.*|5.0.*|5.1.*",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AuraIsHere\\LaravelMultiTenant\\": "src/AuraIsHere/LaravelMultiTenant/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Caleb Fidecaro",
+                    "email": "caleb@auraeq.com"
+                }
+            ],
+            "time": "2015-11-02 23:58:20"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1307,7 +1345,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/d3e2bffc48743a48a09923283382bc637eaf680e",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/8902a660a5ec955fe79ce6d79b3d9d2b715be5de",
                 "reference": "5ac6de4b281144bc2e00630152650dc211b16ddb",
                 "shasum": ""
             },
@@ -5829,8 +5867,10 @@
         "codesleeve/laravel-stapler": 20,
         "laracasts/presenter": 20,
         "laravelrus/localized-carbon": 20,
+        "aura-is-here/laravel-multi-tenant": 20,
         "laravel/framework": 0,
         "anlutro/l4-settings": 0,
+        "uxweb/sweet-alert": 0,
         "nicolaslopezj/searchable": 20,
         "tom-lingham/searchy": 0,
         "baum/baum": 0,
