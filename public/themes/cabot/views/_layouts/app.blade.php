@@ -53,6 +53,13 @@
 
 <header>
 	@include($activeTheme . '::' . '_partials.navigation')
+	{{--
+	@if ( Auth::user() != null) {
+		@include($activeTheme . '::' . '_partials.admin.navigation')
+	@else
+		@include($activeTheme . '::' . '_partials.navigation')
+	@endif
+	--}}
 </header>
 
 <main>

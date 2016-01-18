@@ -14,15 +14,17 @@
 			</a>
 	</div>
 
+	@if (Auth::user())
 	<div id="navbar" class="navbar-collapse collapse">
 		<ul class="nav navbar-nav navbar-right">
 
-{!!
-	Widget::NavLinks()
-!!}
+		{!!
+			Widget::NavLinks()
+		!!}
 
 		</ul>
 	</div><!--/.nav-collapse -->
+	@endif
 
 </div>
 </nav>

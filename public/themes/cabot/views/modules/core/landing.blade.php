@@ -20,7 +20,7 @@
 @section('content')
 
 
-<div id="flex-container">
+<div id="flex-container" class="margin-xl padding-xl">
 <div id="flex-item">
 
 	<a href="/">
