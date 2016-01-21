@@ -159,6 +159,7 @@ return [
         Caffeinated\Themes\ThemesServiceProvider::class,
         Caffeinated\Widgets\WidgetsServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+		GeneaLabs\LaravelCaffeine\LaravelCaffeineServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Vinkla\Translator\TranslatorServiceProvider::class,
         yajra\Datatables\DatatablesServiceProvider::class,
