@@ -123,6 +123,11 @@
 
 @if (Auth::user())
 
+@endif
+
+
+@if ( Auth::user()->is('hr_admin') )
+
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -137,6 +142,12 @@
 			</ul>
 		</li>
 	</ul>
+
+@endif
+
+
+
+@if ( Auth::user()->is('hr_admin') )
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -153,6 +164,13 @@
 		</li>
 	</ul>
 
+@endif
+
+
+
+
+@if ( Auth::user()->is('hr_admin') )
+
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -167,6 +185,12 @@
 			</ul>
 		</li>
 	</ul>
+
+@endif
+
+
+
+@if ( Auth::user()->is('hr_admin') )
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -183,6 +207,17 @@
 		</li>
 	</ul>
 
+@endif
+
+
+
+@if ( Auth::user()->is('hr_admin') )
+
+@endif
+
+
+@if ( Auth::user()->is('hr_admin') )
+
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -197,6 +232,14 @@
 			</ul>
 		</li>
 	</ul>
+
+@endif
+
+
+
+
+
+@if ( Auth::user()->is('hr_admin') )
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -213,6 +256,10 @@
 		</li>
 	</ul>
 
+@endif
+
+@if ( Auth::user()->is('news_admin') || Auth::user()->is('cms_admin') )
+
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -228,20 +275,12 @@
 		</li>
 	</ul>
 
-	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ Lang::choice('kotoba::shop.asset', 1) }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuAssets()
-				!!}
-				</li>
-			</ul>
-		</li>
-	</ul>
+@endif
+
+
+@if (Auth::user()->can('manage_shisan'))
+
+	@include('shisan::_partials.nav')
 
 @endif
 
