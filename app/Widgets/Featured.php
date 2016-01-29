@@ -68,4 +68,6 @@ class Featured extends Widget
 
 
 	}
+
+
 }

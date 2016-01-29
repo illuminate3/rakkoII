@@ -38,7 +38,7 @@
 -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/district/assets/css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/cabot/assets/css/style.css') }}">
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')
@@ -53,13 +53,6 @@
 
 <header>
 	@include($activeTheme . '::' . '_partials.navigation')
-	{{--
-	@if ( Auth::user() != null) {
-		@include($activeTheme . '::' . '_partials.admin.navigation')
-	@else
-		@include($activeTheme . '::' . '_partials.navigation')
-	@endif
-	--}}
 </header>
 
 <main>

@@ -38,7 +38,7 @@
 -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/district/assets/css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/bootstrap/assets/css/style.css') }}">
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')

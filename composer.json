@@ -21,7 +21,6 @@
 		"vinkla/translator": "^2.2",
 		"wikimedia/composer-merge-plugin": "^1.2",
 		"yajra/laravel-datatables-oracle": "~5.0",
-		"barryvdh/laravel-ide-helper": "^2.1",
 		"genealabs/laravel-caffeine": "~0.2"
 	},
 	"require-dev": {
@@ -29,6 +28,7 @@
 		"mockery/mockery": "0.9.*",
 		"phpunit/phpunit": "~4.0",
 		"phpspec/phpspec": "~2.1",
+		"barryvdh/laravel-ide-helper": "^2.1",
 		"barryvdh/laravel-debugbar": "^2.0"
 	},
 	"extra": {

@@ -23,6 +23,7 @@ class TopNews extends Widget
 		$activeTheme = Theme::getActive();
 		$lang = Session::get('locale');
 
+/*
 		$articles = Cache::get('widget_top_news', null);
 
 		if ($articles == null) {
@@ -39,7 +40,20 @@ class TopNews extends Widget
 				'articles',
 				'lang'
 			));
+*/
+
+		$articles = News::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
+// dd($articles);
+
+		return Theme::View($activeTheme . '::' . 'widgets.top_news',
+			compact(
+				'articles',
+				'lang'
+			));
+
 
 
 	}
+
+
 }

@@ -49,7 +49,6 @@
 
 <body>
 
-
 		@include($activeTheme . '::' . '_partials.content')
 
 

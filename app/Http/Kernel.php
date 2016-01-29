@@ -22,6 +22,7 @@ class Kernel extends HttpKernel
 		\App\Http\Middleware\VerifyCsrfToken::class,
 		\GeneaLabs\LaravelCaffeine\Http\Middleware\LaravelCaffeineDripMiddleware::class,
 		\App\Http\Middleware\SetLanguage::class,
+		\App\Http\Middleware\Tenant::class,
 		\App\Http\Middleware\SetTheme::class,
 		\anlutro\LaravelSettings\SaveMiddleware::class,
 	];
@@ -38,6 +39,7 @@ class Kernel extends HttpKernel
 		'guest'				=> \App\Http\Middleware\RedirectIfAuthenticated::class,
 // module middleware
 		'admin'				=> \App\Modules\Kagi\Http\Middleware\AuthenticateAdmin::class,
+		'tenant'			=> \App\Http\Middleware\Tenant::class,
 	];
 
 }

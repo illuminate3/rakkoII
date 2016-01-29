@@ -24,20 +24,24 @@ class NewsBanner extends Widget
 		$lang = Session::get('locale');
 
 
-		$articles = Cache::get('widget_news_banner', null);
-
-		if ($articles == null) {
-			$articles = Cache::rememberForever('widget_news_banner', function() {
-				return News::IsPublished()->IsBanner()->orderBy('order')->get();
-			});
-		}
-
-//dd($articles);
-// 		$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
-// 		$count = count($articles);
-
-		$count = count($articles);
+//		Cache::forget('widget_news_banner');
+//		$articles = Cache::get('widget_news_banner', null);
+//		$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
+//		$count = count($articles);
 //dd($count);
+/*
+		if ( $count == 0 ) {
+//dd($count);
+// 			$articles = Cache::rememberForever('widget_news_banner', function() {
+// 				return News::IsPublished()->IsBanner()->orderBy('order')->get();
+// 			});
+			$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
+			Cache::forever('widget_news_banner', $articles);
+		}
+*/
+		$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
+		$count = count($articles);
+//dd($articles);
 
 		return Theme::View($activeTheme . '::' . 'widgets.news_banner',
 			compact(
