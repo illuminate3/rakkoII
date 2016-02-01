@@ -72,13 +72,13 @@ class Tenant {
 // 		});
 //dd($site_info->id);
 //TenantScope::addTenant( Config::get('tenant.default_tenant_columns'), session()->get('siteId') );
-Session::set('siteId', $site_info->id);
 
 		if (!$site_info) {
 //			throw new NotFoundHttpException;
 			$site_info = Site::where('id', 11)->first();
 		}
 //dd($site_info);
+Session::set('siteId', $site_info->id);
 
 		return $site_info;
 	}

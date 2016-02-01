@@ -32,12 +32,12 @@ class alert extends Widget
 			});
 		}
 */
-		$articles = News::IsPublished()->IsAlert()->orderBy('order')->get();
+		$alerts = News::IsPublished()->IsAlert()->orderBy('order')->get();
 // dd($articles);
 
 		return Theme::View($activeTheme . '::' . 'widgets.alert',
 			compact(
-				'articles',
+				'alerts',
 				'lang'
 			));
 

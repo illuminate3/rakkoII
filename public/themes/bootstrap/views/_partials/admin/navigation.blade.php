@@ -70,6 +70,7 @@
 					</li>
 				<li class="divider"></li>
 @if (Auth::user()->can('manage_admin'))
+@if (Auth::user()->is('super_admin'))
 					<li>
 						<a href="/admin/users">
 							{{ Lang::choice('kotoba::account.user', 2) }}
@@ -85,11 +86,14 @@
 							{{ Lang::choice('kotoba::permission.permission', 2) }}
 						</a>
 					</li>
+@endif
+@if (Auth::user()->is('super_admin'))
 					<li class="divider"></li>
 					{!!
 						Widget::MenuAdmin()
 					!!}
 					<li class="divider"></li>
+@endif
 @endif
 					<li>
 						<a href="/auth/logout">
@@ -278,7 +282,7 @@
 @endif
 
 
-@if (Auth::user()->can('manage_shisan'))
+@if ( Auth::user()->is('super_admin') || Auth::user()->can('manage_shisan') )
 
 	@include('shisan::_partials.nav')
 
