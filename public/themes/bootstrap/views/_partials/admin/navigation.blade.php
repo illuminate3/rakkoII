@@ -130,7 +130,7 @@
 @endif
 
 
-@if ( Auth::user()->is('hr_admin') )
+@if ( (Auth::user()->is('hr_admin')) || (Auth::user()->is('super_admin') ))
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -151,7 +151,7 @@
 
 
 
-@if ( Auth::user()->is('hr_admin') )
+@if ( (Auth::user()->is('hr_admin')) || (Auth::user()->is('super_admin') ))
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -173,7 +173,7 @@
 
 
 
-@if ( Auth::user()->is('hr_admin') )
+@if ( (Auth::user()->is('hr_admin')) || (Auth::user()->is('super_admin') ))
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -194,7 +194,7 @@
 
 
 
-@if ( Auth::user()->is('hr_admin') )
+@if ( (Auth::user()->is('hr_admin')) || (Auth::user()->is('super_admin') ))
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -215,12 +215,7 @@
 
 
 
-@if ( Auth::user()->is('hr_admin') )
-
-@endif
-
-
-@if ( Auth::user()->is('hr_admin') )
+@if ( (Auth::user()->is('hr_admin')) || (Auth::user()->is('super_admin') ))
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -243,7 +238,7 @@
 
 
 
-@if ( Auth::user()->is('hr_admin') )
+@if ( (Auth::user()->is('hr_admin')) || (Auth::user()->is('super_admin') ))
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -262,7 +257,7 @@
 
 @endif
 
-@if ( Auth::user()->is('news_admin') || Auth::user()->is('cms_admin') )
+@if ( Auth::user()->is('super_admin') || ( Auth::user()->is('news_admin') || Auth::user()->is('cms_admin') ))
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
