@@ -2,19 +2,21 @@
 
 return [
 
-//vendor:publish --provider="App\Modules\Records\Providers\RecordsServiceProvider" --tag="config"
-//vendor:publish --provider="App\Modules\Records\Providers\RecordsServiceProvider" --tag="js"
-//vendor:publish --provider="App\Modules\Records\Providers\RecordsServiceProvider" --tag="plugins"
-//vendor:publish --provider="App\Modules\Records\Providers\RecordsServiceProvider" --tag="views"
+//vendor:publish --provider="App\Modules\Filex\Providers\FilexServiceProvider" --tag="config"
+//vendor:publish --provider="App\Modules\Filex\Providers\FilexServiceProvider" --tag="js"
+//vendor:publish --provider="App\Modules\Filex\Providers\FilexServiceProvider" --tag="plugins"
+//vendor:publish --provider="App\Modules\Filex\Providers\FilexServiceProvider" --tag="views"
 
 /*
 |--------------------------------------------------------------------------
 | db settings
 |--------------------------------------------------------------------------
 */
-'records_db' => array(
+'filex_db' => array(
 	'prefix'					=> '',
 ),
+
+'auth_fail_redirect'			=> '/admin/dashboard',
 
 
 /*
@@ -29,7 +31,6 @@ widthxheight: Auto determine both width and height when resizing. This will resi
 	'landscape'					=> '1356x500!',
 	'preview'					=> '700x500!',
 	'portrait'					=> '150x196!',
-	'news'						=> '250x110!',
 	'thumb'						=> '100x100!'
 ]
 

@@ -40,6 +40,9 @@ class Kernel extends HttpKernel
 // module middleware
 		'admin'				=> \App\Modules\Kagi\Http\Middleware\AuthenticateAdmin::class,
 		'tenant'			=> \App\Http\Middleware\Tenant::class,
+		'filex'				=> \App\Modules\Filex\Http\Middleware\AuthenticateFilex::class,
+		'himawari'			=> \App\Modules\Himawari\Http\Middleware\AuthenticateHimawari::class,
+		'newsdesk'			=> \App\Modules\Newsdesk\Http\Middleware\AuthenticateNewsdesk::class,
 	];
 
 }
