@@ -4,6 +4,15 @@ return [
 
 /*
 |--------------------------------------------------------------------------
+| db settings
+|--------------------------------------------------------------------------
+*/
+'kagi_db' => array(
+	'prefix'					=> '', // not fully implemented, also may not make of difference due to models
+),
+
+/*
+|--------------------------------------------------------------------------
 | general
 |--------------------------------------------------------------------------
 */
@@ -39,19 +48,19 @@ return [
 'password_min'					=> 'min:6',
 'throttle'						=> '3',
 'time_out'						=> '2',
-'default_role'					=> '2', // Admin is ID 1
 
 /*
 |--------------------------------------------------------------------------
-| db settings
+| Defaults
 |--------------------------------------------------------------------------
 */
-'kagi_db' => array(
-	'prefix'					=> '', // not fully implemented, also may not make of difference due to models
-	'default_role_id'			=> '2',
-	'activated'					=> '1',
-	'blocked'					=> '0',
-),
+'default_role'					=> '2', // Admin is ID 1
+'default_role_id'				=> 2,
+
+'activated'						=> 1,
+'banned'						=> 0,
+'blocked'						=> 0,
+'confirmed'						=> 1,
 
 'kagi_avatar'					=> 'assets/images/usr.png',
 
