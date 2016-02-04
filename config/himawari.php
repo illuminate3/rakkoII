@@ -16,6 +16,8 @@ return [
 	'prefix'					=> '',
 ),
 
+'default_publish_status'		=> 1,
+
 'auth_fail_redirect'			=> '/admin/dashboard',
 
 ];
