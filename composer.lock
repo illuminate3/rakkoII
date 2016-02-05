@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ff30ea731a8b474f154015812da58379",
-    "content-hash": "009836f28506182491e520fd7435b3d7",
+    "hash": "dd5c8bcd83e1238febfd2169b3937ede",
+    "content-hash": "508b24ac4bd8a20fa941512c8183f953",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -143,16 +143,67 @@
             "time": "2015-12-29 20:31:58"
         },
         {
+            "name": "artesaos/seotools",
+            "version": "v0.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artesaos/seotools.git",
+                "reference": "f173a3f8f16353594e57819f79ccfb0e675ba063"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artesaos/seotools/zipball/f173a3f8f16353594e57819f79ccfb0e675ba063",
+                "reference": "f173a3f8f16353594e57819f79ccfb0e675ba063",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5",
+                "illuminate/support": "~5",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "2.1.x",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Artesaos\\SEOTools\\": "src/SEOTools/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vinicius",
+                    "email": "luiz.vinicius73@gmail.com"
+                }
+            ],
+            "description": "SEO Tools for Laravel and Lumen",
+            "keywords": [
+                "laravel5",
+                "lumen",
+                "metatags",
+                "opengraph",
+                "seo",
+                "seotools",
+                "webmaster"
+            ],
+            "time": "2016-01-24 21:43:40"
+        },
+        {
             "name": "aura-is-here/laravel-multi-tenant",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/AuraEQ/laravel-multi-tenant.git",
-                "reference": "f4b4cc020b497de0d94c0bd0d60f29adcd61988a"
+                "url": "https://github.com/HipsterJazzbo/laravel-multi-tenant.git",
+                "reference": "626c34520dfa088917c577307eb7b903a40df803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AuraEQ/laravel-multi-tenant/zipball/f4b4cc020b497de0d94c0bd0d60f29adcd61988a",
+                "url": "https://api.github.com/repos/HipsterJazzbo/laravel-multi-tenant/zipball/626c34520dfa088917c577307eb7b903a40df803",
                 "reference": "f4b4cc020b497de0d94c0bd0d60f29adcd61988a",
                 "shasum": ""
             },
@@ -342,6 +393,60 @@
                 "modules"
             ],
             "time": "2015-12-11 19:21:55"
+        },
+        {
+            "name": "caffeinated/seo",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/SEO.git",
+                "reference": "b70952178b171175d6276729cf71bd05a3b941ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/SEO/zipball/b70952178b171175d6276729cf71bd05a3b941ca",
+                "reference": "b70952178b171175d6276729cf71bd05a3b941ca",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Caffeinated\\SEO\\": "src/Caffeinated/SEO/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 SEO generator",
+            "keywords": [
+                "Sitemap",
+                "caffeinated",
+                "laravel",
+                "metadata",
+                "robots",
+                "seo"
+            ],
+            "time": "2015-06-26 22:04:07"
         },
         {
             "name": "caffeinated/shinobi",
@@ -622,7 +727,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeSleeve/laravel-stapler/zipball/1433117da9a5d691ab0a081d69571713ef6cad98",
+                "url": "https://api.github.com/repos/CodeSleeve/laravel-stapler/zipball/3bc886fc381397f7387b24e7a05d3a16dd24848f",
                 "reference": "1433117da9a5d691ab0a081d69571713ef6cad98",
                 "shasum": ""
             },
@@ -1325,7 +1430,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/5b5bb4c8374fc49f3cc45386d6c976eb15a3c94c",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/98c225f8293f53b6f62db20a85da6b81d3c5bc36",
                 "reference": "5b5bb4c8374fc49f3cc45386d6c976eb15a3c94c",
                 "shasum": ""
             },
