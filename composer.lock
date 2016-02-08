@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dd5c8bcd83e1238febfd2169b3937ede",
-    "content-hash": "508b24ac4bd8a20fa941512c8183f953",
+    "hash": "ff30ea731a8b474f154015812da58379",
+    "content-hash": "009836f28506182491e520fd7435b3d7",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -204,7 +204,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/HipsterJazzbo/laravel-multi-tenant/zipball/626c34520dfa088917c577307eb7b903a40df803",
-                "reference": "f4b4cc020b497de0d94c0bd0d60f29adcd61988a",
+                "reference": "626c34520dfa088917c577307eb7b903a40df803",
                 "shasum": ""
             },
             "require": {
@@ -230,7 +230,7 @@
                 }
             ],
             "abandoned": "hipsterjazzbo/landlord",
-            "time": "2016-01-20 20:01:05"
+            "time": "2016-02-01 06:21:54"
         },
         {
             "name": "baum/baum",
@@ -339,28 +339,25 @@
         },
         {
             "name": "caffeinated/modules",
-            "version": "v2.1.11",
+            "version": "v2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caffeinated/modules.git",
-                "reference": "5442f1ee6a483627cc2f4113af9deea6e24efe5f"
+                "reference": "502525a4da79adf47dffd6d24d5bd6515423d081"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caffeinated/modules/zipball/5442f1ee6a483627cc2f4113af9deea6e24efe5f",
-                "reference": "5442f1ee6a483627cc2f4113af9deea6e24efe5f",
+                "url": "https://api.github.com/repos/caffeinated/modules/zipball/502525a4da79adf47dffd6d24d5bd6515423d081",
+                "reference": "502525a4da79adf47dffd6d24d5bd6515423d081",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "5.1.*",
-                "illuminate/database": "5.1.*",
-                "illuminate/filesystem": "5.1.*",
-                "illuminate/routing": "5.1.*",
-                "illuminate/support": "5.1.*",
+                "illuminate/config": "5.1.*|5.2.*",
+                "illuminate/database": "5.1.*|5.2.*",
+                "illuminate/filesystem": "5.1.*|5.2.*",
+                "illuminate/routing": "5.1.*|5.2.*",
+                "illuminate/support": "5.1.*|5.2.*",
                 "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9"
             },
             "suggest": {
                 "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
@@ -368,7 +365,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -392,7 +389,7 @@
                 "laravel",
                 "modules"
             ],
-            "time": "2015-12-11 19:21:55"
+            "time": "2016-02-03 20:37:15"
         },
         {
             "name": "caffeinated/seo",
@@ -506,16 +503,16 @@
         },
         {
             "name": "caffeinated/themes",
-            "version": "v2.0.4",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caffeinated/themes.git",
-                "reference": "de4fbabb2bf4d4f3cbb54e8a613284d3007020fc"
+                "reference": "f3d67b203fe778fba4f2a92076d42cd8054939cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caffeinated/themes/zipball/de4fbabb2bf4d4f3cbb54e8a613284d3007020fc",
-                "reference": "de4fbabb2bf4d4f3cbb54e8a613284d3007020fc",
+                "url": "https://api.github.com/repos/caffeinated/themes/zipball/f3d67b203fe778fba4f2a92076d42cd8054939cd",
+                "reference": "f3d67b203fe778fba4f2a92076d42cd8054939cd",
                 "shasum": ""
             },
             "require": {
@@ -552,7 +549,7 @@
                 "themes",
                 "twig"
             ],
-            "time": "2016-01-02 04:01:08"
+            "time": "2016-02-04 03:46:11"
         },
         {
             "name": "caffeinated/widgets",
@@ -723,16 +720,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeSleeve/laravel-stapler.git",
-                "reference": "1433117da9a5d691ab0a081d69571713ef6cad98"
+                "reference": "3bc886fc381397f7387b24e7a05d3a16dd24848f"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/CodeSleeve/laravel-stapler/zipball/3bc886fc381397f7387b24e7a05d3a16dd24848f",
-                "reference": "1433117da9a5d691ab0a081d69571713ef6cad98",
+                "reference": "3bc886fc381397f7387b24e7a05d3a16dd24848f",
                 "shasum": ""
             },
             "require": {
-                "codesleeve/stapler": "1.1.*",
+                "codesleeve/stapler": "1.2.*",
                 "laravel/framework": "4.*|5.*",
                 "php": ">=5.4.0"
             },
@@ -765,20 +762,20 @@
                 "stapler",
                 "upload"
             ],
-            "time": "2016-01-19 06:09:13"
+            "time": "2016-01-30 22:26:13"
         },
         {
             "name": "codesleeve/stapler",
-            "version": "v1.1.01",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeSleeve/stapler.git",
-                "reference": "17a0093ddeb6209857d15cb2a2a95b867197fef1"
+                "reference": "f15aa58d3dac213aefce27dd5885730d9bc31387"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeSleeve/stapler/zipball/17a0093ddeb6209857d15cb2a2a95b867197fef1",
-                "reference": "17a0093ddeb6209857d15cb2a2a95b867197fef1",
+                "url": "https://api.github.com/repos/CodeSleeve/stapler/zipball/f15aa58d3dac213aefce27dd5885730d9bc31387",
+                "reference": "f15aa58d3dac213aefce27dd5885730d9bc31387",
                 "shasum": ""
             },
             "require": {
@@ -818,7 +815,7 @@
                 "s3",
                 "upload"
             ],
-            "time": "2016-01-19 05:48:05"
+            "time": "2016-01-30 21:39:33"
         },
         {
             "name": "cviebrock/eloquent-sluggable",
@@ -1113,16 +1110,16 @@
         },
         {
             "name": "google/apiclient",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "a25dc9d5c109ebb02945ba1ff6336cc937c27628"
+                "reference": "400f250a30ae1dd4c4a0a4f750fe973fc70e6311"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/a25dc9d5c109ebb02945ba1ff6336cc937c27628",
-                "reference": "a25dc9d5c109ebb02945ba1ff6336cc937c27628",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/400f250a30ae1dd4c4a0a4f750fe973fc70e6311",
+                "reference": "400f250a30ae1dd4c4a0a4f750fe973fc70e6311",
                 "shasum": ""
             },
             "require": {
@@ -1152,7 +1149,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2015-10-16 22:11:08"
+            "time": "2016-02-02 18:50:42"
         },
         {
             "name": "guzzle/guzzle",
@@ -1426,12 +1423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "5b5bb4c8374fc49f3cc45386d6c976eb15a3c94c"
+                "reference": "98c225f8293f53b6f62db20a85da6b81d3c5bc36"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/98c225f8293f53b6f62db20a85da6b81d3c5bc36",
-                "reference": "5b5bb4c8374fc49f3cc45386d6c976eb15a3c94c",
+                "reference": "98c225f8293f53b6f62db20a85da6b81d3c5bc36",
                 "shasum": ""
             },
             "require": {
@@ -1462,7 +1459,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2016-01-28 17:50:47"
+            "time": "2016-02-04 22:36:46"
         },
         {
             "name": "imagine/imagine",
@@ -1944,16 +1941,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.28",
+            "version": "v5.1.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "3f0fd27939dfdafb1e50058423cd24e640894ba2"
+                "reference": "7e7ba568ffbc8f3f00778f2e8f41fb92127944fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/3f0fd27939dfdafb1e50058423cd24e640894ba2",
-                "reference": "3f0fd27939dfdafb1e50058423cd24e640894ba2",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7e7ba568ffbc8f3f00778f2e8f41fb92127944fd",
+                "reference": "7e7ba568ffbc8f3f00778f2e8f41fb92127944fd",
                 "shasum": ""
             },
             "require": {
@@ -2068,7 +2065,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-12-31 17:41:30"
+            "time": "2016-02-02 14:56:40"
         },
         {
             "name": "laravel/socialite",
@@ -2765,16 +2762,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.5",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7"
+                "reference": "b0e69d10852716b2ccbdff69c75c477637220790"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
-                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b0e69d10852716b2ccbdff69c75c477637220790",
+                "reference": "b0e69d10852716b2ccbdff69c75c477637220790",
                 "shasum": ""
             },
             "require": {
@@ -2809,7 +2806,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-01-06 13:31:20"
+            "time": "2016-02-06 03:52:05"
         },
         {
             "name": "patchwork/utf8",
@@ -4270,16 +4267,16 @@
         },
         {
             "name": "tom-lingham/searchy",
-            "version": "2.0.2",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TomLingham/Laravel-Searchy.git",
-                "reference": "28b0e04bb26c32905164f61a05281b3f2b72f588"
+                "reference": "fd959de44970f414125701fbe440fe3de52cc93d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TomLingham/Laravel-Searchy/zipball/28b0e04bb26c32905164f61a05281b3f2b72f588",
-                "reference": "28b0e04bb26c32905164f61a05281b3f2b72f588",
+                "url": "https://api.github.com/repos/TomLingham/Laravel-Searchy/zipball/fd959de44970f414125701fbe440fe3de52cc93d",
+                "reference": "fd959de44970f414125701fbe440fe3de52cc93d",
                 "shasum": ""
             },
             "require": {
@@ -4311,7 +4308,7 @@
                 "laravel",
                 "search"
             ],
-            "time": "2015-12-23 11:24:22"
+            "time": "2016-01-31 07:46:48"
         },
         {
             "name": "uxweb/sweet-alert",
@@ -4561,16 +4558,16 @@
         },
         {
             "name": "willvincent/laravel-rateable",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/willvincent/laravel-rateable.git",
-                "reference": "611d3ab7c7cf82f9b618725235c625b54520a6e9"
+                "reference": "8db744c0e3350f4bf030c70db4534573faa5aca7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/willvincent/laravel-rateable/zipball/611d3ab7c7cf82f9b618725235c625b54520a6e9",
-                "reference": "611d3ab7c7cf82f9b618725235c625b54520a6e9",
+                "url": "https://api.github.com/repos/willvincent/laravel-rateable/zipball/8db744c0e3350f4bf030c70db4534573faa5aca7",
+                "reference": "8db744c0e3350f4bf030c70db4534573faa5aca7",
                 "shasum": ""
             },
             "require": {
@@ -4609,7 +4606,7 @@
                 "rateable",
                 "vote"
             ],
-            "time": "2015-10-14 20:48:41"
+            "time": "2016-02-08 18:24:35"
         },
         {
             "name": "yajra/laravel-datatables-oracle",
@@ -5525,16 +5522,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.21",
+            "version": "4.8.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ea76b17bced0500a28098626b84eda12dbcf119c"
+                "reference": "dfb11aa5236376b4fc63853cf746af39fe780e72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ea76b17bced0500a28098626b84eda12dbcf119c",
-                "reference": "ea76b17bced0500a28098626b84eda12dbcf119c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dfb11aa5236376b4fc63853cf746af39fe780e72",
+                "reference": "dfb11aa5236376b4fc63853cf746af39fe780e72",
                 "shasum": ""
             },
             "require": {
@@ -5593,7 +5590,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-12-12 07:45:58"
+            "time": "2016-02-02 09:01:21"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -6076,16 +6073,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "3df409958a646dad2bc5046c3fb671ee24a1a691"
+                "reference": "3cf0709d7fe936e97bee9e954382e449003f1d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/3df409958a646dad2bc5046c3fb671ee24a1a691",
-                "reference": "3df409958a646dad2bc5046c3fb671ee24a1a691",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/3cf0709d7fe936e97bee9e954382e449003f1d9a",
+                "reference": "3cf0709d7fe936e97bee9e954382e449003f1d9a",
                 "shasum": ""
             },
             "require": {
@@ -6121,7 +6118,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-26 13:39:53"
+            "time": "2016-02-02 13:44:19"
         }
     ],
     "aliases": [],
@@ -6132,8 +6129,8 @@
         "laracasts/presenter": 20,
         "laravelrus/localized-carbon": 20,
         "cviebrock/eloquent-sluggable": 20,
-        "stevebauman/calendar-helper": 20,
         "aura-is-here/laravel-multi-tenant": 20,
+        "stevebauman/calendar-helper": 20,
         "milon/barcode": 20
     },
     "prefer-stable": false,

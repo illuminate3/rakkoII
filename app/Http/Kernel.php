@@ -33,13 +33,14 @@ class Kernel extends HttpKernel
 	 * @var array
 	 */
 	protected $routeMiddleware = [
+		'module' => \Caffeinated\Modules\Middleware\IdentifyModule::class,
 // auth middleware
 		'auth'				=> \App\Http\Middleware\Authenticate::class,
 		'auth.basic'		=> \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
 		'guest'				=> \App\Http\Middleware\RedirectIfAuthenticated::class,
 // module middleware
-		'admin'				=> \App\Modules\Kagi\Http\Middleware\AuthenticateAdmin::class,
 		'tenant'			=> \App\Http\Middleware\Tenant::class,
+		'admin'				=> \App\Modules\Kagi\Http\Middleware\AuthenticateAdmin::class,
 		'filex'				=> \App\Modules\Filex\Http\Middleware\AuthenticateFilex::class,
 		'himawari'			=> \App\Modules\Himawari\Http\Middleware\AuthenticateHimawari::class,
 		'newsdesk'			=> \App\Modules\Newsdesk\Http\Middleware\AuthenticateNewsdesk::class,

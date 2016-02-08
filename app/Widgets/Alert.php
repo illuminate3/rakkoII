@@ -12,6 +12,7 @@ use Config;
 use Menu;
 use Session;
 use Theme;
+use TenantScope;
 
 
 class alert extends Widget

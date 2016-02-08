@@ -5,11 +5,13 @@ namespace App\Http\Middleware;
 use App\Modules\Campus\Http\Models\Site;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
+use AuraIsHere\LaravelMultiTenant\TenantScope;
+
 use Cache;
 use Closure;
 use Config;
 use Session;
-use TenantScope;
+//use TenantScope;
 use View;
 
 class Tenant {
@@ -65,20 +67,29 @@ class Tenant {
 
 	public function getSiteInfo($domain_slug)
 	{
+//dd(Config::get('laravel-multi-tenant.default_tenant_columns'));
+
 		$site_info = Site::where('slug', $domain_slug)->first();
 //		Cache::forget('sites');
 // 		$site_info = Cache::rememberForever('sites', function() {
 // 		return Site::where('slug', $domain_slug)->first();
 // 		});
-//dd($site_info->id);
-//TenantScope::addTenant( Config::get('tenant.default_tenant_columns'), session()->get('siteId') );
+//\TenantScope::addTenant( Config::get('laravel-multi-tenant.default_tenant_columns'), session()->get('siteId') );
+\TenantScope::addTenant('site_id', '11');
 
 		if (!$site_info) {
 //			throw new NotFoundHttpException;
 			$site_info = Site::where('id', 11)->first();
 		}
 //dd($site_info);
-Session::set('siteId', $site_info->id);
+
+//dd($site_info->id);
+//		Session::set('siteId', $site_info->id);
+//dd(session('siteId', $site_info->id));
+		session('siteId', $site_info->id);
+		Cache::forget('siteId');
+		Cache::forever('siteId', $site_info->id);
+//dd(session()->get('siteId'));
 
 		return $site_info;
 	}
