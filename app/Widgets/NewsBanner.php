@@ -39,7 +39,8 @@ class NewsBanner extends Widget
 			Cache::forever('widget_news_banner', $articles);
 		}
 */
-		$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
+//		$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
+		$articles = News::IsPublished()->IsBanner()->SiteID()->orderBy('order')->get();
 		$count = count($articles);
 //dd($articles);
 

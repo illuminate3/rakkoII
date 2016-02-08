@@ -28,7 +28,8 @@ class NavLinks extends Widget
 //		if ($pages == null || isEmpty($pages) ) {
 		if (!count($pages)) {
 			$pages = Cache::rememberForever('widget_navlinks', function() {
-				return Content::InPrint()->IsNavigation()->orderBy('order')->get();
+//				return Content::InPrint()->IsNavigation()->orderBy('order')->get();
+				return Content::InPrint()->IsNavigation()->SiteID()->orderBy('order')->get();
 			});
 		}
 //dd($pages);

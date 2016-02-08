@@ -33,7 +33,8 @@ class alert extends Widget
 			});
 		}
 */
-		$alerts = News::IsPublished()->IsAlert()->orderBy('order')->get();
+//		$alerts = News::IsPublished()->IsAlert()->orderBy('order')->get();
+		$alerts = News::IsPublished()->IsAlert()->SiteID()->orderBy('order')->get();
 // dd($articles);
 
 		return Theme::View($activeTheme . '::' . 'widgets.alert',

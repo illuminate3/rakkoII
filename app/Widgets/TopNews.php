@@ -42,7 +42,8 @@ class TopNews extends Widget
 			));
 */
 
-		$articles = News::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
+//		$articles = News::IsPublished()->IsFeatured()->LimitTop()->orderBy('order')->get();
+		$articles = News::IsPublished()->IsFeatured()->LimitTop()->SiteID()->orderBy('order')->get();
 // dd($articles);
 
 		return Theme::View($activeTheme . '::' . 'widgets.top_news',

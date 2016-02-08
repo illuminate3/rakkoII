@@ -27,7 +27,8 @@ class AccessNavPoints extends Widget
 
 		if ($pages == null) {
 			$pages = Cache::rememberForever('widget_accessnavpoint', function() {
-				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
+//				return Content::InPrint()->IsAccessPoint()->orderBy('order')->get();
+				return Content::InPrint()->IsAccessPoint()->SiteID()->orderBy('order')->get();
 			});
 		}
 
