@@ -75,18 +75,19 @@ class Tenant {
 // 		return Site::where('slug', $domain_slug)->first();
 // 		});
 //\TenantScope::addTenant( Config::get('laravel-multi-tenant.default_tenant_columns'), session()->get('siteId') );
-\TenantScope::addTenant('site_id', '11');
+//\TenantScope::addTenant('site_id', '11');
 
 		if (!$site_info) {
 //			throw new NotFoundHttpException;
-			$site_info = Site::where('id', 11)->first();
+			$site_info = Site::where('id', Config::get('core_tenant.default_tenant_id'))->first();
 		}
 //dd($site_info);
 
 //dd($site_info->id);
 //		Session::set('siteId', $site_info->id);
 //dd(session('siteId', $site_info->id));
-		session('siteId', $site_info->id);
+//		session('siteId', $site_info->id);
+		Session::put('siteId', $site_info->id);
 		Cache::forget('siteId');
 		Cache::forever('siteId', $site_info->id);
 //dd(session()->get('siteId'));
