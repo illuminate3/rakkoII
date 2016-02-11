@@ -33,7 +33,7 @@ class Kernel extends HttpKernel
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'module' => \Caffeinated\Modules\Middleware\IdentifyModule::class,
+//		'module' => \Caffeinated\Modules\Middleware\IdentifyModule::class,
 // auth middleware
 		'auth'				=> \App\Http\Middleware\Authenticate::class,
 		'auth.basic'		=> \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,

@@ -9,7 +9,7 @@
 		"laravel/framework": "5.1.*",
 		"illuminate3/kotoba": "dev-master",
 		"caffeinated/flash": "~2.0",
-		"caffeinated/modules": "~2.0",
+		"caffeinated/modules": "2.1.*",
 		"caffeinated/themes": "~2.0",
 		"caffeinated/widgets": "~2.0",
 		"codesleeve/laravel-stapler": "dev-master",

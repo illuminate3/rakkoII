@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ff30ea731a8b474f154015812da58379",
-    "content-hash": "009836f28506182491e520fd7435b3d7",
+    "hash": "680c2068e3248da2b7fe2f3d51a5e640",
+    "content-hash": "9bafa50e6afff984076f30347af0afc2",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -339,25 +339,28 @@
         },
         {
             "name": "caffeinated/modules",
-            "version": "v2.2",
+            "version": "v2.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caffeinated/modules.git",
-                "reference": "502525a4da79adf47dffd6d24d5bd6515423d081"
+                "reference": "5442f1ee6a483627cc2f4113af9deea6e24efe5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caffeinated/modules/zipball/502525a4da79adf47dffd6d24d5bd6515423d081",
-                "reference": "502525a4da79adf47dffd6d24d5bd6515423d081",
+                "url": "https://api.github.com/repos/caffeinated/modules/zipball/5442f1ee6a483627cc2f4113af9deea6e24efe5f",
+                "reference": "5442f1ee6a483627cc2f4113af9deea6e24efe5f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "5.1.*|5.2.*",
-                "illuminate/database": "5.1.*|5.2.*",
-                "illuminate/filesystem": "5.1.*|5.2.*",
-                "illuminate/routing": "5.1.*|5.2.*",
-                "illuminate/support": "5.1.*|5.2.*",
+                "illuminate/config": "5.1.*",
+                "illuminate/database": "5.1.*",
+                "illuminate/filesystem": "5.1.*",
+                "illuminate/routing": "5.1.*",
+                "illuminate/support": "5.1.*",
                 "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9"
             },
             "suggest": {
                 "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
@@ -365,7 +368,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -389,7 +392,7 @@
                 "laravel",
                 "modules"
             ],
-            "time": "2016-02-03 20:37:15"
+            "time": "2015-12-11 19:21:55"
         },
         {
             "name": "caffeinated/seo",
@@ -1423,12 +1426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "98c225f8293f53b6f62db20a85da6b81d3c5bc36"
+                "reference": "7da03761b348f8dedd5a65b09f12ba4288637f6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/98c225f8293f53b6f62db20a85da6b81d3c5bc36",
-                "reference": "98c225f8293f53b6f62db20a85da6b81d3c5bc36",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/7da03761b348f8dedd5a65b09f12ba4288637f6f",
+                "reference": "7da03761b348f8dedd5a65b09f12ba4288637f6f",
                 "shasum": ""
             },
             "require": {
@@ -1459,7 +1462,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2016-02-04 22:36:46"
+            "time": "2016-02-09 16:23:46"
         },
         {
             "name": "imagine/imagine",
@@ -2498,12 +2501,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/milon/barcode.git",
-                "reference": "51ac9e031b72f8dae8a1f37c0600725c7eaa9909"
+                "reference": "d3d96540048d708bcd985f97184812c9fa9250ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milon/barcode/zipball/51ac9e031b72f8dae8a1f37c0600725c7eaa9909",
-                "reference": "51ac9e031b72f8dae8a1f37c0600725c7eaa9909",
+                "url": "https://api.github.com/repos/milon/barcode/zipball/d3d96540048d708bcd985f97184812c9fa9250ce",
+                "reference": "d3d96540048d708bcd985f97184812c9fa9250ce",
                 "shasum": ""
             },
             "require": {
@@ -2539,7 +2542,7 @@
                 "qr code",
                 "qrcode"
             ],
-            "time": "2016-01-13 04:27:07"
+            "time": "2016-02-11 15:23:49"
         },
         {
             "name": "monolog/monolog",
@@ -5522,16 +5525,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.22",
+            "version": "4.8.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "dfb11aa5236376b4fc63853cf746af39fe780e72"
+                "reference": "6e351261f9cd33daf205a131a1ba61c6d33bd483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dfb11aa5236376b4fc63853cf746af39fe780e72",
-                "reference": "dfb11aa5236376b4fc63853cf746af39fe780e72",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6e351261f9cd33daf205a131a1ba61c6d33bd483",
+                "reference": "6e351261f9cd33daf205a131a1ba61c6d33bd483",
                 "shasum": ""
             },
             "require": {
@@ -5590,7 +5593,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-02-02 09:01:21"
+            "time": "2016-02-11 14:56:33"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
