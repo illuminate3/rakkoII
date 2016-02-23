@@ -121,128 +121,72 @@
 		</li>
 	</ul>
 
+
 @if (Auth::user())
+	<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					{{ Lang::choice('kotoba::general.setting', 2) }} <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li>
+					{!!
+						Widget::MenuSettings()
+					!!}
+					</li>
+				</ul>
+			</li>
+		</ul>
 
 	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ Lang::choice('kotoba::general.setting', 2) }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuSettings()
-				!!}
-				</li>
-			</ul>
-		</li>
-	</ul>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					{{ trans('kotoba::hr.office') }} <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li>
+					{!!
+						Widget::MenuOffice()
+					!!}
+					</li>
+				</ul>
+			</li>
+		</ul>
 
 	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ Lang::choice('kotoba::general.mail', 1) }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuMail()
-				!!}
-				</li>
-			</ul>
-		</li>
-	</ul>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					{{ Lang::choice('kotoba::shop.record', 2) }} <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li>
+					{!!
+						Widget::MenuReports()
+					!!}
+					</li>
+				</ul>
+			</li>
+		</ul>
 
 	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ Lang::choice('kotoba::hr.legal', 1) }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuHoritsu()
-				!!}
-				</li>
-			</ul>
-		</li>
-	</ul>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					{{ Lang::choice('kotoba::shop.order', 2) }} <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li>
+					{!!
+						Widget::MenuOrders()
+					!!}
+					</li>
+				</ul>
+			</li>
+		</ul>
+@endif
 
+@if (Auth::user()->can('manage_admin'))
 	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ Lang::choice('kotoba::hr.school', 1) }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuSchool()
-				!!}
-				</li>
-			</ul>
-		</li>
 	</ul>
-
-	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ trans('kotoba::hr.campus') }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuCampus()
-				!!}
-				</li>
-			</ul>
-		</li>
-	</ul>
-
-	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ Lang::choice('kotoba::hr.hr', 1) }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuHR()
-				!!}
-				</li>
-			</ul>
-		</li>
-	</ul>
-
-	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ trans('kotoba::cms.cms') }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuCMS()
-				!!}
-				</li>
-			</ul>
-		</li>
-	</ul>
-
-	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ Lang::choice('kotoba::shop.asset', 1) }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-				{!!
-					Widget::MenuAssets()
-				!!}
-				</li>
-			</ul>
-		</li>
-	</ul>
-
 @endif
 
 

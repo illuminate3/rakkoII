@@ -11,8 +11,6 @@
 		</button>
 		<div class="img-align padding-left-xl padding-right-xl">
 			<a href="/">
-{{-- $activeTheme --}}
-
 				<img class="logo" src="{{ asset('themes/' . $activeTheme . '/assets/img/logo.png') }}"></img>
 			</a>
 		</div>

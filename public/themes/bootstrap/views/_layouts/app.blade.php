@@ -4,23 +4,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<meta name="author" content="{{ Setting::get('author', Config::get('core.author')) }}" />
-{{--
-	<meta name="keywords" content="
-		{{ Setting::get('keywords', Config::get('core.keywords')) }}
-		" />
-	<meta name="description" content="
-		{{ Setting::get('description', Config::get('core.description')) }}
-		" />
---}}
-	<meta name="description" content="{!! Meta::getDescription() !!}" />
-	<meta name="keywords" content="{!! Meta::getKeywords() !!}" />
-
-
+	<meta name="keywords" content="{{ Setting::get('keywords', Config::get('core.keywords')) }}" />
+	<meta name="description" content="{{ Setting::get('description', Config::get('core.description')) }}" />
 
 	<title>
 		@section('title')
-			{!! Meta::getTitle() !!}
+			{{ Setting::get('title', Config::get('core.title')) }}
 		@show
 	</title>
 
@@ -47,7 +38,7 @@
 -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/bootstrap/assets/css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/district/assets/css/style.css') }}">
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')
@@ -96,7 +87,7 @@
 
 <!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
 <script>
-	{{-- Setting::get('google_analytics') --}}
+	{!! Setting::get('google_analytics') !!}
 </script>
 <!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
 

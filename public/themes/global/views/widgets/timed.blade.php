@@ -1,8 +1,9 @@
 <! -- Widget -->
 
-FEATURED
+TIMED
 
 {!!
-	Menu::handler('widget_featured')
+	Menu::handler('widget_timed')
 	->addClass('list-unstyled');
 !!}
+

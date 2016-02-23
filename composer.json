@@ -21,7 +21,7 @@
 		"vinkla/translator": "^2.2",
 		"wikimedia/composer-merge-plugin": "^1.2",
 		"yajra/laravel-datatables-oracle": "~5.0",
-		"genealabs/laravel-caffeine": "~0.2"
+		"genealabs/laravel-caffeine": "~0.2.0"
 	},
 	"require-dev": {
 		"fzaninotto/faker": "~1.4",

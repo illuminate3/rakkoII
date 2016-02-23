@@ -1,8 +1,8 @@
 <! -- Widget -->
 
-FEATURED
+FOOTER
 
 {!!
-	Menu::handler('widget_featured')
+	Menu::handler('widget_footer')
 	->addClass('list-unstyled');
 !!}

@@ -61,15 +61,3 @@
 
 @endforeach
 </div>
-
-
-<div class="row margin-top-md">
-	<div class="col-sm-8 col-sm-offset-4">
-		<div class="row">
-			<h2>
-				{{ Lang::choice('kotoba::cms.archive', 2) }}
-			</h2>
-			<a class="btn btn-primary" href="/news-archives">{{ trans('kotoba::cms.more') }}</a>
-		</div>
-	</div>
-</div>

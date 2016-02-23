@@ -33,13 +33,12 @@
 	</div>
 </div>
 --}}
-
 <div class="row">
 
 	<div class="col-sm-4">
 		@foreach($article->images as $image)
 			<a href="/news/{{ $article->slug }}">
-				<img src="{{ $image->image->url('news') }}" class="img-responsive" alt="{{ $article->slug }}">
+				<img src="{{ $image->image->url('news') }}" class="media-object" alt="{{ $article->slug }}">
 			</a>
 		@endforeach
 	</div>

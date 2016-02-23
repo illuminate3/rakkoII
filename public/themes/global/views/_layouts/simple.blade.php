@@ -37,7 +37,7 @@
 -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/login.css') }}">
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')
@@ -49,15 +49,7 @@
 
 <body>
 
-
-	@include($activeTheme . '::' . '_partials.admin.navigation')
-
-	<div class="container-fluid">
-<!-- <div id="wrap" class="container"> -->
 		@include($activeTheme . '::' . '_partials.content')
-	</div><!-- ./container -->
-
-	@include($activeTheme . '::' . '_partials.admin.footer')
 
 
 <!-- ------------------------------------------ js ------------------------------------------ -->

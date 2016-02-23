@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "680c2068e3248da2b7fe2f3d51a5e640",
-    "content-hash": "9bafa50e6afff984076f30347af0afc2",
+    "hash": "5bcb40237e2d2831d0cac337b2d79fce",
+    "content-hash": "f6df9d5f2251cb25e0ba8ff45bc4bdf6",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -656,16 +656,16 @@
         },
         {
             "name": "cocur/slugify",
-            "version": "v1.4",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cocur/slugify.git",
-                "reference": "05f00fa75f1c53edfcf4d0425e7e62e95b8888dd"
+                "reference": "16cdd7e792657d524cde931ea666436623b23301"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cocur/slugify/zipball/05f00fa75f1c53edfcf4d0425e7e62e95b8888dd",
-                "reference": "05f00fa75f1c53edfcf4d0425e7e62e95b8888dd",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/16cdd7e792657d524cde931ea666436623b23301",
+                "reference": "16cdd7e792657d524cde931ea666436623b23301",
                 "shasum": ""
             },
             "require": {
@@ -715,7 +715,7 @@
                 "slug",
                 "slugify"
             ],
-            "time": "2015-09-29 18:26:32"
+            "time": "2016-02-11 09:53:46"
         },
         {
             "name": "codesleeve/laravel-stapler",
@@ -1027,61 +1027,17 @@
             "time": "2015-11-06 14:35:42"
         },
         {
-            "name": "ezyang/htmlpurifier",
-            "version": "v4.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/6f389f0f25b90d0b495308efcfa073981177f0fd",
-                "reference": "6f389f0f25b90d0b495308efcfa073981177f0fd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
-                "files": [
-                    "library/HTMLPurifier.composer.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Edward Z. Yang",
-                    "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com"
-                }
-            ],
-            "description": "Standards compliant HTML filter written in PHP",
-            "homepage": "http://htmlpurifier.org/",
-            "keywords": [
-                "html"
-            ],
-            "time": "2013-11-30 08:25:19"
-        },
-        {
             "name": "genealabs/laravel-caffeine",
-            "version": "0.3.1",
+            "version": "0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GeneaLabs/laravel-caffeine.git",
-                "reference": "2b8a2205fee43d063c5b2e531e38289e1d410d48"
+                "reference": "da90a1f3bfa6a811fd3b47989e18e9358fbbf67f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GeneaLabs/laravel-caffeine/zipball/2b8a2205fee43d063c5b2e531e38289e1d410d48",
-                "reference": "2b8a2205fee43d063c5b2e531e38289e1d410d48",
+                "url": "https://api.github.com/repos/GeneaLabs/laravel-caffeine/zipball/da90a1f3bfa6a811fd3b47989e18e9358fbbf67f",
+                "reference": "da90a1f3bfa6a811fd3b47989e18e9358fbbf67f",
                 "shasum": ""
             },
             "require": {
@@ -1109,50 +1065,7 @@
                 }
             ],
             "description": "Keeping Your Laravel Forms Awake",
-            "time": "2016-01-24 19:53:02"
-        },
-        {
-            "name": "google/apiclient",
-            "version": "1.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "400f250a30ae1dd4c4a0a4f750fe973fc70e6311"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/400f250a30ae1dd4c4a0a4f750fe973fc70e6311",
-                "reference": "400f250a30ae1dd4c4a0a4f750fe973fc70e6311",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Client library for Google APIs",
-            "homepage": "http://developers.google.com/api-client-library/php",
-            "keywords": [
-                "google"
-            ],
-            "time": "2016-02-02 18:50:42"
+            "time": "2015-09-02 22:56:56"
         },
         {
             "name": "guzzle/guzzle",
@@ -1364,16 +1277,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb"
+                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5d04bdd2881ac89abde1fb78cc234bce24327bb",
-                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2e89629ff057ebb49492ba08e6995d3a6a80021b",
+                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b",
                 "shasum": ""
             },
             "require": {
@@ -1418,7 +1331,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-01-23 01:23:02"
+            "time": "2016-02-18 21:54:00"
         },
         {
             "name": "illuminate3/kotoba",
@@ -1426,12 +1339,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "7da03761b348f8dedd5a65b09f12ba4288637f6f"
+                "reference": "b59d241436c451a6e0dcfbb2ddc05bf88bb30c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/7da03761b348f8dedd5a65b09f12ba4288637f6f",
-                "reference": "7da03761b348f8dedd5a65b09f12ba4288637f6f",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/b59d241436c451a6e0dcfbb2ddc05bf88bb30c95",
+                "reference": "b59d241436c451a6e0dcfbb2ddc05bf88bb30c95",
                 "shasum": ""
             },
             "require": {
@@ -1462,7 +1375,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2016-02-09 16:23:46"
+            "time": "2016-02-17 20:31:15"
         },
         {
             "name": "imagine/imagine",
@@ -1836,67 +1749,6 @@
             "time": "2015-03-23 10:53:38"
         },
         {
-            "name": "larablocks/pigeon",
-            "version": "5.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/larablocks/pigeon.git",
-                "reference": "6e9d27244df045d29066b381ffd2f98b12f750fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/larablocks/pigeon/zipball/6e9d27244df045d29066b381ffd2f98b12f750fd",
-                "reference": "6e9d27244df045d29066b381ffd2f98b12f750fd",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/log": "~5.1",
-                "illuminate/mail": "~5.1",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "fzaninotto/faker": "~1.4",
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Larablocks\\Pigeon\\": "src/Pigeon"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric Mitkowski",
-                    "email": "eric@larablocks.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A more flexible email message builder for Laravel 5.0 and 5.1 including chained methods, reusable message configurations, and message layout and template view management.",
-            "keywords": [
-                "5.1",
-                "builder",
-                "email",
-                "laravel",
-                "mail",
-                "mailer",
-                "message",
-                "pigeon",
-                "template",
-                "views"
-            ],
-            "time": "2016-01-11 16:43:00"
-        },
-        {
             "name": "laracasts/presenter",
             "version": "dev-master",
             "source": {
@@ -1944,16 +1796,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.29",
+            "version": "v5.1.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7e7ba568ffbc8f3f00778f2e8f41fb92127944fd"
+                "reference": "f00b80d4d33cf67815d1b4aaae8d4b47af2f2a2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7e7ba568ffbc8f3f00778f2e8f41fb92127944fd",
-                "reference": "7e7ba568ffbc8f3f00778f2e8f41fb92127944fd",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f00b80d4d33cf67815d1b4aaae8d4b47af2f2a2a",
+                "reference": "f00b80d4d33cf67815d1b4aaae8d4b47af2f2a2a",
                 "shasum": ""
             },
             "require": {
@@ -2068,7 +1920,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-02-02 14:56:40"
+            "time": "2016-02-17 18:00:25"
         },
         {
             "name": "laravel/socialite",
@@ -2220,16 +2072,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.16",
+            "version": "1.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "183e1a610664baf6dcd6fceda415baf43cbdc031"
+                "reference": "02f5b6c9a8b9278c8381e3361e7bd9d641c740ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/183e1a610664baf6dcd6fceda415baf43cbdc031",
-                "reference": "183e1a610664baf6dcd6fceda415baf43cbdc031",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/02f5b6c9a8b9278c8381e3361e7bd9d641c740ca",
+                "reference": "02f5b6c9a8b9278c8381e3361e7bd9d641c740ca",
                 "shasum": ""
             },
             "require": {
@@ -2242,8 +2094,7 @@
                 "ext-fileinfo": "*",
                 "mockery/mockery": "~0.9",
                 "phpspec/phpspec": "^2.2",
-                "phpspec/prophecy-phpunit": "~1.0",
-                "phpunit/phpunit": "~4.8"
+                "phpunit/phpunit": "~4.8 || ~5.0"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -2300,7 +2151,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-12-19 20:16:43"
+            "time": "2016-02-19 15:35:38"
         },
         {
             "name": "league/fractal",
@@ -2501,12 +2352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/milon/barcode.git",
-                "reference": "d3d96540048d708bcd985f97184812c9fa9250ce"
+                "reference": "5b5646e9f7b56c965655cc6656593268b95058b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milon/barcode/zipball/d3d96540048d708bcd985f97184812c9fa9250ce",
-                "reference": "d3d96540048d708bcd985f97184812c9fa9250ce",
+                "url": "https://api.github.com/repos/milon/barcode/zipball/5b5646e9f7b56c965655cc6656593268b95058b0",
+                "reference": "5b5646e9f7b56c965655cc6656593268b95058b0",
                 "shasum": ""
             },
             "require": {
@@ -2542,7 +2393,7 @@
                 "qr code",
                 "qrcode"
             ],
-            "time": "2016-02-11 15:23:49"
+            "time": "2016-02-22 09:01:48"
         },
         {
             "name": "monolog/monolog",
@@ -2711,6 +2562,52 @@
                 "time"
             ],
             "time": "2015-11-04 20:07:17"
+        },
+        {
+            "name": "nicolaslopezj/searchable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nicolaslopezj/searchable.git",
+                "reference": "347f76dbe76606fdd99689cb7a125eb2221a3ea1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nicolaslopezj/searchable/zipball/347f76dbe76606fdd99689cb7a125eb2221a3ea1",
+                "reference": "347f76dbe76606fdd99689cb7a125eb2221a3ea1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "illuminate/database": "4.2.x|~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nicolaslopezj\\Searchable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Lopez",
+                    "email": "nicolaslopezj@me.com"
+                }
+            ],
+            "description": "Eloquent model search trait.",
+            "keywords": [
+                "database",
+                "eloquent",
+                "laravel",
+                "model",
+                "search",
+                "searchable"
+            ],
+            "time": "2016-01-27 20:51:18"
         },
         {
             "name": "nikic/php-parser",
@@ -3085,266 +2982,6 @@
                 "shell"
             ],
             "time": "2015-11-12 16:18:56"
-        },
-        {
-            "name": "shvetsgroup/laravel-email-database-log",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/shvetsgroup/laravel-email-database-log.git",
-                "reference": "fe0b2db7dfb3ce5223c75ec24c92afce73012ba0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/shvetsgroup/laravel-email-database-log/zipball/fe0b2db7dfb3ce5223c75ec24c92afce73012ba0",
-                "reference": "fe0b2db7dfb3ce5223c75ec24c92afce73012ba0",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "ShvetsGroup\\LaravelEmailDatabaseLog\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Shvets",
-                    "email": "neochief@shvetsgroup.com"
-                }
-            ],
-            "description": "A simple database logger for all outgoing emails sent by Laravel website.",
-            "keywords": [
-                "laravel",
-                "markdown"
-            ],
-            "time": "2015-08-19 14:23:06"
-        },
-        {
-            "name": "stevebauman/calendar-helper",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stevebauman/calendar-helper.git",
-                "reference": "75585683ca9c9358c6e0f1003325fc60662d9bff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stevebauman/calendar-helper/zipball/75585683ca9c9358c6e0f1003325fc60662d9bff",
-                "reference": "75585683ca9c9358c6e0f1003325fc60662d9bff",
-                "shasum": ""
-            },
-            "require": {
-                "google/apiclient": " 1.*",
-                "illuminate/support": "5.*",
-                "php": ">=5.4.0",
-                "stevebauman/core-helper": "1.1.*",
-                "stevebauman/eloquenttable": "1.1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Stevebauman\\CalendarHelper": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Bauman",
-                    "email": "steven_bauman@outlook.com"
-                }
-            ],
-            "description": "A Laravel calendar package for using a Google Calendar Service Account",
-            "time": "2016-01-04 01:35:36"
-        },
-        {
-            "name": "stevebauman/core-helper",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stevebauman/core-helper.git",
-                "reference": "2d3343218c10ac76344bb5c5fda3b44e49b7d5f2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stevebauman/core-helper/zipball/2d3343218c10ac76344bb5c5fda3b44e49b7d5f2",
-                "reference": "2d3343218c10ac76344bb5c5fda3b44e49b7d5f2",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "4.* | 5.*",
-                "php": ">=5.4.0",
-                "stevebauman/eloquenttable": "1.1.*",
-                "stevebauman/purify": "1.1.*",
-                "stevebauman/viewer": "1.0.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Stevebauman\\CoreHelper\\": "src/Stevebauman/CoreHelper/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Bauman",
-                    "email": "steven_bauman_7@hotmail.com"
-                }
-            ],
-            "time": "2016-01-04 01:10:12"
-        },
-        {
-            "name": "stevebauman/eloquenttable",
-            "version": "v1.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stevebauman/eloquent-table.git",
-                "reference": "90bee9aab6b37430b699c3063baaef3169609a19"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stevebauman/eloquent-table/zipball/90bee9aab6b37430b699c3063baaef3169609a19",
-                "reference": "90bee9aab6b37430b699c3063baaef3169609a19",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "4.* | 5.*",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Stevebauman\\EloquentTable\\": "src/Stevebauman/EloquentTable/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Bauman",
-                    "email": "steven_bauman_7@hotmail.com"
-                }
-            ],
-            "description": "An HTML table generator for laravel collections",
-            "keywords": [
-                "eloquent",
-                "html",
-                "laravel",
-                "php",
-                "table"
-            ],
-            "time": "2015-06-01 17:58:19"
-        },
-        {
-            "name": "stevebauman/purify",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stevebauman/purify.git",
-                "reference": "07b377e102acdca9a93423345794ad6d785725b5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stevebauman/purify/zipball/07b377e102acdca9a93423345794ad6d785725b5",
-                "reference": "07b377e102acdca9a93423345794ad6d785725b5",
-                "shasum": ""
-            },
-            "require": {
-                "ezyang/htmlpurifier": "4.6.*",
-                "illuminate/support": "5.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Stevebauman\\Purify\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Bauman",
-                    "email": "steven_bauman@outlook.com"
-                }
-            ],
-            "description": "An HTML Purifier for Laravel 5",
-            "keywords": [
-                "Purifier",
-                "clean",
-                "cleaner",
-                "html",
-                "laravel",
-                "purification",
-                "purify"
-            ],
-            "time": "2015-11-02 14:37:02"
-        },
-        {
-            "name": "stevebauman/viewer",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stevebauman/viewer.git",
-                "reference": "b7e75fe5e5c4d1e368339d647105df965cebd2ee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stevebauman/viewer/zipball/b7e75fe5e5c4d1e368339d647105df965cebd2ee",
-                "reference": "b7e75fe5e5c4d1e368339d647105df965cebd2ee",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "4.* | 5.*",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ],
-                "psr-0": {
-                    "Stevebauman\\Viewer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Steve Bauman",
-                    "email": "steven_bauman_7@hotmail.com"
-                }
-            ],
-            "description": "A presenter-like package but used for attaching modular views on a retrieved eloquent record",
-            "keywords": [
-                "Viewer",
-                "eloquent",
-                "laravel",
-                "php",
-                "presenter"
-            ],
-            "time": "2015-05-21 16:02:02"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4270,16 +3907,16 @@
         },
         {
             "name": "tom-lingham/searchy",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TomLingham/Laravel-Searchy.git",
-                "reference": "fd959de44970f414125701fbe440fe3de52cc93d"
+                "reference": "efb1b63e1754cbed4b79dd4948e679360735bcdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TomLingham/Laravel-Searchy/zipball/fd959de44970f414125701fbe440fe3de52cc93d",
-                "reference": "fd959de44970f414125701fbe440fe3de52cc93d",
+                "url": "https://api.github.com/repos/TomLingham/Laravel-Searchy/zipball/efb1b63e1754cbed4b79dd4948e679360735bcdf",
+                "reference": "efb1b63e1754cbed4b79dd4948e679360735bcdf",
                 "shasum": ""
             },
             "require": {
@@ -4311,7 +3948,7 @@
                 "laravel",
                 "search"
             ],
-            "time": "2016-01-31 07:46:48"
+            "time": "2016-02-21 10:00:34"
         },
         {
             "name": "uxweb/sweet-alert",
@@ -4560,58 +4197,6 @@
             "time": "2015-11-06 20:31:16"
         },
         {
-            "name": "willvincent/laravel-rateable",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/willvincent/laravel-rateable.git",
-                "reference": "8db744c0e3350f4bf030c70db4534573faa5aca7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/willvincent/laravel-rateable/zipball/8db744c0e3350f4bf030c70db4534573faa5aca7",
-                "reference": "8db744c0e3350f4bf030c70db4534573faa5aca7",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "~5.0",
-                "illuminate/support": "~5.0",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/commands"
-                ],
-                "psr-4": {
-                    "willvincent\\Rateable\\": "src/Rateable"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Will Vincent",
-                    "email": "tcindie@gmail.com"
-                }
-            ],
-            "description": "Allows multiple models to be rated with a fivestar like system.",
-            "keywords": [
-                "Rating",
-                "fivestar",
-                "laravel",
-                "laravel 5",
-                "rateable",
-                "vote"
-            ],
-            "time": "2016-02-08 18:24:35"
-        },
-        {
             "name": "yajra/laravel-datatables-oracle",
             "version": "v5.12.5",
             "source": {
@@ -4670,23 +4255,23 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "974fd16e328ca851a081449100d9509af59cf0ff"
+                "reference": "13b7058d2120c8d5af7f1ada21b7c44dd87b666a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/974fd16e328ca851a081449100d9509af59cf0ff",
-                "reference": "974fd16e328ca851a081449100d9509af59cf0ff",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/13b7058d2120c8d5af7f1ada21b7c44dd87b666a",
+                "reference": "13b7058d2120c8d5af7f1ada21b7c44dd87b666a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.0.17|5.1.*|5.2.*",
+                "illuminate/support": "5.1.*|5.2.*",
                 "maximebf/debugbar": "~1.11.0",
-                "php": ">=5.4.0",
-                "symfony/finder": "~2.6|~3.0"
+                "php": ">=5.5.9",
+                "symfony/finder": "~2.7|~3.0"
             },
             "type": "library",
             "extra": {
@@ -4720,7 +4305,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2015-12-22 06:22:38"
+            "time": "2016-02-17 08:32:21"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -5225,22 +4810,24 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "4745ded9307786b730d7a60df5cb5a6c43cf95f7"
+                "reference": "3c91bdf81797d725b14cb62906f9a4ce44235972"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4745ded9307786b730d7a60df5cb5a6c43cf95f7",
-                "reference": "4745ded9307786b730d7a60df5cb5a6c43cf95f7",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3c91bdf81797d725b14cb62906f9a4ce44235972",
+                "reference": "3c91bdf81797d725b14cb62906f9a4ce44235972",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
+                "php": "^5.3|^7.0",
                 "phpdocumentor/reflection-docblock": "~2.0",
-                "sebastian/comparator": "~1.1"
+                "sebastian/comparator": "~1.1",
+                "sebastian/recursion-context": "~1.0"
             },
             "require-dev": {
                 "phpspec/phpspec": "~2.0"
@@ -5248,7 +4835,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
@@ -5281,7 +4868,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-08-13 10:07:40"
+            "time": "2016-02-15 07:46:21"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -6133,8 +5720,8 @@
         "laravelrus/localized-carbon": 20,
         "cviebrock/eloquent-sluggable": 20,
         "aura-is-here/laravel-multi-tenant": 20,
-        "stevebauman/calendar-helper": 20,
-        "milon/barcode": 20
+        "milon/barcode": 20,
+        "nicolaslopezj/searchable": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
