@@ -1,4 +1,4 @@
-@extends($theme_front)
+@extends($theme_simple)
 
 {{-- Web site Title --}}
 @section('title')
