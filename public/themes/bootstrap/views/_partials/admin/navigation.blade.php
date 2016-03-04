@@ -17,27 +17,6 @@
 
 @if (Auth::user())
 
-{{-- @if (Auth::user()->can('manage_shisan')) --}}
-@if ( Config::get('shisan.show_category_menu') == true)
-	<ul class="nav navbar-nav">
-		<li>
-		<a href="#" class="sitemap" id="showLeft">
-			{{ Lang::choice('kotoba::general.category', 2) }}
-		</a>
-		</li>
-	</ul>
-@endif
-@endif
-
-
-	@if (Auth::user())
-		<ul class="nav navbar-nav">
-{{--
-			@include('_partials.menu', ['items'=> $menu_navbar->roots()])
-			@include('_partials.menu_links')
---}}
-		</ul>
-	@endif
 	<ul class="nav navbar-nav navbar-right">
 		@if (Auth::guest())
 			<li><a href="/auth/login">{{ trans('kotoba::auth.log_in') }}</a></li>
@@ -101,6 +80,7 @@
 		@endif
 	</ul>
 
+@endif
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown messages-menu">
@@ -251,3 +231,4 @@
 
 </div><!-- ./container-fluid -->
 </nav><!-- /nav -->
+
