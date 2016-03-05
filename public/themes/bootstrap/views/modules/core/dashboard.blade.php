@@ -60,7 +60,10 @@
 							{{ trans('kotoba::general.all') }}
 						</dt>
 						<dd>
-							<a href="{{ URL::to('/admin/tickets') }}">{{ $total_tickets }}</a>
+							<a href="{{ URL::to('/admin/tickets') }}">
+							{{-- $total_tickets --}}
+							{!! Widget::AllTickets() !!}
+							</a>
 						</dd>
 					</dl>
 
@@ -108,7 +111,10 @@
 					{{ trans('kotoba::general.all') }}
 				</dt>
 				<dd>
-					<a href="{{ URL::to('/admin/asset') }}">{{ $total_assets }}</a>
+					<a href="{{ URL::to('/admin/asset') }}">
+					{{-- $total_assets --}}
+					{!! Widget::AllAssets() !!}
+					</a>
 				</dd>
 			</dl>
 
@@ -183,7 +189,10 @@
 			{{ trans('kotoba::general.all') }}
 		</dt>
 		<dd>
-			<a href="{{ URL::to('/admin/seminars') }}">{{ $total_seminars }}</a>
+			<a href="{{ URL::to('/admin/seminars') }}">
+			{{-- $total_seminars --}}
+			{!! Widget::AllSeminars() !!}
+			</a>
 		</dd>
 	</dl>
 
