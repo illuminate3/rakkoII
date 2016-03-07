@@ -24,7 +24,7 @@
 	<p class="pull-right">
 	<a href="/" class="btn btn-primary" title="{{ trans('kotoba::cms.site') }}">
 		<i class="fa fa-globe fa-fw"></i>
-		{{ trans('kotoba::cms.site') }}
+		{{ Lang::choice('kotoba::cms.site', 1) }}
 	</a>
 	</p>
 	<i class="fa fa-dashboard fa-lg"></i>

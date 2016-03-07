@@ -53,7 +53,7 @@ class AllTickets extends Widget
 			$all_tickets = Cache::get('ticket_all_tickets');
 		} else {
 			$all_tickets = Cache::rememberForever('ticket_all_tickets', function() {
-				return Asset::all();
+				return Ticket::all();
 			});
 		}
 
