@@ -10,9 +10,9 @@
 		<span class="icon-bar"></span>
 	</button>
 		@if (Auth::user() && Auth::user()->can('manage_admin'))
-			<a href="/admin">Rakko :: Admin</a>
+			<a class="navbar-brand" href="/admin">Rakko :: Admin</a>
 		@else
-			<a href="/">Rakko :: Information Management System</a>
+			<a class="navbar-brand" href="/">Rakko :: Information Management System</a>
 		@endif
 </div>
 

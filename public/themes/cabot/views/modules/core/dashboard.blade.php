@@ -24,7 +24,7 @@
 	<p class="pull-right">
 	<a href="/" class="btn btn-primary" title="{{ trans('kotoba::cms.site') }}">
 		<i class="fa fa-globe fa-fw"></i>
-		{{ trans('kotoba::cms.site') }}
+		{{ Lang::choice('kotoba::cms.site', 1) }}
 	</a>
 	</p>
 	<i class="fa fa-dashboard fa-lg"></i>
@@ -60,7 +60,10 @@
 							{{ trans('kotoba::general.all') }}
 						</dt>
 						<dd>
-							<a href="{{ URL::to('/admin/tickets') }}">{{ $total_tickets }}</a>
+							<a href="{{ URL::to('/admin/tickets') }}">
+							{{-- $total_tickets --}}
+							{!! Widget::AllTickets() !!}
+							</a>
 						</dd>
 					</dl>
 
@@ -108,7 +111,10 @@
 					{{ trans('kotoba::general.all') }}
 				</dt>
 				<dd>
-					<a href="{{ URL::to('/admin/asset') }}">{{ $total_assets }}</a>
+					<a href="{{ URL::to('/admin/asset') }}">
+					{{-- $total_assets --}}
+					{!! Widget::AllAssets() !!}
+					</a>
 				</dd>
 			</dl>
 
@@ -145,7 +151,10 @@
 			{{ trans('kotoba::general.all') }}
 		</dt>
 		<dd>
-			<a href="{{ URL::to('/admin/contents') }}">{{ $total_contents }}</a>
+			<a href="{{ URL::to('/admin/contents') }}">
+			{{-- $total_contents --}}
+			{!! Widget::AllContents() !!}
+			</a>
 		</dd>
 	</dl>
 
@@ -164,7 +173,10 @@
 			{{ trans('kotoba::general.all') }}
 		</dt>
 		<dd>
-			<a href="{{ URL::to('/admin/news') }}">{{ $total_articles }}</a>
+			<a href="{{ URL::to('/admin/news') }}">
+			{{-- $total_articles --}}
+			{!! Widget::AllContents() !!}
+			</a>
 		</dd>
 	</dl>
 
@@ -183,7 +195,10 @@
 			{{ trans('kotoba::general.all') }}
 		</dt>
 		<dd>
-			<a href="{{ URL::to('/admin/seminars') }}">{{ $total_seminars }}</a>
+			<a href="{{ URL::to('/admin/seminars') }}">
+			{{-- $total_seminars --}}
+			{!! Widget::AllSeminars() !!}
+			</a>
 		</dd>
 	</dl>
 

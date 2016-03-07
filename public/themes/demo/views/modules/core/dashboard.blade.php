@@ -151,7 +151,10 @@
 			{{ trans('kotoba::general.all') }}
 		</dt>
 		<dd>
-			<a href="{{ URL::to('/admin/contents') }}">{{ $total_contents }}</a>
+			<a href="{{ URL::to('/admin/contents') }}">
+			{{-- $total_contents --}}
+			{!! Widget::AllContents() !!}
+			</a>
 		</dd>
 	</dl>
 
@@ -170,7 +173,10 @@
 			{{ trans('kotoba::general.all') }}
 		</dt>
 		<dd>
-			<a href="{{ URL::to('/admin/news') }}">{{ $total_articles }}</a>
+			<a href="{{ URL::to('/admin/news') }}">
+			{{-- $total_articles --}}
+			{!! Widget::AllContents() !!}
+			</a>
 		</dd>
 	</dl>
 

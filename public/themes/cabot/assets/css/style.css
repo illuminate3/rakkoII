@@ -39,6 +39,22 @@ body {
 	font-size: 1.3rem;
 }
 
+.img-resize {
+	-ms-transform: scale(0.4, 0.4);
+	-webkit-transform: scale(0.4, 0.4);
+	transform: scale(0.4, 0.4);
+	padding-right: 5px; !important
+}
+
+.landing {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
 
 /*
 |-----------------------------------------------------------------------------------------
@@ -67,7 +83,7 @@ body {
 		transform: scale(0.7, 0.7);
 		padding-right: 5px; !important
 	}
-	
+
 	a.top-link {
 	font-size: 1em !important;
 	}
@@ -78,7 +94,7 @@ body {
 	.hide-element {
 		display: none !important;
 	}
-	
+
 	.carousel {
 	padding: 0 0 !important;
 	margin: 0 -40px !important;
@@ -279,7 +295,7 @@ main {
 */
 .navbar {
 	font-family: 'Open Sans', sans-serif;
-	min-height:95;
+	min-height:25;
 	margin-bottom: -20px !important;
 	padding: 10px 0;
 }
@@ -288,7 +304,7 @@ main {
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	vertical-align: bottom;
-	margin-top: 40px;
+	margin-top: 0px;
 	padding-right: 20px;
 }
 
@@ -312,11 +328,12 @@ main {
 .footer
 {
 	border-top: 4px solid #e7e7e7;
-	background-color: #2f499e;
+	background-color:rgb(208,0,0);
+	color: #FFF;
 }
 
 .copyright {
-	color: #aab2bd;
+	color: #fff;
 }
 
 .logo-text {
@@ -325,6 +342,16 @@ main {
 	margin-right: auto;
 	color: #aab2bd;
 }
+
+.copyright a {
+	color: #fff;
+}
+
+.copyright a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
 a.logo {
 	color: #fff;
 }
