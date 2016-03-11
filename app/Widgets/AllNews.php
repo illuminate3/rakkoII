@@ -40,6 +40,7 @@ class AllNews extends Widget
 			$count = count($this->getAllNews());
 			Cache::forever('newsdesk_count_all_contents', $count);
 		}
+//dd($count);
 
 		return $count;
 
@@ -53,7 +54,7 @@ class AllNews extends Widget
 			$all_contents = Cache::get('newsdesk_all_contents');
 		} else {
 			$all_contents = Cache::rememberForever('newsdesk_all_contents', function() {
-				return New::all();
+				return News::all();
 			});
 		}
 

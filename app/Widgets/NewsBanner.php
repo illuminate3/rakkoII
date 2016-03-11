@@ -40,7 +40,12 @@ class NewsBanner extends Widget
 		}
 */
 //		$articles = News::IsPublished()->IsBanner()->orderBy('order')->get();
-		$articles = News::IsPublished()->IsBanner()->SiteID()->orderBy('order')->get();
+		$timed_articles = News::IsPublished()->SiteID()->IsBanner()->IsTimed()->orderBy('order')->get();
+//dd($timed_articles);
+		$normal_articles = News::IsPublished()->SiteID()->IsBanner()->NotTimed()->orderBy('order')->get();
+//dd($normal_articles);
+		$articles = $timed_articles->merge($normal_articles);
+
 		$count = count($articles);
 //dd($articles);
 

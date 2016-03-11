@@ -21,6 +21,8 @@ class NavLinks extends Widget
 	{
 
 		$activeTheme = Theme::getActive();
+
+/*
 //Cache::forget('pages');
 		$pages = Cache::get('widget_navlinks', null);
 //dd($pages);
@@ -32,6 +34,22 @@ class NavLinks extends Widget
 				return Content::InPrint()->IsNavigation()->SiteID()->orderBy('order')->get();
 			});
 		}
+*/
+
+//		$pages = Content::InPrint()->IsNavigation()->SiteID()->orderBy('order')->get();
+
+//		$timed_pages = Content::InPrint()->SiteID()->IsNavigation()->IsTimed()->orderBy('order')->get();
+//dd($timed_pages);
+//		$normal_pages = Content::InPrint()->SiteID()->IsNavigation()->NotTimed()->orderBy('order')->get();
+//dd($normal_pages);
+//		$pages = $timed_pages->merge($normal_pages);
+
+		$pages = Cache::rememberForever('widget_navlinks', function() {
+			$timed_pages = Content::InPrint()->SiteID()->IsNavigation()->IsTimed()->orderBy('order')->get();
+			$normal_pages = Content::InPrint()->SiteID()->IsNavigation()->NotTimed()->orderBy('order')->get();
+			return $timed_pages->merge($normal_pages);
+		});
+
 //dd($pages);
 
 

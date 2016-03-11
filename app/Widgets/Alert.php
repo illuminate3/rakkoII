@@ -34,8 +34,14 @@ class alert extends Widget
 		}
 */
 //		$alerts = News::IsPublished()->IsAlert()->orderBy('order')->get();
-		$alerts = News::IsPublished()->IsAlert()->SiteID()->orderBy('order')->get();
+//		$alerts = News::IsPublished()->IsAlert()->SiteID()->orderBy('order')->get();
 //dd($alerts);
+
+		$timed_alerts = News::IsPublished()->SiteID()->IsAlert()->IsTimed()->orderBy('order')->get();
+//dd($timed_alerts);
+		$normal_alerts = News::IsPublished()->SiteID()->IsAlert()->NotTimed()->orderBy('order')->get();
+//dd($normal_alerts);
+		$alerts = $timed_alerts->merge($normal_alerts);
 
 		return Theme::View($activeTheme . '::' . 'widgets.alert',
 			compact(

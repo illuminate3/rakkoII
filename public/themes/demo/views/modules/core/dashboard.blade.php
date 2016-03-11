@@ -183,7 +183,7 @@
 		<dd>
 			<a href="{{ URL::to('/admin/news') }}">
 			{{-- $total_articles --}}
-			{!! Widget::AllContents() !!}
+			{!! Widget::AllNews() !!}
 			</a>
 		</dd>
 	</dl>

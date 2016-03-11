@@ -20,18 +20,12 @@
 
 
 <!-- Banner -->
-{!!
-	Widget::NewsBanner()
-!!}
-
-
-<!--WELCOME-->
 <div class="container-fluid">
 <div class="row">
 
-	<a href="/">
-		<img class="landing" src="{{ asset('/assets/images/rakko.jpg') }}"></img>
-	</a>
+	{!!
+		Widget::NewsBanner()
+	!!}
 
 </div><!--./row-->
 </div><!--./container-fluid-->
