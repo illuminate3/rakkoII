@@ -133,6 +133,14 @@
 		</div>
 		</div>
 
+		<div class="row">
+		<div class="col-sm-12">
+			{!!
+				Widget::AssetSearch()
+			!!}
+		</div>
+		</div>
+
 	@endif
 
 </div>

@@ -35,6 +35,9 @@
 
 		<div class="col-sm-4">
 
+		@if (Auth::user() && Auth::user()->can('manage_admin'))
+			<a class="navbar-brand" href="/admin">Rakko :: Admin</a>
+		@else
 
 				<form class="form-horizontal margin-top-xl" role="form" method="POST" action="/auth/login">
 					{!! csrf_field() !!}
@@ -75,6 +78,7 @@
 
 				</form>
 
+		@endif
 
 		</div>
 
