@@ -156,6 +156,7 @@ return [
         Illuminate3\Kotoba\KotobaServiceProvider::class,
         Caffeinated\Flash\FlashServiceProvider::class,
         Caffeinated\Modules\ModulesServiceProvider::class,
+		Caffeinated\Plugins\PluginsServiceProvider::class,
         Caffeinated\Themes\ThemesServiceProvider::class,
         Caffeinated\Widgets\WidgetsServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
@@ -222,6 +223,7 @@ return [
         */
         'Flash' => Caffeinated\Flash\Facades\Flash::class,
         'Module' => Caffeinated\Modules\Facades\Module::class,
+        'Plugin' => Caffeinated\Plugins\Facades\Plugin::class,
         'Theme' => Caffeinated\Themes\Facades\Theme::class,
         'Widget' => Caffeinated\Widgets\Facades\Widget::class,
         'Form' => Collective\Html\FormFacade::class,

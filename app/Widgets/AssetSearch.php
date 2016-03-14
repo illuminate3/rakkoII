@@ -23,6 +23,5 @@ class AssetSearch extends Widget
 		$activeTheme = Theme::getActive();
 		return Theme::View($activeTheme . '::' . 'widgets.asset_search');
 
-
 	}
 }

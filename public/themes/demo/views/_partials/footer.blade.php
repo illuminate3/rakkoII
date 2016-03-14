@@ -28,7 +28,7 @@
 {!!
 	Widget::TopNews()
 !!}
-
+{!! $menu_example->asUl() !!}
 		</div>
 
 

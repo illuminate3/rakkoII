@@ -19,10 +19,9 @@
 	<div id="navbar" class="navbar-collapse collapse">
 		<ul class="nav navbar-nav navbar-right">
 
-{!!
-	Widget::NavLinks()
-!!}
-
+{{-- Widget::NavLinks() --}}
+{{-- $menu_example->asUl() --}}
+@include('partials.menu', ['items'=> $menu_example->roots()])
 		</ul>
 	</div><!--/.nav-collapse -->
 

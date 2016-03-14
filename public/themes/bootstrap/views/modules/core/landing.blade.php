@@ -9,7 +9,7 @@
 @stop
 
 @section('scripts')
-<script src="{{ asset('themes/district/assets/js/calendar.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/js/calendar.js') }}" type="text/javascript"></script>
 @stop
 
 @section('inline-scripts')

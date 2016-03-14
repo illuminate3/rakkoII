@@ -6,7 +6,7 @@
 @stop
 
 @section('styles')
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/district/assets/css/admin.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/admin.css') }}">
 @stop
 
 @section('scripts')

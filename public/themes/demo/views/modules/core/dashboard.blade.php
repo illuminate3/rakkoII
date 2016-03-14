@@ -6,7 +6,6 @@
 @stop
 
 @section('styles')
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/district/assets/css/admin.css') }}">
 @stop
 
 @section('scripts')
@@ -135,9 +134,11 @@
 
 		<div class="row">
 		<div class="col-sm-12">
-			{!!
-				Widget::AssetSearch()
-			!!}
+
+			{{-- Widget::AssetSearch() --}}
+{{--
+@include($activeTheme . '::' . 'widgets.asset_search')
+--}}
 		</div>
 		</div>
 

@@ -11,6 +11,10 @@
 	<a class="navbar-brand" href="/">
 		{{ Setting::get('brand_title', Config::get('core.brand_title')) }}
 	</a>
+	<a class="navbar-brand" href="/admin/dashboard">
+		<i class="fa fa-dashboard fa-lg"></i>
+		{{ trans('kotoba::cms.dashboard') }}
+	</a>
 </div>
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

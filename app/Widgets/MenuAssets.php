@@ -45,6 +45,7 @@ class MenuAssets extends Widget
 // 	}
 
 
+Cache::forget('widget_assets');
 		$menus = Cache::get('widget_assets', null);
 
 		if ($menus == null) {

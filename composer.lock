@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5bcb40237e2d2831d0cac337b2d79fce",
-    "content-hash": "f6df9d5f2251cb25e0ba8ff45bc4bdf6",
+    "hash": "c30b1ec0fbedd9c053619e79387fc5e4",
+    "content-hash": "e7b624f5b8bb4f4b474fe5d8df5815b7",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -338,6 +338,53 @@
             "time": "2016-02-25 23:37:16"
         },
         {
+            "name": "caffeinated/menus",
+            "version": "v2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/menus.git",
+                "reference": "dc396a8ce2617f6e9b43952200740cf1d628c2a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/menus/zipball/dc396a8ce2617f6e9b43952200740cf1d628c2a9",
+                "reference": "dc396a8ce2617f6e9b43952200740cf1d628c2a9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.1.*|5.2.*",
+                "illuminate/routing": "5.1.*|5.2.*",
+                "illuminate/support": "~5.1.24|5.2.*",
+                "illuminate/view": "5.1.*|5.2.*",
+                "laravelcollective/html": "5.1.*|5.2.*",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Caffeinated\\Menus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Menus",
+            "keywords": [
+                "caffeinated",
+                "laravel",
+                "menu",
+                "navigation"
+            ],
+            "time": "2015-12-04 18:27:59"
+        },
+        {
             "name": "caffeinated/modules",
             "version": "v2.1.11",
             "source": {
@@ -393,6 +440,49 @@
                 "modules"
             ],
             "time": "2015-12-11 19:21:55"
+        },
+        {
+            "name": "caffeinated/plugins",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caffeinated/plugins.git",
+                "reference": "1794ff14e6189795379c97f4391c218ccbcd3481"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caffeinated/plugins/zipball/1794ff14e6189795379c97f4391c218ccbcd3481",
+                "reference": "1794ff14e6189795379c97f4391c218ccbcd3481",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.1.*|5.2.*",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Caffeinated\\Plugins\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shea Lewis",
+                    "email": "shea.lewis89@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Plugins",
+            "keywords": [
+                "caffeinated",
+                "laravel",
+                "plugin",
+                "plugins"
+            ],
+            "time": "2016-02-25 23:37:28"
         },
         {
             "name": "caffeinated/seo",
@@ -553,16 +643,16 @@
         },
         {
             "name": "caffeinated/widgets",
-            "version": "2.1",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caffeinated/widgets.git",
-                "reference": "4816e4c6e5d63ecd7d57dda12bf7364b44e6c349"
+                "reference": "3cd508518c4d62cf6173304638e7a06324a69d61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caffeinated/widgets/zipball/4816e4c6e5d63ecd7d57dda12bf7364b44e6c349",
-                "reference": "4816e4c6e5d63ecd7d57dda12bf7364b44e6c349",
+                "url": "https://api.github.com/repos/caffeinated/widgets/zipball/3cd508518c4d62cf6173304638e7a06324a69d61",
+                "reference": "3cd508518c4d62cf6173304638e7a06324a69d61",
                 "shasum": ""
             },
             "require": {
@@ -595,7 +685,7 @@
                 "laravel",
                 "widgets"
             ],
-            "time": "2016-01-04 19:20:58"
+            "time": "2016-03-06 05:19:46"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -1223,16 +1313,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
-                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/bb9024c526b22f3fe6ae55a561fd70653d470aa8",
+                "reference": "bb9024c526b22f3fe6ae55a561fd70653d470aa8",
                 "shasum": ""
             },
             "require": {
@@ -1270,7 +1360,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2015-10-15 22:28:00"
+            "time": "2016-03-08 01:15:46"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1336,12 +1426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "b59d241436c451a6e0dcfbb2ddc05bf88bb30c95"
+                "reference": "8fa721ea6c2d30fadfce665dded12c1c1d13fc27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/b59d241436c451a6e0dcfbb2ddc05bf88bb30c95",
-                "reference": "b59d241436c451a6e0dcfbb2ddc05bf88bb30c95",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/8fa721ea6c2d30fadfce665dded12c1c1d13fc27",
+                "reference": "8fa721ea6c2d30fadfce665dded12c1c1d13fc27",
                 "shasum": ""
             },
             "require": {
@@ -1372,7 +1462,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2016-02-17 20:31:15"
+            "time": "2016-03-11 18:51:36"
         },
         {
             "name": "imagine/imagine",
@@ -2130,16 +2220,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.17",
+            "version": "1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "02f5b6c9a8b9278c8381e3361e7bd9d641c740ca"
+                "reference": "b334d6c5f95364948e06d2f620ab93d084074c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/02f5b6c9a8b9278c8381e3361e7bd9d641c740ca",
-                "reference": "02f5b6c9a8b9278c8381e3361e7bd9d641c740ca",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/b334d6c5f95364948e06d2f620ab93d084074c6e",
+                "reference": "b334d6c5f95364948e06d2f620ab93d084074c6e",
                 "shasum": ""
             },
             "require": {
@@ -2209,7 +2299,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2016-02-19 15:35:38"
+            "time": "2016-03-07 21:01:43"
         },
         {
             "name": "league/fractal",
@@ -2675,16 +2765,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "f078eba3bcf140fd69b5fcc3ea5ac809abf729dc"
+                "reference": "b3313b618f4edd76523572531d5d7e22fe747430"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/f078eba3bcf140fd69b5fcc3ea5ac809abf729dc",
-                "reference": "f078eba3bcf140fd69b5fcc3ea5ac809abf729dc",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b3313b618f4edd76523572531d5d7e22fe747430",
+                "reference": "b3313b618f4edd76523572531d5d7e22fe747430",
                 "shasum": ""
             },
             "require": {
@@ -2719,7 +2809,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-02-29 17:25:04"
+            "time": "2016-03-11 19:54:08"
         },
         {
             "name": "patchwork/utf8",
@@ -2926,16 +3016,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.7.1",
+            "version": "v0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "5e8cedbe0a3681f18782594eefc78423f8401fc8"
+                "reference": "e64e10b20f8d229cac76399e1f3edddb57a0f280"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/5e8cedbe0a3681f18782594eefc78423f8401fc8",
-                "reference": "5e8cedbe0a3681f18782594eefc78423f8401fc8",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e64e10b20f8d229cac76399e1f3edddb57a0f280",
+                "reference": "e64e10b20f8d229cac76399e1f3edddb57a0f280",
                 "shasum": ""
             },
             "require": {
@@ -2994,7 +3084,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2016-02-27 18:59:18"
+            "time": "2016-03-09 05:03:14"
         },
         {
             "name": "shvetsgroup/laravel-email-database-log",
@@ -3561,7 +3651,7 @@
         },
         {
             "name": "symfony/polyfill-php56",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php56.git",
@@ -3617,7 +3707,7 @@
         },
         {
             "name": "symfony/polyfill-util",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-util.git",
@@ -4006,16 +4096,16 @@
         },
         {
             "name": "uxweb/sweet-alert",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/uxweb/sweet-alert.git",
-                "reference": "24a963cb788357b354a861a9b96484ade0e45b56"
+                "reference": "13c6846d4d789cbd71716639c14a455b095db14a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/uxweb/sweet-alert/zipball/24a963cb788357b354a861a9b96484ade0e45b56",
-                "reference": "24a963cb788357b354a861a9b96484ade0e45b56",
+                "url": "https://api.github.com/repos/uxweb/sweet-alert/zipball/13c6846d4d789cbd71716639c14a455b095db14a",
+                "reference": "13c6846d4d789cbd71716639c14a455b095db14a",
                 "shasum": ""
             },
             "require": {
@@ -4048,20 +4138,20 @@
                 "laravel",
                 "sweet"
             ],
-            "time": "2015-12-22 05:01:51"
+            "time": "2016-03-08 06:11:44"
         },
         {
             "name": "vespakoen/menu",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vespakoen/menu.git",
-                "reference": "e2b2c57bca1fa8132c51c906c701103bfa5c03cd"
+                "reference": "130a245e2ad4af16f5c191f3b537245c8c8eb947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vespakoen/menu/zipball/e2b2c57bca1fa8132c51c906c701103bfa5c03cd",
-                "reference": "e2b2c57bca1fa8132c51c906c701103bfa5c03cd",
+                "url": "https://api.github.com/repos/vespakoen/menu/zipball/130a245e2ad4af16f5c191f3b537245c8c8eb947",
+                "reference": "130a245e2ad4af16f5c191f3b537245c8c8eb947",
                 "shasum": ""
             },
             "require": {
@@ -4098,7 +4188,7 @@
                 "laravel 5",
                 "menu"
             ],
-            "time": "2015-06-08 12:22:47"
+            "time": "2016-03-09 11:41:17"
         },
         {
             "name": "vinkla/translator",
@@ -4203,16 +4293,16 @@
         },
         {
             "name": "wikimedia/composer-merge-plugin",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikimedia/composer-merge-plugin.git",
-                "reference": "bfed1f8d4eb97e9ba80eee57ea46229d7e5364d9"
+                "reference": "0bdf8543d445ee067c9ba7d5d4a5dde70b9785f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/bfed1f8d4eb97e9ba80eee57ea46229d7e5364d9",
-                "reference": "bfed1f8d4eb97e9ba80eee57ea46229d7e5364d9",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/0bdf8543d445ee067c9ba7d5d4a5dde70b9785f4",
+                "reference": "0bdf8543d445ee067c9ba7d5d4a5dde70b9785f4",
                 "shasum": ""
             },
             "require": {
@@ -4248,7 +4338,7 @@
                 }
             ],
             "description": "Composer plugin to merge multiple composer.json files",
-            "time": "2015-11-06 20:31:16"
+            "time": "2016-03-08 17:11:37"
         },
         {
             "name": "willvincent/laravel-rateable",
