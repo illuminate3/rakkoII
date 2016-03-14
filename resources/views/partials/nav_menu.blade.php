@@ -5,7 +5,7 @@
 			@if($item->hasChildren()) <b class="caret"></b> @endif
 		</a>
 		@else
-			{{$item->title}}
+			{{$item->title}}fsdafas
 		@endif
 		@if($item->hasChildren())
 			<ul class="dropdown-menu">
