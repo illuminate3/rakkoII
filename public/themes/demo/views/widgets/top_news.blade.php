@@ -5,6 +5,7 @@
 	<h1>
 		{{ trans('kotoba::cms.news') }}
 	</h1>
+	<hr>
 </div>
 
 

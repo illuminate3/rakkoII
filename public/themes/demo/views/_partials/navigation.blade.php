@@ -21,7 +21,8 @@
 
 {{-- Widget::NavLinks() --}}
 {{-- $menu_example->asUl() --}}
-@include('partials.menu', ['items'=> $menu_example->roots()])
+@include('partials.nav_menu', ['items'=> $menu_navLinks->roots()])
+
 		</ul>
 	</div><!--/.nav-collapse -->
 

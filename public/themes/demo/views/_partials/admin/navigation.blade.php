@@ -71,9 +71,13 @@
 					</li>
 					<li class="divider"></li>
 --}}
-					{!!
+					{{--
 						Widget::MenuAdmin()
-					!!}
+					--}}
+
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navAdmin->roots()])
+
 					<li class="divider"></li>
 @endif
 					<li>

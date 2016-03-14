@@ -62,6 +62,7 @@
 							<a href="{{ URL::to('/admin/tickets') }}">
 							{{-- $total_tickets --}}
 							{!! Widget::AllTickets() !!}
+{{-- plugin_ticketAllActive() --}}
 							</a>
 						</dd>
 					</dl>
@@ -71,7 +72,9 @@
 							{{ trans('kotoba::general.active') }}
 						</dt>
 						<dd>
-							<a href="{{ URL::to('/admin/tickets') }}">{{ $total_tickets_active }}</a>
+							<a href="{{ URL::to('/admin/tickets') }}">
+							{{-- $total_tickets_active --}}
+							</a>
 						</dd>
 					</dl>
 
@@ -80,7 +83,10 @@
 							{{ trans('kotoba::general.closed') }}
 						</dt>
 						<dd>
-							<a href="{{ URL::to('/admin/tickets') }}">{{ $total_tickets_closed }}</a>
+							<a href="{{ URL::to('/admin/tickets') }}">
+							{!! $total_tickets_closed !!}
+{{-- plugin_ticketAllClosed() --}}
+							</a>
 						</dd>
 					</dl>
 
