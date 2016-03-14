@@ -74,6 +74,8 @@
 						<dd>
 							<a href="{{ URL::to('/admin/tickets') }}">
 							{{-- $total_tickets_active --}}
+{{-- plugin_ticketAllClosed() --}}
+							{!! Widget::TicketsActive() !!}
 							</a>
 						</dd>
 					</dl>
@@ -84,8 +86,9 @@
 						</dt>
 						<dd>
 							<a href="{{ URL::to('/admin/tickets') }}">
-							{!! $total_tickets_closed !!}
+							{{-- $total_tickets_closed --}}
 {{-- plugin_ticketAllClosed() --}}
+							{!! Widget::TicketsClosed() !!}
 							</a>
 						</dd>
 					</dl>
@@ -131,7 +134,10 @@
 					{{ date("Y") }}&nbsp;{{ Lang::choice('kotoba::general.year', 1) }}
 				</dt>
 				<dd>
-					<a href="{{ URL::to('/admin/asset') }}">{{ $total_assets_year }}</a>
+					<a href="{{ URL::to('/admin/asset') }}">
+					{{-- $total_assets_year --}}
+					{!! Widget::AllYearAssets() !!}
+					</a>
 				</dd>
 			</dl>
 

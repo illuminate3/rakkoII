@@ -32,12 +32,13 @@ class AllAssets extends Widget
 
 		$count = trans('kotoba::general.error.no_data');
 
+//Cache::forget('shisan_count_all_assets');
 		if (Cache::has('shisan_count_all_assets')) {
 			$count = Cache::get('shisan_count_all_assets');
 //dd($count);
 		} else {
 //dd('die');
-			$count = count($this->getAllAssets());
+			$count = $this->getAllAssets();
 			Cache::forever('shisan_count_all_assets', $count);
 		}
 
