@@ -150,9 +150,11 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuHoritsu()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navHoritsu->roots()])
 				</li>
 			</ul>
 		</li>
@@ -165,9 +167,11 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuSchool()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navGakko->roots()])
 				</li>
 			</ul>
 		</li>
@@ -180,9 +184,11 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuCampus()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navCampus->roots()])
 				</li>
 			</ul>
 		</li>
@@ -195,9 +201,11 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuHR()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navJinji->roots()])
 				</li>
 			</ul>
 		</li>
@@ -210,9 +218,11 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuCMS()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navHimawari->roots()])
 				</li>
 			</ul>
 		</li>
@@ -225,9 +235,11 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuAssets()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navShisan->roots()])
 				</li>
 			</ul>
 		</li>
