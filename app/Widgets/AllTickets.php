@@ -23,6 +23,7 @@ class AllTickets extends Widget
 	public function handle()
 	{
 		$count = $this->coountAllTickets();
+//dd($count);
 		return $count;
 	}
 
@@ -37,7 +38,7 @@ class AllTickets extends Widget
 //dd($count);
 		} else {
 //dd('die');
-			$count = count($this->getAllTickets());
+			$count = $this->getAllTickets();
 			Cache::forever('ticket_count_all_tickets', $count);
 		}
 
@@ -48,7 +49,7 @@ class AllTickets extends Widget
 
 	public function getAllTickets()
 	{
-
+/*
 		if (Cache::has('ticket_all_tickets')) {
 			$all_tickets = Cache::get('ticket_all_tickets');
 		} else {
@@ -58,6 +59,20 @@ class AllTickets extends Widget
 		}
 
 		return $all_tickets;
+*/
+
+
+		if (Schema::hasTable('tickets')) {
+			$total_tickets = Ticket::all();
+			$count = count($total_tickets);
+			if ( $count == null ) {
+				$count = 0;
+			}
+//dd($count);
+			return $count;
+		}
+
+
 
 	}
 

@@ -22,12 +22,13 @@ class AllAssets extends Widget
 
 	public function handle()
 	{
-		$count = $this->coountAllAssets();
+		$count = $this->countAllAssets();
+//dd($count);
 		return $count;
 	}
 
 
-	public function coountAllAssets()
+	public function countAllAssets()
 	{
 
 		$count = trans('kotoba::general.error.no_data');
@@ -50,6 +51,7 @@ class AllAssets extends Widget
 	public function getAllAssets()
 	{
 
+/*
 		if (Cache::has('shisan_all_assets')) {
 			$all_assets = Cache::get('shisan_all_assets');
 		} else {
@@ -59,6 +61,21 @@ class AllAssets extends Widget
 		}
 
 		return $all_assets;
+*/
+
+
+		if (Schema::hasTable('assets')) {
+			$total_assets = Asset::all();
+			$count = count($total_assets);
+			if ( $count == null ) {
+				$count = 0;
+			}
+//dd($count);
+			return $count;
+		}
+
+
+
 
 	}
 
