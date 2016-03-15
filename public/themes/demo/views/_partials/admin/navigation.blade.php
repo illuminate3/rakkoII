@@ -120,9 +120,11 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuSettings()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navSettings->roots()])
 				</li>
 			</ul>
 		</li>
@@ -135,14 +137,17 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuMail()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navYubin->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
 
+@if (Module::isEnabled('horitsu'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -159,7 +164,10 @@
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('gakko'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -176,7 +184,10 @@
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('campus'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -193,7 +204,10 @@
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('jinji'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -210,7 +224,10 @@
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('himawari'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -227,7 +244,10 @@
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('shisan'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -244,6 +264,8 @@
 			</ul>
 		</li>
 	</ul>
+@endif
+
 
 @endif
 
