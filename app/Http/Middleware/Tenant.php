@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 
-use App\Modules\Campus\Http\Models\Site;
+use App\Modules\Core\Http\Models\Site;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 use AuraIsHere\LaravelMultiTenant\TenantScope;
