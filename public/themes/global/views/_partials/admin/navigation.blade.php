@@ -141,6 +141,21 @@
 	<ul class="nav navbar-nav navbar-right">
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					{{ trans('kotoba::general.other') }} <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li>
+					{!!
+						Widget::MenuOther()
+					!!}
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 					{{ trans('kotoba::hr.office') }} <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu" role="menu">

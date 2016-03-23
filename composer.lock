@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c30b1ec0fbedd9c053619e79387fc5e4",
-    "content-hash": "e7b624f5b8bb4f4b474fe5d8df5815b7",
+    "hash": "96de4cbcfa31f52dc52d10890eddecc5",
+    "content-hash": "b5a246cb130a03eb6384b2b6fbfb7a85",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -913,12 +913,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cviebrock/eloquent-sluggable.git",
-                "reference": "2457098d93fb3a0a62d012fbc575af6e5d37bde5"
+                "reference": "cea02a8b8035ce341d14c8529eb775b9514ed236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/2457098d93fb3a0a62d012fbc575af6e5d37bde5",
-                "reference": "2457098d93fb3a0a62d012fbc575af6e5d37bde5",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/cea02a8b8035ce341d14c8529eb775b9514ed236",
+                "reference": "cea02a8b8035ce341d14c8529eb775b9514ed236",
                 "shasum": ""
             },
             "require": {
@@ -955,7 +955,7 @@
                 "laravel",
                 "slug"
             ],
-            "time": "2016-01-04 15:33:59"
+            "time": "2016-03-16 20:21:40"
         },
         {
             "name": "danielstjules/stringy",
@@ -1251,16 +1251,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.1.1",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c"
+                "reference": "d094e337976dff9d8e2424e8485872194e768662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c6851d6e48f63b69357cbfa55bca116448140e0c",
-                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d094e337976dff9d8e2424e8485872194e768662",
+                "reference": "d094e337976dff9d8e2424e8485872194e768662",
                 "shasum": ""
             },
             "require": {
@@ -1276,7 +1276,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1-dev"
+                    "dev-master": "6.2-dev"
                 }
             },
             "autoload": {
@@ -1309,7 +1309,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-11-23 00:47:50"
+            "time": "2016-03-21 20:02:09"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1426,12 +1426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "8fa721ea6c2d30fadfce665dded12c1c1d13fc27"
+                "reference": "5b94a8ea414d755039e6f2dd7302143f36b3d853"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/8fa721ea6c2d30fadfce665dded12c1c1d13fc27",
-                "reference": "8fa721ea6c2d30fadfce665dded12c1c1d13fc27",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/5b94a8ea414d755039e6f2dd7302143f36b3d853",
+                "reference": "5b94a8ea414d755039e6f2dd7302143f36b3d853",
                 "shasum": ""
             },
             "require": {
@@ -1462,7 +1462,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2016-03-11 18:51:36"
+            "time": "2016-03-23 05:04:50"
         },
         {
             "name": "imagine/imagine",
@@ -2220,16 +2220,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.18",
+            "version": "1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "b334d6c5f95364948e06d2f620ab93d084074c6e"
+                "reference": "e87a786e3ae12a25cf78a71bb07b4b384bfaa83a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/b334d6c5f95364948e06d2f620ab93d084074c6e",
-                "reference": "b334d6c5f95364948e06d2f620ab93d084074c6e",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/e87a786e3ae12a25cf78a71bb07b4b384bfaa83a",
+                "reference": "e87a786e3ae12a25cf78a71bb07b4b384bfaa83a",
                 "shasum": ""
             },
             "require": {
@@ -2299,7 +2299,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2016-03-07 21:01:43"
+            "time": "2016-03-14 21:54:11"
         },
         {
             "name": "league/fractal",
@@ -2545,16 +2545,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.18.0",
+            "version": "1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "e19b764b5c855580e8ffa7e615f72c10fd2f99cc"
+                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/e19b764b5c855580e8ffa7e615f72c10fd2f99cc",
-                "reference": "e19b764b5c855580e8ffa7e615f72c10fd2f99cc",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
+                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
                 "shasum": ""
             },
             "require": {
@@ -2619,7 +2619,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-03-01 18:00:40"
+            "time": "2016-03-13 16:08:35"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -2713,6 +2713,52 @@
             "time": "2015-11-04 20:07:17"
         },
         {
+            "name": "nicolaslopezj/searchable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nicolaslopezj/searchable.git",
+                "reference": "347f76dbe76606fdd99689cb7a125eb2221a3ea1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nicolaslopezj/searchable/zipball/347f76dbe76606fdd99689cb7a125eb2221a3ea1",
+                "reference": "347f76dbe76606fdd99689cb7a125eb2221a3ea1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "illuminate/database": "4.2.x|~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nicolaslopezj\\Searchable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Lopez",
+                    "email": "nicolaslopezj@me.com"
+                }
+            ],
+            "description": "Eloquent model search trait.",
+            "keywords": [
+                "database",
+                "eloquent",
+                "laravel",
+                "model",
+                "search",
+                "searchable"
+            ],
+            "time": "2016-01-27 20:51:18"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v2.0.1",
             "source": {
@@ -2765,16 +2811,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v1.2.2",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "b3313b618f4edd76523572531d5d7e22fe747430"
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b3313b618f4edd76523572531d5d7e22fe747430",
-                "reference": "b3313b618f4edd76523572531d5d7e22fe747430",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/c7e26a21ba357863de030f0b9e701c7d04593774",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774",
                 "shasum": ""
             },
             "require": {
@@ -2809,7 +2855,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-03-11 19:54:08"
+            "time": "2016-03-18 20:34:03"
         },
         {
             "name": "patchwork/utf8",
@@ -4142,16 +4188,16 @@
         },
         {
             "name": "vespakoen/menu",
-            "version": "3.0.2",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vespakoen/menu.git",
-                "reference": "130a245e2ad4af16f5c191f3b537245c8c8eb947"
+                "reference": "afbaadaef5f0bb6c7d08ae4a035b8e1c374e99e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vespakoen/menu/zipball/130a245e2ad4af16f5c191f3b537245c8c8eb947",
-                "reference": "130a245e2ad4af16f5c191f3b537245c8c8eb947",
+                "url": "https://api.github.com/repos/vespakoen/menu/zipball/afbaadaef5f0bb6c7d08ae4a035b8e1c374e99e1",
+                "reference": "afbaadaef5f0bb6c7d08ae4a035b8e1c374e99e1",
                 "shasum": ""
             },
             "require": {
@@ -4188,7 +4234,7 @@
                 "laravel 5",
                 "menu"
             ],
-            "time": "2016-03-09 11:41:17"
+            "time": "2016-03-15 02:14:14"
         },
         {
             "name": "vinkla/translator",
@@ -4928,16 +4974,16 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "2.4.1",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "5528ce1e93a1efa090c9404aba3395c329b4e6ed"
+                "reference": "385ecb015e97c13818074f1517928b24d4a26067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/5528ce1e93a1efa090c9404aba3395c329b4e6ed",
-                "reference": "5528ce1e93a1efa090c9404aba3395c329b4e6ed",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/385ecb015e97c13818074f1517928b24d4a26067",
+                "reference": "385ecb015e97c13818074f1517928b24d4a26067",
                 "shasum": ""
             },
             "require": {
@@ -5002,7 +5048,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2016-01-01 10:17:54"
+            "time": "2016-03-20 20:34:32"
         },
         {
             "name": "phpspec/prophecy",
@@ -5308,16 +5354,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.23",
+            "version": "4.8.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6e351261f9cd33daf205a131a1ba61c6d33bd483"
+                "reference": "a1066c562c52900a142a0e2bbf0582994671385e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6e351261f9cd33daf205a131a1ba61c6d33bd483",
-                "reference": "6e351261f9cd33daf205a131a1ba61c6d33bd483",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a1066c562c52900a142a0e2bbf0582994671385e",
+                "reference": "a1066c562c52900a142a0e2bbf0582994671385e",
                 "shasum": ""
             },
             "require": {
@@ -5376,7 +5422,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-02-11 14:56:33"
+            "time": "2016-03-14 06:16:08"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -5920,7 +5966,8 @@
         "laravelrus/localized-carbon": 20,
         "cviebrock/eloquent-sluggable": 20,
         "aura-is-here/laravel-multi-tenant": 20,
-        "milon/barcode": 20
+        "milon/barcode": 20,
+        "nicolaslopezj/searchable": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
