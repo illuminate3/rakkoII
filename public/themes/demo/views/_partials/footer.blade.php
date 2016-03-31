@@ -65,14 +65,14 @@
 				<div class="form-group">
 					<label class="col-md-3 control-label">{{ trans('kotoba::account.email') }}</label>
 					<div class="col-md-9">
-						<input type="email" class="form-control" name="email" value="{{ old('email') }}">
+						<input type="email" class="form-control" name="email" value="{{ old('email') }}" tabindex="1">
 					</div>
 				</div>
 
 				<div class="form-group">
 					<label class="col-md-3 control-label">{{ trans('kotoba::auth.password') }}</label>
 					<div class="col-md-9">
-						<input type="password" class="form-control" name="password">
+						<input type="password" class="form-control" name="password" tabindex="2">
 					</div>
 				</div>
 
@@ -90,7 +90,7 @@
 				<div class="form-group">
 					<label class="col-md-3 control-label"></label>
 					<div class="col-md-9">
-						<button type="submit" class="btn btn-success btn-block">
+						<button type="submit" class="btn btn-success btn-block" tabindex="0">
 							{{ trans('kotoba::button.log_in') }}
 						</button>
 					</div>
