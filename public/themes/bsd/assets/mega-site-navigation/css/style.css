@@ -3,6 +3,7 @@
 Primary style
 
 -------------------------------- */
+/*
 .Site {
   display: flex;
   min-height: 100vh;
@@ -10,6 +11,7 @@ Primary style
 
 .Site-content {
   flex: 1; }
+*/
 
 .bg {
   width: 100%;
@@ -93,7 +95,8 @@ Main components
 .cd-main-header {
   height: 70px;
   background: #ffffff;
-  z-index: 3; }
+  z-index: 3;
+  }
   .nav-is-fixed .cd-main-header {
     /* add .nav-is-fixed class to body if you want a fixed navigation on > 1170px */
     position: fixed;
@@ -102,7 +105,8 @@ Main components
     width: 100%; }
   @media only screen and (min-width: 1170px) {
     .cd-main-header {
-      height: 80px; }
+      height: 80px;
+      }
       .cd-main-header::after {
         clear: both;
         content: "";
@@ -848,7 +852,7 @@ Main components
   top: 0;
   left: 0;
   cursor: pointer;
-  background-color: rgba(47, 73, 158, 0.7);
+  background-color: rgba(47, 73, 158, 0.8);
   visibility: hidden;
   opacity: 0;
   -webkit-backface-visibility: hidden;
