@@ -52,6 +52,28 @@
 			</div><!--./row-->
 
 
+			<form class="form-horizontal margin-top-xl" role="form" method="POST" action="/search/results">
+				{!! csrf_field() !!}
+
+				<div class="form-group">
+					<label class="col-md-3 control-label">{{ trans('kotoba::general.search') }}</label>
+					<div class="col-md-9">
+						<input type="search" class="form-control" name="search" tabindex="1">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-md-3 control-label"></label>
+					<div class="col-md-9">
+						<button type="submit" class="btn btn-success btn-block" tabindex="0">
+							{{ trans('kotoba::button.log_in') }}
+						</button>
+					</div>
+				</div>
+
+			</form>
+
+
 		@else
 
 			<h1>
