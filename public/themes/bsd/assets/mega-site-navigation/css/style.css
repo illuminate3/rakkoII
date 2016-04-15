@@ -1,3 +1,17 @@
+.Site {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+.Site-header,
+.Site-footer {
+	flex-shrink: 0;
+}
+.Site-main {
+	flex: 1 0 auto;
+}
+
+
 header.nav-is-visible {
   transform: translateX(-260px);
 }
@@ -135,7 +149,6 @@ Main components
 
 .cd-main-content {
   background: #e2e3df;
-  min-height: 100vh;
   z-index: 2; }
 
 .cd-main-header {

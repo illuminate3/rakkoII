@@ -1,3 +1,35 @@
+
+html {
+    height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #2e3233;
+  background-color: #ffffff; }
+  @media only screen and (max-width: 1169px) {
+    body.nav-on-left.overflow-hidden {
+      overflow: hidden;
+      }
+    }
+
+
+.Site {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+.Site-header,
+.Site-footer {
+	flex-shrink: 0;
+}
+.Site-main {
+	flex: 1 0 auto;
+}
+
+
 header.nav-is-visible {
   transform: translateX(-260px);
 }
@@ -39,9 +71,36 @@ Primary style
 -------------------------------- */
 
 
+body {
+}
+
+main {
+}
+
+.footer
+{
+	border-top: 4px solid #e7e7e7;
+	background-color: #2f499e;
+	color: #FFF;
+	margin-top: auto;
+}
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #ff0000;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #ff0000;
+	text-decoration: none;
+}
+
 
 img {
   /* make images responsive */
+  width: 100%;
   max-width: 100%;
 }
 .bg {
@@ -49,6 +108,10 @@ img {
   width: 100%;
   z-index: 0;
 }
+
+
+*, *::after, *::before {
+  box-sizing: border-box; }
 
 
 
@@ -100,8 +163,6 @@ Main components
       transform: translateX(260px); } }
 
 .cd-main-content {
-  background: #e2e3df;
-  min-height: 100vh;
   z-index: 2; }
 
 .cd-main-header {
@@ -335,7 +396,8 @@ Main components
   right: 0;
   height: 100%;
   width: 260px;
-  background: #2e3233;
+  background: #2f499e;
+color:#fff;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 1;
