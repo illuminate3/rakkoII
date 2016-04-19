@@ -2,18 +2,6 @@
 <head>
 
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="author" content="{{ Setting::get('author', Config::get('core.author')) }}" />
-	<meta name="keywords" content="{{ Setting::get('keywords', Config::get('core.keywords')) }}" />
-	<meta name="description" content="{{ Setting::get('description', Config::get('core.description')) }}" />
-
-	<title>
-		@section('title')
-			{{ Setting::get('title', Config::get('core.title')) }}
-		@show
-	</title>
 
 <!-- ------------------------------------------ Google Fonts ------------------------------------------ -->
 <!--
@@ -22,6 +10,34 @@
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')
+<style>
+body, html {
+	height: 100%;
+}
+
+#flex-container {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	-webkit-box-flex-direction: row;
+	-moz-box-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	height:100%;
+}
+
+#flex-item {
+	margin: auto;
+	width: 80%;
+
+}
+
+#panel {
+	width: 50%;
+	height: 50%;
+}
+</style>
 
 <!-- ------------------------------------------ head loaded js ------------------------------------------ -->
 
@@ -47,10 +63,6 @@
 <!-- ------------------------------------------ app loaded js ------------------------------------------ -->
 	@yield('scripts')
 
-<!-- ------------------------------------------ template loaded js ------------------------------------------ -->
-	<script type="text/javascript">
-		@yield('inline-scripts')
-	</script>
 
 </body>
 </html>

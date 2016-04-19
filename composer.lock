@@ -810,12 +810,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodeSleeve/laravel-stapler.git",
-                "reference": "3bc886fc381397f7387b24e7a05d3a16dd24848f"
+                "reference": "edb5c3ac338c4e182643501a6b9db6dabac8d387"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodeSleeve/laravel-stapler/zipball/3bc886fc381397f7387b24e7a05d3a16dd24848f",
-                "reference": "3bc886fc381397f7387b24e7a05d3a16dd24848f",
+                "url": "https://api.github.com/repos/CodeSleeve/laravel-stapler/zipball/edb5c3ac338c4e182643501a6b9db6dabac8d387",
+                "reference": "edb5c3ac338c4e182643501a6b9db6dabac8d387",
                 "shasum": ""
             },
             "require": {
@@ -852,7 +852,7 @@
                 "stapler",
                 "upload"
             ],
-            "time": "2016-01-30 22:26:13"
+            "time": "2016-04-14 21:26:17"
         },
         {
             "name": "codesleeve/stapler",
@@ -1114,6 +1114,58 @@
             "time": "2015-11-06 14:35:42"
         },
         {
+            "name": "fedeisas/laravel-mail-css-inliner",
+            "version": "1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fedeisas/laravel-mail-css-inliner.git",
+                "reference": "8c3cd958634e865a90fc398900ea59c427dd35cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fedeisas/laravel-mail-css-inliner/zipball/8c3cd958634e865a90fc398900ea59c427dd35cc",
+                "reference": "8c3cd958634e865a90fc398900ea59c427dd35cc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0",
+                "tijsverkoyen/css-to-inline-styles": "~1.2"
+            },
+            "require-dev": {
+                "jakub-onderka/php-console-highlighter": "0.3.*",
+                "jakub-onderka/php-parallel-lint": "0.8.*",
+                "phpmd/phpmd": "~1.5",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.7@dev",
+                "squizlabs/php_codesniffer": "~1.5",
+                "swiftmailer/swiftmailer": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fedeisas\\LaravelMailCssInliner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fede Isas",
+                    "email": "fedeisas@hotmail.com"
+                }
+            ],
+            "description": "Inline the CSS of your HTML emails using Laravel",
+            "keywords": [
+                "css",
+                "laravel",
+                "mailer"
+            ],
+            "time": "2016-04-19 07:02:48"
+        },
+        {
             "name": "genealabs/laravel-caffeine",
             "version": "0.2.4",
             "source": {
@@ -1364,16 +1416,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.2.3",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b"
+                "reference": "31382fef2889136415751badebbd1cb022a4ed72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2e89629ff057ebb49492ba08e6995d3a6a80021b",
-                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/31382fef2889136415751badebbd1cb022a4ed72",
+                "reference": "31382fef2889136415751badebbd1cb022a4ed72",
                 "shasum": ""
             },
             "require": {
@@ -1418,7 +1470,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2016-02-18 21:54:00"
+            "time": "2016-04-13 19:56:01"
         },
         {
             "name": "illuminate3/kotoba",
@@ -1834,67 +1886,6 @@
                 "threaded"
             ],
             "time": "2015-03-23 10:53:38"
-        },
-        {
-            "name": "larablocks/pigeon",
-            "version": "5.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/larablocks/pigeon.git",
-                "reference": "6e9d27244df045d29066b381ffd2f98b12f750fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/larablocks/pigeon/zipball/6e9d27244df045d29066b381ffd2f98b12f750fd",
-                "reference": "6e9d27244df045d29066b381ffd2f98b12f750fd",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/log": "~5.1",
-                "illuminate/mail": "~5.1",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "fzaninotto/faker": "~1.4",
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Larablocks\\Pigeon\\": "src/Pigeon"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric Mitkowski",
-                    "email": "eric@larablocks.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A more flexible email message builder for Laravel 5.0 and 5.1 including chained methods, reusable message configurations, and message layout and template view management.",
-            "keywords": [
-                "5.1",
-                "builder",
-                "email",
-                "laravel",
-                "mail",
-                "mailer",
-                "message",
-                "pigeon",
-                "template",
-                "views"
-            ],
-            "time": "2016-01-11 16:43:00"
         },
         {
             "name": "laracasts/presenter",
@@ -2545,16 +2536,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.18.2",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "064b38c16790249488e7a8b987acf1c9d7383c09"
+                "reference": "5f56ed5212dc509c8dc8caeba2715732abb32dbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/064b38c16790249488e7a8b987acf1c9d7383c09",
-                "reference": "064b38c16790249488e7a8b987acf1c9d7383c09",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5f56ed5212dc509c8dc8caeba2715732abb32dbf",
+                "reference": "5f56ed5212dc509c8dc8caeba2715732abb32dbf",
                 "shasum": ""
             },
             "require": {
@@ -2619,7 +2610,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-04-02 13:12:58"
+            "time": "2016-04-12 18:29:35"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -2714,16 +2705,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v2.0.1",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "ce5be709d59b32dd8a88c80259028759991a4206"
+                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/ce5be709d59b32dd8a88c80259028759991a4206",
-                "reference": "ce5be709d59b32dd8a88c80259028759991a4206",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
                 "shasum": ""
             },
             "require": {
@@ -2739,7 +2730,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -2761,7 +2752,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2016-02-28 19:48:28"
+            "time": "2016-04-19 13:41:41"
         },
         {
             "name": "paragonie/random_compat",
@@ -2869,6 +2860,68 @@
                 "utf8"
             ],
             "time": "2015-12-15 15:34:15"
+        },
+        {
+            "name": "pelago/emogrifier",
+            "version": "V1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jjriv/emogrifier.git",
+                "reference": "1160bcbc523c7941d2d0dc2a9e59c51c66420b4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jjriv/emogrifier/zipball/1160bcbc523c7941d2d0dc2a9e59c51c66420b4b",
+                "reference": "1160bcbc523c7941d2d0dc2a9e59c51c66420b4b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.11",
+                "squizlabs/php_codesniffer": "2.3.4",
+                "typo3-ci/typo3sniffpool": "2.1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pelago\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Reeve",
+                    "email": "jreeve@pelagodesign.com"
+                },
+                {
+                    "name": "Cameron Brooks"
+                },
+                {
+                    "name": "Jaime Prado"
+                },
+                {
+                    "name": "Oliver Klee",
+                    "email": "typo3-coding@oliverklee.de"
+                },
+                {
+                    "name": "Roman Ožana",
+                    "email": "ozana@omdesign.cz"
+                }
+            ],
+            "description": "Converts CSS styles into inline style attributes in your HTML code",
+            "homepage": "http://www.pelagodesign.com/sidecar/emogrifier/",
+            "time": "2015-10-14 22:22:15"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -3171,6 +3224,49 @@
                 "threaded"
             ],
             "time": "2015-11-09 13:26:59"
+        },
+        {
+            "name": "snowfire/beautymail",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Snowfire/Beautymail.git",
+                "reference": "ff73103c841e9d0cd590b5eba59e19c2c12594a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Snowfire/Beautymail/zipball/ff73103c841e9d0cd590b5eba59e19c2c12594a1",
+                "reference": "ff73103c841e9d0cd590b5eba59e19c2c12594a1",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.*|5.*",
+                "pelago/emogrifier": "@dev",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Snowfire\\Beautymail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emil Sundberg",
+                    "email": "emil@snowfire.net"
+                }
+            ],
+            "description": "Send beautiful html emails with Laravel",
+            "keywords": [
+                "email",
+                "html",
+                "laravel"
+            ],
+            "time": "2016-04-19 06:43:39"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6026,7 +6122,8 @@
         "laravelrus/localized-carbon": 20,
         "cviebrock/eloquent-sluggable": 20,
         "aura-is-here/laravel-multi-tenant": 20,
-        "milon/barcode": 20
+        "milon/barcode": 20,
+        "snowfire/beautymail": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
