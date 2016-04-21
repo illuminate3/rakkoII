@@ -42,6 +42,7 @@ class alert extends Widget
 		$normal_alerts = News::IsPublished()->SiteID()->IsAlert()->NotTimed()->orderBy('order')->get();
 //dd($normal_alerts);
 		$alerts = $timed_alerts->merge($normal_alerts);
+//dd($alerts);
 
 		return Theme::View($activeTheme . '::' . 'widgets.alert',
 			compact(

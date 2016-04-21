@@ -4,7 +4,7 @@
 @if (count($articles))
 
 <!-- Carousel -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="z-index: 0; !important">
 
 <!-- Buttons -->
 {!!
@@ -55,8 +55,6 @@
 
 @else
 
-	<a href="/">
-		<img class="landing" src="{{ asset('/assets/images/rakko.jpg') }}"></img>
-	</a>
+	<img class="landing" src="{{ asset('/assets/images/rakko.jpg') }}"></img>
 
 @endif
