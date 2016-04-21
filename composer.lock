@@ -2863,20 +2863,19 @@
         },
         {
             "name": "pelago/emogrifier",
-            "version": "V1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jjriv/emogrifier.git",
-                "reference": "1160bcbc523c7941d2d0dc2a9e59c51c66420b4b"
+                "reference": "7b00580315c80793e4cbfe0b1f689b311ceb46f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jjriv/emogrifier/zipball/1160bcbc523c7941d2d0dc2a9e59c51c66420b4b",
-                "reference": "1160bcbc523c7941d2d0dc2a9e59c51c66420b4b",
+                "url": "https://api.github.com/repos/jjriv/emogrifier/zipball/7b00580315c80793e4cbfe0b1f689b311ceb46f9",
+                "reference": "7b00580315c80793e4cbfe0b1f689b311ceb46f9",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
@@ -2921,7 +2920,7 @@
             ],
             "description": "Converts CSS styles into inline style attributes in your HTML code",
             "homepage": "http://www.pelagodesign.com/sidecar/emogrifier/",
-            "time": "2015-10-14 22:22:15"
+            "time": "2016-01-28 19:06:55"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -3224,49 +3223,6 @@
                 "threaded"
             ],
             "time": "2015-11-09 13:26:59"
-        },
-        {
-            "name": "snowfire/beautymail",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Snowfire/Beautymail.git",
-                "reference": "ff73103c841e9d0cd590b5eba59e19c2c12594a1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Snowfire/Beautymail/zipball/ff73103c841e9d0cd590b5eba59e19c2c12594a1",
-                "reference": "ff73103c841e9d0cd590b5eba59e19c2c12594a1",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "4.*|5.*",
-                "pelago/emogrifier": "@dev",
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Snowfire\\Beautymail\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Emil Sundberg",
-                    "email": "emil@snowfire.net"
-                }
-            ],
-            "description": "Send beautiful html emails with Laravel",
-            "keywords": [
-                "email",
-                "html",
-                "laravel"
-            ],
-            "time": "2016-04-19 06:43:39"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6123,7 +6079,7 @@
         "cviebrock/eloquent-sluggable": 20,
         "aura-is-here/laravel-multi-tenant": 20,
         "milon/barcode": 20,
-        "snowfire/beautymail": 20
+        "pelago/emogrifier": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
