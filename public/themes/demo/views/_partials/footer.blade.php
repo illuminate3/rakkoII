@@ -5,7 +5,7 @@
 <div class="row">
 	<div class="col-sm-4">
 		<h1>
-		Rakko
+		Bryant Public Schools
 		</h1>
 		<hr>
 		<h3>Information Management System</h3>
@@ -135,9 +135,9 @@
 		<div class="padding-lg">
 			<div class="copyright text-center">
 				@if (Auth::user() && Auth::user()->can('manage_admin'))
-					<a href="/admin">Rakko :: Admin</a> &copy; 2015-2016
+					<a href="/admin">Admin</a> &copy; 2015-2016
 				@else
-					<a href="/">Rakko :: Information Management System</a> &copy; 2015-2016
+					<a href="/">Information Management System</a> &copy; 2015-2016
 				@endif
 			</div>
 		</div>
