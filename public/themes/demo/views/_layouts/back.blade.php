@@ -55,7 +55,7 @@
 
 	<div class="container-fluid">
 <!-- <div id="wrap" class="container"> -->
-		@include($activeTheme . '::' . '_partials.content')
+		@include($activeTheme . '::' . '_partials.admin.content')
 	</div><!-- ./container -->
 
 	@include($activeTheme . '::' . '_partials.admin.footer')
