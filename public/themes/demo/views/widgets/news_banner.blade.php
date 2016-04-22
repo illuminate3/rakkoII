@@ -55,6 +55,6 @@
 
 @else
 
-	<img class="landing" src="{{ asset('/assets/images/rakko.jpg') }}"></img>
+	<img class="landing" src="{{ asset('/assets/images/ballons.jpg') }}"></img>
 
 @endif
