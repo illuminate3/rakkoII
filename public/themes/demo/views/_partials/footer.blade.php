@@ -41,7 +41,7 @@
 
 			<div class="row">
 				</h3>
-				<a class="footer_links" href="/admin">Rakko :: Admin</a>
+				<a class="footer_links" href="/admin">Admin</a>
 				</h3>
 			</div><!--./row-->
 			<div class="row">
