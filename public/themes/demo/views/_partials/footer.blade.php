@@ -22,11 +22,9 @@
 		</div>
 		<div class="col-sm-4">
 
-
 			{!!
 				Widget::TopNews()
 			!!}
-
 
 		</div>
 		<div class="col-sm-4">
@@ -41,7 +39,9 @@
 
 			<div class="row">
 				</h3>
-				<a class="footer_links" href="/admin">Admin</a>
+				<a class="footer_links" href="/admin">
+				{{ trans('kotoba::general.administration') }}
+				</a>
 				</h3>
 			</div><!--./row-->
 			<div class="row">
@@ -135,9 +135,15 @@
 		<div class="padding-lg">
 			<div class="copyright text-center">
 				@if (Auth::user() && Auth::user()->can('manage_admin'))
-					<a href="/admin">Admin</a> &copy; 2015-2016
+					<a href="/admin">
+					{{ trans('kotoba::general.administration') }}
+					</a>
+					&nbsp;&copy;&nbsp;2015-2016
 				@else
-					<a href="/">Information Management System</a> &copy; 2015-2016
+					<a href="/">
+					{{ Setting::get('description', Config::get('core.brand_title')) }}
+					</a>
+					&nbsp;&copy;&nbsp;2015-2016
 				@endif
 			</div>
 		</div>

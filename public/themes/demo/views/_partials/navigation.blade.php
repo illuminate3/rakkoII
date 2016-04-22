@@ -10,9 +10,13 @@
 		<span class="icon-bar"></span>
 	</button>
 		@if (Auth::user() && Auth::user()->can('manage_admin'))
-			<a class="navbar-brand" href="/admin">Admin</a>
+			<a class="navbar-brand" href="/admin">
+			{{ trans('kotoba::general.administration') }}
+			</a>
 		@else
-			<a class="navbar-brand" href="/">Information Management System</a>
+			<a class="navbar-brand" href="/">
+			{{ Setting::get('brand_title', Config::get('core.brand_title')) }}
+			</a>
 		@endif
 </div>
 
