@@ -86,9 +86,10 @@
 						</a>
 					</li>
 					<li class="divider"></li>
-					{!!
-						Widget::MenuAdmin()
-					!!}
+{{--
+	Widget::MenuAdmin()
+--}}
+@include('partials.nav_menu', ['items'=> $menu_navAdmin->roots()])
 					<li class="divider"></li>
 @endif
 					<li>
@@ -130,9 +131,10 @@
 				</a>
 				<ul class="dropdown-menu" role="menu">
 					<li>
-					{!!
-						Widget::MenuSettings()
-					!!}
+{{--
+	Widget::MenuSettings()
+--}}
+@include('partials.nav_menu', ['items'=> $menu_navSettings->roots()])
 					</li>
 				</ul>
 			</li>
@@ -145,9 +147,10 @@
 				</a>
 				<ul class="dropdown-menu" role="menu">
 					<li>
-					{!!
-						Widget::MenuOther()
-					!!}
+{{--
+	Widget::MenuOther()
+--}}
+@include('partials.nav_menu', ['items'=> $menu_navOther->roots()])
 					</li>
 				</ul>
 			</li>
@@ -160,9 +163,10 @@
 				</a>
 				<ul class="dropdown-menu" role="menu">
 					<li>
-					{!!
-						Widget::MenuOffice()
-					!!}
+{{--
+	Widget::MenuOffice()
+--}}
+@include('partials.nav_menu', ['items'=> $menu_navOffice->roots()])
 					</li>
 				</ul>
 			</li>
@@ -175,9 +179,10 @@
 				</a>
 				<ul class="dropdown-menu" role="menu">
 					<li>
-					{!!
-						Widget::MenuReports()
-					!!}
+{{--
+	Widget::MenuReports()
+--}}
+@include('partials.nav_menu', ['items'=> $menu_navNenji->roots()])
 					</li>
 				</ul>
 			</li>
@@ -190,9 +195,10 @@
 				</a>
 				<ul class="dropdown-menu" role="menu">
 					<li>
-					{!!
-						Widget::MenuOrders()
-					!!}
+{{--
+	Widget::MenuOrders()
+--}}
+@include('partials.nav_menu', ['items'=> $menu_navOrders->roots()])
 					</li>
 				</ul>
 			</li>
