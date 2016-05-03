@@ -10,7 +10,6 @@
 	</div>
 @endif
 
-
 <!-- Buttons -->
 {!!
 	Widget::alert()
@@ -18,3 +17,5 @@
 
 
 @yield('content')
+
+{!! Breadcrumbs::render('admin') !!}

@@ -1,18 +1,28 @@
 <?php
 
+
 // Home
 Breadcrumbs::register('home', function($breadcrumbs)
 {
-    $breadcrumbs->push('Home', route('home'));
+	$breadcrumbs->push('Home', url('/'));
 });
 
 // Home > About
 Breadcrumbs::register('about', function($breadcrumbs)
 {
-    $breadcrumbs->parent('home');
-    $breadcrumbs->push('About', route('about'));
+	$breadcrumbs->parent('home');
+	$breadcrumbs->push('About', url('admin'));
 });
 
+// Home > About
+Breadcrumbs::register('admin', function($breadcrumbs)
+{
+	$breadcrumbs->parent('about');
+	$breadcrumbs->push('admin', url('admin'));
+});
+
+
+/*
 // Home > Blog
 Breadcrumbs::register('blog', function($breadcrumbs)
 {
@@ -33,3 +43,4 @@ Breadcrumbs::register('page', function($breadcrumbs, $page)
     $breadcrumbs->parent('category', $page->category);
     $breadcrumbs->push($page->title, route('page', $page->id));
 });
+*/
