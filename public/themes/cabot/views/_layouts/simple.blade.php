@@ -49,7 +49,7 @@
 
 <body>
 
-		@include($activeTheme . '::' . '_partials.content')
+		@include($activeTheme . '::' . '_partials.simple_content')
 
 
 <!-- ------------------------------------------ js ------------------------------------------ -->

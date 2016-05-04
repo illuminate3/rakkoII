@@ -8,8 +8,12 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-	<a class="navbar-brand" href="/admin">
+	<a class="navbar-brand" href="/">
 		{{ Setting::get('brand_title', Config::get('core.brand_title')) }}
+	</a>
+	<a class="navbar-brand" href="/admin/dashboard">
+		<i class="fa fa-dashboard fa-lg"></i>
+		{{ trans('kotoba::cms.dashboard') }}
 	</a>
 </div>
 
@@ -17,27 +21,6 @@
 
 @if (Auth::user())
 
-{{-- @if (Auth::user()->can('manage_shisan')) --}}
-@if ( Config::get('shisan.show_category_menu') == true)
-	<ul class="nav navbar-nav">
-		<li>
-		<a href="#" class="sitemap" id="showLeft">
-			{{ Lang::choice('kotoba::general.category', 2) }}
-		</a>
-		</li>
-	</ul>
-@endif
-@endif
-
-
-	@if (Auth::user())
-		<ul class="nav navbar-nav">
-{{--
-			@include('_partials.menu', ['items'=> $menu_navbar->roots()])
-			@include('_partials.menu_links')
---}}
-		</ul>
-	@endif
 	<ul class="nav navbar-nav navbar-right">
 		@if (Auth::guest())
 			<li><a href="/auth/login">{{ trans('kotoba::auth.log_in') }}</a></li>
@@ -70,6 +53,7 @@
 					</li>
 				<li class="divider"></li>
 @if (Auth::user()->can('manage_admin'))
+{{--
 					<li>
 						<a href="/admin/users">
 							{{ Lang::choice('kotoba::account.user', 2) }}
@@ -86,9 +70,14 @@
 						</a>
 					</li>
 					<li class="divider"></li>
-					{!!
+--}}
+					{{--
 						Widget::MenuAdmin()
-					!!}
+					--}}
+
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navAdmin->roots()])
+
 					<li class="divider"></li>
 @endif
 					<li>
@@ -101,6 +90,7 @@
 		@endif
 	</ul>
 
+@endif
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown messages-menu">
@@ -130,9 +120,11 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuSettings()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navSettings->roots()])
 				</li>
 			</ul>
 		</li>
@@ -145,14 +137,17 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuMail()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navYubin->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
 
+@if (Module::isEnabled('horitsu'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -160,14 +155,19 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuHoritsu()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navHoritsu->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('gakko'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -175,14 +175,19 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuSchool()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navGakko->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('campus'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -190,14 +195,19 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuCampus()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navCampus->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('jinji'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -205,14 +215,19 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuHR()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navJinji->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('himawari'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -220,14 +235,19 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuCMS()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navHimawari->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
+@endif
 
+
+@if (Module::isEnabled('shisan'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -235,13 +255,17 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{!!
+				{{--
 					Widget::MenuAssets()
-				!!}
+				--}}
+{{-- $menu_navAdmin->asUl() --}}
+@include('partials.nav_menu', ['items'=> $menu_navShisan->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
+@endif
+
 
 @endif
 
@@ -251,3 +275,4 @@
 
 </div><!-- ./container-fluid -->
 </nav><!-- /nav -->
+

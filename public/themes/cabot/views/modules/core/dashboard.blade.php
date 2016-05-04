@@ -6,7 +6,6 @@
 @stop
 
 @section('styles')
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/admin.css') }}">
 @stop
 
 @section('scripts')
@@ -63,6 +62,7 @@
 							<a href="{{ URL::to('/admin/tickets') }}">
 							{{-- $total_tickets --}}
 							{!! Widget::AllTickets() !!}
+{{-- plugin_ticketAllActive() --}}
 							</a>
 						</dd>
 					</dl>
@@ -72,7 +72,11 @@
 							{{ trans('kotoba::general.active') }}
 						</dt>
 						<dd>
-							<a href="{{ URL::to('/admin/tickets') }}">{{ $total_tickets_active }}</a>
+							<a href="{{ URL::to('/admin/tickets') }}">
+							{{-- $total_tickets_active --}}
+{{-- plugin_ticketAllClosed() --}}
+							{!! Widget::TicketsActive() !!}
+							</a>
 						</dd>
 					</dl>
 
@@ -81,7 +85,11 @@
 							{{ trans('kotoba::general.closed') }}
 						</dt>
 						<dd>
-							<a href="{{ URL::to('/admin/tickets') }}">{{ $total_tickets_closed }}</a>
+							<a href="{{ URL::to('/admin/tickets') }}">
+							{{-- $total_tickets_closed --}}
+{{-- plugin_ticketAllClosed() --}}
+							{!! Widget::TicketsClosed() !!}
+							</a>
 						</dd>
 					</dl>
 
@@ -126,10 +134,23 @@
 					{{ date("Y") }}&nbsp;{{ Lang::choice('kotoba::general.year', 1) }}
 				</dt>
 				<dd>
-					<a href="{{ URL::to('/admin/asset') }}">{{ $total_assets_year }}</a>
+					<a href="{{ URL::to('/admin/asset') }}">
+					{{-- $total_assets_year --}}
+					{!! Widget::AllYearAssets() !!}
+					</a>
 				</dd>
 			</dl>
 
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="col-sm-12">
+
+			{{-- Widget::AssetSearch() --}}
+{{--
+@include($activeTheme . '::' . 'widgets.asset_search')
+--}}
 		</div>
 		</div>
 
@@ -175,7 +196,7 @@
 		<dd>
 			<a href="{{ URL::to('/admin/news') }}">
 			{{-- $total_articles --}}
-			{!! Widget::AllContents() !!}
+			{!! Widget::AllNews() !!}
 			</a>
 		</dd>
 	</dl>

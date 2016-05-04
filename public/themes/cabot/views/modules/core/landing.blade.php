@@ -20,9 +20,15 @@
 
 
 <!-- Banner -->
-{!!
-	Widget::NewsBanner()
-!!}
+<div class="container-fluid">
+<div class="row">
 
+	{!!
+		Widget::NewsBanner()
+	!!}
+
+</div><!--./row-->
+</div><!--./container-fluid-->
+</div>
 
 @stop

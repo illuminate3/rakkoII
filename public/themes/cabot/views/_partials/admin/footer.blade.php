@@ -8,7 +8,7 @@
 			</div>
 			<div class="col-sm-4">
 				<p class="text-muted">
-					{{ Config::get('core.footer') }}
+					{{ Setting::get('footer', Config::get('core.footer')) }}
 				</p>
 			</div>
 			<div class="col-sm-4">

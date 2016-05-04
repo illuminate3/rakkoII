@@ -1,8 +1,10 @@
 <! -- Widget -->
 
-<!-- Carousel -->
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+@if (count($articles))
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="z-index: 0; !important">
 
 <!-- Buttons -->
 {!!
@@ -50,3 +52,9 @@
 
 </div><!-- ./carousel-inner -->
 </div><!-- /#myCarousel -->
+
+@else
+
+	<img class="landing" src="{{ asset('/assets/images/ballons.jpg') }}"></img>
+
+@endif
