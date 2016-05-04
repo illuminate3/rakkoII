@@ -18,4 +18,4 @@
 
 @yield('content')
 
-{{-- Breadcrumbs::render('admin') }--}
+{{-- Breadcrumbs::render('admin') --}}
