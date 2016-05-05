@@ -48,7 +48,7 @@
 			<tr>
 			<td>
 				<center data-parsed="">
-					<a href="http://campus.bryantschools.org/kiosk/{{ $seminar_id }}" align="center" class="text-center">
+					<a href="{{ env('APP_URL') }}/workshops/{{ $seminar_id }}" align="center" class="text-center">
 						{{ Lang::choice('kotoba::hr.seminar', 1) }}
 					</a>
 				</center>

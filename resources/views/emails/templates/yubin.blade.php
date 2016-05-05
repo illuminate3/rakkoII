@@ -48,7 +48,7 @@
 			<tr>
 			<td>
 				<center data-parsed="">
-					<a href="http://campus.bryantschools.org/admin/employees/{{ $employee_id }}" align="center" class="text-center">
+					<a href="{{ env('APP_URL') }}/admin/employees/{{ $employee_id }}" align="center" class="text-center">
 						{{ trans('kotoba::button.update') }}&nbsp;{{ Lang::choice('kotoba::hr.employee', 1) }}
 					</a>
 				</center>
