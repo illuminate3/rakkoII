@@ -48,7 +48,7 @@
 			<tr>
 			<td>
 				<center data-parsed="">
-					<a href="{{ env('APP_URL') }}/admin/contents/{{ $content_id }}" align="center" class="text-center">
+					<a href="{{ env('APP_URL') }}/admin/contents/{{ $content_id }}/edit" align="center" class="text-center">
 						{{ trans('kotoba::button.update') }}&nbsp;{{ trans('kotoba::cms.content') }}
 					</a>
 				</center>
