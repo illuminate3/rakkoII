@@ -20,6 +20,8 @@ return [
 
 'auth_fail_redirect'			=> '/admin/dashboard',
 
+'editor_one'					=> 829,
+'editor_two'					=> 518,
 
 'mailer' => [
 	'from_email'				=> '',
