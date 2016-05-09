@@ -20,4 +20,15 @@ return [
 
 'auth_fail_redirect'			=> '/admin/dashboard',
 
+
+'mailer' => [
+	'from_email'				=> '',
+	'from_name'					=> '',
+	'group_slug'				=> 'cms-mailer-group',
+	'template'					=> 'seminars',
+	'create_canned_slug'		=> 'content_created',
+	'update_canned_slug'		=> 'content_update',
+],
+
+
 ];
