@@ -9,7 +9,6 @@
 <link href="bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/theme.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="woothemes-FlexSlider/flexslider.css" type="text/css" media="screen" />
 <!--
 	<link rel="stylesheet" href="css/mountain.css">
 -->
@@ -30,6 +29,7 @@
 
 <main class="Site-main cd-main-content">
 
+<section class="carousel">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
   <ol class="carousel-indicators">
@@ -84,34 +84,11 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+</section>
 
-<!--
-      <section class="slider">
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-  	    	    <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="images/kitchen_adventurer_lemon.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="images/kitchen_adventurer_donut.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
-  	    		</li>
-          </ul>
-        </div>
-<div class="custom-navigation">
-  <a href="#" class="flex-prev">Prev</a>
-  <div class="custom-controls-container"></div>
-  <a href="#" class="flex-next">Next</a>
-</div>
-      </section>
--->
+<div class="container-fluid">
 
-
+<br>
 <div class="jumbotron">
 <div class="container-fluid">
 <h1>Hello, world!</h1>
@@ -120,8 +97,84 @@
 </div>
 </div>
 
-<div class="container-fluid">
+<!-- CONTENT -->
+
 <div class="row">
+
+<div class="col-md-4">
+
+	<article class="left-box">
+			<h4>EASILY CUSTOMIZABLE</h4>
+			<p>Sed ut perspiciatis unde omnis iste natus <strong>error sit voluptatem accusantium</strong> doloremque laudantium, totam aspernatur aut odit aut fugit.</p>
+			<a href="index.html#">LEARN MORE</a>
+	</article>
+
+</div>
+<div class="col-md-4">
+
+	<article class="right-box">
+			<h4>PSD FILES INCLUDED</h4>
+			<p>Sed ut perspiciatis unde omnis iste natus <strong>error sit voluptatem accusantium</strong> doloremque laudantium, totam aspernatur aut odit aut fugit.</p>
+			<a href="index.html#">LEARN MORE</a>
+	</article>
+
+</div>
+<div class="col-md-4">
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a href="#news" aria-controls="home" role="tab" data-toggle="tab">News</a></li>
+	<li role="presentation"><a href="#tweets" aria-controls="tweets" role="tab" data-toggle="tab">Tweets</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="news">
+
+		<h4>NEWS</h4>
+
+		<div>
+				<span>July 19, 2012</span>
+				<h5>NEW SHOP ON 13TH AVENUE</h5>
+				<p>At vero eos et accusamus et que iusto odio dignissimos ducimus qui blanditiis...</p>
+		</div>
+
+		<div>
+				<span>July 19, 2012</span>
+				<h5>NEW SHOP ON 13TH AVENUE</h5>
+				<p>At vero eos et accusamus et que iusto odio dignissimos ducimus qui blanditiis...</p>
+										</div>
+
+	</div>
+	<div role="tabpanel" class="tab-pane" id="tweets">
+
+		<h4>TWEETS</h4>
+
+		<div>
+				<span>July 19, 2012</span>
+				<h5>NEW SHOP ON 13TH AVENUE</h5>
+				<p>At vero eos et accusamus et que iusto odio dignissimos ducimus qui blanditiis...</p>
+		</div>
+
+		<div>
+				<span>July 19, 2012</span>
+				<h5>NEW SHOP ON 13TH AVENUE</h5>
+				<p>At vero eos et accusamus et que iusto odio dignissimos ducimus qui blanditiis...</p>
+										</div>
+
+	</div>
+</div> <!-- tab-content -->
+
+</div>
+
+</div> <!-- ./row -->
+
+
+<br>
+
+
+<div class="row row-color">
+
 <div class="col-md-4">
 <h2>Heading</h2>
 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -137,125 +190,82 @@
 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 </div>
-</div>
-</div>
 
+</div> <!-- ./row -->
+
+<br>
+
+<!-- CONTENT -->
+</div> <!-- ./container -->
 </main>
 
 
-<footer class="Site-footer footer">
+<footer class="Site-footer">
+
+<!-- BOTTOM -->
+<div class="row row-bottom-wrapper" id="bottom">
 <div class="container-fluid">
-<div class="row">
-	<div class="col-sm-3">
-		<h3 class="title">CSS3</h3>
-		<ul>
-			<li><a data-description="Image Animation" href="https://jsfiddle.net/MadLittleMods/LmYay/">flex box codepen</a></li>
-			<li><a data-description="Tooltips" href="../../2014/02/13/fancy-tooltips-using-css3/index.html">Fancy Tooltips using CSS3</a></li>
-			<li><a data-description="Image Animation" href="../../2013/11/14/image-hover-effects-using-css3/index.html">Image Hover Effects using CSS3</a></li>
-			<li><a data-description="Metro Style Boxes" href="../../2013/08/26/animated-windows-metro-boxes-using-css3/index.html">Animated Windows Metro Boxes using CSS3</a></li>
-			<li><a data-description="Css3 Skill bar" href="../../2013/06/04/skill-bar-with-jquery-css3/index.html">Skill Bar with jQuery & CSS3</a></li>
-		</ul>
-	</div>
-	<div class="col-sm-3">
-		<h3 class="title">jQuery</h3>
-		<ul>
-			<li><a data-description="DropDown Menu" href="../../2013/12/26/mashable-style-ajax-drop-down-menu-using-php-mysql-jquery/index.html">Mashable Style Ajax Drop Down Menu using PHP, Mysql & jQuery</a></li>
-			<li><a data-description="Facebook Friends Search" href="../../2013/12/12/facebook-style-search-friends-using-jquery/index.html">Facebook Style Search Friends using jQuery</a></li>
-			<li><a data-description="Text Search" href="../../2013/12/11/live-text-search-using-jquery/index.html">Live Text Search using jQuery</a></li>
-			<li><a data-description="Security" href="../../2013/10/28/secure-web-page-content-using-jquery/index.html">Protect / Secure your Website Content using jQuery</a></li>
-			<li><a data-description="Page Speed" href="../../2013/07/11/how-to-reduce-web-page-loading-time-with-jquery/index.html">How to reduce web page loading time with jQuery</a></li>
-		</ul>
-	</div>
-	<div class="col-sm-3">
-		<h3 class="title">PHP</h3>
-		<ul>
-			<li><a data-description="Checking Expired Sessions" href="../../2014/01/01/how-to-check-expired-sessions-using-php-jquery-ajax/index.html">How to Check Expired Sessions using PHP & jQuery Ajax</a></li>
-			<li><a data-description="Smiley Parser" href="../../2013/08/11/smiley-parser-with-php/index.html">Smiley Parser with PHP</a></li>
-			<li><a data-description="IP address validation" href="../../2013/04/01/validate-ipv4-address-in-php/index.html">Validate IPv4 Address in PHP</a></li>
-			<li><a data-description="PHP TimeZones" href="../../2012/11/11/php-country-time-zones/index.html">PHP Country Time Zones</a></li>
-			<li><a data-description="Fixing Urls" href="../../2012/09/14/fixing-url-using-php-by-adding-http-https/index.html">Fixing url using PHP by adding http & https</a></li>
-		</ul>
-	</div>
-	<div class="col-sm-3">
-		<h3 class="title">HTMl5</h3>
-		<ul>
-		<li><a data-description="HTML5 Inline Edit" href="../../2014/04/13/html5-inline-edit-with-php-mysql-jquery-ajax/index.html">HTML5 Inline Edit with PHP, MYSQL & jQuery Ajax</a></li>
-			<li><a data-description="Advanced HTML5 Tutorials" href="../../2014/03/22/advanced-html5-tutorials-client-side-offline-geolocation-part-i/index.html">Advanced HTML5 Tutorials – Client Side, Offline, Geolocation – Part I</a></li>
-			<li><a data-description="HTML5 Chart" href="../../2013/04/08/html5-chart/index.html">HTML5 Chart</a></li>
-			<li><a data-description="HTML5 Whiteboard Marker" href="../../2012/12/22/white-board-drawing-widget-using-html5/index.html">WhiteBoard Drawing Widget using HTML5</a></li>
-			<li><a data-description="Free HTML5 Ebook" href="../../2012/03/23/free-html5-and-css3-ebook/index.html">Free HTML5 and CSS3 Ebook</a></li>
-		</ul>
-	</div>
+
+<div class="col-md-4">
+<article>
+	<h4>Heading</h4>
+	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+</article>
 </div>
+<div class="col-md-4">
+<article>
+	<h4>Heading</h4>
+	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+</article>
+</div>
+<div class="col-md-4">
+<article>
+	<h4>Heading</h4>
+	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+</article>
 </div>
 
+</div>
+</div> <!-- ./row -->
+<!-- BOTTOM -->
 
 
+<!-- FOOTER -->
+<div class="footer-wrapper">
+<footer>
 
-                <!-- BOTTOM -->
-                <div class="bottom-wrapper">
+	<div class="col-md-3">
+	</div>
+	<div class="col-md-3">
+		<p class="copyright-text"><a href="index.html" class="logo"><img src="images/footer-logo.png" alt="" /></a> &copy; 2012, All rights reserved</p>
 
-                		<section id="bottom">
+		<ul class="footer-nav">
+			<li><a href="index.html#">Contact</a></li>
+			<li><a href="index.html#">Download</a></li>
+			<li><a href="index.html#">Privacy Policy</a></li>
+			<li><a href="index.html#">Terms of Use</a></li>
+			<li><a href="index.html#">FAQ</a></li>
+		</ul>
+	</div>
 
-                        		<article class="bottom-text-widget">
-                                		<h4>TEXT WIDGET</h4>
-                                		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <strong>dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud.</p>
-                                		<p>Aliquip ex ea commodo consequat.  Excepteur sint occaecat cupidatat non proident.</p>
-                                </article>
+	<div class="col-md-3">
+		<ul class="social">
+			<li><a href="index.html#" class="fb">&nbsp;</a></li>
+			<li><a href="index.html#" class="tw">&nbsp;</a></li>
+			<li><a href="index.html#" class="vm">&nbsp;</a></li>
+		</ul>
 
-                                <article class="bottom-tweet-widget">
-                                		<h4>RECENT TWEETS</h4>
-                                        <div class="bottom-tweet"></div>
-                                </article>
+		<p class="footer-email"><a href="index.html#">info@mountainia.com</a></p>
+	</div>
+	<div class="col-md-3">
+	</div>
 
-                                <article class="bottom-subscribe-widget">
-                                		<h4>MONTHLY NEWSLETTER</h4>
-                                        <p>Don’t miss any event, discount or news. Subscribe to our Newsletter!</p>
-                                        <form action="#">
-                                        	<fieldset>
-                                            		<input type="text" class="feild bottom-email" value="Your Email" />
-                                            		<input type="submit" class="ok-btn" value="OK" />
-                                            </fieldset>
-                                        </form>
-                                        <p>(No, seriously, don’t miss anything)</p>
-                                </article>
-
-                        </section>
-
-                </div>
-				<!-- BOTTOM -->
-
-
-
-                <!-- FOOTER -->
-                <div class="footer-wrapper">
-                		<footer>
-
-                    			<div class="left">
-                    				<p class="copyright-text"><a href="index.html" class="logo"><img src="images/footer-logo.png" alt="" /></a> &copy; 2012, All rights reserved</p>
-
-                    				<ul class="footer-nav">
-                    					<li><a href="index.html#">Contact</a></li>
-                    					<li><a href="index.html#">Download</a></li>
-                    					<li><a href="index.html#">Privacy Policy</a></li>
-                    					<li><a href="index.html#">Terms of Use</a></li>
-                    					<li><a href="index.html#">FAQ</a></li>
-                    				</ul>
-                    			</div>
-
-                                <div class="right">
-                                	<ul class="social">
-                                		<li><a href="index.html#" class="fb">&nbsp;</a></li>
-                                		<li><a href="index.html#" class="tw">&nbsp;</a></li>
-                                		<li><a href="index.html#" class="vm">&nbsp;</a></li>
-                                	</ul>
-
-                                    <p class="footer-email"><a href="index.html#">info@mountainia.com</a></p>
-                                </div>
-
-                    	</footer>
-                </div>
-                <!-- FOOTER -->
+</footer>
+</div>
+<!-- FOOTER -->
 
 
 
@@ -275,14 +285,12 @@
 					<li class="go-back"><a href="#0">Go Back</a></li>
 					<li class="see-all"><a href="http://www.bryantschools.org/about-us">Creating Opportunities for Success</a></li>
 					<li class="has-children">
-						<h3 class="center">
-							Bryant School District
-						</h3>
+						<div class="img-center">
 						<img class="img-responsive" src="img/logo.png">
-						<br />
-						<p class="center">
-							The Bryant School District encompasses 342.19 square miles of land in Saline County and supports all or portions of Bryant, Alexander, Benton, Salem, Mabelvale, Shannon Hills, Paron, Bauxite, and Avilla.
-						</p>
+						</div>
+						<h3>
+							Bryant Public Schools
+						</h3>
 					</li>
 
 					<li class="has-children">
@@ -303,6 +311,9 @@
 					</li>
 
 					<li class="has-children">
+						<p class="">
+							The Bryant School District encompasses 342.19 square miles of land in Saline County and supports all or portions of Bryant, Alexander, Benton, Salem, Mabelvale, Shannon Hills, Paron, Bauxite, and Avilla.
+						</p>
 						<a href="http://www.bryantschools.org/themes/district/assets/files/district/files/At_A_Glance.pdf">Our Mission</a>
 						<p>Bryant Public Schools create opportunities for academic and personal success to ensure all students are future ready.</p>
 						<br />
@@ -579,21 +590,6 @@
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <!-- FlexSlider -->
-  <script defer src="woothemes-FlexSlider/jquery.flexslider.js"></script>
-
-  <script type="text/javascript">
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-
-    animation: "slide",
-    controlsContainer: $(".custom-controls-container"),
-    customDirectionNav: $(".custom-navigation a")
-
-      });
-    });
-  </script>
 
 
 </body>

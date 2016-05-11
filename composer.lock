@@ -4,9 +4,68 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "96de4cbcfa31f52dc52d10890eddecc5",
-    "content-hash": "b5a246cb130a03eb6384b2b6fbfb7a85",
+    "hash": "0a49ce756258abc5e075ee418057b11a",
+    "content-hash": "28ebc8140593564329af1506e9c691d5",
     "packages": [
+        {
+            "name": "anahkiasen/former",
+            "version": "4.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/formers/former.git",
+                "reference": "37f6876a5d211427b5c445cd64f0eb637f42f685"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/formers/former/zipball/37f6876a5d211427b5c445cd64f0eb637f42f685",
+                "reference": "37f6876a5d211427b5c445cd64f0eb637f42f685",
+                "shasum": ""
+            },
+            "require": {
+                "anahkiasen/html-object": "~1.4",
+                "illuminate/config": "~5.0",
+                "illuminate/container": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/routing": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/translation": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/database": "~5.0",
+                "mockery/mockery": "~0.9.1",
+                "phpunit/phpunit": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Former\\": [
+                        "src/Former",
+                        "tests"
+                    ],
+                    "Laravel\\": "src/Laravel"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A powerful form builder",
+            "homepage": "http://anahkiasen.github.com/former/",
+            "keywords": [
+                "bootstrap",
+                "form",
+                "foundation",
+                "laravel"
+            ],
+            "time": "2016-04-18 15:33:06"
+        },
         {
             "name": "anahkiasen/html-object",
             "version": "1.4.2",
@@ -908,6 +967,47 @@
             "time": "2016-01-30 21:39:33"
         },
         {
+            "name": "codingo-me/dropzoner",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codingo-me/dropzoner.git",
+                "reference": "c6660d70d66b82dc672b814aeb33479d0e358730"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codingo-me/dropzoner/zipball/c6660d70d66b82dc672b814aeb33479d0e358730",
+                "reference": "c6660d70d66b82dc672b814aeb33479d0e358730",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": "^2.3",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Codingo\\Dropzoner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Radunovic",
+                    "email": "ivan@codingo.me"
+                }
+            ],
+            "description": "Simpe Laravel package for image uploads using DropzoneJS library",
+            "keywords": [
+                "dropzone",
+                "laravel"
+            ],
+            "time": "2015-12-26 18:59:11"
+        },
+        {
             "name": "cviebrock/eloquent-sluggable",
             "version": "dev-master",
             "source": {
@@ -917,7 +1017,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/cea02a8b8035ce341d14c8529eb775b9514ed236",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/60f13310e03d6227b939281ab402c3a6d04c191d",
                 "reference": "cea02a8b8035ce341d14c8529eb775b9514ed236",
                 "shasum": ""
             },
@@ -1012,6 +1112,55 @@
                 "utils"
             ],
             "time": "2015-07-23 00:54:12"
+        },
+        {
+            "name": "davejamesmiller/laravel-breadcrumbs",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davejamesmiller/laravel-breadcrumbs.git",
+                "reference": "5a5d5d1b1f5780359604f7fde11bbf810ff3e9e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davejamesmiller/laravel-breadcrumbs/zipball/5a5d5d1b1f5780359604f7fde11bbf810ff3e9e4",
+                "reference": "5a5d5d1b1f5780359604f7fde11bbf810ff3e9e4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "illuminate/view": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testbench": "3.0.*",
+                "phpunit/phpunit": "4.*",
+                "satooshi/php-coveralls": "0.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DaveJamesMiller\\Breadcrumbs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT License"
+            ],
+            "authors": [
+                {
+                    "name": "Dave James Miller",
+                    "email": "dave@davejamesmiller.com",
+                    "homepage": "http://davejamesmiller.com/"
+                }
+            ],
+            "description": "A simple Laravel-style way to create breadcrumbs in Laravel 4+.",
+            "homepage": "https://github.com/davejamesmiller/laravel-breadcrumbs",
+            "keywords": [
+                "laravel"
+            ],
+            "time": "2015-02-08 21:44:39"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1482,7 +1631,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/202b520b634ed3bcfcdd94a9c2e3cbd15604cf01",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/6488dfd9390eee37398c03a877e0914dc12187de",
                 "reference": "202b520b634ed3bcfcdd94a9c2e3cbd15604cf01",
                 "shasum": ""
             },
@@ -1774,6 +1923,54 @@
                 }
             ],
             "time": "2015-04-20 18:58:01"
+        },
+        {
+            "name": "jasekz/laradrop",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jasekz/laradrop.git",
+                "reference": "6729712529ac5d80ebc068df863e850f903bff7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jasekz/laradrop/zipball/6729712529ac5d80ebc068df863e850f903bff7e",
+                "reference": "6729712529ac5d80ebc068df863e850f903bff7e",
+                "shasum": ""
+            },
+            "require": {
+                "baum/baum": "~1.1",
+                "ext-fileinfo": "*",
+                "illuminate/support": "~5.0",
+                "intervention/image": "2.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Jasekz\\Laradrop": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jasek Zbigniew",
+                    "email": "zig@elegrit.com",
+                    "homepage": "http://elegrit.com"
+                }
+            ],
+            "description": "File manager using Dropzone.js for Laravel 5",
+            "keywords": [
+                "dropzone.js",
+                "file manager",
+                "file upload",
+                "laravel 5",
+                "php"
+            ],
+            "time": "2016-04-15 01:22:32"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -2871,7 +3068,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jjriv/emogrifier/zipball/7b00580315c80793e4cbfe0b1f689b311ceb46f9",
+                "url": "https://api.github.com/repos/jjriv/emogrifier/zipball/82a67a1d3a9b18cba6dca86774ea4608a16d600d",
                 "reference": "7b00580315c80793e4cbfe0b1f689b311ceb46f9",
                 "shasum": ""
             },
