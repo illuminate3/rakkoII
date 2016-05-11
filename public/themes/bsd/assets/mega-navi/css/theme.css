@@ -1159,3 +1159,144 @@ support for no js
 .slider-wrapper .slider-nav .prev { height: 50%; width: 100%; background: url("../images/slider-arrow-left.png") center no-repeat; display: block; }
 .slider-wrapper .slider-nav .next:hover { text-decoration: none; background-position: 53% center; }
 .slider-wrapper .slider-nav .prev:hover { text-decoration: none; background-position: 47% center; }
+
+
+/*******************************************/
+/**             BOTTOM                    **/
+/*******************************************/
+
+.bottom-wrapper { background: #333c4d url("../images/home-tab-bg.png") repeat-x; min-height: 300px; width: 100%; overflow: hidden; }
+#bottom { width: 960px; margin: 0px auto; }
+#bottom article { float: left; padding: 45px 0px; min-height: 212px; }
+#bottom article.bottom-text-widget { width: 300px; margin: 0px 20px 0px 0px; }
+#bottom article.bottom-tweet-widget { width: 300px; padding-right: 35px; margin: 0px 54px 0px 0px; background: url("../images/bottom-separator.png") right center repeat-y; }
+#bottom article.bottom-subscribe-widget { width: 230px; }
+#bottom article h4 { text-shadow: 1px 1px 0px #282f3b; color: #fff; font: 16px "RobotoRegular", Arial, Helvetica, sans-serif; background: url("../images/heading-bg.png") left bottom no-repeat; padding: 0px 0px 14px 0px; margin: 0px 0px 14px 0px; }
+#bottom article p { text-shadow: 1px 1px 0px #282f3b; color: #cfd9e2; font: 13px "RobotoRegular", Arial, Helvetica, sans-serif; line-height: 21px; margin: 0px 0px 20px 0px; }
+#bottom article p strong { font-family: "RobotoMedium"; color: #fff; }
+#bottom article fieldset { position: relative; margin: 0px 0px 10px; }
+#bottom article input.feild { outline: none; color: #a5acb8; font: 12px "RobotoRegular", Arial, Helvetica, sans-serif; background: url("../images/subscribe-fields.png") no-repeat; width: 169px; height: 23px; padding: 10px 51px 10px 10px; line-height: 23px; border: none; }
+#bottom article input.ok-btn { outline: none; position: absolute; top: 0px; right: 0px; cursor: pointer; background: url("../images/subscribe-btn.png") no-repeat; width: 41px; height: 41px; line-height: 41px; border: none; color: #fff; text-shadow: #1685bb; }
+#bottom article .tweet_list li { padding: 0px 0px 15px; margin: 0px 0px 15px; background: url("../images/heading-bg.png") left bottom no-repeat; }
+#bottom article .tweet_list li:last-child { background: none; }
+#bottom article .tweet_time { display: block; text-shadow: 1px 1px 0px #282f3b; }
+#bottom article .tweet_time a { color: #a2abba; font-size: 11px; }
+#bottom article .tweet_text { text-shadow: 1px 1px 0px #282f3b; color: #cfd9e2; font: 13px "RobotoRegular", Arial, Helvetica, sans-serif; line-height: 21px; }
+#bottom article .tweet_text a { color: #88caed; }
+
+
+
+/*******************************************/
+/**             FOOTER                    **/
+/*******************************************/
+
+.footer-wrapper { background: #202732; padding: 40px 0px; overflow: hidden; border-top: 1px solid #3d495d; }
+.footer-wrapper footer { width: 960px; padding: 0px 0px; margin: 0px auto; }
+.footer-wrapper footer p { color: #cfd9e2; font: 13px "RobotoMedium", Arial, Helvetica, sans-serif; line-height: 20px; text-shadow: 1px 1px 0px #101319; }
+.footer-wrapper footer a { color: #cfd9e2; }
+.footer-wrapper footer p.copyright-text { margin: 0px 0px 20px; }
+.footer-wrapper footer p.copyright-text a.logo { border-right: 1px solid #555d67; margin-right: 15px; }
+.footer-wrapper footer p.copyright-text a.logo img { margin-right: 15px; vertical-align: middle; }
+.footer-wrapper footer .footer-nav {}
+.footer-wrapper footer .footer-nav li { float: left; padding: 0px 15px 0px 0px; margin: 0px 15px 0px 0px; background: url("../images/separator.png") right center no-repeat; }
+.footer-wrapper footer .footer-nav li:last-child { padding: 0; margin: 0; background: none; }
+.footer-wrapper footer .social { margin: 0px 0px 20px; overflow: hidden; }
+.footer-wrapper footer .social li { display: inline; margin-left: 15px; }
+.footer-wrapper footer .social li a { font-size: 0; line-height: 0; display: inline-block; width: 19px; height: 19px; }
+.footer-wrapper footer .social li a:hover { text-decoration: underline; }
+.footer-wrapper footer .social li a.fb { background: url("../images/social.png") right center no-repeat; }
+.footer-wrapper footer .social li a.tw { background: url("../images/social.png") -35px center no-repeat; }
+.footer-wrapper footer .social li a.vm { background: url("../images/social.png") left center no-repeat; }
+.footer-wrapper footer div.left { float: left; width: 470px; }
+.footer-wrapper footer div.right { float: right; width: 470px; text-align: right; }
+
+
+
+.carousel img {
+width:100%
+}
+
+.carousel-caption {
+background-color: rgba(0,0,0,0.5);
+position: absolute;
+right: 0;
+bottom: 0px;
+left: 0;
+z-index: 10;
+padding-top: 0;
+padding-bottom: 0px;
+color: #fff;
+text-align: left;
+padding-left: 5%;
+}
+.carousel-caption h3 {
+/*
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+*/
+letter-spacing: -1px;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 0;
+margin-top: 10px !important;
+text-align: left;
+text-shadow: 2px 1px 2px rgba(0,0,0,0.9);
+}
+.carousel-caption p {
+margin-top: 0;
+font-size: 14px;
+text-align: left;
+}
+.carousel-control {
+width: /*15%*/ 8%;
+}
+.carousel-indicators {
+bottom: 2px;
+}
+.carousel-indicators .active {
+background: #FDF7DE
+}
+
+/**arrows**/
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+width: 35px;
+height: 45px;
+font-size: 45px;
+}
+.carousel-fade .carousel-inner .item {
+opacity: 0;
+transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+left: 0;
+opacity: 0;
+z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+opacity: 1;
+}
+.carousel-fade .carousel-control {
+z-index: 2;
+}
+/*WHAT'S NEW IN BS 3.3: Added transforms to improve carousel performance in modern browsers. now override the 3.3 new styles for modern browsers & apply opacity*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+.carousel-fade .carousel-inner > .item.next, .carousel-fade .carousel-inner > .item.active.right {
+opacity: 0;
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-inner > .item.prev, .carousel-fade .carousel-inner > .item.active.left {
+opacity: 0;
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-inner > .item.next.left, .carousel-fade .carousel-inner > .item.prev.right, .carousel-fade .carousel-inner > .item.active {
+opacity: 1;
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+}
