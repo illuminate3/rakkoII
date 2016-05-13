@@ -3422,6 +3422,42 @@
             "time": "2015-11-09 13:26:59"
         },
         {
+            "name": "sukohi/surpass",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SUKOHI/Surpass.git",
+                "reference": "70c45c57955ea70b6ee1aa4ff6b17400aea8755b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SUKOHI/Surpass/zipball/70c45c57955ea70b6ee1aa4ff6b17400aea8755b",
+                "reference": "70c45c57955ea70b6ee1aa4ff6b17400aea8755b",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sukohi\\Surpass\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sukohi",
+                    "email": "capilano.sukohi@gmail.com"
+                }
+            ],
+            "description": "A PHP package mainly developed for Laravel to manage uploading images using Ajax and displaying thumbnail.",
+            "time": "2016-04-03 07:49:26"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.2",
             "source": {
