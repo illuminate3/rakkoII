@@ -26,7 +26,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
 <!-- ------------------------------------------ CSS stylesheets ------------------------------------------ -->
 
@@ -38,7 +37,7 @@
 -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/global/assets/css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')
@@ -51,17 +50,14 @@
 <body>
 
 
-<header>
 	@include($activeTheme . '::' . '_partials.navigation')
-</header>
 
-<main>
-	@include($activeTheme . '::' . '_partials.content')
-</main>
+	<div class="container-fluid">
+<!-- <div id="wrap" class="container"> -->
+		@include($activeTheme . '::' . '_partials.content')
+	</div><!-- ./container -->
 
-<footer>
 	@include($activeTheme . '::' . '_partials.footer')
-</footer>
 
 
 <!-- ------------------------------------------ js ------------------------------------------ -->
@@ -84,12 +80,6 @@
 	<script type="text/javascript">
 		@yield('inline-scripts')
 	</script>
-
-<!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
-<script>
-	{!! Setting::get('google_analytics') !!}
-</script>
-<!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
 
 </body>
 </html>
