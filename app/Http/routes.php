@@ -25,7 +25,7 @@ Route::pattern('lang', '[0-9a-z]+');
 
 // Controllers
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return Theme::view('welcome');
 });
 
