@@ -57,6 +57,12 @@ body {
 	width:auto; height:auto;
 }
 
+.dropzone {
+	border: 1px dashed #CCC;
+	min-height: 227px;
+	margin-bottom: 20px;
+}
+
 
 /*
 |-----------------------------------------------------------------------------------------
