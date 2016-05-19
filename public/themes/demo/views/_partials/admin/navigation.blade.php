@@ -11,7 +11,7 @@
 	<a class="navbar-brand" href="/">
 		{{ Setting::get('brand_title', Config::get('core.brand_title')) }}
 	</a>
-	<a class="navbar-brand" href="/admin/dashboard">
+	<a class="navbar-brand" href="/admin">
 		<i class="fa fa-dashboard fa-lg"></i>
 		{{ trans('kotoba::cms.dashboard') }}
 	</a>
