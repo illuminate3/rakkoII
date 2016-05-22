@@ -4,7 +4,8 @@
 @if (count($articles))
 
 <!-- Carousel -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="z-index: 0; !important">
+<section class="slide">
+<div id="myCarousel" class="carousel" data-ride="carousel">
 
 <!-- Buttons -->
 {!!
@@ -29,10 +30,10 @@
 			<a href="/news/{{ $article->slug }}">
 				<img src="{{ $image->image->url('landscape') }}" class="" alt="{{ $article->slug }}">
 			</a>
-		@endforeach
 			<div class="carousel-caption">
-				<a class="top-link" href="/news/{{ $article->slug }}">{{ $article->translate($lang)->title }}</a>
 {{--
+				<a class="top-link" href="/news/{{ $article->slug }}">{{ $article->translate($lang)->title }}</a>
+--}}
 				<h1>
 					{{ $article->translate($lang)->title }}
 				</h1>
@@ -42,16 +43,27 @@
 				<p>
 					<a class="btn btn-primary" href="/news/{{ $article->slug }}">{{ trans('kotoba::cms.more') }}</a>
 				</p>
---}}
 			</div>
+
+		@endforeach
 		</div>
 
 	{{--*/ $i++ /*--}}
 	@endforeach
 
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">{{ trans('kotoba::button.previous') }}</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">{{ trans('kotoba::button.next') }}</span>
+	</a>
+
 
 </div><!-- ./carousel-inner -->
 </div><!-- /#myCarousel -->
+</section>
 
 @else
 

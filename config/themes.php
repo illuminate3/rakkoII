@@ -14,8 +14,9 @@ return [
 	*/
 
 	'active' => env('ACTIVE_THEME', 'bootstrap'),
+	'app' => '_layouts.app',
 	'back' => '_layouts.back',
-	'front' => '_layouts.app',
+	'front' => '_layouts.front',
 	'simple' => '_layouts.simple',
 	'html' => 'pigeon.layouts.html',
 

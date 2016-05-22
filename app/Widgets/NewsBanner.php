@@ -45,6 +45,7 @@ class NewsBanner extends Widget
 		$normal_articles = News::IsPublished()->SiteID()->IsBanner()->NotTimed()->orderBy('order')->get();
 //dd($normal_articles);
 		$articles = $timed_articles->merge($normal_articles);
+//dd($articles);
 
 		$count = count($articles);
 //dd($articles);
