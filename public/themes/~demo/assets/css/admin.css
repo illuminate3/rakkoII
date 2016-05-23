@@ -1,0 +1,40 @@
+/*
+|-----------------------------------------------------------------------------------------
+| general
+|-----------------------------------------------------------------------------------------
+*/
+
+
+.dropzone {
+	border: 1px dashed #CCC !important;
+	min-height: 227px !important;
+	margin-bottom: 20px !important;
+}
+
+
+/*
+|-----------------------------------------------------------------------------------------
+| lists
+|-----------------------------------------------------------------------------------------
+*/
+
+.nav-item{
+}
+.nav-item {
+	line-height: 1.6em;
+	list-style-type: none;
+}
+.nav-item > a {
+}
+
+.nav-item > a:hover {
+	color: #ccd1d9;
+	text-decoration: none;
+}
+
+.plain ul {
+	list-style-type: none;
+}
+.plain li {
+	list-style-type: none;
+}
