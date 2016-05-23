@@ -339,16 +339,16 @@
         },
         {
             "name": "caffeinated/menus",
-            "version": "v2.3.1",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caffeinated/menus.git",
-                "reference": "7a345b3d95a97f74bddd2de350634e9458a2e4d1"
+                "reference": "307475d36e9d0c47e317774ac7d86c3565e13ab4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caffeinated/menus/zipball/7a345b3d95a97f74bddd2de350634e9458a2e4d1",
-                "reference": "7a345b3d95a97f74bddd2de350634e9458a2e4d1",
+                "url": "https://api.github.com/repos/caffeinated/menus/zipball/307475d36e9d0c47e317774ac7d86c3565e13ab4",
+                "reference": "307475d36e9d0c47e317774ac7d86c3565e13ab4",
                 "shasum": ""
             },
             "require": {
@@ -382,7 +382,7 @@
                 "menu",
                 "navigation"
             ],
-            "time": "2016-05-11 18:28:59"
+            "time": "2016-05-23 01:25:48"
         },
         {
             "name": "caffeinated/modules",
@@ -1063,6 +1063,57 @@
             "time": "2015-02-08 21:44:39"
         },
         {
+            "name": "dimsav/laravel-translatable",
+            "version": "v5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dimsav/laravel-translatable.git",
+                "reference": "4534a17da5494ac27cf5ce743e228533c66b7275"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dimsav/laravel-translatable/zipball/4534a17da5494ac27cf5ce743e228533c66b7275",
+                "reference": "4534a17da5494ac27cf5ce743e228533c66b7275",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dimsav\\Translatable\\": "src/Translatable/"
+                },
+                "classmap": [
+                    "tests"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dimitrios Savvopoulos",
+                    "email": "ds@dimsav.com",
+                    "homepage": "http://dimsav.com"
+                }
+            ],
+            "description": "A Laravel package for multilingual models",
+            "keywords": [
+                "database",
+                "language",
+                "laravel",
+                "translation"
+            ],
+            "time": "2016-04-21 22:12:50"
+        },
+        {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
             "source": {
@@ -1527,12 +1578,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate3/kotoba.git",
-                "reference": "fd594de5bc1d57979c9f11bca6525a81cd63813b"
+                "reference": "bf2864736c3132c8b2b15c5921f8e889932a10a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/fd594de5bc1d57979c9f11bca6525a81cd63813b",
-                "reference": "fd594de5bc1d57979c9f11bca6525a81cd63813b",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/bf2864736c3132c8b2b15c5921f8e889932a10a4",
+                "reference": "bf2864736c3132c8b2b15c5921f8e889932a10a4",
                 "shasum": ""
             },
             "require": {
@@ -1563,7 +1614,7 @@
                 "language",
                 "laravel"
             ],
-            "time": "2016-05-17 21:25:58"
+            "time": "2016-05-22 22:41:02"
         },
         {
             "name": "imagine/imagine",
@@ -5033,16 +5084,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "0.9.4",
+            "version": "0.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/padraic/mockery.git",
-                "reference": "70bba85e4aabc9449626651f48b9018ede04f86b"
+                "reference": "4db079511a283e5aba1b3c2fb19037c645e70fc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/70bba85e4aabc9449626651f48b9018ede04f86b",
-                "reference": "70bba85e4aabc9449626651f48b9018ede04f86b",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/4db079511a283e5aba1b3c2fb19037c645e70fc2",
+                "reference": "4db079511a283e5aba1b3c2fb19037c645e70fc2",
                 "shasum": ""
             },
             "require": {
@@ -5094,7 +5145,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2015-04-02 19:54:00"
+            "time": "2016-05-22 21:52:33"
         },
         {
             "name": "phpdocumentor/reflection-docblock",

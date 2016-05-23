@@ -2,9 +2,9 @@
 
 
 <div class="row">
-	<h1>
+	<h2>
 		{{ trans('kotoba::cms.news') }}
-	</h1>
+	</h2>
 	<hr>
 </div>
 

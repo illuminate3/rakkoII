@@ -64,11 +64,12 @@ dd('die');
 //dd($theme);
 //dd(Theme::getActive());
 //dd(Theme::setActive($theme));
-//dd(Theme::getActive() . '::' . Config::get('themes.simple', $theme . '::' . '_layouts.simple'));
+//dd(Theme::getActive() . '::' . Config::get('themes.front', $theme . '::' . '_layouts.front'));
 
 		View::share('activeTheme', $theme);
+		View::share('theme_app',  $theme . '::' . Config::get('themes.app', $theme . '::' . '_layouts.app'));
 		View::share('theme_back', $theme . '::' . Config::get('themes.back', $theme . '::' . '_layouts.back'));
-		View::share('theme_front',  $theme . '::' . Config::get('themes.front', $theme . '::' . '_layouts.app'));
+		View::share('theme_front',  $theme . '::' . Config::get('themes.front', $theme . '::' . '_layouts.front'));
 		View::share('theme_simple', $theme . '::' . Config::get('themes.simple', $theme . '::' . '_layouts.simple'));
 
 //		View::share('site_title', Setting::get( 'brand_title', Config::get('core.title', 'Site Name')) );
