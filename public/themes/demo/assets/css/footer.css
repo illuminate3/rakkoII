@@ -27,7 +27,7 @@ footer components
 #bottom article p strong { font-family: "RobotoMedium"; color: #fff; }
 
 #bottom article fieldset { position: relative; margin: 0px 0px 10px; }
-#bottom article input.feild { outline: none; color: #a5acb8; font: 12px "RobotoRegular", Arial, Helvetica, sans-serif; background: url("../img/_style/subscribe-fields.png") no-repeat; width: 169px; height: 23px; padding: 10px 51px 10px 10px; line-height: 23px; border: none; }
+#bottom article input.field { outline: none; color: #a5acb8; font: 12px "RobotoRegular", Arial, Helvetica, sans-serif; background: url("../img/_style/subscribe-fields.png") no-repeat; width: 169px; height: 23px; padding: 10px 51px 10px 10px; line-height: 23px; border: none; }
 #bottom article input.ok-btn { outline: none; position: absolute; top: 0px; right: 0px; cursor: pointer; background: url("../img/_style/subscribe-btn.png") no-repeat; width: 41px; height: 41px; line-height: 41px; border: none; color: #fff; text-shadow: #1685bb; }
 
 #bottom article .tweet_list li { padding: 0px 0px 15px; margin: 0px 0px 15px; background: url("../img/_style/heading-bg.png") left bottom no-repeat; }
@@ -70,3 +70,23 @@ footer components
 .footer-wrapper footer .social li a.vm { background: url("../img/_style/social.png") left center no-repeat; }
 .footer-wrapper footer div.left { float: left; width: 470px; }
 .footer-wrapper footer div.right { float: right; width: 470px; text-align: right; }
+
+.footer-wrapper section input.field {
+	outline: none;
+	color: #a5acb8;
+	font: 12px "RobotoRegular", Arial, Helvetica, sans-serif;
+	background: url("../img/_style/bottom-bg.png") repeat-x;
+	width: 70%;
+	padding: 10px 10px;
+	margin-bottom: 10px;
+	line-height: 14px;
+	border: none;
+	}
+.footer-wrapper section h4 {
+	text-shadow: 1px 1px 0px #282f3b;
+	color: #fff;
+	font: 16px "RobotoRegular", Arial, Helvetica, sans-serif;
+	background: url("../img/_style/heading-bg.png") left bottom no-repeat;
+	padding: 0px 0px 14px 0px;
+	margin: 0px 0px 14px 0px;
+	}
