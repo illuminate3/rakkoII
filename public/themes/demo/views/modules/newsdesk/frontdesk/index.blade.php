@@ -5,11 +5,18 @@
 {{{ $article->title }}} :: @parent
 @stop
 
+@section('seo')
+	<meta name="keywords" content="{{ Meta::getKeywords() }}" />
+	<meta name="description" content="{{ Meta::getDescription() }}" />
+@stop
+
 @section('styles')
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/cd_style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/pdf_viewer.css') }}">
 @stop
 
 @section('scripts')
+	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/js/main.js') }}"></script>
 	<script src="{{ asset('assets/js/pdf_viewer.min.js') }}"></script>
 @stop
 
@@ -35,14 +42,16 @@ $(function(){
 {{-- News --}}
 @section('content')
 
+<div class="container-fluid">
 
 <div class="row">
+<div class="col-sm-12">
 	<h1>
 		{{ $article->title }}
 	</h1>
 	<hr>
 </div>
-
+</div>
 
 <div class="row">
 <div class="col-sm-8 col-sm-offset-2">
@@ -54,13 +63,11 @@ $(function(){
 </div>
 </div>
 
-{{--
 <div class="row">
 	<h2>
 		{!! $article->summary !!}
 	</h2>
 </div>
---}}
 
 <div class="row padding-xl">
 <div class="col-sm-12">
@@ -105,6 +112,8 @@ $(function(){
 	</div>
 
 @endif
+
+</div> <!-- ./container -->
 
 
 <!-- Modal -->

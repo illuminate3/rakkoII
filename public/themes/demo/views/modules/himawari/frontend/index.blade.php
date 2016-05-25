@@ -5,6 +5,11 @@
 {{{ $page->title }}} :: @parent
 @stop
 
+@section('seo')
+	<meta name="keywords" content="{{ Meta::getKeywords() }}" />
+	<meta name="description" content="{{ Meta::getDescription() }}" />
+@stop
+
 @section('styles')
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/pdf_viewer.css') }}">
 @stop
