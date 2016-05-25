@@ -1,6 +1,6 @@
 <!-- header -->
 
-<a class="cd-logo" href=""><img src="{{ asset('/themes/' . $activeTheme . '/assets/img/logo.png') }}" alt="Logo"></a>
+<a class="cd-logo" href="/"><img src="{{ asset('/themes/' . $activeTheme . '/assets/img/logo.png') }}" alt="Logo"></a>
 
 <ul class="cd-header-buttons">
 	<li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>

@@ -3,7 +3,7 @@
 <footer>
 
 	<div class="col-md-4">
-		<p class="copyright-text"><a href="index.html" class="logo"><img src="{{ asset('/themes/' . $activeTheme . '/assets/img/footer-logo.png') }}" alt="" /></a> &copy; 2015-2016, All rights reserved</p>
+		<p class="copyright-text"><a href="/" class="logo"><img src="{{ asset('/themes/' . $activeTheme . '/assets/img/footer-logo.png') }}" alt="" /></a> &copy; 2015-2016, All rights reserved</p>
 
 		<ul class="footer-nav">
 			<li><a href="index.html#">Contact</a></li>
