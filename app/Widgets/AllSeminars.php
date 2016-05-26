@@ -1,20 +1,13 @@
 <?php
 
-//namespace App\Modules\Shisan\Http\Widgets;
-//namespace App\Widgets\Shisan;
 namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
 use App\Modules\Kenshu\Http\Models\Seminar;
 
-// use App;
 use Cache;
-// use Config;
-// use Menu;
-// use Session;
-// use Theme;
-use Schema;
+
 
 class AllSeminars extends Widget
 {
@@ -34,15 +27,12 @@ class AllSeminars extends Widget
 
 		if (Cache::has('kenshu_count_all_seminars')) {
 			$count = Cache::get('kenshu_count_all_seminars');
-//dd($count);
 		} else {
-//dd('die');
 			$count = count($this->getAllSeminars());
 			Cache::forever('kenshu_count_all_seminars', $count);
 		}
 
 		return $count;
-
 	}
 
 
@@ -58,7 +48,6 @@ class AllSeminars extends Widget
 		}
 
 		return $all_seminars;
-
 	}
 
 

@@ -20,6 +20,8 @@ class TopSeminars extends Widget
 	public function handle()
 	{
 
+dd('TopSeminars');
+
 		$activeTheme = Theme::getActive();
 		$lang = Session::get('locale');
 

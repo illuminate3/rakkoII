@@ -22,6 +22,8 @@ class MenuSchools extends Widget
 	public function handle()
 	{
 
+dd('MenuSchools');
+
 		$activeTheme = Theme::getActive();
 		$schools = Cache::get('widget_schools', null);
 //Cache::forget('schools');

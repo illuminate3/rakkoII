@@ -20,6 +20,8 @@ class AssetSearch extends Widget
 	public function handle()
 	{
 
+dd('AssetSearch');
+
 		$activeTheme = Theme::getActive();
 		return Theme::View($activeTheme . '::' . 'widgets.asset_search');
 

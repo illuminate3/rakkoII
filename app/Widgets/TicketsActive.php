@@ -22,6 +22,9 @@ class TicketsActive extends Widget
 
 	public function handle()
 	{
+
+dd('TicketsActive');
+
 		$count = $this->coountAllTickets();
 		return $count;
 	}

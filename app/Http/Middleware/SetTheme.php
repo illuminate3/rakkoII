@@ -20,7 +20,9 @@ use View;
 
 
 //class SetTheme implements Middleware {
-class SetTheme {
+class SetTheme
+{
+
 
 	public function __construct(
 		Application $app,
@@ -78,5 +80,6 @@ dd('die');
 		return $next($request);
 
 	}
+
 
 }

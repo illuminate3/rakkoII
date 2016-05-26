@@ -23,6 +23,8 @@ class MenuOther extends Widget
 	public function handle()
 	{
 
+dd('MenuOther');
+
 		$activeTheme = Theme::getActive();
 
 // 		Menu::handler('other')->hydrate(function()

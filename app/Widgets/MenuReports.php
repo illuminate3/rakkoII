@@ -23,6 +23,8 @@ class MenuReports extends Widget
 	public function handle()
 	{
 
+dd('MenuReports');
+
 		$activeTheme = Theme::getActive();
 
 // 		Menu::handler('reports')->hydrate(function()

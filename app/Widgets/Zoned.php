@@ -20,6 +20,8 @@ class Zoned extends Widget
 	public function handle()
 	{
 
+dd('Zoned');
+
 		$activeTheme = Theme::getActive();
 
 // 		Menu::handler('zoned')->hydrate(function()

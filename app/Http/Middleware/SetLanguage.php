@@ -16,7 +16,9 @@ use Lang;
 use Session;
 
 
-class SetLanguage implements Middleware {
+class SetLanguage implements Middleware
+{
+
 
 	public function __construct(Request $request)
 	{
@@ -50,5 +52,6 @@ class SetLanguage implements Middleware {
 		return $next($request);
 
 	}
+
 
 }

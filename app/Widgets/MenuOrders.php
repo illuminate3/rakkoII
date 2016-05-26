@@ -23,6 +23,8 @@ class MenuOrders extends Widget
 	public function handle()
 	{
 
+dd('MenuOrders');
+
 		$activeTheme = Theme::getActive();
 
 // 		Menu::handler('orders')->hydrate(function()

@@ -22,10 +22,12 @@ class MenuDistrict extends Widget
 	public function handle()
 	{
 
+dd('MenuDistrict');
+
 		$activeTheme = Theme::getActive();
 		$district = Cache::get('widget_district', null);
 //Cache::forget('district');
-//dd($district);
+dd($district);
 
 		if ($district == null) {
 			$district = Cache::rememberForever('widget_district', function() {

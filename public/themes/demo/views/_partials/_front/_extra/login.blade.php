@@ -14,10 +14,13 @@
 		<a class="footer_links" href="/admin">
 		{{ trans('kotoba::general.administration') }}
 		</a>
-		{{-- $menu_navLinks->asUl() --}}
+
+{{--
 		<ul class="footer_links">
 		@include('partials.footer_menu', ['items'=> $menu_navLinks->roots()])
 		</ul>
+--}}
+
 	</div>
 
 </div><!--./row-->

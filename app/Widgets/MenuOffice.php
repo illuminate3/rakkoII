@@ -23,6 +23,8 @@ class MenuOffice extends Widget
 	public function handle()
 	{
 
+dd('MenuOffice');
+
 		$activeTheme = Theme::getActive();
 
 // 		Menu::handler('office')->hydrate(function()

@@ -20,6 +20,8 @@ class AccessNavPoints extends Widget
 	public function handle()
 	{
 
+dd('AccessNavPoints');
+
 		$activeTheme = Theme::getActive();
 //Cache::forget('accessnavpoint');
 		$pages = Cache::get('widget_accessnavpoint', null);

@@ -23,6 +23,8 @@ class MenuFooter extends Widget
 	public function handle()
 	{
 
+dd('MenuFooter');
+
 		$activeTheme = Theme::getActive();
 
 // 		Menu::handler('footer')->hydrate(function()

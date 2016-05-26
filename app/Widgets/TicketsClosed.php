@@ -1,20 +1,14 @@
 <?php
 
-//namespace App\Modules\Shisan\Http\Widgets;
-//namespace App\Widgets\Shisan;
 namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
 use App\Modules\Ticket\Http\Models\Ticket;
 
-// use App;
 use Cache;
-// use Config;
-// use Menu;
-// use Session;
-// use Theme;
 use Schema;
+
 
 class TicketsClosed extends Widget
 {
@@ -32,12 +26,11 @@ class TicketsClosed extends Widget
 
 		$count = trans('kotoba::general.error.no_data');
 
-Cache::forget('ticket_count_closed_tickets');
+//Cache::forget('ticket_count_closed_tickets');
+
 		if (Cache::has('ticket_count_closed_tickets')) {
 			$count = Cache::get('ticket_count_closed_tickets');
-//dd($count);
 		} else {
-//dd('die');
 			$count = $this->getClosedTickets();
 			Cache::forever('ticket_count_closed_tickets', $count);
 		}
@@ -59,7 +52,6 @@ Cache::forget('ticket_count_closed_tickets');
 			}
 			return $count;
 		}
-//return 'need to fix';
 
 	}
 

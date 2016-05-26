@@ -22,6 +22,8 @@ class Timed extends Widget
 
 		$activeTheme = Theme::getActive();
 
+dd('Timed');
+
 // 		Menu::handler('timed')->hydrate(function()
 // 			{
 //

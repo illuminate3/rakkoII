@@ -1,20 +1,13 @@
 <?php
 
-//namespace App\Modules\Shisan\Http\Widgets;
-//namespace App\Widgets\Shisan;
 namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
 use App\Modules\Himawari\Http\Models\Content;
 
-// use App;
 use Cache;
-// use Config;
-// use Menu;
-// use Session;
-// use Theme;
-use Schema;
+
 
 class AllContents extends Widget
 {
@@ -34,15 +27,12 @@ class AllContents extends Widget
 
 		if (Cache::has('himawari_count_all_contents')) {
 			$count = Cache::get('himawari_count_all_contents');
-//dd($count);
 		} else {
-//dd('die');
 			$count = count($this->getAllContents());
 			Cache::forever('himawari_count_all_contents', $count);
 		}
 
 		return $count;
-
 	}
 
 
@@ -58,7 +48,6 @@ class AllContents extends Widget
 		}
 
 		return $all_contents;
-
 	}
 
 

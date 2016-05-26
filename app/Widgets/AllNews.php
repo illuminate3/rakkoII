@@ -1,20 +1,13 @@
 <?php
 
-//namespace App\Modules\Shisan\Http\Widgets;
-//namespace App\Widgets\Shisan;
 namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
 use App\Modules\Newsdesk\Http\Models\News;
 
-// use App;
 use Cache;
-// use Config;
-// use Menu;
-// use Session;
-// use Theme;
-use Schema;
+
 
 class AllNews extends Widget
 {
@@ -34,16 +27,12 @@ class AllNews extends Widget
 
 		if (Cache::has('newsdesk_count_all_contents')) {
 			$count = Cache::get('newsdesk_count_all_contents');
-//dd($count);
 		} else {
-//dd('die');
 			$count = count($this->getAllNews());
 			Cache::forever('newsdesk_count_all_contents', $count);
 		}
-//dd($count);
 
 		return $count;
-
 	}
 
 
@@ -59,7 +48,6 @@ class AllNews extends Widget
 		}
 
 		return $all_contents;
-
 	}
 
 

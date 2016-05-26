@@ -22,6 +22,9 @@ class AllAssets extends Widget
 
 	public function handle()
 	{
+
+dd('AllAssets');
+
 		$count = $this->countAllAssets();
 //dd($count);
 		return $count;
