@@ -10,10 +10,4 @@
 	</div>
 @endif
 
-<!-- Buttons -->
-{!!
-	Widget::alert()
-!!}
-
-
 @yield('content')
