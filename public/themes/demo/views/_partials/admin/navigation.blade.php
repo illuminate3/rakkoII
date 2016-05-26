@@ -19,6 +19,7 @@
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+
 @if (Auth::user())
 
 	<ul class="nav navbar-nav navbar-right">
@@ -52,34 +53,12 @@
 						</a>
 					</li>
 				<li class="divider"></li>
-@if (Auth::user()->can('manage_admin'))
-{{--
-					<li>
-						<a href="/admin/users">
-							{{ Lang::choice('kotoba::account.user', 2) }}
-						</a>
-					</li>
-					<li>
-						<a href="/admin/roles">
-							{{ Lang::choice('kotoba::role.role', 2) }}
-						</a>
-					</li>
-					<li>
-						<a href="/admin/permissions">
-							{{ Lang::choice('kotoba::permission.permission', 2) }}
-						</a>
-					</li>
-					<li class="divider"></li>
---}}
-					{{--
-						Widget::MenuAdmin()
-					--}}
 
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navAdmin->roots()])
-
+				@if (Auth::user()->can('manage_admin'))
+					@include('partials.nav_menu', ['items'=> $menu_navAdmin->roots()])
 					<li class="divider"></li>
-@endif
+				@endif
+
 					<li>
 						<a href="/auth/logout">
 							{{ trans('kotoba::auth.log_out') }}
@@ -120,11 +99,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuSettings()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navSettings->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navSettings->roots()])
 				</li>
 			</ul>
 		</li>
@@ -137,11 +112,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuMail()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navYubin->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navYubin->roots()])
 				</li>
 			</ul>
 		</li>
@@ -155,11 +126,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuHoritsu()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navHoritsu->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navHoritsu->roots()])
 				</li>
 			</ul>
 		</li>
@@ -175,11 +142,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuSchool()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navGakko->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navGakko->roots()])
 				</li>
 			</ul>
 		</li>
@@ -195,11 +158,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuCampus()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navCampus->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navCampus->roots()])
 				</li>
 			</ul>
 		</li>
@@ -215,11 +174,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuHR()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navJinji->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navJinji->roots()])
 				</li>
 			</ul>
 		</li>
@@ -235,11 +190,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuCMS()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navHimawari->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navHimawari->roots()])
 				</li>
 			</ul>
 		</li>
@@ -255,7 +206,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-@include('partials.nav_menu', ['items'=> $menu_navChishiki->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navChishiki->roots()])
 				</li>
 			</ul>
 		</li>
@@ -271,11 +222,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuAssets()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navShisan->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navShisan->roots()])
 				</li>
 			</ul>
 		</li>
@@ -286,9 +233,8 @@
 @endif
 
 
+</div><!-- ./navbar-collapse -->
 
-</div>
 
 </div><!-- ./container-fluid -->
 </nav><!-- /nav -->
-
