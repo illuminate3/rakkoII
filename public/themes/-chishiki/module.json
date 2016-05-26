@@ -1,0 +1,8 @@
+{
+	"name": "Chishiki",
+	"slug": "chishiki",
+	"version": "1.0",
+	"description": "Knowledge Base for Rakko",
+	"order": 11,
+	"enabled": false
+}

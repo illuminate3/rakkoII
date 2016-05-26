@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Modules\Chishiki\Http\Models\helpdesk\Workflow;
+
+use Illuminate\Database\Eloquent\Model;
+
+
+class WorkflowAction extends Model
+{
+    public $timestamps = false;
+    protected $table = 'workflow_action';
+    protected $fillable = ['id', 'workflow_id', 'condition', 'action', 'updated_at', 'created_at'];
+}
