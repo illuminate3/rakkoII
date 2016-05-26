@@ -7,6 +7,7 @@ use Caffeinated\Widgets\Widget;
 use App\Modules\Shisan\Http\Models\Asset;
 
 use Cache;
+use Schema;
 
 
 class AllYearAssets extends Widget
