@@ -43,8 +43,8 @@ Arkansas! Go Hogs!
 </h4>
 <p>
 The base framework of Campus Soft was actually developed just down the street from us.
-The framework is has not only become world famous but has brought back attention to the programming language it was built on.
-Campus Soft is also an Arkansas company.
+The framework has not only become world famous but has brought back attention to the programming language it was built on.
+Campus Soft is also an Arkansas company that tries to take advantage of other Arkansas technologies.
 </p>
 
 <a class="btn btn-default" href="/" role="button">{{ trans('kotoba::button.view') }}&nbsp;{{ Lang::choice('kotoba::general.detail', 2) }}&nbsp;&raquo;</a>
