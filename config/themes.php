@@ -18,6 +18,8 @@ return [
 	'back' => '_layouts.back',
 	'front' => '_layouts.front',
 	'simple' => '_layouts.simple',
+	'manager' => '_layouts.manager',
+	'agent' => '_layouts.agent',
 	'html' => 'pigeon.layouts.html',
 
 	/*

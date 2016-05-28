@@ -3,7 +3,7 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<meta name="author" content="{{ Setting::get('author', Config::get('core.author')) }}" />
 	<meta name="keywords" content="{{ Setting::get('keywords', Config::get('core.keywords')) }}" />
@@ -37,8 +37,15 @@
 -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
+<!--
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/admin.css') }}">
+-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/css/AdminLTE.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/css/skins/_all-skins.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/skins/skin-black.css') }}">
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')
@@ -48,17 +55,26 @@
 
 </head>
 
-<body>
+<body class="hold-transition skin-black sidebar-collapse sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
 
 
-	@include($activeTheme . '::' . '_partials.admin.navigation')
+	@include($activeTheme . '::' . '_admin_lte.navigation')
 
-	<div class="container-fluid">
-<!-- <div id="wrap" class="container"> -->
-		@include($activeTheme . '::' . '_partials.admin.content')
-	</div><!-- ./container -->
+	@include($activeTheme . '::' . '_admin_lte.sidebar')
 
-	@include($activeTheme . '::' . '_partials.admin.footer')
+	<div class="content-wrapper padding-left-lg padding-right-md">
+		@include($activeTheme . '::' . '_admin_lte.content')
+	</div><!-- /.content-wrapper -->
+
+	@include($activeTheme . '::' . '_admin_lte.footer')
+
+	@include($activeTheme . '::' . '_admin_lte.control_sidebar')
+	<div class="control-sidebar-bg"></div>
+
+</div>
+<!-- ./wrapper -->
 
 
 <!-- ------------------------------------------ js ------------------------------------------ -->
@@ -72,6 +88,8 @@
 
 	<script type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script>
 -->
+	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/js/app.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/plugins/fastclick.min.js') }}"></script>
 
 
 <!-- ------------------------------------------ app loaded js ------------------------------------------ -->
@@ -79,6 +97,19 @@
 
 <!-- ------------------------------------------ template loaded js ------------------------------------------ -->
 	<script type="text/javascript">
+	var AdminLTEOptions = {
+	//Enable sidebar expand on hover effect for sidebar mini
+	//This option is forced to true if both the fixed layout and sidebar mini
+	//are used together
+//	sidebarExpandOnHover: true,
+	//BoxRefresh Plugin
+	enableBoxRefresh: true,
+	//Bootstrap.js tooltip
+//	enableBSToppltip: true
+	//'fast', 'normal', or 'slow'
+	animationSpeed: 'fast',
+	};
+
 		@yield('inline-scripts')
 	</script>
 
