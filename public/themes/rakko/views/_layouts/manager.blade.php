@@ -41,6 +41,8 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/main.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/admin.css') }}">
 -->
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/style.css') }}">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/css/AdminLTE.min.css') }}">

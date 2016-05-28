@@ -105,6 +105,129 @@
 		</ul>
 	</li>
 
+	<li class="treeview @yield('sidebar_manage')">
+		<a href="#">
+			<i class="fa fa-cubes fa-fw"></i>&nbsp;
+			<span>
+				{{ trans('kotoba::helpdesk.manage') }}
+			</span>&nbsp;
+			<i class="fa fa-angle-left pull-right"></i>
+		</a>
+		<ul class="treeview-menu">
+			<li @yield('sidear_help')>
+				<a href="{{ url('support/helptopic') }}">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					{{ trans('kotoba::helpdesk.help_topics') }}
+				</a>
+			</li>
+			<li @yield('sidebar_sla')>
+				<a href="{{ url('support/sla') }}">
+					<i class="fa fa-clock-o fa-fw"></i>
+					{{ trans('kotoba::helpdesk.sla_plans') }}
+				</a>
+			</li>
+			<li @yield('sidebar_forms')>
+				<a href="{{ url('support/list-forms') }}">
+					<i class="fa fa-file-text fa-fw"></i>
+					{{ trans('kotoba::helpdesk.forms') }}
+				</a>
+			</li>
+			<li @yield('sidebar_workflow')>
+				<a href="{{ url('support/workflow') }}">
+					<i class="fa fa-sitemap fa-fw"></i>
+					{{ trans('kotoba::helpdesk.workflow') }}
+				</a>
+			</li>
+		</ul>
+	</li>
+
+	<li class="treeview @yield('sidebar_settings')">
+		<a href="#">
+			<i class="fa fa-cog fa-fw"></i>&nbsp;
+			<span>
+				{{ trans('kotoba::helpdesk.system-settings') }}
+			</span>&nbsp;
+			<i class="fa fa-angle-left pull-right"></i>
+		</a>
+		<ul class="treeview-menu">
+			<li @yield('sidear_company')>
+				<a href="{{ url('support/getcompany') }}">
+					<i class="fa fa-industry fa-fw"></i>
+					{{ trans('kotoba::helpdesk.company') }}
+				</a>
+			</li>
+			<li @yield('sidebar_system')>
+				<a href="{{ url('support/getsystem') }}">
+					<i class="fa fa-laptop fa-fw"></i>
+					{{ trans('kotoba::helpdesk.system') }}
+				</a>
+			</li>
+			<li @yield('sidebar_email')>
+				<a href="{{ url('support/getemail') }}">
+					<i class="fa fa-at fa-fw"></i>
+					{{ trans('kotoba::helpdesk.email') }}
+				</a>
+			</li>
+			<li @yield('sidebar_tickets')>
+				<a href="{{ url('support/getticket') }}">
+					<i class="fa fa-ticket fa-fw"></i>
+					{{ trans('kotoba::helpdesk.ticket') }}
+				</a>
+			</li>
+			<li @yield('sidear_auto_response')>
+				<a href="{{ url('support/getalert') }}">
+					<i class="fa fa-bell-o fa-fw"></i>
+					{{ trans('kotoba::helpdesk.alert_notices') }}
+				</a>
+			</li>
+			<li @yield('sidebar_languages')>
+				<a href="{{ url('support/languages') }}">
+					<i class="fa fa-language fa-fw"></i>
+					{{ trans('kotoba::helpdesk.language') }}
+				</a>
+			</li>
+			<li @yield('sidebar_cron')>
+				<a href="{{ url('support/job-scheduler') }}">
+					<i class="fa fa-hourglass fa-fw"></i>
+					{{ trans('kotoba::helpdesk.cron') }}
+				</a>
+			</li>
+		</ul>
+	</li>
+
+	<li class="treeview @yield('sidebar_themes')">
+		<a href="#">
+			<i class="fa fa-pie-chart fa-fw"></i>&nbsp;
+			<span>
+				{{ trans('kotoba::helpdesk.widgets') }}
+			</span>&nbsp;
+			<i class="fa fa-angle-left pull-right"></i>
+		</a>
+		<ul class="treeview-menu">
+			<li @yield('sidear_widget')>
+				<a href="{{ url('support/widgets') }}">
+					<i class="fa fa-list-alt fa-fw"></i>
+					{{ trans('kotoba::helpdesk.widgets') }}
+				</a>
+			</li>
+			<li @yield('sidebar_social')>
+				<a href="{{ url('support/social-buttons') }}">
+					<i class="fa fa-cubes fa-fw"></i>
+					{{ trans('kotoba::helpdesk.social') }}
+				</a>
+			</li>
+		</ul>
+	</li>
+
+	<li class="treeview @yield('sidebar_pligins')">
+		<a href="{{ url('support/plugins') }}">
+			<i class="fa fa-plug fa-fw"></i>&nbsp;
+			<span>
+				{{ trans('kotoba::helpdesk.plugin') }}
+			</span>&nbsp;
+		</a>
+	</li>
+
 
 
 
