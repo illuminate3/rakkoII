@@ -42,30 +42,50 @@ line-height: 1;
 width: 100% !important;
 }
 
-        .settingdivblue:hover {
-            border: 5px double #3C8DBC;
-        }
-        .settingdivblue a:hover {
-            /*            color: #61C5FF;*/
-            /*            background-color: darkgrey;*/
-        }
-        .settingdivblue a {
-            color: #3A83AD;
-        }
-        .settingiconblue p {
-            text-align: center;
-            font-size: 17px;
-            word-wrap: break-word;
-            font-variant: small-caps;
-            font-weight: bold;
-            line-height: 30px;
-        }
-        .settingdivblue {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto;
-            text-align: center;
-            border: 5px solid #C4D8E4;
-            border-radius: 100%;
-            padding-top: 5px;
-        }
+
+
+.content-wrapper,
+.right-side {
+	background-color: #fff !important;
+}
+.skin-black .main-header > .navbar {
+  background-color: #f5f5f5 !important;
+}
+.skin-black .main-header > .logo {
+  background-color: #f5f5f5 !important;
+  color: #333333;
+  border-bottom: 0 solid transparent;
+  border-right: 1px solid #eee;
+}
+
+
+a.black,
+a.black:hover,
+a.black:visited,
+a.black:active,
+a.black:focus {
+  outline: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.settingdivblue:hover {
+	border: 5px double #666;
+}
+.settingiconblue p {
+	text-align: center;
+	font-size: 17px;
+	word-wrap: break-word;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 30px;
+}
+.settingdivblue {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	text-align: center;
+	border: 5px solid #ccc;
+	border-radius: 100%;
+	padding-top: 5px;
+}
