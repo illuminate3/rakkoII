@@ -42,7 +42,7 @@ $(function(){
 {{-- News --}}
 @section('content')
 
-<div class="container-fluid">
+<div class="container-fluid padding-left-xl padding-right-xl">
 
 <div class="row">
 <div class="col-sm-12">
@@ -63,13 +63,17 @@ $(function(){
 </div>
 </div>
 
-<div class="row">
-	<h2>
-		{!! $article->summary !!}
-	</h2>
-</div>
 
-<div class="row padding-xl">
+<!-- well -->
+<div class="well">
+	<h3>
+		{!! $article->summary !!}
+	</h3>
+</div>
+<!-- well -->
+
+
+<div class="row">
 <div class="col-sm-12">
 	{!! $article->content !!}
 </div>

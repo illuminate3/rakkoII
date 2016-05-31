@@ -19,6 +19,13 @@ CD Main components
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
+
+.h-bottom_border {
+	border-bottom: 1px solid white;
+	display: inline-block;
+	text-shadow: 1px 1px 0px #fff;
+}
+
 @media only screen and (max-width: 1169px) {
   .cd-main-content.nav-is-visible, .cd-main-header.nav-is-visible {
     -webkit-transform: translateX(-260px);
@@ -37,7 +44,9 @@ CD Main components
 }
 
 .cd-main-content {
+/*
   min-height: 100vh;
+*/
   z-index: 2;
 }
 
@@ -388,10 +397,27 @@ padding: 10px 20px;
 text-align: justify;
 padding: 10px 70px;
 }
-.cd-primary-nav h3 {
+.cd-primary-nav h1 {
 color: #ffffff;
 padding: 10px 15px;
 }
+.cd-primary-nav h2,
+.cd-primary-nav h3,
+.cd-primary-nav h4 {
+color: #ffffff;
+padding: 10px 15px;
+}
+
+/*
+.cd-primary-nav h2 {
+	text-shadow: 1px 1px 0px #282f3b;
+	color: #fff;
+	font: "RobotoRegular", Arial, Helvetica, sans-serif;
+	background: url("../img/_style/heading-bg.png") left bottom no-repeat;
+	padding: 0px 0px 14px 0px;
+	margin: 0px 0px 14px 0px;
+	}
+*/
 
   .nav-on-left .cd-primary-nav, .nav-on-left .cd-primary-nav ul {
     right: auto;
@@ -412,6 +438,7 @@ padding: 10px 15px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/*
 .cd-primary-nav .cd-nav-gallery .cd-nav-item {
   padding-left: 90px;
 }
@@ -427,14 +454,15 @@ padding: 10px 15px;
 .cd-primary-nav .cd-nav-icons .cd-nav-item {
   padding-left: 75px;
 }
+*/
 .cd-primary-nav .cd-nav-icons .cd-nav-item p {
   color: #2e3233;
   font-size: 1.3rem;
   /* hide description on small devices */
   display: none;
 }
+/*
 .cd-primary-nav .cd-nav-icons .cd-nav-item::before {
-  /* item icon */
   content: '';
   display: block;
   position: absolute;
@@ -471,6 +499,7 @@ padding: 10px 15px;
 .cd-primary-nav .cd-nav-icons .cd-nav-item.item-8::before {
   background-image: url("../img/_style/line-icon-8.svg");
 }
+*/
 @media only screen and (max-width: 1169px) {
   .cd-primary-nav {
     /* by default .cd-primary-nav is hidden - trick for iOS devices where you can see the navigation if you pull down */
@@ -637,7 +666,9 @@ padding: 10px 15px;
     width: 23%;
     float: left;
     margin-right: 2.66%;
+/*
     border-right: 1px solid #e2e3df;
+*/
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: auto;

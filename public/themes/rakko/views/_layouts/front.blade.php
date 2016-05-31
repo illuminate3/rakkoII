@@ -41,6 +41,7 @@
 -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/main.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/footer.css') }}">
 
@@ -54,10 +55,10 @@
 --}}
 </head>
 
-<body>
+<body class="Site">
 
 
-<header class="cd-main-header">
+<header class="Site-header cd-main-header">
 	@include($activeTheme . '::' . '_partials._front.header')
 </header>
 

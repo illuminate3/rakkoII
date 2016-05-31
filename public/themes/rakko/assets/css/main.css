@@ -3,7 +3,7 @@
 | main
 |-----------------------------------------------------------------------------------------
 */
-
+/*
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@
 html {
   font-size: 62.5%;
 }
-
+*/
 body {
   font-size: 1.6rem;
   font-family: sans-serif;
@@ -44,9 +44,10 @@ body {
 	text-align: center;
 }
 
-
+/*
 @media only screen and (max-width: 1169px) {
   body.nav-on-left.overflow-hidden {
     overflow: hidden;
   }
 }
+*/
