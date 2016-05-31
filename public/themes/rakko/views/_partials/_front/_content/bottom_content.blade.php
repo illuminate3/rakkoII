@@ -27,8 +27,8 @@ Dog Food!
 <p>
 In the programming world there is phrase, "eating your own dog food". You might even remember that dog food commercial which this phrase is coined from.
 You are using Campus Soft right now.
-Here at Campus Soft, do realize that choosing the right tool for the right job is extremely important and definitely will use those tools.
-However, we have enough faith in our product that we would have you use it too!
+Here at Campus Soft, although we do realize that choosing the right tool for the right job is extremely important and definitely will use those tools.
+However, we have enough faith in our product that we want you to use it from the first interaction!
 </p>
 
 <a class="btn btn-default" href="/" role="button">{{ trans('kotoba::button.view') }}&nbsp;{{ Lang::choice('kotoba::general.detail', 2) }}&nbsp;&raquo;</a>
