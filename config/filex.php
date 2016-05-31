@@ -29,10 +29,10 @@ widthxheight: Auto determine both width and height when resizing. This will resi
 
 'image_styles' => [
 	'landscape'					=> '1356x500!',
-	'preview'					=> '700x500!',
-	'portrait'					=> '150x196!',
-	'news'						=> '100x100!',
-	'thumb'						=> '100x100!'
+	'preview'					=> '700x500',
+	'portrait'					=> '150x196',
+	'news'						=> '300x120',
+	'thumb'						=> '100x100'
 ],
 //	'url' => '/system/files/:attachment/:id_partition/:style/:filename'
 			'url' => '/system/files/:attachment/:id/:style/:filename',

@@ -6,7 +6,7 @@
 		<a href="#about-us">About Us</a>
 
 		<ul class="cd-secondary-nav is-hidden">
-			<li class="go-back"><a href="#0">Go Back</a></li>
+			<li class="go-back"><a href="#">Go Back</a></li>
 {{--
 			<li class="see-all"><a href="/">Creating Opportunities for Success</a></li>
 --}}
@@ -77,70 +77,57 @@
 			<li class="go-back"><a href="#0">Go Back</a></li>
 
 			<li>
-				<h3>
 				<a class="cd-nav-item" href="/">
 					<i class="fa fa-keyboard-o fa-2x"></i>
 					Asset Management
 				</a>
-				</h3>
 			</li>
 
 			<li>
-				<h3>
 				<a class="cd-nav-item" href="/">
 					<i class="fa fa-files-o fa-fw"></i>
 					Content Management System
 				</a>
-				</h3>
 			</li>
 
 			<li>
-				<h3>
 				<a class="cd-nav-item" href="/">
 					<i class="fa fa-users fa-fw"></i>
 					Human Resource Management
 				</a>
-				</h3>
 			</li>
 
 			<li>
-				<h3>
 				<a class="cd-nav-item" href="/">
 					<i class="fa fa-clock-o fa-fw"></i>
 					Personal Development Tracking
 				</a>
-				</h3>
 			</li>
 
 			<li>
-				<h3>
 				<a class="cd-nav-item" href="/">
 					<i class="fa fa-ticket fa-fw"></i>
 					Ticket System
 				</a>
-				</h3>
 			</li>
 
 			<li>
-				<h3>
 				<a class="cd-nav-item" href="/">
 					<i class="fa fa-info-circle fa-fw"></i>
 					Knowledge Base
 				</a>
-				</h3>
 			</li>
 
 			<li>
-				<h3>
 				<a class="cd-nav-item" href="/">
 					<i class="fa fa-plug fa-fw"></i>
 					Extra Modules
 				</a>
-				</h3>
 			</li>
 		</ul>
 	</li>
 
+{{--
 	<li class="has-children">
 		<a href="/">Documentation</a>
 
@@ -160,13 +147,13 @@
 
 		</ul>
 	</li>
-
+--}}
 
 @if (Auth::user() && Auth::user()->can('manage_admin'))
 
 	<li>
 		<a href="/admin">
-			{{ trans('kotoba::general.administration') }}
+			{{ trans('kotoba::general.dashboard') }}
 		</a>
 	</li>
 
