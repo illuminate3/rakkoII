@@ -47,7 +47,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/css/AdminLTE.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/css/skins/_all-skins.min.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/skins/skin-black.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/css/skins/skin-black.css') }}">
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')

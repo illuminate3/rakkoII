@@ -31,7 +31,7 @@
 <ul class="sidebar-menu">
 
 	<li class="header">
-		{{ lang::choice('kotoba::general.setting', 2) }}
+		{{ Lang::choice('kotoba::general.setting', 2) }}
 	</li>
 	<li class="treeview @yield('sidebar_staff')">
 		<a href="#">
