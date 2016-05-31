@@ -47,7 +47,8 @@
 		</h4>
 		<p>
 		Campus Soft wasn't created by a team who have no actual classroom experience.
-		Campus Soft was created by a teacher with vast experience in several educational institutions for your institution.
+		Campus Soft was created by a teacher with vast experience in several educational institutions.
+		That experience and understanding is the foundation for what Campus Soft achieves while at the same time, keeping it easy to use.
 		</p>
 		<a class="btn btn-default" href="/" role="button">Learn&nbsp;{{ trans('kotoba::button.more') }}&nbsp;&raquo;</a>
 

@@ -8,7 +8,7 @@
 Asset Management
 </h4>
 <p>
-Simple, attractive and easy to use asset management system. Campus Soft takes advantage of it's tight integration to employees and staff to provide easy access and easy to use system.
+Simple, attractive and easy to use asset management system. Campus Soft takes advantage of it's tight integration to employees and staff to provide easy access to your data.
 </p>
 
 <a class="btn btn-default" href="/" role="button">{{ trans('kotoba::button.view') }}&nbsp;{{ Lang::choice('kotoba::general.detail', 2) }}&nbsp;&raquo;</a>
