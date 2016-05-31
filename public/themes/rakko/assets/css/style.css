@@ -9,6 +9,7 @@
 	padding: 40px 20px;
 }
 .row-bottom-wrapper {
+	padding: 0px 10px;
 	background: #333c4d url("../img/_style/home-tab-bg.png") repeat-x;
 }
 .row-footer-wrapper {
