@@ -4,15 +4,9 @@
 <section>
 <div class="row">
 
-	<div class="col-sm-2">
-		<h4>
-			{{ trans('kotoba::general.information') }}
-		</h4>
-	</div>
-
-	<div class="col-sm-10 padding-top-sm">
+	<div class="col-sm-12">
 		<a class="footer_links" href="/admin">
-		{{ trans('kotoba::general.administration') }}
+		{{ trans('kotoba::general.dashboard') }}
 		</a>
 
 {{--
