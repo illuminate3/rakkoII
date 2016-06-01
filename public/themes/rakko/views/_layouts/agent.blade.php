@@ -54,6 +54,7 @@
 
 <!-- ------------------------------------------ head loaded js ------------------------------------------ -->
 	<script type="text/javascript" src="{{ asset('assets/vendors/jquery/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/faveo/lb-faveo/plugins/moment/moment.js') }}"></script>
 
 </head>
 
@@ -67,6 +68,13 @@
 	@include($activeTheme . '::' . '_agent_lte.sidebar')
 
 	<div class="content-wrapper padding-left-lg padding-right-md">
+
+
+		@include($activeTheme . '::' . '_agent_lte.tabs')
+<section class="content-header">
+	@yield('PageHeader')
+	@yield('breadcrumbs')
+</section>
 		@include($activeTheme . '::' . '_agent_lte.content')
 	</div><!-- /.content-wrapper -->
 
@@ -91,7 +99,7 @@
 	<script type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script>
 -->
 	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/js/app.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/plugins/fastclick.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/plugins/fastclick/fastclick.min.js') }}"></script>
 
 
 <!-- ------------------------------------------ app loaded js ------------------------------------------ -->
@@ -114,6 +122,7 @@
 
 		@yield('inline-scripts')
 	</script>
+	@include($activeTheme . '::' . '_agent_lte.js')
 
 </body>
 </html>
