@@ -9,7 +9,7 @@
 </a>
 
 <!-- Header Navbar: style can be found in header.less -->
-<nav class="navbar navbar-static-top">
+<nav class="navbar navbar-static-top" role="navigation">
 <!-- Sidebar toggle button-->
 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
 <span class="sr-only">Toggle navigation</span>
@@ -17,138 +17,75 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </a>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="navbar-collapse">
 
-<div class="navbar-custom-menu">
-<ul class="nav navbar-nav">
-<!-- Messages: style can be found in dropdown.less-->
-<li class="dropdown messages-menu">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-<i class="fa fa-envelope-o"></i>
-<span class="label label-success">4</span>
-</a>
-<ul class="dropdown-menu">
-<li class="header">You have 4 messages</li>
-<li>
-<!-- inner menu: contains the actual data -->
-<ul class="menu">
-<li><!-- start message -->
-<a href="#">
-<div class="pull-left">
-<img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-</div>
-<h4>
-Support Team
-<small><i class="fa fa-clock-o"></i> 5 mins</small>
-</h4>
-<p>Why not buy a new awesome theme?</p>
-</a>
-</li>
-<!-- end message -->
+
+<!-- Nav tabs -->
+<ul class="tabs tabs-horizontal nav navbar-nav navbar-left">
+	<li role="presentation" class="active"><a href="#tabA" aria-controls="tabA" role="tab" data-toggle="tab">{!! trans('kotoba::helpdesk.home') !!}</a></li>
+{{--
+	<li role="presentation" class="@yield('Staffs')"><a href="#tabB" aria-controls="tabB" role="tab" data-toggle="tab">{!! trans('kotoba::helpdesk.staffs') !!}</a></li>
+	<li role="presentation" class="@yield('Emails')"><a href="#tabC" aria-controls="tabC" role="tab" data-toggle="tab">{!! trans('kotoba::helpdesk.emails') !!}</a></li>
+	<li role="presentation" class="@yield('Manage')"><a href="#tabD" aria-controls="tabD" role="tab" data-toggle="tab">{!! trans('kotoba::helpdesk.manage') !!}</a></li>
+	<li role="presentation" class="@yield('Settings')"><a href="#tabE" aria-controls="tabE" role="tab" data-toggle="tab">{!! trans('kotoba::helpdesk.settings') !!}</a></li>
+	<li role="presentation" class="@yield('Themes')"><a href="#tabF" aria-controls="tabF" role="tab" data-toggle="tab">{!! trans('kotoba::helpdesk.themes') !!}</a></li>
+--}}
 </ul>
-</li>
-<li class="footer"><a href="#">See All Messages</a></li>
-</ul>
-</li>
-<!-- Notifications: style can be found in dropdown.less -->
-<li class="dropdown notifications-menu">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-<i class="fa fa-bell-o"></i>
-<span class="label label-warning">10</span>
-</a>
-<ul class="dropdown-menu">
-<li class="header">You have 10 notifications</li>
-<li>
-<!-- inner menu: contains the actual data -->
-<ul class="menu">
-<li>
-<a href="#">
-<i class="fa fa-users text-aqua"></i> 5 new members joined today
-</a>
-</li>
-</ul>
-</li>
-<li class="footer"><a href="#">View all</a></li>
-</ul>
-</li>
-<!-- Tasks: style can be found in dropdown.less -->
-<li class="dropdown tasks-menu">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-<i class="fa fa-flag-o"></i>
-<span class="label label-danger">9</span>
-</a>
-<ul class="dropdown-menu">
-<li class="header">You have 9 tasks</li>
-<li>
-<!-- inner menu: contains the actual data -->
-<ul class="menu">
-<li><!-- Task item -->
-<a href="#">
-<h3>
-Design some buttons
-<small class="pull-right">20%</small>
-</h3>
-<div class="progress xs">
-<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-<span class="sr-only">20% Complete</span>
-</div>
-</div>
-</a>
-</li>
-<!-- end task item -->
-</ul>
-</li>
-<li class="footer">
-<a href="#">View all tasks</a>
-</li>
-</ul>
-</li>
+
+
+
+<ul class="nav navbar-nav navbar-right">
+
+<li><a href="{{url('agent/dashboard')}}">Agent Panel</a></li>
+
+
+
 <!-- User Account: style can be found in dropdown.less -->
 <li class="dropdown user user-menu">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-<img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-<span class="hidden-xs">Alexander Pierce</span>
+@if(Auth::user())
+@if(Auth::user()->profile_pic)
+<img src="{{asset('lb-faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}"class="user-image" alt="User Image"/>
+@else
+{{--
+<img src="{{ Gravatar::src(Auth::user()->email) }}" class="user-image" alt="User Image">
+--}}
+@endif
+<span class="hidden-xs">{!! Auth::user()->first_name." ".Auth::user()->last_name !!}</span>
+@endif
 </a>
 <ul class="dropdown-menu">
 <!-- User image -->
-<li class="user-header">
-<img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-
+<li class="user-header" style="background-color:#343F44;">
+@if(Auth::user())
+@if(Auth::user()->profile_pic)
+<img src="{{asset('lb-faveo/lb-faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}" class="img-circle" alt="User Image" />
+@else
+{{--
+<img src="{{ Gravatar::src(Auth::user()->email) }}" class="img-circle" alt="User Image">
+--}}
+@endif
 <p>
-Alexander Pierce - Web Developer
-<small>Member since Nov. 2012</small>
+{!! Auth::user()->first_name !!}{!! " ". Auth::user()->last_name !!} - {{Auth::user()->role}}
+<small></small>
 </p>
-</li>
-<!-- Menu Body -->
-<li class="user-body">
-<div class="row">
-<div class="col-xs-4 text-center">
-<a href="#">Followers</a>
-</div>
-<div class="col-xs-4 text-center">
-<a href="#">Sales</a>
-</div>
-<div class="col-xs-4 text-center">
-<a href="#">Friends</a>
-</div>
-</div>
-<!-- /.row -->
+@endif
 </li>
 <!-- Menu Footer-->
-<li class="user-footer">
+
+<li class="user-footer"  style="background-color:#1a2226;">
 <div class="pull-left">
-<a href="#" class="btn btn-default btn-flat">Profile</a>
+<a href="{{url('admin-profile')}}" class="btn btn-info btn-sm"><b>Profile</b></a>
 </div>
 <div class="pull-right">
-<a href="#" class="btn btn-default btn-flat">Sign out</a>
+<a href="{{url('auth/logout')}}" class="btn btn-danger btn-sm"><b>Sign out</b></a>
 </div>
 </li>
 </ul>
 </li>
-<!-- Control Sidebar Toggle Button -->
-<li>
-<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-</li>
-</ul>
-</div>
+
 </nav>
+
+
 </header>

@@ -67,6 +67,14 @@
 	@include($activeTheme . '::' . '_admin_lte.sidebar')
 
 	<div class="content-wrapper padding-left-lg padding-right-md">
+{{--
+		@include($activeTheme . '::' . '_admin_lte.tabs')
+--}}
+<section class="content-header">
+	@yield('PageHeader')
+	@yield('breadcrumbs')
+</section>
+
 		@include($activeTheme . '::' . '_admin_lte.content')
 	</div><!-- /.content-wrapper -->
 
