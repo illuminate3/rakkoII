@@ -76,6 +76,7 @@ dd('die');
 
 		View::share('theme_manager', $theme . '::' . Config::get('themes.manager', $theme . '::' . '_layouts.manager'));
 		View::share('theme_agent', $theme . '::' . Config::get('themes.agent', $theme . '::' . '_layouts.agent'));
+		View::share('theme_client', $theme . '::' . Config::get('themes.client', $theme . '::' . '_layouts.client'));
 
 //dd($theme_manager);
 //		View::share('site_title', Setting::get( 'brand_title', Config::get('core.title', 'Site Name')) );
