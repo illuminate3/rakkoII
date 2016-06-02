@@ -197,7 +197,7 @@
 	</ul>
 @endif
 
-
+{{--
 @if (Module::isEnabled('chishiki'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -212,7 +212,7 @@
 		</li>
 	</ul>
 @endif
-
+--}}
 
 @if (Module::isEnabled('shisan'))
 	<ul class="nav navbar-nav navbar-right">

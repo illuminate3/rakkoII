@@ -43,6 +43,34 @@ line-height: 1;
 width: 100% !important;
 }
 
+.navbar {
+	border-radius: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+ol {
+	margin-bottom: 0 !important;
+}
+
+.breadcrumb-clean li {
+	vertical-align: middle !important;
+	display: inline;
+}
+.breadcrumb-clean li+li:before {
+	content:"» ";
+}
+
+.search-wrapper {
+	line-height: 40px;
+	color: #fff;
+	background: #333c4d url("../img/_style/bottom-bg.png") repeat-x;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	}
+
+
+
 
 
 .content-wrapper,
@@ -60,6 +88,15 @@ width: 100% !important;
 }
 
 
+.search-wrapper a,
+.search-wrapper a:hover,
+.search-wrapper a:visited,
+.search-wrapper a:active,
+.search-wrapper a:focus {
+	outline: none;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.95) !important;
+}
 a.black,
 a.black:hover,
 a.black:visited,

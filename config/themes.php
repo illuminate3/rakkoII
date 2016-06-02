@@ -20,6 +20,7 @@ return [
 	'simple' => '_layouts.simple',
 	'manager' => '_layouts.manager',
 	'agent' => '_layouts.agent',
+	'client' => '_layouts.client',
 	'html' => 'pigeon.layouts.html',
 
 	/*
