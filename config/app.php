@@ -164,7 +164,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Vinkla\Translator\TranslatorServiceProvider::class,
         yajra\Datatables\DatatablesServiceProvider::class,
-
+		Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
     ],
 
     /*

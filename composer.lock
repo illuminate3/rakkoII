@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dd7a9cbd3ae19f7a8afc7466d26c9964",
-    "content-hash": "3bcb8048593d04c0cd8e1bea8847f86a",
+    "hash": "df13792ef404ea542a5343a15f265e83",
+    "content-hash": "a3627c49a5424c978da9ff6ea01d1bb9",
     "packages": [
         {
             "name": "anlutro/l4-settings",
@@ -1012,16 +1012,16 @@
         },
         {
             "name": "cviebrock/eloquent-sluggable",
-            "version": "dev-master",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cviebrock/eloquent-sluggable.git",
-                "reference": "60f13310e03d6227b939281ab402c3a6d04c191d"
+                "reference": "5d40a334ec02c32b9c7d33f9023b5da75eb27d7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/60f13310e03d6227b939281ab402c3a6d04c191d",
-                "reference": "60f13310e03d6227b939281ab402c3a6d04c191d",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/5d40a334ec02c32b9c7d33f9023b5da75eb27d7d",
+                "reference": "5d40a334ec02c32b9c7d33f9023b5da75eb27d7d",
                 "shasum": ""
             },
             "require": {
@@ -1058,7 +1058,7 @@
                 "laravel",
                 "slug"
             ],
-            "time": "2016-05-01 22:12:05"
+            "time": "2016-01-03 21:24:10"
         },
         {
             "name": "danielstjules/stringy",
@@ -6798,7 +6798,6 @@
         "illuminate3/kotoba": 20,
         "laracasts/presenter": 20,
         "laravelrus/localized-carbon": 20,
-        "cviebrock/eloquent-sluggable": 20,
         "aura-is-here/laravel-multi-tenant": 20,
         "codesleeve/laravel-stapler": 20,
         "milon/barcode": 20,
