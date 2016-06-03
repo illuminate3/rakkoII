@@ -22,7 +22,7 @@ footer components
 	color: #cfd9e2;
 	font: 13px "RobotoRegular", Arial, Helvetica, sans-serif;
 	line-height: 21px;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 0px 0px;
 	}
 #bottom article p strong { font-family: "RobotoMedium"; color: #fff; }
 
@@ -55,7 +55,9 @@ footer components
 }
 .footer-wrapper footer p { color: #cfd9e2; font: 13px "RobotoMedium", Arial, Helvetica, sans-serif; line-height: 20px; text-shadow: 1px 1px 0px #101319; }
 .footer-wrapper footer a { color: #cfd9e2; }
-.footer-wrapper footer p.copyright-text { margin: 0px 0px 20px; }
+.footer-wrapper footer p.copyright-text {
+	margin: 0px 0px 0px 0px;
+	}
 .footer-wrapper footer p.copyright-text a.logo { border-right: 1px solid #555d67; margin-right: 15px; }
 .footer-wrapper footer p.copyright-text a.logo img { margin-right: 15px; vertical-align: middle; }
 .footer-wrapper footer .footer-nav {}
