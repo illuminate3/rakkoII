@@ -14,7 +14,7 @@ return [
 	*/
 
 	'active' => env('ACTIVE_THEME', 'bootstrap'),
-	'app' => '_layouts.app',
+//	'app' => '_layouts.app',
 	'back' => '_layouts.back',
 	'front' => '_layouts.front',
 	'simple' => '_layouts.simple',
