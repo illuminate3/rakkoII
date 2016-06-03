@@ -18,7 +18,7 @@ $group = App\Modules\Support\Http\Models\HelpDesk\Agent\Groups::where('id', '=',
 {{--
 	<div role="tabpanel" class="tab-pane @yield('dashboard-bar')" id="tabA">
 		<ul class="nav navbar-nav">
-			<li id="bar" @yield('dashboard') ><a href="{{url('agent/dashboard')}}">{!! trans('kotoba::helpdesk.dashboard') !!}</a></li>
+			<li id="bar" @yield('dashboard') ><a href="{{url('agent')}}">{!! trans('kotoba::helpdesk.dashboard') !!}</a></li>
 			<li id="bar" @yield('kb')><a href="{{ url('agent/comment') }}" >{!! trans('kotoba::helpdesk.knowledge_base') !!}</a></li>
 		</ul>
 	</div>

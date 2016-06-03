@@ -25,7 +25,7 @@ $notifications = App\Modules\Support\Http\Controllers\Common\NotificationControl
 
 <!-- Nav tabs -->
 <ul class="tabs tabs-horizontal nav navbar-nav navbar-left">
-	<li id="bar" @yield('dashboard') ><a href="{{url('agent/dashboard')}}">{!! trans('kotoba::helpdesk.dashboard') !!}</a></li>
+	<li id="bar" @yield('dashboard') ><a href="{{url('agent')}}">{!! trans('kotoba::helpdesk.dashboard') !!}</a></li>
 	<li id="bar" @yield('kb')><a href="{{ url('agent/comment') }}" >{!! trans('kotoba::helpdesk.knowledge_base') !!}</a></li>
 
 {{--
