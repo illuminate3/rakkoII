@@ -1,19 +1,29 @@
 <!-- login -->
-@if (Auth::user() && Auth::user()->can('manage_admin'))
+@if ( Auth::user() )
 
 <section>
 <div class="row">
 
 	<div class="col-sm-12">
-		<a class="footer_links" href="/admin">
-		{{ trans('kotoba::general.dashboard') }}
-		</a>
 
-{{--
 		<ul class="footer_links">
+
+		@if ( Auth::user()->can('manage_admin') )
+			<li>
+				<a class="footer_links" href="/admin">
+					{{ trans('kotoba::general.dashboard') }}
+				</a>
+			</li>
+		@endif
+		<li>
+			<a class="footer_links" href="/helpdesk">
+				{{ trans('kotoba::helpdesk.helpdesk') }}
+			</a>
+		</li>
+{{--
 		@include('partials.footer_menu', ['items'=> $menu_navLinks->roots()])
-		</ul>
 --}}
+		</ul>
 
 	</div>
 

@@ -81,6 +81,7 @@ ol {
 }
 .skin-black .main-header > .navbar {
   background-color: #f5f5f5 !important;
+padding-right: 50px !important;
 }
 .skin-black .main-header > .logo {
   background-color: #f5f5f5 !important;
@@ -99,18 +100,19 @@ ol {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.95) !important;
 }
-a.black,
-a.black:hover,
-a.black:visited,
-a.black:active,
-a.black:focus {
+
+a.blue,
+a.blue:hover,
+a.blue:visited,
+a.blue:active,
+a.blue:focus {
   outline: none;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.75) !important;
+  color: #2B547E !important;
 }
 
 .settingdivblue:hover {
-	border: 5px double #666;
+	border: 5px double #737CA1;
 }
 .settingiconblue p {
 	text-align: center;
@@ -121,6 +123,37 @@ a.black:focus {
 	line-height: 30px;
 }
 .settingdivblue {
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	text-align: center;
+	border: 5px solid #737CA1;
+	border-radius: 100%;
+}
+
+
+a.black,
+a.black:hover,
+a.black:visited,
+a.black:active,
+a.black:focus {
+  outline: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.settingdivblack:hover {
+	border: 5px double #666;
+}
+.settingiconblack p {
+	text-align: center;
+	font-size: 17px;
+	word-wrap: break-word;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 30px;
+}
+.settingdivblack {
 	width: 70px;
 	height: 70px;
 	margin: 0 auto;

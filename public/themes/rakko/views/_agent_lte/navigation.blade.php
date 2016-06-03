@@ -34,8 +34,8 @@ $notifications = App\Modules\Support\Http\Controllers\Common\NotificationControl
 
 	<ul class="nav navbar-nav navbar-right">
 
-		@if (Shinobi::is('super_admin')) {
-			<li><a href="{{url('support/admin')}}">{!! trans('kotoba::helpdesk.admin_panel') !!}</a></li>
+		@if (Shinobi::is('super_admin'))
+			<li><a href="{{ url('support/admin') }}">{!! trans('kotoba::helpdesk.admin_panel') !!}</a></li>
 		@endif
 		<!-- User Account: style can be found in dropdown.less -->
 		<li class="dropdown notifications-menu">
@@ -51,13 +51,13 @@ $notifications = App\Modules\Support\Http\Controllers\Common\NotificationControl
 						@foreach($notifications as $notification)
 						@if($notification->type == 'registration')
 						<li>
-							<a href="{!! route('user.show', $notification->model_id) !!}" id="{{$notification->notification_id}}" class='noti_User'>
+							<a href="{!! route('user.show', $notification->model_id) !!}" id="{{ $notification->notification_id }}" class='noti_User'>
 								<i class="{!! $notification->icon_class !!}"></i> {!! $notification->message !!}
 							</a>
 						</li>
 						@else
 						<li>
-							<a href="{!! route('ticket.thread', $notification->model_id) !!}" id='{{ $notification->notification_id}}' class='noti_User'>
+							<a href="{!! route('ticket.thread', $notification->model_id) !!}" id='{{ $notification->notification_id }}' class='noti_User'>
 								<i class="{!! $notification->icon_class !!}"></i> {!! $notification->message !!}
 							</a>
 						</li>
@@ -66,43 +66,14 @@ $notifications = App\Modules\Support\Http\Controllers\Common\NotificationControl
 
 					</ul>
 				</li>
-				<li class="footer"><a href="{{ url('notifications-list')}}">View all</a>
+				<li class="footer"><a href="{{ url('notifications-list') }}">View all</a>
 				</li>
 
 			</ul>
 		</li>
-		<!-- User Account: style can be found in dropdown.less -->
-		<li class="dropdown user user-menu">
-		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-			@if(Auth::user())
 
-					<img src="{{Auth::user()->profile_pic}}"class="user-image" alt="User Image"/>
+		@include($activeTheme . '::' . '_partials.admin.navigation_profile')
 
-				<span class="hidden-xs">{{Auth::user()->first_name." ".Auth::user()->last_name}}</span>
-			@endif
-			</a>
-			<ul class="dropdown-menu">
-				<!-- User image -->
-				<li class="user-header"  style="background-color:#343F44;">
-
-					<img src="{{Auth::user()->profile_pic}}" class="img-circle" alt="User Image" />
-
-					<p>
-						{{Auth::user()->first_name." ".Auth::user()->last_name}} - {{Auth::user()->role}}
-						<small></small>
-					</p>
-				</li>
-				<!-- Menu Footer-->
-				<li class="user-footer" style="background-color:#1a2226;">
-					<div class="pull-left">
-						<a href="{{URL::route('profile')}}" class="btn btn-info btn-sm"><b>{!! trans('kotoba::helpdesk.profile') !!}</b></a>
-					</div>
-					<div class="pull-right">
-						<a href="{{url('auth/logout')}}" class="btn btn-danger btn-sm"><b>{!! trans('kotoba::helpdesk.sign_out') !!}</b></a>
-					</div>
-				</li>
-			</ul>
-		</li>
 	</ul>
 </div>
 
