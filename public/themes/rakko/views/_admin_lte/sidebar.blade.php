@@ -127,7 +127,7 @@
 				</a>
 			</li>
 			<li @yield('sidebar_forms')>
-				<a href="{{ url('support/list-forms') }}">
+				<a href="{{ url('support/forms') }}">
 					<i class="fa fa-file-text fa-fw"></i>
 					{{ trans('kotoba::helpdesk.forms') }}
 				</a>
