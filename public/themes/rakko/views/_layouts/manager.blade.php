@@ -57,7 +57,10 @@
 
 </head>
 
+<!--
 <body class="hold-transition skin-black sidebar-collapse sidebar-mini">
+-->
+<body class="hold-transition skin-black sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
@@ -108,15 +111,15 @@
 <!-- ------------------------------------------ template loaded js ------------------------------------------ -->
 	<script type="text/javascript">
 	var AdminLTEOptions = {
-	//Enable sidebar expand on hover effect for sidebar mini
-	//This option is forced to true if both the fixed layout and sidebar mini
-	//are used together
+//Enable sidebar expand on hover effect for sidebar mini
+//This option is forced to true if both the fixed layout and sidebar mini
+//are used together
 //	sidebarExpandOnHover: true,
-	//BoxRefresh Plugin
+//	BoxRefresh Plugin
 	enableBoxRefresh: true,
-	//Bootstrap.js tooltip
+//	Bootstrap.js tooltip
 //	enableBSToppltip: true
-	//'fast', 'normal', or 'slow'
+//'fast', 'normal', or 'slow'
 	animationSpeed: 'fast',
 	};
 

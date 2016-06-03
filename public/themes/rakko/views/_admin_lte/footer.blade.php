@@ -1,6 +1,6 @@
 <footer class="main-footer">
 
-<div class="pull-right hidden-xs">
+<div class="pull-right hidden-xs padding-right-lg">
 	<b>
 		{{ trans('kotoba::general.version') }}
 	</b>

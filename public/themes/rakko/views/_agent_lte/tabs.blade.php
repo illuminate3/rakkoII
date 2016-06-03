@@ -15,10 +15,11 @@ $group = App\Modules\Support\Http\Models\HelpDesk\Agent\Groups::where('id', '=',
 
 <div class="tab-content">
 
+{{--
 	<div role="tabpanel" class="tab-pane @yield('dashboard-bar')" id="tabA">
 		<ul class="nav navbar-nav">
 			<li id="bar" @yield('dashboard') ><a href="{{url('agent/dashboard')}}">{!! trans('kotoba::helpdesk.dashboard') !!}</a></li>
-			<li id="bar" @yield('profile') ><a href="{{url('agent/profile')}}">{!! trans('kotoba::helpdesk.profile') !!}</a></li>
+			<li id="bar" @yield('kb')><a href="{{ url('agent/comment') }}" >{!! trans('kotoba::helpdesk.knowledge_base') !!}</a></li>
 		</ul>
 	</div>
 
@@ -28,6 +29,7 @@ $group = App\Modules\Support\Http\Models\HelpDesk\Agent\Groups::where('id', '=',
 			<li id="bar" @yield('organizations')><a href="{{ url('agent/organizations') }}" >{!! trans('kotoba::helpdesk.organizations') !!}</a></li></a></li>
 		</ul>
 	</div>
+--}}
 
 	<div role="tabpanel" class="tab-pane @yield('ticket-bar')" id="tabC">
 		<ul class="nav navbar-nav">
@@ -47,7 +49,9 @@ $group = App\Modules\Support\Http\Models\HelpDesk\Agent\Groups::where('id', '=',
 	<div role="tabpanel" class="tab-pane @yield('tools-bar')" id="tabD">
 		<ul class="nav navbar-nav">
 			<li id="bar" @yield('tools')><a href="{{ url('agent/canned/list') }}" >{!! trans('kotoba::helpdesk.canned_response') !!}</a></li>
-			<li id="bar" @yield('kb')><a href="{{ url('agent/comment') }}" >{!! trans('kotoba::helpdesk.knowledge_base') !!}</a></li>
+			<li id="bar" @yield('profile') ><a href="{{url('agent/profile')}}">{!! trans('kotoba::helpdesk.profile') !!}</a></li>
+			<li id="bar" @yield('user')><a href="{{ url('agent/user') }}" >{!! trans('kotoba::helpdesk.user_directory') !!}</a></li></a></li>
+			<li id="bar" @yield('organizations')><a href="{{ url('agent/organizations') }}" >{!! trans('kotoba::helpdesk.organizations') !!}</a></li></a></li>
 		</ul>
 	</div>
 

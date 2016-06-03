@@ -58,7 +58,10 @@
 
 </head>
 
+<!--
 <body class="hold-transition skin-black sidebar-collapse sidebar-mini">
+-->
+<body class="hold-transition skin-black sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 

@@ -71,7 +71,7 @@
 	</li>
 
 	<li class="has-children">
-		<a href="http://codyhouse.co/?p=409">Modules</a>
+		<a href="#">Modules</a>
 
 		<ul class="cd-nav-icons is-hidden">
 			<li class="go-back"><a href="#0">Go Back</a></li>
@@ -151,10 +151,49 @@
 
 @if (Auth::user() && Auth::user()->can('manage_admin'))
 
-	<li>
-		<a href="/admin">
-			{{ trans('kotoba::general.dashboard') }}
+
+	<li class="has-children">
+		<a href="#">
+			<i class="fa fa-magnet fa-fw"></i>
+			{{ trans('kotoba::helpdesk.control_panel') }}
 		</a>
+
+		<ul class="cd-nav-icons is-hidden">
+			<li class="go-back"><a href="#0">Go Back</a></li>
+
+			<li>
+				<a class="cd-nav-item" href="/admin">
+					<i class="fa fa-dashboard fa-fw"></i>
+					{{ trans('kotoba::general.dashboard') }}
+				</a>
+			</li>
+
+			@if ( Auth::user()->can('manage_support') )
+
+				<li>
+					<a class="cd-nav-item" href="/support/admin">
+						<i class="fa fa-gears fa-fw"></i>
+						{{ trans('kotoba::helpdesk.admin_panel') }}
+					</a>
+				</li>
+
+				<li>
+					<a class="cd-nav-item" href="/agent/dashboard">
+						<i class="fa fa-ticket fa-fw"></i>
+						{{ trans('kotoba::helpdesk.agent_panel') }}
+					</a>
+				</li>
+
+			@endif
+
+			<li>
+				<a class="cd-nav-item" href="/helpdesk">
+					<i class="fa fa-lightbulb-o fa-fw"></i>
+					{{ trans('kotoba::helpdesk.helpdesk') }}
+				</a>
+			</li>
+
+		</ul>
 	</li>
 
 @else

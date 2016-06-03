@@ -1,52 +1,12 @@
 <aside class="main-sidebar">
-<!-- sidebar: style can be found in sidebar.less -->
 <section class="sidebar">
 
-{{--
-<div class="user-panel">
-@if (trim($__env->yieldContent('profileimg')))
-<h1>@yield('profileimg')</h1>
-@else
-<div class = "row">
-<div class="col-xs-3"></div>
-<div class="col-xs-2" style="width:50%;">
-<a href="{!! url('profile') !!}">
 
-<img src="{{Auth::user()->profile_pic}}" class="img-circle" alt="User Image" />
-
-</a>
-</div>
-</div>
-@endif
-<div class="info" style="text-align:center;">
-@if(Auth::user())
-<p>{{Auth::user()->first_name." ".Auth::user()->last_name}}</p>
-@endif
-@if(Auth::user() && Auth::user()->active==1)
-<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-@else
-<a href="#"><i class="fa fa-circle"></i> Offline</a>
-@endif
-</div>
-</div>
-<!-- search form -->
-{{-- <form action="#" method="get" class="sidebar-form"> --}}
-{{-- <div class="input-group"> --}}
-{{-- <input type="text" name="q" class="form-control" placeholder="Search..."/> --}}
-{{-- <span class="input-group-btn"> --}}
-{{-- <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button> --}}
-{{-- </span> --}}
-{{-- </div> --}}
-{{-- </form> --}}
-<!-- /.search form -->
---}}
-
-<!-- sidebar menu: : style can be found in sidebar.less -->
 <ul id="side-bar" class="sidebar-menu">
-@yield('sidebar')
-<li class="header">{!! trans('kotoba::helpdesk.Tickets') !!}</li>
-<?php
+	@yield('sidebar')
+	<li class="header">{!! trans('kotoba::helpdesk.Tickets') !!}</li>
 
+<?php
 
 if (Shinobi::is('super_admin')) {
 //if(Auth::user()->role == 'admin') {
@@ -108,7 +68,8 @@ $overdue_ticket = 0;
 
 <li @yield('inbox')>
 <a href="{{ url('agent/ticket/inbox') }}" id="load-inbox">
-<i class="fa fa-envelope"></i> <span>{!! trans('kotoba::helpdesk.inbox') !!}</span> <small class="label pull-right bg-green"><?php echo count($tickets); ?></small>                                            </a>
+<i class="fa fa-envelope"></i> <span>{!! trans('kotoba::helpdesk.inbox') !!}</span> <small class="label pull-right bg-green"><?php echo count($tickets); ?></small>
+</a>
 </li>
 <li @yield('myticket')>
 <a href="{{ url('agent/ticket/myticket') }}" id="load-myticket">
@@ -135,6 +96,7 @@ $overdue_ticket = 0;
 </a>
 </li>
 <li class="header">{!! trans('kotoba::helpdesk.Departments') !!}</li>
+
 <?php
 $depts = App\Modules\Support\Http\Models\HelpDesk\Agent\Department::all();
 foreach ($depts as $dept) {
@@ -153,7 +115,8 @@ $closed = count($closed);
 // }
 
 //if (Auth::user()->role == 'admin') {
-if (Shinobi::is('super_admin')) { ?>
+if (Shinobi::is('super_admin')) {
+?>
 
 <li class="treeview">
 <a href="#">
@@ -178,6 +141,7 @@ if (Shinobi::is('super_admin')) { ?>
 </li>
 <?php } }  ?>
 </ul>
-</section>
-<!-- /.sidebar -->
+
+
+</section><!-- /.sidebar -->
 </aside>

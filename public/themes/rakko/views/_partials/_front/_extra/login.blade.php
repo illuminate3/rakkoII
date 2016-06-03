@@ -15,6 +15,13 @@
 				</a>
 			</li>
 		@endif
+		@if ( Auth::user()->can('manage_support') )
+			<li>
+				<a class="footer_links" href="/agent/dashboard">
+					{{ trans('kotoba::helpdesk.agent_panel') }}
+				</a>
+			</li>
+		@endif
 		<li>
 			<a class="footer_links" href="/helpdesk">
 				{{ trans('kotoba::helpdesk.helpdesk') }}
