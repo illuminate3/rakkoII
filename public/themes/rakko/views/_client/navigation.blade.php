@@ -12,9 +12,11 @@
 
 	<li @yield('myticket')><a href="{{ url('helpdesk/mytickets') }}">{!! trans('kotoba::helpdesk.my_tickets') !!}</a></li>
 
+
 	<li class="dropdown" @yield('kb')>
-		<a href="{!! url('helpdesk/knowledgebase') !!}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{!! trans('kotoba::helpdesk.knowledge_base') !!} <span class="caret"></span></a>
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{!! trans('kotoba::helpdesk.knowledge_base') !!} <span class="caret"></span></a>
 		<ul class="dropdown-menu">
+			<li><a href="{{ url('helpdesk/knowledgebase') }}">{!! trans('kotoba::helpdesk.knowledge_base') !!}</a></li>
 			<li><a href="{{ url('helpdesk/categories') }}">{!! trans('kotoba::helpdesk.categories') !!}</a></li>
 			<li><a href="{{ url('helpdesk/articles') }}">{!! trans('kotoba::helpdesk.articles') !!}</a></li>
 		</ul>

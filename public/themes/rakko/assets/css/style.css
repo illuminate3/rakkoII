@@ -71,8 +71,29 @@ ol {
 	margin-bottom: 20px;
 	}
 
+.section {
+	margin-bottom: 30px;
+}
+.section-title {
+	margin-top: 0;
+	margin-bottom: 1em;
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.section-title > .line {
+	float: left;
+	width: 35%;
+	border-bottom: 1px solid #0044cc;
+	position: absolute;
+	bottom: -1px;
+}
 
 
+.bs-callout-site {
+	background-color: rgba(	115, 124, 161, 0.2);
+	border-color: #333c4d;
+}
 
 
 .content-wrapper,
