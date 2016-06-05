@@ -16,7 +16,7 @@
 <div class="col-sm-12">
 
 <div class="input-group">
-	<input type="text" class="form-control" placeholder="{!! trans('kotoba::helpdesk.have_a_question?_type_your_search_term_here') !!}">
+	<input type="text" class="form-control" name="search" id="search" placeholder="{!! trans('kotoba::helpdesk.have_a_question?_type_your_search_term_here') !!}">
 	<span class="input-group-btn">
 		<button class="btn btn-default" type="button">
 		<i class="fa fa-search fa-fw"></i>
