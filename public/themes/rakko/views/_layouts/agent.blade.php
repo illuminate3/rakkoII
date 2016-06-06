@@ -53,6 +53,7 @@
 	@yield('styles')
 
 <!-- ------------------------------------------ head loaded js ------------------------------------------ -->
+	<script type="text/javascript" src="{{ asset('assets/vendors/jquery/jquery-2.1.3.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/vendors/jquery/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/faveo/lb-faveo/plugins/moment/moment.js') }}"></script>
 
@@ -92,7 +93,6 @@
 
 <!-- ------------------------------------------ js ------------------------------------------ -->
 
-	<script type="text/javascript" src="{{ asset('assets/vendors/jquery/jquery-2.1.3.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('assets/vendors/bootstrap-3.3.5-dist/js/bootstrap.min.js') }}"></script>
 
 <!--
