@@ -115,31 +115,37 @@ $closed = count($closed);
 // }
 
 //if (Auth::user()->role == 'admin') {
-if (Shinobi::is('super_admin')) {
+if (Shinobi::is('admin')) {
+?>
+
+<li class="treeview  @yield('{!! $dept->name !!}')">
+	<a href="#"><i class="fa fa-folder-open"></i> <span>{!! $dept->name !!}</span> <i class="fa fa-angle-left pull-right"></i></a>
+	<ul class="treeview-menu">
+		<li><a href="{!! url::route('dept.open.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.open') !!}<small class="label pull-right bg-green">{!! $open !!}</small></a></li>
+		<li><a href="{!! url::route('dept.inprogress.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.inprogress') !!}<small class="label pull-right bg-green">{!! $underprocess !!}</small></a></li>
+		<li><a href="{!! url::route('dept.closed.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.closed') !!}<small class="label pull-right bg-green">{!! $closed !!}</small></a></li>
+	</ul>
+</li>
+
+<?php
+}
+if (Auth::user()->role == 'agent' && Auth::user()->primary_dpt == $dept->id) {
 ?>
 
 <li class="treeview">
-<a href="#">
-<i class="fa fa-folder-open"></i> <span>{!! $dept->name !!}</span> <i class="fa fa-angle-left pull-right"></i>
-</a>
-<ul class="treeview-menu">
-<li><a href="{!! url::route('dept.open.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.open') !!}<small class="label pull-right bg-green">{!! $open !!}</small></a></li>
-<li><a href="{!! url::route('dept.inprogress.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.inprogress') !!}<small class="label pull-right bg-green">{!! $underprocess !!}</small></a></li>
-<li><a href="{!! url::route('dept.closed.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.closed') !!}<small class="label pull-right bg-green">{!! $closed !!}</small></a></li>
-</ul>
+	<a href="#"><i class="fa fa-folder-open"></i> <span>{!! $dept->name !!}</span> <i class="fa fa-angle-left pull-right"></i></a>
+	<ul class="treeview-menu">
+		<li><a href="{!! url::route('dept.open.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.open') !!}<small class="label pull-right bg-green">{!! $open !!}</small></a></li>
+		<li><a href="{!! url::route('dept.inprogress.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.inprogress') !!}<small class="label pull-right bg-green">{!! $underprocess !!}</small></a></li>
+		<li><a href="{!! url::route('dept.closed.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.closed') !!}<small class="label pull-right bg-green">{!! $closed !!}</small></a></li>
+	</ul>
 </li>
-<?php } if (Auth::user()->role == 'agent' && Auth::user()->primary_dpt == $dept->id) { ?>
-<li class="treeview">
-<a href="#">
-<i class="fa fa-folder-open"></i> <span>{!! $dept->name !!}</span> <i class="fa fa-angle-left pull-right"></i>
-</a>
-<ul class="treeview-menu">
-<li><a href="{!! url::route('dept.open.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.open') !!}<small class="label pull-right bg-green">{!! $open !!}</small></a></li>
-<li><a href="{!! url::route('dept.inprogress.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.inprogress') !!}<small class="label pull-right bg-green">{!! $underprocess !!}</small></a></li>
-<li><a href="{!! url::route('dept.closed.ticket',$dept->name) !!}"><i class="fa fa-circle-o"></i>{!! trans('kotoba::helpdesk.closed') !!}<small class="label pull-right bg-green">{!! $closed !!}</small></a></li>
-</ul>
-</li>
-<?php } }  ?>
+
+<?php
+}
+}
+?>
+
 </ul>
 
 

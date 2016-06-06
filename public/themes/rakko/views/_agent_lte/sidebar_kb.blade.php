@@ -90,7 +90,7 @@
 	 </ul>
 </li>
 
-<li @yield('comment')>
+<li class="treeview @yield('commnets')">
 	<a href="{{url('agent/comment') }}">
 		<i class="fa fa-comments-o"></i>
 		<span>
@@ -98,7 +98,8 @@
 		</span>
 	</a>
 </li>
-<li @yield('settings')>
+
+<li class="treeview @yield('settings')">
 	<a href="{{url('agent/kb/settings') }}">
 		<i class="fa fa-wrench"></i>
 		<span>
