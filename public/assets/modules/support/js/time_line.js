@@ -47,7 +47,7 @@ source: 'auto/<?php echo $tickets->id; ?>'
 $(document).ready(function () {
 
 //Initialize Select2 Elements
-$(".select2").select2();
+//$(".select2").select2();
 
 setInterval(function(){
 $("#auto-submit").submit(function(){
@@ -700,10 +700,10 @@ $(document).ready(function() {
 
 var Vardata="";
 var count = 0;
-$(".select2").on('select2:select', function(){
+//$(".select2").on('select2:select', function(){
 parentAjaxCall();
 });
-$(".select2").on('select2:unselect', function(){
+//$(".select2").on('select2:unselect', function(){
 parentAjaxCall();
 });
 function parentAjaxCall(){
