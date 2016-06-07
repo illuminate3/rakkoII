@@ -198,22 +198,6 @@
 @endif
 
 
-@if (Module::isEnabled('chishiki'))
-	<ul class="nav navbar-nav navbar-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				{{ trans('kotoba::general.support') }} <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu">
-				<li>
-					@include('partials.nav_menu', ['items'=> $menu_navChishiki->roots()])
-				</li>
-			</ul>
-		</li>
-	</ul>
-@endif
-
-
 @if (Module::isEnabled('shisan'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
