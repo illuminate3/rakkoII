@@ -20,8 +20,10 @@ $group = App\Modules\Support\Http\Models\HelpDesk\Agent\Groups::where('id', '=',
 			<li id="open" @yield('open')><a href="{{ url('agent/ticket/open') }}" id="load-open">{!! trans('kotoba::helpdesk.open') !!}</a></li>
 			<li id="answered" @yield('answered')><a href="{{ url('agent/ticket/answered') }}" id="load-answered">{!! trans('kotoba::helpdesk.answered') !!}</a></li>
 			<li id="myticket" @yield('myticket')><a href="{{ url('agent/ticket/myticket') }}" >{!! trans('kotoba::helpdesk.my_tickets') !!}</a></li>
-			{{-- <li id="ticket" @yield('ticket')><a href="{{ url('ticket') }}" >Ticket</a></li> --}}
-			{{-- <li id="overdue" @yield('overdue')><a href="{{ url('agent/ticket/overdue') }}" >Overdue</a></li> --}}
+			{{--
+			<li id="ticket" @yield('ticket')><a href="{{ url('ticket') }}" >Ticket</a></li>
+			<li id="overdue" @yield('overdue')><a href="{{ url('agent/ticket/overdue') }}" >Overdue</a></li>
+			--}}
 			<li id="assigned" @yield('assigned')><a href="{{ url('agent/ticket/assigned') }}" id="load-assigned" >{!! trans('kotoba::helpdesk.assigned') !!}</a></li>
 			<li id="closed" @yield('closed')><a href="{{ url('agent/ticket/closed') }}" >{!! trans('kotoba::helpdesk.closed') !!}</a></li>
 			<?php if ($group->can_create_ticket == 1) {?>
@@ -37,8 +39,10 @@ $group = App\Modules\Support\Http\Models\HelpDesk\Agent\Groups::where('id', '=',
 			<li id="pages" class="@yield('pages')"><a href="{{ url('agent/page') }}" >{!! trans('kotoba::helpdesk.pages') !!}</a></li></a></li>
 
 			<li id="commnets" class="@yield('commnets')"><a href="{{ url('agent/comment') }}" >{!! trans('kotoba::helpdesk.comments') !!}</a></li></a></li>
-			<li id="canned" class="@yield('canned')"><a href="{{ url('agent/canned/list') }}" >{!! trans('kotoba::helpdesk.canned_response') !!}</a></li>
+			<li id="canned" class="@yield('canned')"><a href="{{ url('agent/canned') }}" >{!! trans('kotoba::helpdesk.canned_response') !!}</a></li>
+{{--
 			<li id="organizations" class="@yield('organizations')"><a href="{{ url('agent/organizations') }}" >{!! trans('kotoba::helpdesk.organizations') !!}</a></li></a></li>
+--}}
 		</ul>
 	</div>
 
