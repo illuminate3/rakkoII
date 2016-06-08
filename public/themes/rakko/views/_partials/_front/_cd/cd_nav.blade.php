@@ -181,14 +181,6 @@
 			</li>
 
 			@if ( Auth::user()->can('manage_support') )
-
-				<li>
-					<a class="cd-nav-item" href="/support/admin">
-						<i class="fa fa-gears fa-fw"></i>
-						{{ trans('kotoba::helpdesk.admin_panel') }}
-					</a>
-				</li>
-
 				<li>
 					<a class="cd-nav-item" href="/agent/dashboard">
 						<i class="fa fa-ticket fa-fw"></i>
@@ -198,10 +190,18 @@
 
 			@endif
 
+				<li>
+					<a class="cd-nav-item" href="/helpdesk">
+						<i class="fa fa-ticket fa-fw"></i>
+						{{ trans('kotoba::helpdesk.helpdesk') }}
+					</a>
+				</li>
+
+
 			<li>
-				<a class="cd-nav-item" href="/helpdesk">
+				<a class="cd-nav-item" href="/helpdesk/knowledgebase">
 					<i class="fa fa-lightbulb-o fa-fw"></i>
-					{{ trans('kotoba::helpdesk.helpdesk') }}
+					{{ trans('kotoba::helpdesk.knowledge_base') }}
 				</a>
 			</li>
 
