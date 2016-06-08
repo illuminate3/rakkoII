@@ -175,6 +175,11 @@
 				</a>
 			</li>
 
+			<li>
+				<a class="cd-nav-item" href="/">
+				</a>
+			</li>
+
 			@if ( Auth::user()->can('manage_support') )
 
 				<li>
@@ -206,9 +211,14 @@
 @else
 
 	<li>
-		<a href="/auth/login">
-			{{ trans('kotoba::button.log_in') }}
+		<a href="/social/login">
+			{{ trans('kotoba::hr.staff') }}
 		</a>
+{{--
+		<a href="/auth/login">
+			{{ trans('kotoba::hr.staff') }}
+		</a>
+--}}
 	</li>
 
 @endif

@@ -2,7 +2,7 @@
 <div class="footer-wrapper">
 <footer>
 
-	<div class="col-sm-4">
+	<div class="col-sm-4 padding-left-xl">
 
 		<a href="/" class="logo"><img src="{{ asset('/themes/' . $activeTheme . '/assets/img/footer-logo.png') }}" alt="" /></a>
 
