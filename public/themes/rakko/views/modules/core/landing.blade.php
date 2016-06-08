@@ -6,13 +6,10 @@
 @stop
 
 @section('styles')
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/cd_style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/carousel.css') }}">
 @stop
 
 @section('scripts')
-	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/js/jquery.mobile.custom.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('themes/' . $activeTheme . '/assets/js/main.js') }}"></script>
 @stop
 
 @section('inline-scripts')

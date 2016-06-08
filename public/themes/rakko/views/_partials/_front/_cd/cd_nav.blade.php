@@ -168,6 +168,13 @@
 				</a>
 			</li>
 
+			<li>
+				<a class="cd-nav-item" href="/staff">
+					<i class="fa fa-sign-in fa-fw"></i>
+					{{ trans('kotoba::general.staff') }}&nbsp;{{ trans('kotoba::cms.portal') }}
+				</a>
+			</li>
+
 			@if ( Auth::user()->can('manage_support') )
 
 				<li>

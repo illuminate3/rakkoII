@@ -44,6 +44,7 @@ width: 100% !important;
 }
 
 .navbar {
+	border-style: none !important;
 	margin: auto !important;
 	border-radius: 0 !important;
 	margin-bottom: 0 !important;
@@ -127,9 +128,15 @@ a.blue:hover,
 a.blue:visited,
 a.blue:active,
 a.blue:focus {
-  outline: none;
-  text-decoration: none;
-  color: #2B547E !important;
+	outline: none;
+	text-decoration: none;
+	color: rgba(7, 41, 77, 0.8) !important;
+}
+
+a.blue-hover:hover {
+	outline: none;
+	text-decoration: none;
+	color: #446A92 !important;
 }
 
 .settingdivblue:hover {
