@@ -112,6 +112,10 @@ padding-right: 50px !important;
   border-right: 1px solid #eee;
 }
 
+.box {
+	padding-bottom: 30px;
+	margin-bottom: 0px !important;
+}
 
 .search-wrapper a,
 .search-wrapper a:hover,

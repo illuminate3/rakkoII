@@ -129,7 +129,7 @@ if (Shinobi::is('admin')) {
 
 <?php
 }
-if (Auth::user()->role == 'agent' && Auth::user()->primary_dpt == $dept->id) {
+if (Shinobi::is('agent') && Auth::user()->primary_dpt == $dept->id) {
 ?>
 
 <li class="treeview">
