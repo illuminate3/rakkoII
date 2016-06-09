@@ -23,13 +23,13 @@
 	</li>
 
 <?php
-$pages = App\Modules\Support\Http\Models\KB\Page::where('status', '1')->where('visibility', '1')->get();
+//$pages = App\Modules\Support\Http\Models\KB\Page::where('status', '1')->where('visibility', '1')->get();
 ?>
-
+{{--
 	@foreach($pages as $page)
 		<li><a href="{{ url('helpdesk/pages',$page->slug) }}">{{$page->name}}</a></li>
 	@endforeach
-
+--}}
 </ul>
 
 </div><!-- /.navbar-collapse -->

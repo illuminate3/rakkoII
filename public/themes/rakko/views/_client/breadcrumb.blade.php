@@ -9,7 +9,7 @@
 	<li class="">{!! trans('kotoba::helpdesk.you_are_here') !!}: </li>
 --}}
 	<li>
-		<a href="{!! URL::route('/') !!}">
+		<a href="{!! url('/') !!}">
 			<i class="fa fa-home fa-fw"></i>
 			{!! trans('kotoba::helpdesk.home') !!}
 		</a>
