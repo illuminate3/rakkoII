@@ -193,3 +193,9 @@ a.black:focus {
 	border: 5px solid #ccc;
 	border-radius: 100%;
 }
+
+.more-link {
+	font-size: 22px !important;
+	font-weight: bold !important;
+	line-height: 30px !important;
+	}
