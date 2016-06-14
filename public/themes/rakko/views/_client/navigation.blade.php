@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default">
-<div class="col-sm-6 col-sm-offset-3">
+<div class="col-sm-4 col-sm-offset-4">
 
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -8,9 +8,11 @@
 
 	<li @yield('home')><a href="{{ url('helpdesk') }}">Help Desk</a></li>
 
-	<li @yield('submit')><a href="{{ url('helpdesk/create-ticket') }}">{!! trans('kotoba::helpdesk.submit_a_ticket') !!}</a></li>
+	<li @yield('submit')><a href="{{ url('helpdesk/tickets/create') }}">{!! trans('kotoba::helpdesk.submit_a_ticket') !!}</a></li>
 
-	<li @yield('myticket')><a href="{{ url('helpdesk/mytickets') }}">{!! trans('kotoba::helpdesk.my_tickets') !!}</a></li>
+	<li @yield('myticket')><a href="{{ url('helpdesk/tickets') }}">{!! trans('kotoba::helpdesk.my_tickets') !!}</a></li>
+
+	<li @yield('knowledgebase')><a href="{{ url('helpdesk/knowledgebase') }}">{!! trans('kotoba::helpdesk.knowledge_base') !!}</a></li>
 
 
 	<li class="dropdown" @yield('kb')>
