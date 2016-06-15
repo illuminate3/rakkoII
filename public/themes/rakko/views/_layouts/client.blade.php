@@ -46,6 +46,8 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/main.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/footer.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/css/AdminLTE.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/admin_lte/dist/css/skins/_all-skins.min.css') }}">
 
 <!-- ------------------------------------------ app loaded CSS stylesheets ------------------------------------------ -->
 	@yield('styles')
@@ -69,7 +71,6 @@
 	@if(Auth::user())
 		@include($activeTheme . '::' . '_client.navigation')
 		@include($activeTheme . '::' . '_client.breadcrumb')
-		@include($activeTheme . '::' . '_client.search')
 	@endif
 
 	@include($activeTheme . '::' . '_partials._front.content')
