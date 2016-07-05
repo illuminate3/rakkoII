@@ -22,4 +22,13 @@ return [
 'auth_fail_redirect'			=> '/admin/dashboard',
 
 
+'mailer' => [
+	'from_email'				=> '',
+	'from_name'					=> '',
+	'group_slug'				=> 'news-mailer-group',
+	'template'					=> 'news',
+	'create_canned_slug'		=> 'news_created',
+	'update_canned_slug'		=> 'news_update',
+],
+
 ];
