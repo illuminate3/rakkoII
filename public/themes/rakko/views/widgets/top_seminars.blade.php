@@ -59,4 +59,4 @@
 <br>
 
 @endforeach
-</div>
+</div><!-- ./row -->

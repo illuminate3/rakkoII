@@ -1,9 +1,7 @@
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
-	<li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">News</a></li>
-{{--
-	<li role="presentation"><a href="#tweets" aria-controls="tweets" role="tab" data-toggle="tab">Tweets</a></li>
---}}
+	<li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">{{ trans('kotoba::cms.news') }}</a></li>
+	<li role="presentation"><a href="#tweets" aria-controls="tweets" role="tab" data-toggle="tab">{{ trans('kotoba::general.twitter') }}</a></li>
 </ul>
 
 <!-- Tab panes -->
@@ -13,7 +11,7 @@
 		@include($activeTheme . '::' . '_partials._front._tabs.news')
 	</div>
 	<div role="tabpanel" class="tab-pane" id="tweets">
-		@include($activeTheme . '::' . '_partials._front._tabs.other')
+		@include($activeTheme . '::' . '_partials._front._tabs.twitter')
 	</div>
 
 </div>

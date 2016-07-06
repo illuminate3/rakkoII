@@ -19,7 +19,7 @@
 
 			@foreach($article->images as $image)
 				<a href="/news/{{ $article->slug }}">
-					<img src="{{ $image->image->url('landscape') }}" class="media-object" alt="{{ $article->slug }}">
+					<img src="{{ $image->image->url('landscape') }}" class="img-responsive media-object" alt="{{ $article->slug }}">
 				</a>
 			@endforeach
 
