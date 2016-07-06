@@ -35,6 +35,18 @@
 	@include($activeTheme . '::' . '_partials._front._content.jumbo_tron')
 </div><!--./container-fluid-->
 
+
+{!!
+	Widget::TopNewsBanner()
+!!}
+
+
+{{--
+<div class="row margin-left-md margin-right-md margin-bottom-lg">
+	@include($activeTheme . '::' . '_partials._front._content.alex')
+</div> <!-- ./row -->
+--}}
+
 <div class="row margin-left-md margin-right-md">
 <div class="col-md-4">
 	<article class="left-box">
