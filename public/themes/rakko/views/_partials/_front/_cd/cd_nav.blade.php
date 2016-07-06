@@ -180,6 +180,7 @@
 				</a>
 			</li>
 
+{{--
 			@if ( Auth::user()->can('manage_support') )
 				<li>
 					<a class="cd-nav-item" href="/agent/dashboard">
@@ -187,8 +188,8 @@
 						{{ trans('kotoba::helpdesk.agent_panel') }}
 					</a>
 				</li>
-
 			@endif
+--}}
 
 				<li>
 					<a class="cd-nav-item" href="/helpdesk">

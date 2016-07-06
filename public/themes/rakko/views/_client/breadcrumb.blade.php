@@ -1,24 +1,22 @@
-<!-- bottom_content -->
-<div class="row search-wrapper" id="search">
-
+<!-- bread_crumb -->
+<div class="row search-wrapper">
 <div class="col-sm-8 col-sm-offset-2">
+
 
 <ol class="breadcrumb-clean">
 
-{{--
-	<li class="">{!! trans('kotoba::helpdesk.you_are_here') !!}: </li>
---}}
 	<li>
 		<a href="{!! url('/') !!}">
 			<i class="fa fa-home fa-fw"></i>
-			{!! trans('kotoba::helpdesk.home') !!}
+			{!! trans('kotoba::general.home') !!}
 		</a>
 	</li>
+
 	@yield('breadcrumb')
+
 </ol>
 
+
 </div>
-
-
 </div> <!-- ./row -->
-<!-- bottom_content -->
+<!-- bread_crumb -->
