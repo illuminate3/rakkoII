@@ -6,7 +6,7 @@ use Caffeinated\Widgets\Widget;
 
 use App\Modules\Newsdesk\Http\Models\News as news;
 
-use Menu;
+use CMenu;
 use Session;
 use Theme;
 

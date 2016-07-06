@@ -8,9 +8,9 @@
 <div id="myCarousel" class="carousel" data-ride="carousel">
 
 <!-- Buttons -->
-{!!
+{{--
 	Widget::AccessPoints()
-!!}
+--}}
 
 
 <!-- Indicators -->
