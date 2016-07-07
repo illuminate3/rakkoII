@@ -20,8 +20,7 @@
 		"wikimedia/composer-merge-plugin": "^1.2",
 		"yajra/laravel-datatables-oracle": "5.12.5",
 		"genealabs/laravel-caffeine": "~0.2.0",
-		"cviebrock/eloquent-sluggable": "^3.1",
-		"thujohn/twitter": "^2.2"
+		"cviebrock/eloquent-sluggable": "^3.1"
 	},
 	"require-dev": {
 		"fzaninotto/faker": "~1.4",
