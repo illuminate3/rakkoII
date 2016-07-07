@@ -3,7 +3,7 @@
 
 <div class="row">
 	<h2>
-		{{ trans('kotoba::general.recent') }}&nbsp;{{ trans('kotoba::general.tweet') }}
+		{{ trans('kotoba::general.recent') }}&nbsp;{{ Lang::choice('kotoba::general.tweet', 1) }}
 	</h2>
 	<hr>
 </div>
