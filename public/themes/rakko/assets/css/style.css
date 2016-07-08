@@ -59,7 +59,7 @@ ol {
 	display: inline;
 }
 .breadcrumb-clean li+li:before {
-	content:"» ";
+	content:" \00bb \00a0";
 }
 
 .search-wrapper {
