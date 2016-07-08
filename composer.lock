@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bad91f425dd2c660a375bd153f9a77f8",
-    "content-hash": "b73e8548227fc9e47b8ed592836b41ed",
+    "hash": "d5d0541f13fe56653ff1c56f51c86b3d",
+    "content-hash": "f3749c8ac79a8e363919b93beb0cc308",
     "packages": [
         {
             "name": "anlutro/l4-settings",
@@ -1036,6 +1036,49 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "cosenary/instagram",
+            "version": "v2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cosenary/Instagram-PHP-API.git",
+                "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cosenary/Instagram-PHP-API/zipball/fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
+                "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MetzWeb\\Instagram\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Metz",
+                    "email": "christian-metz1@gmx.net",
+                    "homepage": "http://metzweb.net"
+                }
+            ],
+            "description": "An easy-to-use PHP Class for accessing Instagram's API.",
+            "homepage": "https://github.com/cosenary/Instagram-PHP-API",
+            "keywords": [
+                "api",
+                "instagram"
+            ],
+            "time": "2014-11-29 13:10:42"
         },
         {
             "name": "cviebrock/eloquent-sluggable",
@@ -2278,7 +2321,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/4396ecd708bba89c8a7d4417bd07e18cc69ac67b",
+                "url": "https://api.github.com/repos/illuminate3/kotoba/zipball/d97a202b5476228c096eb19c0589ff86cf9cb57a",
                 "reference": "34e947036a10d8c87986d4817f18e13081c93118",
                 "shasum": ""
             },
@@ -4215,7 +4258,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jjriv/emogrifier/zipball/81947fddadbc829a9f31c7f138ae890e2f56e7a4",
+                "url": "https://api.github.com/repos/jjriv/emogrifier/zipball/cdbf35ff25231b6681d2643dc7eea910ebf774cb",
                 "reference": "2b4d26165b5e4ee2da12cdb3432fe36d6f88f864",
                 "shasum": ""
             },
