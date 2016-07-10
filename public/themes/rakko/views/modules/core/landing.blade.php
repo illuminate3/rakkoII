@@ -36,11 +36,9 @@
 </div><!--./container-fluid-->
 
 
-{!!
+{{--
 	Widget::TopNewsBanner()
-!!}
-
-
+--}}
 {{--
 <div class="row margin-left-md margin-right-md margin-bottom-lg">
 	@include($activeTheme . '::' . '_partials._front._content.alex')
