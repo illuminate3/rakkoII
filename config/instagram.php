@@ -40,7 +40,8 @@ return [
 		'main' => [
 			'id' => function_exists('env') ? env('INSTAGRAM_ID', '') : '',
 			'secret' => function_exists('env') ? env('INSTAGRAM_SECRET', '') : '',
-			'access_token' => null,
+//			'access_token' => function_exists('env') ? env('INSTAGRAM_TOKEN', '') : '',
+			'access_token' => '{ "access_token": "' . env('INSTAGRAM_TOKEN') . '" }',
 		],
 
 		'alternative' => [
