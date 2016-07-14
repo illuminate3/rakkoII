@@ -149,7 +149,7 @@
 	</li>
 --}}
 
-@if (Auth::user() && Auth::user()->can('manage_admin'))
+@if (Auth::user() && Auth::user()->is('user'))
 
 
 	<li class="has-children">
@@ -162,14 +162,14 @@
 			<li class="go-back"><a href="#0">Go Back</a></li>
 
 			<li>
-				<a class="cd-nav-item" href="/admin">
+				<a class="cd-nav-item" href="/staff/dashboard/{{ Auth::user()->id }}">
 					<i class="fa fa-dashboard fa-fw"></i>
 					{{ trans('kotoba::general.dashboard') }}
 				</a>
 			</li>
 
 			<li>
-				<a class="cd-nav-item" href="staff">
+				<a class="cd-nav-item" href="/staff">
 					<i class="fa fa-sign-in fa-fw"></i>
 					{{ trans('kotoba::general.staff') }}&nbsp;{{ trans('kotoba::cms.portal') }}
 				</a>
@@ -179,6 +179,15 @@
 				<a class="cd-nav-item" href="/">
 				</a>
 			</li>
+
+			@if ( Auth::user()->can('manage_admin') )
+				<li>
+					<a class="cd-nav-item" href="/admin">
+						<i class="fa fa-cogs fa-fw"></i>
+						{{ trans('kotoba::helpdesk.admin_panel') }}
+					</a>
+				</li>
+			@endif
 
 {{--
 			@if ( Auth::user()->can('manage_support') )
@@ -191,18 +200,29 @@
 			@endif
 --}}
 
-				<li>
-					<a class="cd-nav-item" href="/helpdesk">
-						<i class="fa fa-ticket fa-fw"></i>
-						{{ trans('kotoba::helpdesk.helpdesk') }}
-					</a>
-				</li>
-
+			<li>
+				<a class="cd-nav-item" href="/helpdesk">
+					<i class="fa fa-ticket fa-fw"></i>
+					{{ trans('kotoba::helpdesk.helpdesk') }}
+				</a>
+			</li>
 
 			<li>
 				<a class="cd-nav-item" href="/helpdesk/knowledgebase">
 					<i class="fa fa-lightbulb-o fa-fw"></i>
 					{{ trans('kotoba::helpdesk.knowledge_base') }}
+				</a>
+			</li>
+
+			<li>
+				<a class="cd-nav-item" href="/">
+				</a>
+			</li>
+
+			<li>
+				<a class="cd-nav-item" href="/auth/logout">
+					<i class="fa fa-sign-out fa-fw"></i>
+					{{ trans('kotoba::auth.sign_out') }}
 				</a>
 			</li>
 
