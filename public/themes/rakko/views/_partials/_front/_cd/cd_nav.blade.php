@@ -161,6 +161,15 @@
 		<ul class="cd-nav-icons is-hidden">
 			<li class="go-back"><a href="#0">Go Back</a></li>
 
+			@if ( Auth::user()->can('manage_admin') )
+				<li>
+					<a class="cd-nav-item" href="/admin">
+						<i class="fa fa-cogs fa-fw"></i>
+						{{ trans('kotoba::helpdesk.admin_panel') }}
+					</a>
+				</li>
+			@endif
+
 			<li>
 				<a class="cd-nav-item" href="/staff/dashboard/{{ Auth::user()->id }}">
 					<i class="fa fa-dashboard fa-fw"></i>
@@ -175,16 +184,9 @@
 				</a>
 			</li>
 
-			<li>
-				<a class="cd-nav-item" href="/">
-				</a>
-			</li>
-
-			@if ( Auth::user()->can('manage_admin') )
+			@if ( !Auth::user()->can('manage_admin') )
 				<li>
-					<a class="cd-nav-item" href="/admin">
-						<i class="fa fa-cogs fa-fw"></i>
-						{{ trans('kotoba::helpdesk.admin_panel') }}
+					<a class="cd-nav-item" href="/">
 					</a>
 				</li>
 			@endif
