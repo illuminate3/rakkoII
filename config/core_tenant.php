@@ -2,6 +2,6 @@
 
 return [
 
-	'default_tenant_id' => 11,
+	'default_tenant_id' => 4,
 
 ];
