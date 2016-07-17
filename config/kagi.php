@@ -35,7 +35,7 @@ return [
 'admin_login_return_path'		=> '/admin/dashboard',
 'admin_logout_return_path'		=> '/auth/login',
 
-'login_return_path'				=> '/',
+'login_return_path'				=> getenv('LOGIN_RETURN_PATH'),
 'logout_return_path'			=> getenv('LOGOUT_RETURN_PATH'),
 
 'auth_fail_redirect'			=> '/auth/login',
