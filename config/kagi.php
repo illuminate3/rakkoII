@@ -32,13 +32,13 @@ return [
 */
 'auth_login_path'				=> getenv('AUTH_LOGIN_PATH'),
 
-'admin_login_return_path'		=> '/admin/dashboard',
-'admin_logout_return_path'		=> '/auth/login',
+'admin_login_return_path'		=> getenv('ADMIN_LOGIN_RETURN'),
+'admin_logout_return_path'		=> getenv('ADMIN_LOGOUT_RETURN'),
 
 'login_return_path'				=> getenv('LOGIN_RETURN_PATH'),
 'logout_return_path'			=> getenv('LOGOUT_RETURN_PATH'),
 
-'auth_fail_redirect'			=> '/auth/login',
+'auth_fail_redirect'			=> getenv('AUTH_FAIL_REDIRECT'),
 
 /*
 |--------------------------------------------------------------------------
