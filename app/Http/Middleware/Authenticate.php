@@ -52,7 +52,7 @@ class Authenticate
 */
 
 //				return redirect()->guest('login');
-				return redirect()->guest(Config::get('kagi.auth_login_path', '/login'));
+				return redirect()->guest(Config::get('kagi.auth_fail_redirect', '/login'));
 
 			}
 		}
