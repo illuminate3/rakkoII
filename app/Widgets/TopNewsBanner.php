@@ -4,7 +4,7 @@ namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
-use App\Modules\Newsdesk\Http\Models\News as news;
+use App\Modules\Newsdesk\Http\Models\News as News;
 
 //use App;
 //use Cache;
@@ -23,10 +23,11 @@ class TopNewsBanner extends Widget
 		$activeTheme = Theme::getActive();
 		$lang = Session::get('locale');
 
-		$timed_articles = News::IsPublished()->SiteID()->IsFeatured()->IsTimed()->LimitTop()->orderBy('order')->get();
-		$normal_articles = News::IsPublished()->SiteID()->IsFeatured()->NotTimed()->LimitTop()->orderBy('order')->get();
-		$articles = $timed_articles->merge($normal_articles);
+// 		$timed_articles = News::IsPublished()->SiteID()->IsFeatured()->IsTimed()->LimitTop()->orderBy('order')->get();
+// 		$normal_articles = News::IsPublished()->SiteID()->IsFeatured()->NotTimed()->LimitTop()->orderBy('order')->get();
+// 		$articles = $timed_articles->merge($normal_articles);
 //dd($articles);
+		$articles = News::IsPublished()->SiteID()->IsFeatured()->LimitTop()->orderBy('order')->get();
 
 		return Theme::View($activeTheme . '::' . 'widgets.top_news_banner',
 			compact(
