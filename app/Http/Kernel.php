@@ -44,6 +44,7 @@ class Kernel extends HttpKernel
 		'filex'				=> \App\Modules\Filex\Http\Middleware\AuthenticateFilex::class,
 		'himawari'			=> \App\Modules\Himawari\Http\Middleware\AuthenticateHimawari::class,
 		'newsdesk'			=> \App\Modules\Newsdesk\Http\Middleware\AuthenticateNewsdesk::class,
+		'social'			=> \App\Modules\Social\Http\Middleware\AuthenticateSocial::class,
 	];
 
 }
