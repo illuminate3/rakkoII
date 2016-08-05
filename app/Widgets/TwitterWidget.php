@@ -4,7 +4,6 @@ namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
-use Cache;
 use Config;
 use Setting;
 use Theme;
@@ -20,30 +19,13 @@ class TwitterWidget extends Widget
 		$activeTheme = Theme::getActive();
 
 		$screen_name = Setting::get('twitter_username', Config::get('social.username'));
-// 		$tweet_minutes = Setting::get('tweet_minutes', Config::get('social.tweet_minutes'));
-//
-// 		$tweets = Cache::get('widget_twitter', null);
-//
-// 		if ($tweets == null) {
-// 			$tweets = Cache::remember('widget_twitter', $tweet_minutes, function() {
-// 				$tweets = Twitter::getUserTimeline([
-// 					'screen_name' => $screen_name,
-// 					'count' => 1,
-// 					false,
-// 					true
-// 					]);
-// 				Return $tweets;
-// 			});
-// 		}
 
-			$tweets = Cache::remember('widget_twitter', $tweet_minutes, function() {
-				$tweets = Twitter::getUserTimeline([
-					'screen_name' => $screen_name,
-					'count' => 1,
-					false,
-					true
-					]);
-
+		$tweets = Twitter::getUserTimeline([
+			'screen_name' => $screen_name,
+			'count' => 1,
+			false,
+			true
+			]);
 //dd($tweets);
 
 		return Theme::View($activeTheme . '::' . 'widgets.twitter',
