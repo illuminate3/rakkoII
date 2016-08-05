@@ -17,6 +17,7 @@ return [
 ),
 
 'auth_fail_redirect'			=> '/admin',
+'tweet_minutes'					=> 5,
 
 
 ];
