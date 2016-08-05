@@ -25,7 +25,7 @@ class TwitterWidget extends Widget
 		$tweets = Cache::get('widget_twitter', null);
 
 		if ($tweets == null) {
-			$tweets = Cache::remember('widget_twitter', $minutes, function() {
+			$tweets = Cache::remember('widget_twitter', $tweet_minutes, function() {
 				$tweets = Twitter::getUserTimeline([
 					'screen_name' => $screen_name,
 					'count' => 1,
