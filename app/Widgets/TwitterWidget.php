@@ -4,6 +4,7 @@ namespace App\Widgets;
 
 use Caffeinated\Widgets\Widget;
 
+use Cache;
 use Config;
 use Setting;
 use Theme;
