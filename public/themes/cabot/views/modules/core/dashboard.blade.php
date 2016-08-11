@@ -61,7 +61,7 @@
 						<dd>
 							<a href="{{ URL::to('/admin/tickets') }}">
 							{{-- $total_tickets --}}
-							{!! Widget::AllTickets() !!}
+							{{-- Widget::AllTickets() --}}
 {{-- plugin_ticketAllActive() --}}
 							</a>
 						</dd>
@@ -75,7 +75,7 @@
 							<a href="{{ URL::to('/admin/tickets') }}">
 							{{-- $total_tickets_active --}}
 {{-- plugin_ticketAllClosed() --}}
-							{!! Widget::TicketsActive() !!}
+							{{-- Widget::TicketsActive() --}}
 							</a>
 						</dd>
 					</dl>
@@ -121,7 +121,7 @@
 				<dd>
 					<a href="{{ URL::to('/admin/asset') }}">
 					{{-- $total_assets --}}
-					{!! Widget::AllAssets() !!}
+					{{-- Widget::AllAssets() --}}
 					</a>
 				</dd>
 			</dl>

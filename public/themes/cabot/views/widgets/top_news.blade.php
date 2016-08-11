@@ -2,9 +2,9 @@
 
 
 <div class="row">
-	<h1>
+	<h2>
 		{{ trans('kotoba::cms.news') }}
-	</h1>
+	</h2>
 	<hr>
 </div>
 
@@ -12,7 +12,6 @@
 <div class="row margin-top-md">
 @foreach ($articles as $article)
 
-{{--
 <div class="media">
 	<div class="media-left">
 		@foreach($article->images as $image)
@@ -33,8 +32,8 @@
 		</p>
 	</div>
 </div>
---}}
 
+{{--
 <div class="row">
 
 	<div class="col-sm-4">
@@ -56,6 +55,7 @@
 	</div>
 
 </div>
+--}}
 
 <br>
 <br>

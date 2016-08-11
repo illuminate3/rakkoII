@@ -11,7 +11,7 @@
 	<a class="navbar-brand" href="/">
 		{{ Setting::get('brand_title', Config::get('core.brand_title')) }}
 	</a>
-	<a class="navbar-brand" href="/admin/dashboard">
+	<a class="navbar-brand" href="/admin">
 		<i class="fa fa-dashboard fa-lg"></i>
 		{{ trans('kotoba::cms.dashboard') }}
 	</a>
@@ -19,78 +19,7 @@
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-@if (Auth::user())
-
-	<ul class="nav navbar-nav navbar-right">
-		@if (Auth::guest())
-			<li><a href="/auth/login">{{ trans('kotoba::auth.log_in') }}</a></li>
-			<li><a href="/auth/register">{{ trans('kotoba::auth.register') }}</a></li>
-		@else
-			<li>
-				@if (Auth::user()->avatar != null)
-					<img
-						src="{{ asset(Auth::user()->avatar) }}"
-						alt="{{ Auth::user()->email }}"
-						class="img-circle nav-profile"
-					/>
-				@else
-					<img
-						src="{{ asset('/assets/images/usr.png') }}"
-						alt="{{ Auth::user()->email }}"
-						class="img-circle nav-profile"
-					/>
-				@endif
-			</li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-					{{ Auth::user()->name }} <span class="caret"></span>
-				</a>
-				<ul class="dropdown-menu" role="menu">
-					<li>
-						<a href="/profiles/{{ Auth::user()->id }}">
-							{{ Lang::choice('kotoba::account.profile', 1) }}
-						</a>
-					</li>
-				<li class="divider"></li>
-@if (Auth::user()->can('manage_admin'))
-{{--
-					<li>
-						<a href="/admin/users">
-							{{ Lang::choice('kotoba::account.user', 2) }}
-						</a>
-					</li>
-					<li>
-						<a href="/admin/roles">
-							{{ Lang::choice('kotoba::role.role', 2) }}
-						</a>
-					</li>
-					<li>
-						<a href="/admin/permissions">
-							{{ Lang::choice('kotoba::permission.permission', 2) }}
-						</a>
-					</li>
-					<li class="divider"></li>
---}}
-					{{--
-						Widget::MenuAdmin()
-					--}}
-
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navAdmin->roots()])
-
-					<li class="divider"></li>
-@endif
-					<li>
-						<a href="/auth/logout">
-							{{ trans('kotoba::auth.log_out') }}
-						</a>
-					</li>
-				</ul>
-			</li>
-		@endif
-	</ul>
-
-@endif
+	@include($activeTheme . '::' . '_partials.admin.navigation_profile')
 
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown messages-menu">
@@ -120,11 +49,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuSettings()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navSettings->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navSettings->roots()])
 				</li>
 			</ul>
 		</li>
@@ -137,17 +62,14 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuMail()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navYubin->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navYubin->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
 
 @if (Module::isEnabled('horitsu'))
+@if ( count($menu_navHoritsu->roots()) )
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -155,15 +77,12 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuHoritsu()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navHoritsu->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navHoritsu->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
+@endif
 @endif
 
 
@@ -175,11 +94,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuSchool()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navGakko->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navGakko->roots()])
 				</li>
 			</ul>
 		</li>
@@ -195,11 +110,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuCampus()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navCampus->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navCampus->roots()])
 				</li>
 			</ul>
 		</li>
@@ -215,11 +126,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuHR()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navJinji->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navJinji->roots()])
 				</li>
 			</ul>
 		</li>
@@ -235,17 +142,27 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuCMS()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navHimawari->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navHimawari->roots()])
 				</li>
 			</ul>
 		</li>
 	</ul>
 @endif
 
+@if (Module::isEnabled('chishiki'))
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ trans('kotoba::general.support') }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+					@include('partials.nav_menu', ['items'=> $menu_navChishiki->roots()])
+				</li>
+			</ul>
+		</li>
+	</ul>
+@endif
 
 @if (Module::isEnabled('shisan'))
 	<ul class="nav navbar-nav navbar-right">
@@ -255,11 +172,7 @@
 			</a>
 			<ul class="dropdown-menu" role="menu">
 				<li>
-				{{--
-					Widget::MenuAssets()
-				--}}
-{{-- $menu_navAdmin->asUl() --}}
-@include('partials.nav_menu', ['items'=> $menu_navShisan->roots()])
+					@include('partials.nav_menu', ['items'=> $menu_navShisan->roots()])
 				</li>
 			</ul>
 		</li>
@@ -270,8 +183,8 @@
 @endif
 
 
+</div><!-- ./navbar-collapse -->
 
-</div>
 
 </div><!-- ./container-fluid -->
 </nav><!-- /nav -->

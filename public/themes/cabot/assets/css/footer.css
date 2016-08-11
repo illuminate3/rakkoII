@@ -1,0 +1,98 @@
+/* --------------------------------
+
+footer components
+
+-------------------------------- */
+
+/*******************************************/
+/**             BOTTOM                    **/
+/*******************************************/
+
+.bottom-wrapper { background: #333c4d url("../img/_style/bottom-bg.png") repeat-x; min-height: 300px; width: 100%; overflow: hidden; }
+#bottom {
+/*
+	width: 960px; margin: 0px auto;
+*/
+}
+#bottom article { float: left; padding: 45px 0px; min-height: 212px; }
+
+#bottom article h4 { text-shadow: 1px 1px 0px #282f3b; color: #fff; font: 16px "RobotoRegular", Arial, Helvetica, sans-serif; background: url("../img/_style/heading-bg.png") left bottom no-repeat; padding: 0px 0px 14px 0px; margin: 0px 0px 14px 0px; }
+#bottom article p {
+	text-shadow: 1px 1px 0px #282f3b;
+	color: #cfd9e2;
+	font: 13px "RobotoRegular", Arial, Helvetica, sans-serif;
+	line-height: 21px;
+	margin: 0px 0px 0px 0px;
+	}
+#bottom article p strong { font-family: "RobotoMedium"; color: #fff; }
+
+#bottom article fieldset { position: relative; margin: 0px 0px 10px; }
+#bottom article input.field { outline: none; color: #E94639; font: 12px "RobotoRegular", Arial, Helvetica, sans-serif; width: 169px; height: 23px; padding: 10px 51px 10px 10px; line-height: 23px; border: none; }
+#bottom article input.ok-btn { outline: none; position: absolute; top: 0px; right: 0px; cursor: pointer; background: url("../img/_style/subscribe-btn.png") no-repeat; width: 41px; height: 41px; line-height: 41px; border: none; color: #fff; text-shadow: #1685bb; }
+
+#bottom article .tweet_list li { padding: 0px 0px 15px; margin: 0px 0px 15px; background: url("../img/_style/heading-bg.png") left bottom no-repeat; }
+#bottom article .tweet_list li:last-child { background: none; }
+#bottom article .tweet_time { display: block; text-shadow: 1px 1px 0px #282f3b; }
+#bottom article .tweet_time a { color: #a2abba; font-size: 11px; }
+#bottom article .tweet_text { text-shadow: 1px 1px 0px #282f3b; color: #cfd9e2; font: 13px "RobotoRegular", Arial, Helvetica, sans-serif; line-height: 21px; }
+#bottom article .tweet_text a { color: #88caed; }
+#bottom article.bottom-text-widget { width: 300px; margin: 0px 20px 0px 0px; }
+#bottom article.bottom-tweet-widget { width: 300px; padding-right: 35px; margin: 0px 54px 0px 0px; background: url("../bottom-separator.pngbottom-separator.png") right center repeat-y; }
+#bottom article.bottom-subscribe-widget { width: 230px; }
+
+
+/*******************************************/
+/**             FOOTER                    **/
+/*******************************************/
+
+.footer-wrapper {
+	background: #cc2214;
+	padding: 40px 0px;
+	overflow: hidden;
+	border-top: 1px solid #E8473A;
+	}
+.footer-wrapper footer {
+/*
+	width: 960px;
+*/
+	padding: 0px 0px;
+	margin: 0px auto;
+}
+.footer-wrapper footer p { color: #fff; font: 13px "RobotoMedium", Arial, Helvetica, sans-serif; line-height: 20px; text-shadow: 1px 1px 0px #101319; }
+.footer-wrapper footer a { color: #fff; }
+.footer-wrapper footer p.copyright-text {
+	margin: 0px 0px 0px 0px;
+	}
+.footer-wrapper footer p.copyright-text a.logo { border-right: 1px solid #555d67; margin-right: 15px; }
+.footer-wrapper footer p.copyright-text a.logo img { margin-right: 15px; vertical-align: middle; }
+.footer-wrapper footer .footer-nav {}
+.footer-wrapper footer .footer-nav li { float: left; padding: 0px 15px 0px 0px; margin: 0px 15px 0px 0px; background: url("../img/_style/separator.png") right center no-repeat; }
+.footer-wrapper footer .footer-nav li:last-child { padding: 0; margin: 0; background: none; }
+.footer-wrapper footer .social { margin: 0px 0px 20px; overflow: hidden; }
+.footer-wrapper footer .social li { display: inline; margin-left: 15px; }
+.footer-wrapper footer .social li a { font-size: 0; line-height: 0; display: inline-block; width: 19px; height: 19px; }
+.footer-wrapper footer .social li a:hover { text-decoration: underline; }
+.footer-wrapper footer .social li a.fb { background: url("../img/_style/social.png") right center no-repeat; }
+.footer-wrapper footer .social li a.tw { background: url("../img/_style/social.png") -35px center no-repeat; }
+.footer-wrapper footer .social li a.vm { background: url("../img/_style/social.png") left center no-repeat; }
+.footer-wrapper footer div.left { float: left; width: 470px; }
+.footer-wrapper footer div.right { float: right; width: 470px; text-align: right; }
+
+.footer-wrapper section input.field {
+	outline: none;
+	color: #E94639;
+	font: 12px "RobotoRegular", Arial, Helvetica, sans-serif;
+	width: 70%;
+	padding: 10px 10px;
+	margin-bottom: 10px;
+	line-height: 14px;
+	border: none;
+	}
+.footer-wrapper section h4 {
+	text-shadow: 1px 1px 0px #282f3b;
+	color: #fff;
+	font: 16px "RobotoRegular", Arial, Helvetica, sans-serif;
+	background: url("../img/_style/heading-bg.png") left bottom no-repeat;
+	padding: 0px 0px 14px 0px;
+	margin: 0px 0px 14px 0px;
+	}

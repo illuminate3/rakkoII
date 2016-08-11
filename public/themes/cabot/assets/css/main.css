@@ -1,0 +1,56 @@
+/*
+|-----------------------------------------------------------------------------------------
+| main
+|-----------------------------------------------------------------------------------------
+*/
+/*
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+*/
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #2e3233;
+  background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start; /* align items in Main Axis */
+    align-items: stretch; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+
+    background: rgba(255, 255, 255, .1);
+}
+
+.Site {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+.Site-header,
+.Site-footer {
+	flex-shrink: 0;
+}
+.Site-main {
+	flex: 1 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+/*
+@media only screen and (max-width: 1169px) {
+  body.nav-on-left.overflow-hidden {
+    overflow: hidden;
+  }
+}
+*/
+.font_reduce {
+  font-size: 80%;
+}
