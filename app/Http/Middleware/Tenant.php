@@ -10,6 +10,7 @@ use AuraIsHere\LaravelMultiTenant\TenantScope;
 use Cache;
 use Closure;
 use Config;
+use DB;
 use Session;
 //use TenantScope;
 use View;
@@ -48,6 +49,7 @@ class Tenant {
 		$site_id = $site_info->id;
 //dd($site_id);
 
+		$this->getGoogleAnalytics($site_id);
 
 		return $next($request);
 	}
@@ -87,8 +89,8 @@ class Tenant {
 //		Session::set('siteId', $site_info->id);
 //dd(session('siteId', $site_info->id));
 //		session('siteId', $site_info->id);
-		Session::put('siteId', $site_info->id);
 		Cache::forget('siteId');
+//		Session::put('siteId', $site_info->id);
 		Cache::forever('siteId', $site_info->id);
 //dd(session()->get('siteId'));
 
@@ -141,6 +143,23 @@ dd('die');
 		}
 
 		return $site_slug;
+	}
+
+
+//	public function getSiteSlug()
+	public function getGoogleAnalytics($site_id)
+	{
+//dd($site_id);
+
+		Cache::forget('google_analytics');
+
+		$google_analytics = DB::table('sites')
+			->where('id', '=', $site_id)
+			->pluck('google_analytics');
+//dd($google_analytics);
+
+		Cache::forever('google_analytics', $google_analytics);
+
 	}
 
 

@@ -97,9 +97,7 @@
 	</script>
 
 <!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
-<script>
-	{!! Setting::get('google_analytics') !!}
-</script>
+	{!! Cache::get('google_analytics') !!}
 <!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
 
 </body>
