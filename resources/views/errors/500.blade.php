@@ -1,103 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
+
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Pankaj Taneja">
-	<link rel="shortcut icon" href="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>500</title>
 
-	<!-- Latest compiled and Bootstrap minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<title>
+		500
+	</title>
 
-	<!-- Core CSS -->
-	<link href="{{ asset('assets/css/_errors/owl/stylesheet.css') }}" rel="stylesheet">
+	<link rel="shortcut icon" href="{{ asset('ico/favicon.png') }}">
+	<link rel="icon" href="{{ asset('favicon.ico') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ asset('ico/apple-touch-icon-57-precomposed.png') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('ico/apple-touch-icon-72-precomposed.png') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('ico/apple-touch-icon-144-precomposed.png') }}">
 
-	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+<!-- ------------------------------------------ Google Fonts ------------------------------------------ -->
+<!--
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+<!-- ------------------------------------------ CSS stylesheets ------------------------------------------ -->
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/reset.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-3.3.5-dist/css/bootstrap.min.css') }}">
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/login.css') }}">
+
 </head>
 
-<body class="dusk">
+<body class="body_color">
 
-<div class="col-md-12">
 
-	<div class="owl-background">
-		<div class="moon">
-			<div class="left">5</div>
-			<div class="right">0</div>
-		</div>
-		<div class="owl">
-	<div class="wing1"></div>
-	<div class="wing2"></div>
-	<div class="wing3"></div>
-	<div class="wing4"></div>
-	<div class="wing5"></div>
-	<div class="wing6"></div>
-	<div class="wing7"></div>
-	<div class="wing8"></div>
-	<div class="wing9"></div>
-	<div class="wing10"></div>
-	<div class="wing11"></div>
-	<div class="wing12"></div>
-	<div class="owl-head">
-	<div class="ears"></div>
-	</div>
-	<div class="owl-body">
-	<div class="owl-eyes">
-	<div class="owleye">
-	<div class="owleye inner"></div>
-	<div class="owleye inner inner-2"></div>
-	<div class="eyelid top"></div>
-	<div class="eyelid bottom"></div>
-	</div>
-	<div class="owleye">
-	<div class="owleye inner"></div>
-	<div class="owleye inner inner-2"></div>
-	<div class="eyelid top"></div>
-	<div class="eyelid bottom"></div>
-	</div>
-	<div class="nose"></div>
-	</div>
-	<div class="feet">
-	<div class="foot1"></div>
-	<div class="foot2"></div>
-	</div>
-	</div>
-	<div class="branch"></div>
-	</div>
-	</div>
-	</div>
+<div id="flex-container">
+<div id="flex-item">
 
-	<div class="col-md-12">
-		<div class="message">
-		<h2>
-			Coding Team is lost in the dark!
-		</h2>
-		<p>
-			They broke the site ... what were they thinking???
-		</p>
-		<br>
-		<div class="btndiv">
-			<a href="/">
-				<button class="btnpop">
-					Return to Mian Site
-				</button>
-			<a>
-		</div>
+<div class="well well-lg">
+	<a href="/">
+		<img src="{{ asset('themes/' . $activeTheme . '/assets/img/logo.png') }}">
+	</a>
+
+	<h3>
+		Oops. Something broke. Don't worry. We are more than likely fixing it right now
+	</h3>
+
+	<div class="margin-top-lg">
+		<a href="/" class="btn btn-primary btn-block">{{ trans('kotoba::button.return') }}</a>
 	</div>
 
 </div>
 
-<div id='stars1'></div>
-<div id='stars2'></div>
-<div id='stars3'></div>
-<div id='sstar'></div>
+
+</div>
+</div>
+
+<!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
+	{!! Cache::get('google_analytics') !!}
+<!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
 
 </body>
 </html>

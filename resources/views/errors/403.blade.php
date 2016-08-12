@@ -1,69 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
+
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="Pankaj Taneja">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>403</title>
 
-	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+	<title>
+		403
+	</title>
 
-	<!-- Latest compiled and minified Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="shortcut icon" href="{{ asset('ico/favicon.png') }}">
+	<link rel="icon" href="{{ asset('favicon.ico') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ asset('ico/apple-touch-icon-57-precomposed.png') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('ico/apple-touch-icon-72-precomposed.png') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('ico/apple-touch-icon-144-precomposed.png') }}">
 
-	<!-- Core CSS -->
-	<link href="{{ asset('assets/css/_errors/cow/stylesheet.css') }}" rel="stylesheet">
+<!-- ------------------------------------------ Google Fonts ------------------------------------------ -->
+<!--
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+<!-- ------------------------------------------ CSS stylesheets ------------------------------------------ -->
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/reset.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-3.3.5-dist/css/bootstrap.min.css') }}">
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/login.css') }}">
+
 </head>
 
-<body class="blue-bg">
+<body class="body_color">
 
-<div class="col-md-12" style="top:48vmin">
-<div class="mooo">
-<div class="cow">
-<div class="cow-head">
-<div class="cow-head-pattern"><div><div></div></div></div>
-<div class="cow-nose"><div><div></div></div></div>
-<div class="cow-nose-bottom"><div class="moo-mouth"></div></div>
-<div class="cow-grass"></div>
-<div class="cow-ear1"></div><div class="cow-ear2"></div>
-<div class="cow-horn"></div>
-</div>
-<div class="cow-body-shell">
-<div class="cow-body"><div></div></div>
-<div class="cow-forelegs"></div>
-<div class="cow-hindlegs"></div>
-<div class="cow-tail"></div>
-<div class="cow-udder"><div></div></div>
-</div>
-		</div>
-		<h1>403</h1>
+
+<div id="flex-container">
+<div id="flex-item">
+
+<div class="well well-lg">
+	<a href="/">
+		<img src="{{ asset('themes/' . $activeTheme . '/assets/img/logo.png') }}">
+	</a>
+
+	<h3>
+		Nothing is supposed to be here
+	</h3>
+
+	<div class="margin-top-lg">
+		<a href="/" class="btn btn-primary btn-block">{{ trans('kotoba::button.return') }}</a>
 	</div>
+
 </div>
 
-<div class="col-md-12">
-	<div class="message">
-		<h2>
-			Mooooove On!
-		</h2>
-		<p>
-			Nothing to see here
-		</p>
-		<br>
-		<div class="btndiv">
-			<div class="btnpop">
-				<a href="/">
-					Return to the Main Site
-				</a>
-			</div>
-		</div>
-	</div>
+
 </div>
+</div>
+
+<!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
+	{!! Cache::get('google_analytics') !!}
+<!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
 
 </body>
 </html>

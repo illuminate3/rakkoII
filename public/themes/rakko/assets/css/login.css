@@ -27,6 +27,9 @@ body, html {
 	height: 350px;
 }
 
+.body_color {
+	background-color: rgba(52, 61, 81, 0.8);
+}
 
 
 .flexcontainer {

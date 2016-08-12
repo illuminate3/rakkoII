@@ -1,47 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Be right back.</title>
+<head>
 
-        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                color: #B0BEC5;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+	<title>
+		503
+	</title>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+	<link rel="shortcut icon" href="{{ asset('ico/favicon.png') }}">
+	<link rel="icon" href="{{ asset('favicon.ico') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ asset('ico/apple-touch-icon-57-precomposed.png') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('ico/apple-touch-icon-72-precomposed.png') }}">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('ico/apple-touch-icon-144-precomposed.png') }}">
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+<!-- ------------------------------------------ Google Fonts ------------------------------------------ -->
+<!--
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
-            .title {
-                font-size: 72px;
-                margin-bottom: 40px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Be right back.</div>
-            </div>
-        </div>
-    </body>
+<!-- ------------------------------------------ CSS stylesheets ------------------------------------------ -->
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/reset.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/bootstrap-3.3.5-dist/css/bootstrap.min.css') }}">
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/illuminate3/css/standard.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/' . $activeTheme . '/assets/css/login.css') }}">
+
+</head>
+
+<body class="body_color">
+
+
+<div id="flex-container">
+<div id="flex-item">
+
+<div class="well well-lg">
+	<a href="/">
+		<img src="{{ asset('themes/' . $activeTheme . '/assets/img/logo.png') }}">
+	</a>
+
+	<h3>
+		Something is getting fixed. Please check again a little later
+	</h3>
+
+	<div class="margin-top-lg">
+		<a href="/" class="btn btn-primary btn-block">{{ trans('kotoba::button.return') }}</a>
+	</div>
+
+</div>
+
+
+</div>
+</div>
+
+<!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
+	{!! Cache::get('google_analytics') !!}
+<!-- ------------------------------------------ google ananlytics js ------------------------------------------ -->
+
+</body>
 </html>
