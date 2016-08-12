@@ -1,125 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Error 500 - Internal Server Error</title>
-	<meta name="viewport" content="width=device-width">
-	<style type="text/css">
-		@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Pankaj Taneja">
+	<link rel="shortcut icon" href="">
 
-		article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-		audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-		audio:not([controls]) { display: none; }
-		[hidden] { display: none; }
-		html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-		html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-		body { margin: 0; font-size: 1em; line-height: 1.4; }
-		::-moz-selection { background: #E37B52; color: #fff; text-shadow: none; }
-		::selection { background: #E37B52; color: #fff; text-shadow: none; }
-		a { color: #00e; }
-		a:visited { color: #551a8b; }
-		a:hover { color: #06e; }
-		a:focus { outline: thin dotted; }
-		a:hover, a:active { outline: 0; }
-		abbr[title] { border-bottom: 1px dotted; }
-		b, strong { font-weight: bold; }
-		blockquote { margin: 1em 40px; }
-		dfn { font-style: italic; }
-		hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-		ins { background: #ff9; color: #000; text-decoration: none; }
-		mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-		pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
-		pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-		q { quotes: none; }
-		q:before, q:after { content: ""; content: none; }
-		small { font-size: 85%; }
-		sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-		sup { top: -0.5em; }
-		sub { bottom: -0.25em; }
-		ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-		dd { margin: 0 0 0 40px; }
-		nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
-		img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-		svg:not(:root) { overflow: hidden; }
-		figure { margin: 0; }
-		form { margin: 0; }
-		fieldset { border: 0; margin: 0; padding: 0; }
-		label { cursor: pointer; }
-		legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
-		button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-		button, input { line-height: normal; }
-		button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
-		button[disabled], input[disabled] { cursor: default; }
-		input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
-		input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-		input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
-		button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-		textarea { overflow: auto; vertical-align: top; resize: vertical; }
-		input:valid, textarea:valid {  }
-		input:invalid, textarea:invalid { background-color: #f0dddd; }
-		table { border-collapse: collapse; border-spacing: 0; }
-		td { vertical-align: top; }
+	<title>500</title>
 
-		body
-		{
-			font-family:'Droid Sans', sans-serif;
-			font-size:10pt;
-			color:#555;
-			line-height: 25px;
-		}
+	<!-- Latest compiled and Bootstrap minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-		.wrapper
-		{
-			width:760px;
-			margin:0 auto 5em auto;
-		}
+	<!-- Core CSS -->
+	<link href="{{ asset('assets/css/_errors/owl/stylesheet.css') }}" rel="stylesheet">
 
-		.main
-		{
-			overflow:hidden;
-		}
-
-		.error-spacer
-		{
-			height:4em;
-		}
-
-		a, a:visited
-		{
-			color:#2972A3;
-		}
-
-		a:hover
-		{
-			color:#72ADD4;
-		}
-	</style>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
 </head>
-<body>
-	<div class="wrapper">
-		<div class="error-spacer"></div>
-		<div role="main" class="main">
-			<?php $messages = array('Ouch.', 'Oh no!', 'Whoops!'); ?>
 
-			<h1><?php echo $messages[mt_rand(0, 2)]; ?></h1>
+<body class="dusk">
 
-			<h2>Server Error: 500 (Internal Server Error)</h2>
+<div class="col-md-12">
 
-			<hr>
+	<div class="owl-background">
+		<div class="moon">
+			<div class="left">5</div>
+			<div class="right">0</div>
+		</div>
+		<div class="owl">
+	<div class="wing1"></div>
+	<div class="wing2"></div>
+	<div class="wing3"></div>
+	<div class="wing4"></div>
+	<div class="wing5"></div>
+	<div class="wing6"></div>
+	<div class="wing7"></div>
+	<div class="wing8"></div>
+	<div class="wing9"></div>
+	<div class="wing10"></div>
+	<div class="wing11"></div>
+	<div class="wing12"></div>
+	<div class="owl-head">
+	<div class="ears"></div>
+	</div>
+	<div class="owl-body">
+	<div class="owl-eyes">
+	<div class="owleye">
+	<div class="owleye inner"></div>
+	<div class="owleye inner inner-2"></div>
+	<div class="eyelid top"></div>
+	<div class="eyelid bottom"></div>
+	</div>
+	<div class="owleye">
+	<div class="owleye inner"></div>
+	<div class="owleye inner inner-2"></div>
+	<div class="eyelid top"></div>
+	<div class="eyelid bottom"></div>
+	</div>
+	<div class="nose"></div>
+	</div>
+	<div class="feet">
+	<div class="foot1"></div>
+	<div class="foot2"></div>
+	</div>
+	</div>
+	<div class="branch"></div>
+	</div>
+	</div>
+	</div>
 
-			<h3>What does this mean?</h3>
-
-			<p>
-				Something went wrong on our servers while we were processing your request.
-				We're really sorry about this, and will work hard to get this resolved as
-				soon as possible.
-			</p>
-
-			<p>
-				Perhaps you would like to go to our <a href="{{ URL::to('home'); }}">home page</a>?
-			</p>
+	<div class="col-md-12">
+		<div class="message">
+		<h2>
+			Coding Team is lost in the dark!
+		</h2>
+		<p>
+			They broke the site ... what were they thinking???
+		</p>
+		<br>
+		<div class="btndiv">
+			<a href="/">
+				<button class="btnpop">
+					Return to Mian Site
+				</button>
+			<a>
 		</div>
 	</div>
+
+</div>
+
+<div id='stars1'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='sstar'></div>
+
 </body>
 </html>

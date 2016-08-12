@@ -12,38 +12,39 @@ use Flash;
 class Handler extends ExceptionHandler
 {
 
-    /**
-     * A list of the exception types that should not be reported.
-     *
-     * @var array
-     */
-    protected $dontReport = [
-        HttpException::class,
-    ];
+	/**
+	 * A list of the exception types that should not be reported.
+	 *
+	 * @var array
+	 */
+	protected $dontReport = [
+		HttpException::class,
+	];
 
-    /**
-     * Report or log an exception.
-     *
-     * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
-     *
-     * @param  \Exception  $e
-     * @return void
-     */
-    public function report(Exception $e)
-    {
-        return parent::report($e);
-    }
+	/**
+	 * Report or log an exception.
+	 *
+	 * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
+	 *
+	 * @param  \Exception  $e
+	 * @return void
+	 */
+	public function report(Exception $e)
+	{
+		return parent::report($e);
+	}
 
-    /**
-     * Render an exception into an HTTP response.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $e
-     * @return \Illuminate\Http\Response
-     */
-    public function render($request, Exception $e)
-    {
+	/**
+	 * Render an exception into an HTTP response.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @param  \Exception  $e
+	 * @return \Illuminate\Http\Response
+	 */
+	public function render($request, Exception $e)
+	{
 
+/*
 		if ($e instanceof TokenMismatchException) {
 			//Redirect to login form if session expires
 			Flash::success( trans('kotoba::auth.error.time_out') );
@@ -51,8 +52,28 @@ class Handler extends ExceptionHandler
 //             return redirect($request->fullUrl())->with('errors',
 //                 ["The login form has expired, please try again. In the future, reload the login page if it has been open for several hours."]);
 		}
+*/
 
-        return parent::render($request, $e);
-    }
+		if ( ! config('app.debug') ) {
+
+// TokenMismatchException
+			if ( $e instanceof TokenMismatchException ) {
+				$e = new HttpException( 400, $e->getMessage() );
+			}
+
+// ModelNotFoundException
+			if ( $e instanceof MethodNotAllowedHttpException ) {
+				$e = new HttpException( 404, $e->getMessage() );
+			}
+
+// MethodNotAllowedHttpException
+			if ( $e instanceof MethodNotAllowedHttpException ) {
+				$e = new HttpException( 405, $e->getMessage() );
+			}
+
+		}
+
+		return parent::render($request, $e);
+	}
 
 }
