@@ -42,6 +42,7 @@
 
 @if (Auth::user())
 
+@if (Auth::user()->is('super_admin'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -54,7 +55,9 @@
 			</ul>
 		</li>
 	</ul>
+@endif
 
+@if (Auth::user()->can('manage_yubin'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -67,8 +70,10 @@
 			</ul>
 		</li>
 	</ul>
+@endif
 
 @if (Module::isEnabled('horitsu'))
+@if (Auth::user()->can('manage_horitsu'))
 @if ( count($menu_navHoritsu->roots()) )
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
@@ -84,9 +89,11 @@
 	</ul>
 @endif
 @endif
+@endif
 
 
 @if (Module::isEnabled('gakko'))
+@if (Auth::user()->can('manage_gakko'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -100,9 +107,11 @@
 		</li>
 	</ul>
 @endif
+@endif
 
 
 @if (Module::isEnabled('campus'))
+@if (Auth::user()->can('manage_campus'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -116,9 +125,11 @@
 		</li>
 	</ul>
 @endif
+@endif
 
 
 @if (Module::isEnabled('jinji'))
+@if (Auth::user()->can('manage_jinji'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -132,9 +143,11 @@
 		</li>
 	</ul>
 @endif
+@endif
 
 
-@if (Module::isEnabled('himawari'))
+@if ( (Module::isEnabled('himawari')) || (Module::isEnabled('newsdesk')) )
+@if ( (Auth::user()->can('manage_himawari')) || (Auth::user()->can('manage_newsdesk')) )
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -148,8 +161,10 @@
 		</li>
 	</ul>
 @endif
+@endif
 
 @if (Module::isEnabled('chishiki'))
+@if (Auth::user()->can('manage_ticket'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -163,8 +178,27 @@
 		</li>
 	</ul>
 @endif
+@endif
+
+@if (Module::isEnabled('filex'))
+@if (Auth::user()->can('manage_filex'))
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ trans('kotoba::files.media') }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+					@include('partials.nav_menu', ['items'=> $menu_navFilex->roots()])
+				</li>
+			</ul>
+		</li>
+	</ul>
+@endif
+@endif
 
 @if (Module::isEnabled('shisan'))
+@if (Auth::user()->can('manage_shisan'))
 	<ul class="nav navbar-nav navbar-right">
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -177,6 +211,7 @@
 			</ul>
 		</li>
 	</ul>
+@endif
 @endif
 
 

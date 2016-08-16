@@ -35,7 +35,7 @@
 					</li>
 				<li class="divider"></li>
 
-				@if (Auth::user()->can('manage_admin'))
+				@if (Auth::user()->is('super_admin'))
 					@include('partials.nav_menu', ['items'=> $menu_navAdmin->roots()])
 					<li class="divider"></li>
 				@endif

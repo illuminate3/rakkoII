@@ -6,7 +6,9 @@ use Caffeinated\Widgets\Widget;
 
 use App\Modules\Newsdesk\Http\Models\News as news;
 
-use CMenu;
+//use Illuminate\Support\Collection;
+
+//use CMenu;
 use Session;
 use Theme;
 
@@ -22,7 +24,11 @@ class NewsBanner extends Widget
 
 		$timed_articles = News::IsPublished()->SiteID()->IsBanner()->IsTimed()->orderBy('order')->get();
 		$normal_articles = News::IsPublished()->SiteID()->IsBanner()->NotTimed()->orderBy('order')->get();
-		$articles = $timed_articles->merge($normal_articles);
+		$articles = $normal_articles->merge($timed_articles);
+
+//		$articles = News::IsPublished()->SiteID()->IsBanner()->IsTimed()->NotTimed()->orderBy('order')->get();
+// 		$articles = new Collection($articles);
+
 //dd($articles);
 
 		$count = count($articles);
