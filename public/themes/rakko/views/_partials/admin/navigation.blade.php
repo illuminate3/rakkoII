@@ -163,6 +163,23 @@
 @endif
 @endif
 
+@if (Module::isEnabled('social'))
+@if (Auth::user()->can('manage_social'))
+	<ul class="nav navbar-nav navbar-right">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+				{{ trans('kotoba::general.social') }} <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li>
+					@include('partials.nav_menu', ['items'=> $menu_navSocial->roots()])
+				</li>
+			</ul>
+		</li>
+	</ul>
+@endif
+@endif
+
 @if (Module::isEnabled('chishiki'))
 @if (Auth::user()->can('manage_ticket'))
 	<ul class="nav navbar-nav navbar-right">
